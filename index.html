@@ -480,40 +480,18 @@
             
             // --- Pre-generated AI Voice Audio ---
             // Voice: Daniel (British, authoritative, deep) from ElevenLabs
-            const voiceAudio = {
-                tagline: new Audio('./audio/tagline.mp3'),
-                bio: new Audio('./audio/bio.mp3')
-            };
+            const bioAudio = new Audio('./audio/bio.mp3');
+            bioAudio.volume = 0.7;
 
-            // Set volume for all voice audio
-            Object.values(voiceAudio).forEach(audio => {
-                audio.volume = 0.7;
-            });
-
-            function playVoiceAudio(key) {
-                const audio = voiceAudio[key];
-                if (audio) {
-                    audio.currentTime = 0;
-                    audio.play().catch(e => console.log('Voice playback prevented:', e));
-                }
+            function playBioVoice() {
+                bioAudio.currentTime = 0;
+                bioAudio.play().catch(e => console.log('Voice playback prevented:', e));
             }
 
             // --- Typing Effect with Pre-generated AI Voice Narration ---
             function startTyping() {
                 const elementsToType = document.querySelectorAll('.typing-effect');
                 let delay = 0;
-                let elementIndex = 0;
-
-                // Map specific elements to their audio files
-                const audioMap = [
-                    null,           // "Grand Magus Alistair's"
-                    null,           // "Digital Grimoire"
-                    'tagline',      // "Undoubtedly one of the five..."
-                    null,           // grimoire image (skipped)
-                    'bio',          // Bio section
-                    null,           // wizard artifacts image (skipped)
-                    null            // decorative divider (skipped)
-                ];
 
                 elementsToType.forEach((el, index) => {
                     setTimeout(() => {
@@ -521,10 +499,9 @@
                         let text = el.textContent;
                         el.textContent = '';
 
-                        // Play corresponding audio if available
-                        const audioKey = audioMap[index];
-                        if (audioKey) {
-                            playVoiceAudio(audioKey);
+                        // Play bio voice only for the bio section (4th element)
+                        if (index === 4) {
+                            playBioVoice();
                         }
 
                         // Type text
