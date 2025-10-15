@@ -426,24 +426,26 @@
                 musicPlaying = !musicPlaying;
             });
 
-            // --- Sound Synthesis ---
-            const synth = new Tone.MembraneSynth().toDestination();
+            // --- Sound Effects ---
+            // Page turn sound for seal click
+            const sealClickSound = new Audio('http://soundbible.com/grab.php?id=2066&type=mp3');
+            sealClickSound.volume = 0.4;
+
+            // Parchment unrolling sound
             const parchmentSound = new Tone.Player({
-                url: "https://cdn.freesound.org/previews/266/266472_4486188-lq.mp3", // A parchment unrolling sound
+                url: "https://cdn.freesound.org/previews/266/266472_4486188-lq.mp3",
                 autostart: false,
             }).toDestination();
-            parchmentSound.volume.value = -6;
+            parchmentSound.volume.value = -8;
 
-            // Additional sound effects
-            const sealClickSound = new Tone.Synth({
-                oscillator: { type: 'triangle' },
-                envelope: { attack: 0.01, decay: 0.2, sustain: 0, release: 0.1 }
-            }).toDestination();
+            // Page turn for accordion open
+            const accordionOpenSound = new Audio('http://soundbible.com/grab.php?id=2066&type=mp3');
+            accordionOpenSound.volume = 0.3;
 
-            const accordionSound = new Tone.Synth({
-                oscillator: { type: 'sine' },
-                envelope: { attack: 0.1, decay: 0.3, sustain: 0, release: 0.2 }
-            }).toDestination();
+            // Subtle paper rustle for accordion close
+            const accordionCloseSound = new Audio('http://soundbible.com/grab.php?id=2066&type=mp3');
+            accordionCloseSound.volume = 0.2;
+            accordionCloseSound.playbackRate = 0.8;
 
 
             // --- Interactions ---
@@ -461,11 +463,13 @@
                     try {
                         await Tone.start();
                         await Tone.loaded();
-                        // Play seal click sound
-                        sealClickSound.triggerAttackRelease("G4", "0.2");
-                        setTimeout(() => sealClickSound.triggerAttackRelease("D4", "0.3"), 100);
+                        // Play page turn sound
+                        sealClickSound.currentTime = 0;
+                        sealClickSound.play().catch(e => console.log('Seal sound prevented:', e));
                         // Play parchment unrolling sound
-                        parchmentSound.start();
+                        setTimeout(() => {
+                            parchmentSound.start();
+                        }, 200);
                     } catch (error) {
                         console.error("Audio could not be initialized or played, but the site will continue to function.", error);
                     }
@@ -594,16 +598,13 @@
                     if (content.style.maxHeight) {
                         content.style.maxHeight = null;
                         content.style.padding = "0 1rem";
-                        // Closing sound
-                        if (Tone.context.state === 'running') {
-                            accordionSound.triggerAttackRelease("F3", "0.1");
-                        }
+                        // Closing sound - subtle paper rustle
+                        accordionCloseSound.currentTime = 0;
+                        accordionCloseSound.play().catch(e => console.log('Sound prevented'));
                     } else {
-                        // Opening sound - more elaborate
-                        if (Tone.context.state === 'running') {
-                            accordionSound.triggerAttackRelease("C4", "0.15");
-                            setTimeout(() => accordionSound.triggerAttackRelease("E4", "0.15"), 100);
-                        }
+                        // Opening sound - page turn
+                        accordionOpenSound.currentTime = 0;
+                        accordionOpenSound.play().catch(e => console.log('Sound prevented'));
                         content.style.maxHeight = content.scrollHeight + "px";
                         content.style.padding = "1.5rem 1rem";
                     }
