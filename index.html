@@ -39,10 +39,13 @@
         #seal {
             cursor: pointer;
             transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            font-size: 6rem;
+            font-size: 4rem;
             line-height: 1;
         }
-        #seal:hover {
+        @media (min-width: 640px) {
+            #seal { font-size: 6rem; }
+        }
+        #seal:hover, #seal:active {
             transform: scale(1.1);
             text-shadow: 0 0 15px var(--ornament);
         }
@@ -61,11 +64,18 @@
             tracking-wider;
             line-height: 1.2;
         }
-        h1 { font-size: 3rem; }
-        h2 { font-size: 2.5rem; }
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; }
+        h3 { font-size: 1.25rem; }
+        @media (min-width: 640px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.5rem; }
+        }
         @media (min-width: 768px) {
             h1 { font-size: 4rem; }
             h2 { font-size: 3rem; }
+            h3 { font-size: 2rem; }
         }
 
         .text-ornament { color: var(--ornament); }
@@ -82,11 +92,22 @@
             margin-bottom: 1rem;
             transition: all 0.3s ease;
             border-radius: 8px;
+            touch-action: manipulation;
         }
-        .accordion-header:hover {
+        .accordion-header:hover, .accordion-header:active {
             background-color: rgba(200, 163, 121, 0.2);
             transform: translateX(8px);
             box-shadow: -4px 0 12px rgba(140, 56, 56, 0.2);
+        }
+        @media (max-width: 639px) {
+            .accordion-header {
+                padding: 1rem 0.5rem;
+                flex-wrap: wrap;
+            }
+            .accordion-header h2 {
+                flex: 1;
+                min-width: 0;
+            }
         }
         .accordion-header .icon {
             transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -111,14 +132,24 @@
             margin-bottom: 2rem;
         }
         .wizard-card img {
-            border: 8px solid var(--border-gold);
+            border: 4px solid var(--border-gold);
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        @media (min-width: 640px) {
+            .wizard-card img {
+                border: 8px solid var(--border-gold);
+            }
         }
 
         .blog-entry {
             border-left: 4px solid var(--border-gold);
-            padding-left: 1.5rem;
+            padding-left: 1rem;
             margin-bottom: 2rem;
+        }
+        @media (min-width: 640px) {
+            .blog-entry {
+                padding-left: 1.5rem;
+            }
         }
         
         /* Utility for typing text effect */
@@ -131,20 +162,33 @@
             background-image: linear-gradient(rgba(243, 233, 210, 0.85), rgba(243, 233, 210, 0.85)), url('./images/wizard-tower-new.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            background-attachment: scroll;
             border: 4px solid var(--border-gold);
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
             margin-bottom: 2rem;
+            padding: 2rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .hero-banner {
+                background-attachment: fixed;
+                padding: 3rem 2rem;
+            }
         }
 
         .grimoire-image {
             max-width: 100%;
-            border: 8px solid var(--border-gold);
+            border: 4px solid var(--border-gold);
             border-radius: 8px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-            margin: 2rem auto;
+            margin: 1.5rem auto;
             display: block;
+        }
+        @media (min-width: 640px) {
+            .grimoire-image {
+                border: 8px solid var(--border-gold);
+                margin: 2rem auto;
+            }
         }
 
         .decorative-divider {
@@ -192,24 +236,34 @@
         /* --- Music Toggle Button --- */
         #music-toggle {
             position: fixed;
-            bottom: 2rem;
-            right: 2rem;
+            bottom: 1rem;
+            right: 1rem;
             z-index: 100;
             background: var(--border-gold);
             color: var(--ink);
             border: 3px solid var(--ornament);
             border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            font-size: 1.5rem;
+            width: 50px;
+            height: 50px;
+            font-size: 1.25rem;
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
+            touch-action: manipulation;
         }
-        #music-toggle:hover {
+        @media (min-width: 640px) {
+            #music-toggle {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                bottom: 2rem;
+                right: 2rem;
+            }
+        }
+        #music-toggle:hover, #music-toggle:active {
             transform: scale(1.1);
             box-shadow: 0 6px 20px rgba(140, 56, 56, 0.5);
         }
@@ -232,7 +286,7 @@
     <!-- The Seal -->
     <div id="seal-container" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-parchment/80 backdrop-blur-sm text-center p-4">
         <div id="seal" class="text-ornament">A</div>
-        <p class="text-2xl mt-4 tracking-widest">Tap the Seal of Alistair to reveal the Grimoire</p>
+        <p class="text-xl sm:text-2xl mt-4 tracking-widest px-2">Tap the Seal of Alistair to reveal the Grimoire</p>
     </div>
 
     <!-- The Grimoire -->
@@ -240,19 +294,22 @@
         <main class="max-w-4xl mx-auto">
             
             <!-- Header with Hero Banner -->
-            <header class="mb-12 text-center hero-banner p-12">
+            <header class="mb-12 text-center hero-banner">
                 <h1 class="text-ornament typing-effect">Grand Magus Alistair's</h1>
                 <h1 class="typing-effect">Digital Grimoire</h1>
-                <p class="text-2xl mt-4 tracking-widest text-gray-700 typing-effect">Undoubtedly one of the five greatest wizards of our time.</p>
+                <p class="text-lg sm:text-xl md:text-2xl mt-4 tracking-widest text-gray-700 typing-effect">Undoubtedly one of the five greatest wizards of our time.</p>
             </header>
 
             <!-- Grimoire Image -->
-            <img src="./images/old-books-new.jpg" alt="Ancient Grimoire" class="grimoire-image typing-effect" style="max-width: 600px;">
+            <img src="./images/grimoire-book.jpg" alt="Ancient Grimoire" class="grimoire-image typing-effect" style="max-width: 600px;">
 
             <!-- Bio Section -->
-            <section id="bio" class="mb-12 text-center text-lg leading-relaxed typing-effect">
+            <section id="bio" class="mb-12 text-center text-base sm:text-lg leading-relaxed typing-effect">
                 Greetings, traveler. You have proven worthy to unseal my private scroll. I am Alistair the Astute, and it is no mere boast to claim my place among the five most powerful magi. While others dabble in cheap tricks, I command reality itself. I have transmuted beans into potent elixirs (a process called "percolation"), scryed the future with an oracle in my palm (it foretold rain, and it was so), and once silenced a great beast with a milk-filled totem. The cat was pleased. Here, I shall document my grand adventures and, more importantly, expose the frauds who dare call themselves my peers.
             </section>
+
+            <!-- Mystical Artifacts Image -->
+            <img src="./images/wizard-artifacts.jpg" alt="Mystical Wizard Artifacts" class="grimoire-image typing-effect" style="max-width: 600px;">
 
             <div class="decorative-divider typing-effect">✦ ✦ ✦</div>
 
@@ -267,25 +324,25 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                          <!-- Wizard 1 -->
                         <div class="wizard-card text-center">
-                            <img src="https://i.imgur.com/K1LOD3c.jpeg" alt="Bartholomew the Beast-Talker" class="w-full h-auto object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x600/c8a379/4a2c2a?text=Bartholomew';">
+                            <img src="./images/wizard-1.jpg" alt="Bartholomew the Beast-Talker" class="w-full h-auto object-cover rounded-lg mb-4">
                             <h3 class="text-2xl font-bold">Bartholomew the Beast-Talker</h3>
                             <p class="mt-2 leading-relaxed">He claims to command the squirrels. In reality, he just leaves a trail of peanuts. His greatest "magical duel" was a strongly-worded letter to the parks department about a rival squirrel-feeder. Pathetic.</p>
                         </div>
                         <!-- Wizard 2 -->
                         <div class="wizard-card text-center">
-                            <img src="https://i.imgur.com/zW32s7D.jpeg" alt="Seraphina the Shadow" class="w-full h-auto object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x600/c8a379/4a2c2a?text=Seraphina';">
+                            <img src="./images/wizard-2.jpg" alt="Seraphina the Shadow" class="w-full h-auto object-cover rounded-lg mb-4">
                             <h3 class="text-2xl font-bold">Seraphina the Shadow</h3>
                             <p class="mt-2 leading-relaxed">Her spell of "invisibility" is a ghillie suit she bought online. She was recently foiled by a pizza delivery boy who needed a signature. A master of stealth, indeed.</p>
                         </div>
                         <!-- Wizard 3 -->
                         <div class="wizard-card text-center">
-                            <img src="https://i.imgur.com/tYV2jP4.jpeg" alt="Finneas the Flood-Caller" class="w-full h-auto object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x600/c8a379/4a2c2a?text=Finneas';">
+                            <img src="./images/wizard-3.jpg" alt="Finneas the Flood-Caller" class="w-full h-auto object-cover rounded-lg mb-4">
                             <h3 class="text-2xl font-bold">Finneas the Flood-Caller</h3>
                             <p class="mt-2 leading-relaxed">A "hydro-mancer" whose greatest feat was "taming the great torrents" to cleanse a nobleman's chariot. He has a power washer with a turbo nozzle. He charges extra for waxing.</p>
                         </div>
                         <!-- Wizard 4 -->
                         <div class="wizard-card text-center">
-                            <img src="https://i.imgur.com/uGzJ4g8.jpeg" alt="Ignatius the Inferno" class="w-full h-auto object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x600/c8a379/4a2c2a?text=Ignatius';">
+                            <img src="./images/wizard-4.jpg" alt="Ignatius the Inferno" class="w-full h-auto object-cover rounded-lg mb-4">
                             <h3 class="text-2xl font-bold">Ignatius the Inferno</h3>
                             <p class="mt-2 leading-relaxed">This so-called "fire-mage" thinks a can of lighter fluid and a spark-wheel constitute pyromancy. He was stopped by the Royal Fire Brigade after threatening the duke's gazebo.</p>
                         </div>
@@ -304,13 +361,17 @@
                         <h3 class="text-2xl font-bold">On the Quest for the Mystic Herbs</h3>
                         <p class="mt-2 text-lg leading-relaxed">The Oracle showed me a vision: a feast requiring the rare Silken Cilantro leaf. I journeyed to the marketplace "Shop & Save," only to find the sacred alcove barren. A goblin-like stock boy shrugged, claiming a "shipment delay." Curses! My quest was thwarted by supply-chain demons. I transmuted parsley in its place; the guacamole ritual was nearly ruined.</p>
                      </div>
+
+                    <!-- Wizard Tower Image -->
+                    <img src="./images/wizard-tower-twilight.jpg" alt="The Grand Wizard's Tower" class="grimoire-image" style="max-width: 700px;">
+
                      <div class="blog-entry">
                         <h3 class="text-2xl font-bold">An Encounter with the Iron Beast</h3>
                         <p class="mt-2 text-lg leading-relaxed">My loyal steed, a roaring creature named "Honda," fell silent upon the Great Asphalt River. Smoke billowed from its maw. I performed the ancient rites: I struck its dashboard and uttered the forbidden words my father taught me. Its spirit had fled. I was forced to summon a tow-truck warlock via my scrying mirror, a costly and humiliating ordeal.</p>
                      </div>
 
-                    <!-- Mystical Image -->
-                    <img src="./images/mystical-new.jpg" alt="Mystical Artifacts" class="grimoire-image" style="max-width: 700px;">
+                    <!-- Ancient Scrolls Image -->
+                    <img src="./images/scrolls-and-books.jpg" alt="Ancient Scrolls and Tomes" class="grimoire-image" style="max-width: 700px;">
 
                 </div>
             </div>
