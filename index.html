@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Magus Alistair's Digital Grimoire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #f3e9d2;
+            --ink: #4a2c2a;
+            --ornament: #8c3838;
+            --border-gold: #c8a379;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background-color: var(--parchment);
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+            color: var(--ink);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            overflow-x: hidden;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%234a2c2a" d="M3 3 L3 18 L7 14 L10 21 L12 20 L9 13 L15 13 Z"/></svg>'), auto;
+        }
+
+        /* --- Seal Animation --- */
+        #seal-container {
+            transition: opacity 1.5s ease-in-out, transform 1s ease-in-out;
+        }
+        #seal-container.unsealed {
+            opacity: 0;
+            transform: scale(2);
+            pointer-events: none;
+        }
+        #seal {
+            cursor: pointer;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-size: 6rem;
+            line-height: 1;
+        }
+        #seal:hover {
+            transform: scale(1.1);
+            text-shadow: 0 0 15px var(--ornament);
+        }
+
+        /* --- Grimoire Content --- */
+        #grimoire-content {
+            opacity: 0;
+            transition: opacity 2s ease-in-out 1s;
+        }
+        #grimoire-content.visible {
+            opacity: 1;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+            tracking-wider;
+            line-height: 1.2;
+        }
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2.5rem; }
+        @media (min-width: 768px) {
+            h1 { font-size: 4rem; }
+            h2 { font-size: 3rem; }
+        }
+
+        .text-ornament { color: var(--ornament); }
+
+        /* --- Interactive Accordion --- */
+        .accordion-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-gold);
+            padding: 0.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+        .accordion-header:hover {
+            background-color: rgba(200, 163, 121, 0.2);
+            transform: translateX(8px);
+            box-shadow: -4px 0 12px rgba(140, 56, 56, 0.2);
+        }
+        .accordion-header .icon {
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            font-size: 2rem;
+            color: var(--border-gold);
+        }
+        .accordion-header.active .icon {
+            transform: rotate(135deg);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out;
+            padding: 0 1rem;
+        }
+
+        .wizard-card {
+            background-color: rgba(0,0,0,0.02);
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        .wizard-card img {
+            border: 8px solid var(--border-gold);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .blog-entry {
+            border-left: 4px solid var(--border-gold);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Utility for typing text effect */
+        .typing-effect {
+            opacity: 0;
+        }
+
+        /* --- Hero Image Section --- */
+        .hero-banner {
+            background-image: linear-gradient(rgba(243, 233, 210, 0.85), rgba(243, 233, 210, 0.85)), url('./images/wizard-tower-new.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            border: 4px solid var(--border-gold);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
+        }
+
+        .grimoire-image {
+            max-width: 100%;
+            border: 8px solid var(--border-gold);
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            margin: 2rem auto;
+            display: block;
+        }
+
+        .decorative-divider {
+            text-align: center;
+            margin: 3rem 0;
+            color: var(--border-gold);
+            font-size: 2rem;
+        }
+
+        /* --- Magical Particle Effects --- */
+        .particle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: radial-gradient(circle, var(--border-gold), transparent);
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+            animation: float 15s infinite ease-in-out;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                opacity: 0;
+                transform: translateY(100vh) translateX(0) scale(0);
+            }
+            10% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.5;
+                transform: translateY(-20vh) translateX(100px) scale(1);
+            }
+            90% {
+                opacity: 0.3;
+            }
+        }
+
+        .particle:nth-child(2n) { animation-duration: 18s; animation-delay: -5s; }
+        .particle:nth-child(3n) { animation-duration: 12s; animation-delay: -8s; }
+        .particle:nth-child(4n) { animation-duration: 20s; animation-delay: -2s; }
+        .particle:nth-child(5n) { animation-duration: 14s; animation-delay: -10s; }
+
+        /* --- Music Toggle Button --- */
+        #music-toggle {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+            background: var(--border-gold);
+            color: var(--ink);
+            border: 3px solid var(--ornament);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #music-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(140, 56, 56, 0.5);
+        }
+        #music-toggle.playing {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
+            50% { box-shadow: 0 4px 25px rgba(200, 163, 121, 0.8); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Music Toggle Button -->
+    <button id="music-toggle" title="Toggle Medieval Music" aria-label="Toggle background music">
+        ♫
+    </button>
+
+    <!-- The Seal -->
+    <div id="seal-container" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-parchment/80 backdrop-blur-sm text-center p-4">
+        <div id="seal" class="text-ornament">A</div>
+        <p class="text-2xl mt-4 tracking-widest">Tap the Seal of Alistair to reveal the Grimoire</p>
+    </div>
+
+    <!-- The Grimoire -->
+    <div id="grimoire-content" class="container mx-auto px-4 sm:px-6 py-12">
+        <main class="max-w-4xl mx-auto">
+            
+            <!-- Header with Hero Banner -->
+            <header class="mb-12 text-center hero-banner p-12">
+                <h1 class="text-ornament typing-effect">Grand Magus Alistair's</h1>
+                <h1 class="typing-effect">Digital Grimoire</h1>
+                <p class="text-2xl mt-4 tracking-widest text-gray-700 typing-effect">Undoubtedly one of the five greatest wizards of our time.</p>
+            </header>
+
+            <!-- Grimoire Image -->
+            <img src="./images/old-books-new.jpg" alt="Ancient Grimoire" class="grimoire-image typing-effect" style="max-width: 600px;">
+
+            <!-- Bio Section -->
+            <section id="bio" class="mb-12 text-center text-lg leading-relaxed typing-effect">
+                Greetings, traveler. You have proven worthy to unseal my private scroll. I am Alistair the Astute, and it is no mere boast to claim my place among the five most powerful magi. While others dabble in cheap tricks, I command reality itself. I have transmuted beans into potent elixirs (a process called "percolation"), scryed the future with an oracle in my palm (it foretold rain, and it was so), and once silenced a great beast with a milk-filled totem. The cat was pleased. Here, I shall document my grand adventures and, more importantly, expose the frauds who dare call themselves my peers.
+            </section>
+
+            <div class="decorative-divider typing-effect">✦ ✦ ✦</div>
+
+            <!-- Accordion 1: The Fools -->
+            <div>
+                <div class="accordion-header">
+                    <h2 class="text-ornament">A Word On My "Peers"</h2>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p class="text-center text-lg my-6">Let us be clear. There are four others who occupy the "top 5" with me. This is a clerical error I am working to amend. They are, to put it mildly, incompetent fools. Observe:</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                         <!-- Wizard 1 -->
+                        <div class="wizard-card text-center">
+                            <img src="https://i.imgur.com/K1LOD3c.jpeg" alt="Bartholomew the Beast-Talker" class="w-full h-auto object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x600/c8a379/4a2c2a?text=Bartholomew';">
+                            <h3 class="text-2xl font-bold">Bartholomew the Beast-Talker</h3>
+                            <p class="mt-2 leading-relaxed">He claims to command the squirrels. In reality, he just leaves a trail of peanuts. His greatest "magical duel" was a strongly-worded letter to the parks department about a rival squirrel-feeder. Pathetic.</p>
+                        </div>
+                        <!-- Wizard 2 -->
+                        <div class="wizard-card text-center">
+                            <img src="https://i.imgur.com/zW32s7D.jpeg" alt="Seraphina the Shadow" class="w-full h-auto object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x600/c8a379/4a2c2a?text=Seraphina';">
+                            <h3 class="text-2xl font-bold">Seraphina the Shadow</h3>
+                            <p class="mt-2 leading-relaxed">Her spell of "invisibility" is a ghillie suit she bought online. She was recently foiled by a pizza delivery boy who needed a signature. A master of stealth, indeed.</p>
+                        </div>
+                        <!-- Wizard 3 -->
+                        <div class="wizard-card text-center">
+                            <img src="https://i.imgur.com/tYV2jP4.jpeg" alt="Finneas the Flood-Caller" class="w-full h-auto object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x600/c8a379/4a2c2a?text=Finneas';">
+                            <h3 class="text-2xl font-bold">Finneas the Flood-Caller</h3>
+                            <p class="mt-2 leading-relaxed">A "hydro-mancer" whose greatest feat was "taming the great torrents" to cleanse a nobleman's chariot. He has a power washer with a turbo nozzle. He charges extra for waxing.</p>
+                        </div>
+                        <!-- Wizard 4 -->
+                        <div class="wizard-card text-center">
+                            <img src="https://i.imgur.com/uGzJ4g8.jpeg" alt="Ignatius the Inferno" class="w-full h-auto object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x600/c8a379/4a2c2a?text=Ignatius';">
+                            <h3 class="text-2xl font-bold">Ignatius the Inferno</h3>
+                            <p class="mt-2 leading-relaxed">This so-called "fire-mage" thinks a can of lighter fluid and a spark-wheel constitute pyromancy. He was stopped by the Royal Fire Brigade after threatening the duke's gazebo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion 2: The Chronicles -->
+            <div>
+                <div class="accordion-header">
+                    <h2 class="text-ornament">Chronicles from 1337</h2>
+                     <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                     <div class="blog-entry mt-6">
+                        <h3 class="text-2xl font-bold">On the Quest for the Mystic Herbs</h3>
+                        <p class="mt-2 text-lg leading-relaxed">The Oracle showed me a vision: a feast requiring the rare Silken Cilantro leaf. I journeyed to the marketplace "Shop & Save," only to find the sacred alcove barren. A goblin-like stock boy shrugged, claiming a "shipment delay." Curses! My quest was thwarted by supply-chain demons. I transmuted parsley in its place; the guacamole ritual was nearly ruined.</p>
+                     </div>
+                     <div class="blog-entry">
+                        <h3 class="text-2xl font-bold">An Encounter with the Iron Beast</h3>
+                        <p class="mt-2 text-lg leading-relaxed">My loyal steed, a roaring creature named "Honda," fell silent upon the Great Asphalt River. Smoke billowed from its maw. I performed the ancient rites: I struck its dashboard and uttered the forbidden words my father taught me. Its spirit had fled. I was forced to summon a tow-truck warlock via my scrying mirror, a costly and humiliating ordeal.</p>
+                     </div>
+
+                    <!-- Mystical Image -->
+                    <img src="./images/mystical-new.jpg" alt="Mystical Artifacts" class="grimoire-image" style="max-width: 700px;">
+
+                </div>
+            </div>
+
+            <div class="decorative-divider">✦ ✦ ✦</div>
+
+            <!-- Footer -->
+            <footer class="mt-16 text-lg text-center border-t-2 border-dashed border-border-gold pt-8">
+                <p>Copyright 1337, by order of the Grand Magus Alistair</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sealContainer = document.getElementById('seal-container');
+            const seal = document.getElementById('seal');
+            const grimoireContent = document.getElementById('grimoire-content');
+            let hasBeenUnsealed = false;
+
+            // --- Create Magical Particles ---
+            function createParticles() {
+                const numParticles = 25;
+                for (let i = 0; i < numParticles; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.animationDelay = -Math.random() * 15 + 's';
+                    document.body.appendChild(particle);
+                }
+            }
+            createParticles();
+
+            // --- Background Music ---
+            const bgMusic = new Audio('https://cdn.pixabay.com/download/audio/2022/05/13/audio_1808fbf07a.mp3');
+            bgMusic.loop = true;
+            bgMusic.volume = 0.2;
+            let musicPlaying = false;
+
+            const musicToggle = document.getElementById('music-toggle');
+            musicToggle.addEventListener('click', () => {
+                if (musicPlaying) {
+                    bgMusic.pause();
+                    musicToggle.classList.remove('playing');
+                    musicToggle.textContent = '♫';
+                } else {
+                    bgMusic.play().catch(e => console.log('Music play prevented:', e));
+                    musicToggle.classList.add('playing');
+                    musicToggle.textContent = '♪';
+                }
+                musicPlaying = !musicPlaying;
+            });
+
+            // --- Sound Synthesis ---
+            const synth = new Tone.MembraneSynth().toDestination();
+            const parchmentSound = new Tone.Player({
+                url: "https://cdn.freesound.org/previews/266/266472_4486188-lq.mp3", // A parchment unrolling sound
+                autostart: false,
+            }).toDestination();
+            parchmentSound.volume.value = -6;
+
+            // Additional sound effects
+            const sealClickSound = new Tone.Synth({
+                oscillator: { type: 'triangle' },
+                envelope: { attack: 0.01, decay: 0.2, sustain: 0, release: 0.1 }
+            }).toDestination();
+
+            const accordionSound = new Tone.Synth({
+                oscillator: { type: 'sine' },
+                envelope: { attack: 0.1, decay: 0.3, sustain: 0, release: 0.2 }
+            }).toDestination();
+
+
+            // --- Interactions ---
+            seal.addEventListener('click', () => {
+                if (hasBeenUnsealed) return;
+                hasBeenUnsealed = true;
+
+                // --- Start Visuals Immediately ---
+                sealContainer.classList.add('unsealed');
+                grimoireContent.classList.add('visible');
+                setTimeout(startTyping, 1200);
+
+                // --- Try to play audio, but don't block visuals if it fails ---
+                const playSounds = async () => {
+                    try {
+                        await Tone.start();
+                        await Tone.loaded();
+                        // Play seal click sound
+                        sealClickSound.triggerAttackRelease("G4", "0.2");
+                        setTimeout(() => sealClickSound.triggerAttackRelease("D4", "0.3"), 100);
+                        // Play parchment unrolling sound
+                        parchmentSound.start();
+                    } catch (error) {
+                        console.error("Audio could not be initialized or played, but the site will continue to function.", error);
+                    }
+                };
+
+                playSounds();
+            });
+            
+            // --- Typing Effect with Voice Narration ---
+            function startTyping() {
+                const elementsToType = document.querySelectorAll('.typing-effect');
+                let delay = 0;
+
+                // Check if speech synthesis is available
+                const speechSynth = window.speechSynthesis;
+                const speechAvailable = 'speechSynthesis' in window;
+
+                console.log('Speech Synthesis available:', speechAvailable);
+
+                // Wait for voices to load with timeout
+                function loadVoices() {
+                    return new Promise((resolve) => {
+                        if (!speechAvailable) {
+                            console.warn('Speech synthesis not available');
+                            resolve([]);
+                            return;
+                        }
+
+                        let voices = speechSynth.getVoices();
+                        console.log('Initial voices count:', voices.length);
+
+                        if (voices.length) {
+                            console.log('Voices already loaded');
+                            resolve(voices);
+                        } else {
+                            console.log('Waiting for voices to load...');
+                            // Wait for voices with longer timeout
+                            const timeout = setTimeout(() => {
+                                const voicesNow = speechSynth.getVoices();
+                                console.warn('Voice loading timeout. Voices now:', voicesNow.length);
+                                if (voicesNow.length === 0) {
+                                    // Force a short delay and try again
+                                    setTimeout(() => {
+                                        resolve(speechSynth.getVoices());
+                                    }, 100);
+                                } else {
+                                    resolve(voicesNow);
+                                }
+                            }, 2000);
+
+                            speechSynth.addEventListener('voiceschanged', () => {
+                                clearTimeout(timeout);
+                                const loadedVoices = speechSynth.getVoices();
+                                console.log('Voices loaded via event:', loadedVoices.length);
+                                resolve(loadedVoices);
+                            }, { once: true });
+
+                            // Also try manually triggering getVoices() which can sometimes help
+                            setTimeout(() => {
+                                speechSynth.getVoices();
+                            }, 100);
+                        }
+                    });
+                }
+
+                loadVoices().then(voices => {
+                    console.log('Starting typing with', voices.length, 'voices available');
+
+                    elementsToType.forEach(el => {
+                        setTimeout(() => {
+                            el.style.opacity = 1;
+                            let text = el.textContent;
+                            el.textContent = '';
+
+                            // Try to use voice narration if available
+                            if (speechAvailable && voices.length > 0) {
+                                const utterance = new SpeechSynthesisUtterance(text);
+                                utterance.rate = 0.95;
+                                utterance.pitch = 0.85;
+                                utterance.volume = 0.85;
+
+                                // Find best voice
+                                const preferredVoice = voices.find(v => v.lang.includes('en-GB')) ||
+                                                     voices.find(v => v.lang.includes('en-US')) ||
+                                                     voices[0];
+
+                                if (preferredVoice) {
+                                    utterance.voice = preferredVoice;
+                                    console.log('Using voice:', preferredVoice.name, preferredVoice.lang);
+                                }
+
+                                try {
+                                    speechSynth.speak(utterance);
+                                    console.log('Started speaking:', text.substring(0, 50) + '...');
+                                } catch (e) {
+                                    console.error('Speech error:', e);
+                                }
+                            } else {
+                                console.warn('Skipping voice narration - not available');
+                            }
+
+                            // Type text
+                            const typingSpeed = 50;
+                            let i = 0;
+                            function typeWriter() {
+                                if (i < text.length) {
+                                    el.textContent += text.charAt(i);
+                                    i++;
+                                    setTimeout(typeWriter, typingSpeed);
+                                }
+                            }
+                            typeWriter();
+                        }, delay);
+                        delay += 1000;
+                    });
+                });
+            }
+
+            // --- Accordion Logic ---
+            const accordions = document.querySelectorAll('.accordion-header');
+            accordions.forEach(accordion => {
+                accordion.addEventListener('click', () => {
+                    const content = accordion.nextElementSibling;
+                    accordion.classList.toggle('active');
+
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.style.padding = "0 1rem";
+                        // Closing sound
+                        if (Tone.context.state === 'running') {
+                            accordionSound.triggerAttackRelease("F3", "0.1");
+                        }
+                    } else {
+                        // Opening sound - more elaborate
+                        if (Tone.context.state === 'running') {
+                            accordionSound.triggerAttackRelease("C4", "0.15");
+                            setTimeout(() => accordionSound.triggerAttackRelease("E4", "0.15"), 100);
+                        }
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        content.style.padding = "1.5rem 1rem";
+                    }
+                });
+            });
+            
+        });
+    </script>
+</body>
+</html>
+
