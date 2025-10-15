@@ -478,113 +478,79 @@
                 playSounds();
             });
             
-            // --- Typing Effect with Voice Narration ---
+            // --- ElevenLabs AI Voice Integration ---
+            const ELEVENLABS_API_KEY = 'sk_fd1495c2991269e6f3453f73e6205c542de7ccc98c9f3b48';
+            const ELEVENLABS_VOICE_ID = 'pNInz6obpgDQGcFmaJgB'; // Adam - narrative voice
+
+            async function speakWithElevenLabs(text) {
+                if (!ELEVENLABS_API_KEY || ELEVENLABS_API_KEY === 'YOUR_API_KEY_HERE') {
+                    console.warn('ElevenLabs API key not configured, skipping narration');
+                    return;
+                }
+
+                try {
+                    const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${ELEVENLABS_VOICE_ID}`, {
+                        method: 'POST',
+                        headers: {
+                            'Accept': 'audio/mpeg',
+                            'Content-Type': 'application/json',
+                            'xi-api-key': ELEVENLABS_API_KEY
+                        },
+                        body: JSON.stringify({
+                            text: text,
+                            model_id: 'eleven_monolingual_v1',
+                            voice_settings: {
+                                stability: 0.5,
+                                similarity_boost: 0.75
+                            }
+                        })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`ElevenLabs API error: ${response.status}`);
+                    }
+
+                    const audioBlob = await response.blob();
+                    const audioUrl = URL.createObjectURL(audioBlob);
+                    const audio = new Audio(audioUrl);
+                    audio.volume = 0.7;
+                    await audio.play();
+                } catch (error) {
+                    console.error('ElevenLabs narration failed:', error);
+                }
+            }
+
+            // --- Typing Effect with AI Voice Narration ---
             function startTyping() {
                 const elementsToType = document.querySelectorAll('.typing-effect');
                 let delay = 0;
 
-                // Check if speech synthesis is available
-                const speechSynth = window.speechSynthesis;
-                const speechAvailable = 'speechSynthesis' in window;
+                elementsToType.forEach(el => {
+                    setTimeout(() => {
+                        el.style.opacity = 1;
+                        let text = el.textContent;
+                        el.textContent = '';
 
-                console.log('Speech Synthesis available:', speechAvailable);
-
-                // Wait for voices to load with timeout
-                function loadVoices() {
-                    return new Promise((resolve) => {
-                        if (!speechAvailable) {
-                            console.warn('Speech synthesis not available');
-                            resolve([]);
-                            return;
+                        // Use ElevenLabs for narration (only for longer text blocks)
+                        if (text.length > 50) {
+                            speakWithElevenLabs(text).catch(e => {
+                                console.log('AI narration skipped:', e.message);
+                            });
                         }
 
-                        let voices = speechSynth.getVoices();
-                        console.log('Initial voices count:', voices.length);
-
-                        if (voices.length) {
-                            console.log('Voices already loaded');
-                            resolve(voices);
-                        } else {
-                            console.log('Waiting for voices to load...');
-                            // Wait for voices with longer timeout
-                            const timeout = setTimeout(() => {
-                                const voicesNow = speechSynth.getVoices();
-                                console.warn('Voice loading timeout. Voices now:', voicesNow.length);
-                                if (voicesNow.length === 0) {
-                                    // Force a short delay and try again
-                                    setTimeout(() => {
-                                        resolve(speechSynth.getVoices());
-                                    }, 100);
-                                } else {
-                                    resolve(voicesNow);
-                                }
-                            }, 2000);
-
-                            speechSynth.addEventListener('voiceschanged', () => {
-                                clearTimeout(timeout);
-                                const loadedVoices = speechSynth.getVoices();
-                                console.log('Voices loaded via event:', loadedVoices.length);
-                                resolve(loadedVoices);
-                            }, { once: true });
-
-                            // Also try manually triggering getVoices() which can sometimes help
-                            setTimeout(() => {
-                                speechSynth.getVoices();
-                            }, 100);
+                        // Type text
+                        const typingSpeed = 50;
+                        let i = 0;
+                        function typeWriter() {
+                            if (i < text.length) {
+                                el.textContent += text.charAt(i);
+                                i++;
+                                setTimeout(typeWriter, typingSpeed);
+                            }
                         }
-                    });
-                }
-
-                loadVoices().then(voices => {
-                    console.log('Starting typing with', voices.length, 'voices available');
-
-                    elementsToType.forEach(el => {
-                        setTimeout(() => {
-                            el.style.opacity = 1;
-                            let text = el.textContent;
-                            el.textContent = '';
-
-                            // Try to use voice narration if available
-                            if (speechAvailable && voices.length > 0) {
-                                const utterance = new SpeechSynthesisUtterance(text);
-                                utterance.rate = 0.95;
-                                utterance.pitch = 0.85;
-                                utterance.volume = 0.85;
-
-                                // Find best voice
-                                const preferredVoice = voices.find(v => v.lang.includes('en-GB')) ||
-                                                     voices.find(v => v.lang.includes('en-US')) ||
-                                                     voices[0];
-
-                                if (preferredVoice) {
-                                    utterance.voice = preferredVoice;
-                                    console.log('Using voice:', preferredVoice.name, preferredVoice.lang);
-                                }
-
-                                try {
-                                    speechSynth.speak(utterance);
-                                    console.log('Started speaking:', text.substring(0, 50) + '...');
-                                } catch (e) {
-                                    console.error('Speech error:', e);
-                                }
-                            } else {
-                                console.warn('Skipping voice narration - not available');
-                            }
-
-                            // Type text
-                            const typingSpeed = 50;
-                            let i = 0;
-                            function typeWriter() {
-                                if (i < text.length) {
-                                    el.textContent += text.charAt(i);
-                                    i++;
-                                    setTimeout(typeWriter, typingSpeed);
-                                }
-                            }
-                            typeWriter();
-                        }, delay);
-                        delay += 1000;
-                    });
+                        typeWriter();
+                    }, delay);
+                    delay += 1000;
                 });
             }
 
