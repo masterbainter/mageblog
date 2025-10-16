@@ -20,6 +20,7 @@
   "homepage": "https://github.com/masterbainter/wizard-grimoire#readme",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.66.0",
+    "dotenv": "^17.2.3",
     "selenium-webdriver": "^4.36.0"
   }
 }

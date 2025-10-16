@@ -44,6 +44,22 @@ function generatePostHTML(post) {
                     <p class="text-sm text-gray-600 mt-2 italic">🎙️ Narrated by Grand Magus Alistair himself</p>
                 </div>` : '';
 
+    // Images HTML (if images exist)
+    let imagesHTML = '';
+    if (post.images && post.images.length > 0) {
+        const imageGallery = post.images.map(img => `
+                    <div class="mb-6">
+                        <img src="./${img.filename}" alt="${img.name}" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ ${img.name.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</p>
+                    </div>
+        `).join('\n');
+
+        imagesHTML = `
+                <div class="images-gallery mb-6">
+                    ${imageGallery}
+                </div>`;
+    }
+
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,9 +138,10 @@ function generatePostHTML(post) {
                 <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4">Chronicle Entry</h1>
                 <p class="text-2xl mb-6 text-gray-600">${formattedDate}</p>
                 ${audioPlayerHTML}
-                <div class="text-lg md:text-xl leading-relaxed">
+                <div class="text-lg md:text-xl leading-relaxed mb-8">
                     ${post.content}
                 </div>
+                ${imagesHTML}
             </div>
 
             <footer class="mt-16 text-lg text-center border-t-2 border-dashed border-border-gold pt-8">

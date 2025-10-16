@@ -765,14 +765,22 @@
                     const latestPostId = latestPost.id || latestPost.timestamp;
                     const latestPostLink = latestPostId ? `./blog/${latestPostId}/` : '#';
 
+                    // Featured image HTML (if exists)
+                    const featuredImageHTML = (latestPost.featuredImage && latestPostId) ? `
+                        <div class="mb-6">
+                            <img src="./blog/${latestPostId}/${latestPost.featuredImage}" alt="Chronicle illustration" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
+                        </div>
+                    ` : '';
+
                     latestContainer.innerHTML = `
                         <div class="text-center mb-4">
                             <p class="text-2xl font-bold text-ornament">${latestFormattedDate}</p>
                         </div>
+                        ${featuredImageHTML}
                         <div class="text-lg leading-relaxed mb-4">
                             ${latestPost.content}
                         </div>
-                        ${latestPostId ? `<div class="text-center"><a href="${latestPostLink}" class="text-xl text-ornament hover:underline font-bold">→ Read Full Chronicle${latestPost.hasAudio ? ' with Voice Narration' : ''}</a></div>` : ''}
+                        ${latestPostId ? `<div class="text-center"><a href="${latestPostLink}" class="text-xl text-ornament hover:underline font-bold">→ Read Full Chronicle${latestPost.hasAudio ? ' with Voice Narration' : ''}${latestPost.images && latestPost.images.length > 0 ? ' & Illustrations' : ''}</a></div>` : ''}
                     `;
 
                     // Load blog audio if available
