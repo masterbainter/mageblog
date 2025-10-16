@@ -21,13 +21,13 @@ node news-fetcher.js
 echo "✅ News fetched successfully!"
 echo ""
 
-# Step 2: Generate Blog Content
+# Step 2: Generate Blog Content and Save to blog-posts.json
 echo "✍️  Step 2/5: Generating blog content..."
-if [ -f "claude-code-generator.js" ]; then
-    node claude-code-generator.js
-    echo "✅ Blog content generated with Claude!"
+if [ -f "generate-blog-post.js" ]; then
+    node generate-blog-post.js
+    echo "✅ Blog content generated and saved!"
 else
-    echo "❌ Error: claude-code-generator.js not found!"
+    echo "❌ Error: generate-blog-post.js not found!"
     exit 1
 fi
 echo ""
