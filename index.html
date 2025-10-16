@@ -357,17 +357,9 @@
                      <span class="icon">+</span>
                 </div>
                 <div class="accordion-content">
-                     <div class="blog-entry mt-6">
-                        <h3 class="text-2xl font-bold">On the Quest for the Mystic Herbs</h3>
-                        <p class="mt-2 text-lg leading-relaxed">The Oracle showed me a vision: a feast requiring the rare Silken Cilantro leaf. I journeyed to the marketplace "Shop & Save," only to find the sacred alcove barren. A goblin-like stock boy shrugged, claiming a "shipment delay." Curses! My quest was thwarted by supply-chain demons. I transmuted parsley in its place; the guacamole ritual was nearly ruined.</p>
-                     </div>
-
-                    <!-- Wizard Tower Image -->
-                    <img src="./images/wizard-tower-twilight.jpg" alt="The Grand Wizard's Tower" class="grimoire-image">
-
-                     <div class="blog-entry">
-                        <h3 class="text-2xl font-bold">An Encounter with the Iron Beast</h3>
-                        <p class="mt-2 text-lg leading-relaxed">My loyal steed, a roaring creature named "Honda," fell silent upon the Great Asphalt River. Smoke billowed from its maw. I performed the ancient rites: I struck its dashboard and uttered the forbidden words my father taught me. Its spirit had fled. I was forced to summon a tow-truck warlock via my scrying mirror, a costly and humiliating ordeal.</p>
+                     <div id="blog-posts-container">
+                        <!-- Blog posts will be loaded dynamically -->
+                        <p class="text-center text-lg my-6">Loading Chronicles...</p>
                      </div>
 
                     <!-- Ancient Scrolls Image -->
@@ -519,6 +511,60 @@
                     delay += 1000;
                 });
             }
+
+            // --- Load Blog Posts ---
+            async function loadBlogPosts() {
+                try {
+                    const response = await fetch('./blog-posts.json');
+                    const posts = await response.json();
+
+                    const container = document.getElementById('blog-posts-container');
+
+                    if (posts.length === 0) {
+                        container.innerHTML = '<p class="text-center text-lg my-6">No Chronicles yet. Check back tomorrow for new tales of mystical mundanity!</p>';
+                        return;
+                    }
+
+                    // Clear loading message
+                    container.innerHTML = '';
+
+                    // Add each blog post
+                    posts.forEach((post, index) => {
+                        const postDiv = document.createElement('div');
+                        postDiv.className = 'blog-entry' + (index === 0 ? ' mt-6' : '');
+
+                        const date = new Date(post.date);
+                        const formattedDate = date.toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+
+                        postDiv.innerHTML = `
+                            <h3 class="text-2xl font-bold">Chronicle: ${formattedDate}</h3>
+                            <p class="mt-2 text-lg leading-relaxed">${post.content}</p>
+                        `;
+
+                        container.appendChild(postDiv);
+
+                        // Add tower image after 3rd post
+                        if (index === 2) {
+                            const img = document.createElement('img');
+                            img.src = './images/wizard-tower-twilight.jpg';
+                            img.alt = 'The Grand Wizard\'s Tower';
+                            img.className = 'grimoire-image';
+                            container.appendChild(img);
+                        }
+                    });
+                } catch (error) {
+                    console.error('Error loading blog posts:', error);
+                    const container = document.getElementById('blog-posts-container');
+                    container.innerHTML = '<p class="text-center text-lg my-6">The Chronicles are temporarily obscured by a mystical fog. Please refresh the page.</p>';
+                }
+            }
+
+            // Load blog posts when page loads
+            loadBlogPosts();
 
             // --- Accordion Logic ---
             const accordions = document.querySelectorAll('.accordion-header');
