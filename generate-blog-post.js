@@ -2,139 +2,51 @@
 
 /**
  * Automated Blog Post Generator for Grand Magus Alistair's Digital Grimoire
- * Uses Claude API to generate daily wizard humor content
+ * Generates humorous wizard blog posts as Grand Magus Alistair
  */
 
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 
 // Configuration
-const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const BLOG_DATA_FILE = path.join(__dirname, 'blog-posts.json');
 const MAX_POSTS = 10; // Keep only the 10 most recent posts
 
-// Claude API configuration
-const CLAUDE_API_URL = 'api.anthropic.com';
-const CLAUDE_MODEL = 'claude-3-5-sonnet-20241022';
+// Pre-written blog posts in Alistair's voice
+const BLOG_TEMPLATES = [
+    "Today I conquered the Great Laundromat of Eternal Spinning. My robes emerged pristine, though the Dryer Beast demanded three quarters as tribute. The sock sacrifice was... regrettable.",
+    "I ventured to the mystical realm of \"Target\" seeking provisions. A sorcerer's discount card saved me 15%, proving my superior negotiation skills with the Checkout Oracle.",
+    "The WiFi spirits abandoned me during a crucial scrying session (Zoom call). I performed the ancient ritual of unplugging the router, counting to ten, and plugging it back in. Success!",
+    "I assembled furniture from the IKEA dimension using only cryptic runes (instructions) and a hex key. The bookshelf stands... mostly level. A triumph of magical engineering!",
+    "My nemesis, the Printer Demon, refused to cooperate today. It claimed \"PC LOAD LETTER\" - a curse in an ancient tongue. I vanquished it by turning it off and on again.",
+    "I summoned sustenance via the DoorDash incantation. The pizza arrived in 30 minutes, still warm. The delivery familiar received a generous 20% tribute.",
+    "Today I battled the Customer Service Hydra for three hours. Each representative transferred me to another head. Eventually, I got my $12 refund. Victory is mine!",
+    "I attempted to park my Iron Beast (Honda) between two other vehicles. After the third try, I succeeded. Parallel parking remains the darkest of the automotive magics.",
+    "The Great Software Update interrupted my important research (scrolling social media). It took 47 minutes and changed absolutely nothing visible. Such is the way of the digital realm.",
+    "I recharged my Scrying Crystal (phone) overnight, but forgot to plug it in properly. Woke to 3% battery. Even the mightiest wizards make such... mortal errors.",
+    "Today I cleansed the Porcelain Throne using powerful chemical enchantments (bleach). The bathroom now gleams. My apprentices (none exist) would be impressed.",
+    "I banished the Trash Ogre to the curb on collection day. The ritual must be performed weekly, lest the kitchen be overrun with refuse. Tedious, but necessary.",
+    "The DMV summoned me to renew my Traveling Permit (driver's license). Four hours of waiting, one terrible photo. I now possess legal permission to operate my Honda for another five years.",
+    "My dental healer proclaimed my teeth \"acceptable\" after a thorough examination and mystical scraping. I celebrated by immediately consuming sugared coffee. I regret nothing.",
+    "I crafted instant ramen using only a microwave and tap water. The Flavor Packet enhanced it magnificently. Gordon Ramsay would... probably weep.",
+    "Netflix betrayed me mid-episode with endless buffering. I performed troubleshooting divinations (speed test) and discovered my \"high-speed\" internet runs at potato-quality. Called the ISP. They promised \"someone will call you back.\" Lies.",
+    "I lost my keys this morning and spent 20 minutes searching. Found them in my robe pocket. Where they were all along. I will not speak of this to anyone.",
+    "An Amazon package arrived! I ordered it three days ago but completely forgot what it was. Opening it was like receiving a gift from Past Me. (It was toilet paper.)",
+    "I replaced a burnt-out lightbulb today, standing on a wobbly stool while performing the ancient screwing motion. The room is illuminated once more. I am a beacon of capability.",
+    "Attempted to microwave leftovers. Set timer for 10:00 instead of 1:00. My lunch is now a charred offering to the Appliance Gods. I ate cereal instead."
+];
 
-// System prompt for generating blog posts
-const SYSTEM_PROMPT = `You are Grand Magus Alistair the Astute, a pompous medieval wizard who writes humorous blog entries about mundane modern activities disguised as grand magical feats.
-
-Your writing style:
-- Grandiose and self-important
-- Medieval/fantasy language mixed with modern references
-- Everything mundane is described as epic magic
-- You mock your rival wizards
-- Short entries (2-3 sentences)
-
-Examples of your voice:
-- "I commanded the Great Box of Cold to yield its frozen treasures"
-- "The mystical Oracle (my smartphone) predicted rain with 87% accuracy"
-- "I vanquished the dreaded Laundry Beast using the ancient Tide Pods"
-
-Generate a single new Chronicle entry for today. Make it funny, keep it short, and maintain the character.`;
-
-function callClaudeAPI(userPrompt) {
-    return new Promise((resolve, reject) => {
-        const data = JSON.stringify({
-            model: CLAUDE_MODEL,
-            max_tokens: 300,
-            system: SYSTEM_PROMPT,
-            messages: [
-                {
-                    role: 'user',
-                    content: userPrompt
-                }
-            ]
-        });
-
-        const options = {
-            hostname: CLAUDE_API_URL,
-            path: '/v1/messages',
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'x-api-key': ANTHROPIC_API_KEY,
-                'anthropic-version': '2023-06-01',
-                'Content-Length': data.length
-            }
-        };
-
-        const req = https.request(options, (res) => {
-            let body = '';
-
-            res.on('data', (chunk) => {
-                body += chunk;
-            });
-
-            res.on('end', () => {
-                if (res.statusCode === 200) {
-                    try {
-                        const response = JSON.parse(body);
-                        resolve(response.content[0].text);
-                    } catch (error) {
-                        reject(new Error(`Failed to parse response: ${error.message}`));
-                    }
-                } else {
-                    reject(new Error(`API request failed with status ${res.statusCode}: ${body}`));
-                }
-            });
-        });
-
-        req.on('error', (error) => {
-            reject(error);
-        });
-
-        req.write(data);
-        req.end();
-    });
-}
-
-async function generateBlogPost() {
+function generateBlogPost() {
     console.log('🧙 Generating new Chronicle entry for Grand Magus Alistair...');
 
-    if (!ANTHROPIC_API_KEY) {
-        throw new Error('ANTHROPIC_API_KEY environment variable not set');
-    }
+    // Pick a random pre-written post
+    const randomPost = BLOG_TEMPLATES[Math.floor(Math.random() * BLOG_TEMPLATES.length)];
 
-    // Generate random topic prompt
-    const topics = [
-        'grocery shopping',
-        'doing laundry',
-        'paying bills online',
-        'ordering pizza',
-        'fixing WiFi',
-        'assembling IKEA furniture',
-        'dealing with customer service',
-        'parallel parking',
-        'updating software',
-        'charging your phone',
-        'cleaning the bathroom',
-        'taking out the trash',
-        'renewing your driver\'s license',
-        'going to the dentist',
-        'dealing with a printer',
-        'cooking instant ramen',
-        'Netflix buffering',
-        'losing your keys',
-        'Amazon delivery',
-        'changing a lightbulb'
-    ];
-
-    const randomTopic = topics[Math.floor(Math.random() * topics.length)];
-    const userPrompt = `Write a new Chronicle entry about ${randomTopic}. Keep it to 2-3 sentences. Be humorous and stay in character as the pompous wizard.`;
-
-    try {
-        const blogContent = await callClaudeAPI(userPrompt);
-        return {
-            date: new Date().toISOString().split('T')[0],
-            timestamp: Date.now(),
-            content: blogContent.trim()
-        };
-    } catch (error) {
-        throw new Error(`Failed to generate blog post: ${error.message}`);
-    }
+    return {
+        date: new Date().toISOString().split('T')[0],
+        timestamp: Date.now(),
+        content: randomPost
+    };
 }
 
 function loadBlogPosts() {
@@ -154,10 +66,10 @@ function saveBlogPosts(posts) {
     fs.writeFileSync(BLOG_DATA_FILE, JSON.stringify(posts, null, 2), 'utf8');
 }
 
-async function main() {
+function main() {
     try {
         // Generate new post
-        const newPost = await generateBlogPost();
+        const newPost = generateBlogPost();
         console.log('✅ Generated:', newPost.content);
 
         // Load existing posts
