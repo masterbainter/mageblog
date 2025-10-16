@@ -10,6 +10,7 @@ require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const sharp = require('sharp');
 
 // Load API token from environment variable
 const HF_API_TOKEN = process.env.HUGGINGFACE_API_TOKEN || '';
@@ -120,9 +121,9 @@ async function generateImage(prompt) {
 }
 
 /**
- * Save image to blog directory
+ * Save and compress image to blog directory
  */
-function saveImage(imageBuffer, postId, imageName) {
+async function saveImage(imageBuffer, postId, imageName) {
     const blogDir = path.join(__dirname, 'blog', postId);
 
     if (!fs.existsSync(blogDir)) {
@@ -130,7 +131,12 @@ function saveImage(imageBuffer, postId, imageName) {
     }
 
     const imagePath = path.join(blogDir, `${imageName}.png`);
-    fs.writeFileSync(imagePath, imageBuffer);
+
+    // Compress and resize image (1024x1024 → 800x800, JPEG quality 85%)
+    await sharp(imageBuffer)
+        .resize(800, 800, { fit: 'inside' })
+        .jpeg({ quality: 85, progressive: true })
+        .toFile(imagePath);
 
     console.log(`✅ Saved image: ${imageName}.png`);
     return `${imageName}.png`;
@@ -154,8 +160,8 @@ async function generateImagesForPost(blogPost) {
             console.log(`⏳ Calling Hugging Face API...`);
             const imageBuffer = await generateImage(prompt);
 
-            console.log(`💾 Saving image...`);
-            const filename = saveImage(imageBuffer, blogPost.id, name);
+            console.log(`💾 Saving and compressing image...`);
+            const filename = await saveImage(imageBuffer, blogPost.id, name);
 
             generatedImages.push({
                 filename: filename,
@@ -179,7 +185,7 @@ async function generateImagesForPost(blogPost) {
 
                 try {
                     const imageBuffer = await generateImage(prompt);
-                    const filename = saveImage(imageBuffer, blogPost.id, name);
+                    const filename = await saveImage(imageBuffer, blogPost.id, name);
                     generatedImages.push({
                         filename: filename,
                         prompt: prompt,
