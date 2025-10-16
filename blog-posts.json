@@ -12,6 +12,24 @@
       "Political debates heat up ahead of upcoming elections",
       "South Dakota economy shows strong growth"
     ],
-    "hasAudio": true
+    "hasAudio": true,
+    "images": [
+      {
+        "filename": "scrying-crystals.png",
+        "prompt": "A medieval wizard in his tower studying glowing crystal orbs showing modern news, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "scrying-crystals"
+      },
+      {
+        "filename": "commerce-scene.png",
+        "prompt": "Medieval marketplace with merchants and gold coins, prosperity and trade, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "commerce-scene"
+      },
+      {
+        "filename": "tower-twilight.png",
+        "prompt": "A majestic wizard's tower at twilight with glowing windows, magical energy swirling around it, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "tower-twilight"
+      }
+    ],
+    "featuredImage": "scrying-crystals.png"
   }
 ]
