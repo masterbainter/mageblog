@@ -27,6 +27,12 @@
             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%234a2c2a" d="M3 3 L3 18 L7 14 L10 21 L12 20 L9 13 L15 13 Z"/></svg>'), auto;
         }
 
+        /* Disable scrolling when seal is active */
+        body.seal-active {
+            overflow: hidden;
+            height: 100vh;
+        }
+
         /* --- Seal Animation --- */
         #seal-container {
             transition: opacity 1.5s ease-in-out, transform 1s ease-in-out;
@@ -233,12 +239,10 @@
         .particle:nth-child(4n) { animation-duration: 20s; animation-delay: -2s; }
         .particle:nth-child(5n) { animation-duration: 14s; animation-delay: -10s; }
 
-        /* --- Music Toggle Button --- */
-        #music-toggle {
+        /* --- Audio Control Buttons --- */
+        .audio-control {
             position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            z-index: 100;
+            z-index: 150;
             background: var(--border-gold);
             color: var(--ink);
             border: 3px solid var(--ornament);
@@ -255,32 +259,41 @@
             touch-action: manipulation;
         }
         @media (min-width: 640px) {
-            #music-toggle {
+            .audio-control {
                 width: 60px;
                 height: 60px;
                 font-size: 1.5rem;
-                bottom: 2rem;
-                right: 2rem;
             }
         }
-        #music-toggle:hover, #music-toggle:active {
+        .audio-control:hover, .audio-control:active {
             transform: scale(1.1);
             box-shadow: 0 6px 20px rgba(140, 56, 56, 0.5);
         }
-        #music-toggle.playing {
+        .audio-control.playing {
             animation: pulse 2s infinite;
         }
         @keyframes pulse {
             0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
             50% { box-shadow: 0 4px 25px rgba(200, 163, 121, 0.8); }
         }
+
+        #voice-toggle {
+            bottom: 1rem;
+            right: 1rem;
+        }
+        @media (min-width: 640px) {
+            #voice-toggle {
+                bottom: 2rem;
+                right: 2rem;
+            }
+        }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Music Toggle Button -->
-    <button id="music-toggle" title="Toggle Medieval Music" aria-label="Toggle background music">
-        ♫
+    <!-- Voice Control Button -->
+    <button id="voice-toggle" class="audio-control" title="Toggle Voice Narration" aria-label="Toggle voice narration">
+        🗣️
     </button>
 
     <!-- The Seal -->
@@ -312,6 +325,16 @@
             <img src="./images/wizard-artifacts.jpg" alt="Mystical Wizard Artifacts" class="grimoire-image typing-effect">
 
             <div class="decorative-divider typing-effect">✦ ✦ ✦</div>
+
+            <!-- Latest Chronicle Section -->
+            <section id="latest-chronicle" class="mb-12 typing-effect">
+                <h2 class="text-3xl md:text-4xl font-bold text-ornament text-center mb-6">Latest Chronicle from the Year 1337</h2>
+                <div id="latest-post-container" class="border-4 border-border-gold rounded-lg p-6 bg-white bg-opacity-20">
+                    <p class="text-center text-lg">Loading latest chronicle...</p>
+                </div>
+            </section>
+
+            <div class="decorative-divider">✦ ✦ ✦</div>
 
             <!-- Accordion 1: The Fools -->
             <div>
@@ -361,10 +384,6 @@
                         <!-- Blog posts will be loaded dynamically -->
                         <p class="text-center text-lg my-6">Loading Chronicles...</p>
                      </div>
-
-                    <!-- Ancient Scrolls Image -->
-                    <img src="./images/scrolls-and-books.jpg" alt="Ancient Scrolls and Tomes" class="grimoire-image">
-
                 </div>
             </div>
 
@@ -385,6 +404,10 @@
             const grimoireContent = document.getElementById('grimoire-content');
             let hasBeenUnsealed = false;
 
+            // Disable scrolling initially and ensure we're at the top
+            document.body.classList.add('seal-active');
+            window.scrollTo(0, 0);
+
             // --- Create Magical Particles ---
             function createParticles() {
                 const numParticles = 25;
@@ -398,24 +421,70 @@
             }
             createParticles();
 
-            // --- Background Music ---
-            const bgMusic = new Audio('https://cdn.pixabay.com/download/audio/2022/05/13/audio_1808fbf07a.mp3');
-            bgMusic.loop = true;
-            bgMusic.volume = 0.2;
-            let musicPlaying = false;
+            // --- Voice Control ---
+            let voiceMuted = false; // Voice unmuted by default
+            let hasScrolledToBio = false; // Track if user has scrolled to bio section
+            let hasScrolledToChronicle = false; // Track if user has scrolled to latest chronicle
+            let currentAudio = null; // Track which audio is currently playing
 
-            const musicToggle = document.getElementById('music-toggle');
-            musicToggle.addEventListener('click', () => {
-                if (musicPlaying) {
-                    bgMusic.pause();
-                    musicToggle.classList.remove('playing');
-                    musicToggle.textContent = '♫';
+            const voiceToggle = document.getElementById('voice-toggle');
+
+            // Voice button - starts unmuted
+            voiceToggle.innerHTML = '🔊';
+            voiceToggle.title = 'Voice Narration: ON (Click to disable)';
+
+            // Pre-load the bio audio so we can control it
+            const bioAudio = new Audio('./audio/bio.mp3');
+            bioAudio.volume = 0.7;
+
+            // Blog audio will be loaded dynamically
+            let blogAudio = null;
+
+            // Debug audio loading
+            bioAudio.addEventListener('loadeddata', () => {
+                console.log('Bio audio loaded successfully, duration:', bioAudio.duration);
+            });
+            bioAudio.addEventListener('error', (e) => {
+                console.error('Bio audio failed to load:', e);
+            });
+            bioAudio.addEventListener('play', () => {
+                console.log('Bio audio started playing');
+            });
+            bioAudio.addEventListener('pause', () => {
+                console.log('Bio audio paused');
+            });
+
+            // Voice Narration Toggle - controls whichever audio is currently playing
+            voiceToggle.addEventListener('click', () => {
+                voiceMuted = !voiceMuted;
+                console.log('Voice toggle clicked. Muted:', voiceMuted);
+
+                if (voiceMuted) {
+                    // Pause whichever audio is currently playing
+                    if (!bioAudio.paused) {
+                        bioAudio.pause();
+                        console.log('Bio audio paused');
+                    }
+                    if (blogAudio && !blogAudio.paused) {
+                        blogAudio.pause();
+                        console.log('Blog audio paused');
+                    }
+                    voiceToggle.innerHTML = '🔇';
+                    voiceToggle.title = 'Voice Narration: OFF (Click to enable)';
+                    console.log('Voice muted');
                 } else {
-                    bgMusic.play().catch(e => console.log('Music play prevented:', e));
-                    musicToggle.classList.add('playing');
-                    musicToggle.textContent = '♪';
+                    // Resume the current audio if it was paused (not ended)
+                    if (currentAudio) {
+                        if (currentAudio.paused && currentAudio.currentTime > 0 && currentAudio.currentTime < currentAudio.duration) {
+                            currentAudio.play()
+                                .then(() => console.log('Audio resumed'))
+                                .catch(e => console.log('Audio resume prevented:', e));
+                        }
+                    }
+                    voiceToggle.innerHTML = '🔊';
+                    voiceToggle.title = 'Voice Narration: ON (Click to enable)';
+                    console.log('Voice unmuted');
                 }
-                musicPlaying = !musicPlaying;
             });
 
             // --- Sound Effects ---
@@ -423,12 +492,12 @@
             const sealClickSound = new Audio('http://soundbible.com/grab.php?id=2066&type=mp3');
             sealClickSound.volume = 0.4;
 
-            // Parchment unrolling sound
-            const parchmentSound = new Tone.Player({
-                url: "https://cdn.freesound.org/previews/266/266472_4486188-lq.mp3",
-                autostart: false,
-            }).toDestination();
-            parchmentSound.volume.value = -8;
+            // Parchment unrolling sound - removed due to 404 errors
+            // const parchmentSound = new Tone.Player({
+            //     url: "https://cdn.freesound.org/previews/266/266472_4486188-lq.mp3",
+            //     autostart: false,
+            // }).toDestination();
+            // parchmentSound.volume.value = -8;
 
             // Page turn for accordion open
             const accordionOpenSound = new Audio('http://soundbible.com/grab.php?id=2066&type=mp3');
@@ -445,23 +514,27 @@
                 if (hasBeenUnsealed) return;
                 hasBeenUnsealed = true;
 
+                // Scroll to top and enable scrolling
+                window.scrollTo({ top: 0, behavior: 'instant' });
+                document.body.classList.remove('seal-active');
+
                 // --- Start Visuals Immediately ---
                 sealContainer.classList.add('unsealed');
                 grimoireContent.classList.add('visible');
                 setTimeout(startTyping, 1200);
 
+                // Check if bio section is already visible after a short delay
+                setTimeout(checkBioScroll, 2000);
+
                 // --- Try to play audio, but don't block visuals if it fails ---
                 const playSounds = async () => {
+                    // Seal sounds play when user clicks
                     try {
                         await Tone.start();
                         await Tone.loaded();
                         // Play page turn sound
                         sealClickSound.currentTime = 0;
                         sealClickSound.play().catch(e => console.log('Seal sound prevented:', e));
-                        // Play parchment unrolling sound
-                        setTimeout(() => {
-                            parchmentSound.start();
-                        }, 200);
                     } catch (error) {
                         console.error("Audio could not be initialized or played, but the site will continue to function.", error);
                     }
@@ -469,32 +542,126 @@
 
                 playSounds();
             });
-            
-            // --- Pre-generated AI Voice Audio ---
-            // Voice: Callum (British, deep, dramatic) from ElevenLabs
-            const bioAudio = new Audio('./audio/bio.mp3');
-            bioAudio.volume = 0.7;
 
+            // --- Voice Playback Functions ---
             function playBioVoice() {
+                if (voiceMuted) {
+                    console.log('Voice playback skipped - voice is muted');
+                    return;
+                }
+                if (!hasScrolledToBio) {
+                    console.log('Voice playback skipped - user has not scrolled to bio section yet');
+                    return;
+                }
+                console.log('Attempting to play bio voice narration...');
+                console.log('Audio ready state:', bioAudio.readyState, 'Paused:', bioAudio.paused, 'Duration:', bioAudio.duration);
+
+                // Stop blog audio if playing
+                if (blogAudio && !blogAudio.paused) {
+                    blogAudio.pause();
+                    console.log('Stopped blog audio');
+                }
+
                 bioAudio.currentTime = 0;
-                bioAudio.play().catch(e => console.log('Voice playback prevented:', e));
+                currentAudio = bioAudio;
+                bioAudio.play()
+                    .then(() => console.log('✅ Bio voice playback started successfully'))
+                    .catch(e => console.error('❌ Voice playback prevented:', e.name, e.message));
             }
 
+            function playBlogVoice() {
+                if (voiceMuted) {
+                    console.log('Blog voice playback skipped - voice is muted');
+                    return;
+                }
+                if (!hasScrolledToChronicle) {
+                    console.log('Blog voice playback skipped - user has not scrolled to chronicle section yet');
+                    return;
+                }
+                if (!blogAudio) {
+                    console.log('Blog audio not loaded yet');
+                    return;
+                }
+                console.log('Attempting to play blog voice narration...');
+
+                // Stop bio audio if playing
+                if (!bioAudio.paused) {
+                    bioAudio.pause();
+                    console.log('Stopped bio audio');
+                }
+
+                blogAudio.currentTime = 0;
+                currentAudio = blogAudio;
+                blogAudio.play()
+                    .then(() => console.log('✅ Blog voice playback started successfully'))
+                    .catch(e => console.error('❌ Blog voice playback prevented:', e.name, e.message));
+            }
+
+            // --- Scroll Detection for Bio Section ---
+            function checkBioScroll() {
+                // Don't check if seal hasn't been clicked yet
+                if (!hasBeenUnsealed) return;
+
+                const bioSection = document.getElementById('bio');
+                if (!bioSection || hasScrolledToBio) return;
+
+                const rect = bioSection.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+                if (isVisible) {
+                    hasScrolledToBio = true;
+                    console.log('User has scrolled to bio section');
+                    // Trigger voice playback now that user has scrolled to bio
+                    playBioVoice();
+                }
+            }
+
+            // --- Scroll Detection for Latest Chronicle Section ---
+            function checkChronicleScroll() {
+                // Don't check if seal hasn't been clicked yet
+                if (!hasBeenUnsealed) return;
+
+                const chronicleSection = document.getElementById('latest-chronicle');
+                if (!chronicleSection || hasScrolledToChronicle) return;
+
+                const rect = chronicleSection.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+                if (isVisible) {
+                    hasScrolledToChronicle = true;
+                    console.log('User has scrolled to latest chronicle section');
+                    // Trigger blog voice playback now that user has scrolled to chronicle
+                    playBlogVoice();
+                }
+            }
+
+            // Listen for scroll events
+            window.addEventListener('scroll', checkBioScroll);
+            window.addEventListener('resize', checkBioScroll);
+            window.addEventListener('scroll', checkChronicleScroll);
+            window.addEventListener('resize', checkChronicleScroll);
+            window.addEventListener('scroll', checkBioScrollPast);
+            window.addEventListener('resize', checkBioScrollPast);
+
             // --- Typing Effect with Pre-generated AI Voice Narration ---
+            let typingTimeouts = []; // Store all typing timeouts so we can cancel them
+            let typingElements = []; // Store elements with their full text and index
+            let isBioTypingComplete = false;
+
             function startTyping() {
                 const elementsToType = document.querySelectorAll('.typing-effect');
                 let delay = 0;
 
                 elementsToType.forEach((el, index) => {
-                    setTimeout(() => {
+                    const text = el.textContent;
+                    typingElements.push({ element: el, fullText: text, index: index });
+
+                    const initialTimeout = setTimeout(() => {
                         el.style.opacity = 1;
-                        let text = el.textContent;
                         el.textContent = '';
 
-                        // Play bio voice only for the bio section (4th element)
-                        if (index === 4) {
-                            playBioVoice();
-                        }
+                        // Voice will play when user scrolls to bio section
+                        // No longer triggering it here during typing animation
 
                         // Type text
                         const typingSpeed = 50;
@@ -503,13 +670,70 @@
                             if (i < text.length) {
                                 el.textContent += text.charAt(i);
                                 i++;
-                                setTimeout(typeWriter, typingSpeed);
+                                const timeout = setTimeout(typeWriter, typingSpeed);
+                                typingTimeouts.push({ timeout, elementIndex: index });
                             }
                         }
                         typeWriter();
                     }, delay);
+                    typingTimeouts.push({ timeout: initialTimeout, elementIndex: index });
                     delay += 1000;
                 });
+            }
+
+            // Complete typing for bio and elements before it
+            function completeBioTyping() {
+                if (isBioTypingComplete) return;
+
+                console.log('Completing bio typing instantly - user scrolled past bio');
+
+                const bioSection = document.getElementById('bio');
+                const latestChronicle = document.getElementById('latest-chronicle');
+
+                if (!bioSection || !latestChronicle) return;
+
+                // Find the index of the latest chronicle in typingElements
+                let chronicleIndex = -1;
+                typingElements.forEach(({ element, index }) => {
+                    if (element === latestChronicle || element.closest('#latest-chronicle')) {
+                        if (chronicleIndex === -1 || index < chronicleIndex) {
+                            chronicleIndex = index;
+                        }
+                    }
+                });
+
+                // Clear timeouts only for elements before the chronicle
+                typingTimeouts = typingTimeouts.filter(({ timeout, elementIndex }) => {
+                    if (chronicleIndex === -1 || elementIndex < chronicleIndex) {
+                        clearTimeout(timeout);
+                        return false; // Remove from array
+                    }
+                    return true; // Keep in array
+                });
+
+                // Set full text only for elements before the chronicle
+                typingElements.forEach(({ element, fullText, index }) => {
+                    if (chronicleIndex === -1 || index < chronicleIndex) {
+                        element.style.opacity = 1;
+                        element.textContent = fullText;
+                    }
+                });
+
+                isBioTypingComplete = true;
+            }
+
+            // Detect when user scrolls past bio section
+            function checkBioScrollPast() {
+                if (!hasBeenUnsealed || isBioTypingComplete) return;
+
+                const bioSection = document.getElementById('bio');
+                if (!bioSection) return;
+
+                const rect = bioSection.getBoundingClientRect();
+                // If bio section has scrolled past (bottom edge is above viewport top)
+                if (rect.bottom < 0) {
+                    completeBioTyping();
+                }
             }
 
             // --- Load Blog Posts ---
@@ -518,44 +742,111 @@
                     const response = await fetch('./blog-posts.json');
                     const posts = await response.json();
 
-                    const container = document.getElementById('blog-posts-container');
+                    // --- Load Latest Post in Featured Section ---
+                    const latestContainer = document.getElementById('latest-post-container');
 
                     if (posts.length === 0) {
-                        container.innerHTML = '<p class="text-center text-lg my-6">No Chronicles yet. Check back tomorrow for new tales of mystical mundanity!</p>';
+                        latestContainer.innerHTML = '<p class="text-center text-lg">No Chronicles yet. Check back tomorrow for new tales of mystical mundanity!</p>';
+                        document.getElementById('blog-posts-container').innerHTML = '<p class="text-center text-lg my-6">No Chronicles yet.</p>';
                         return;
                     }
 
-                    // Clear loading message
+                    // Show latest post in featured section
+                    const latestPost = posts[0];
+                    // Parse date as YYYY-MM-DD to avoid timezone conversion issues
+                    const [year, month, day] = latestPost.date.split('-').map(Number);
+                    const latestDate = new Date(year, month - 1, day); // Month is 0-indexed
+                    const latestFormattedDate = latestDate.toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        timeZone: 'America/Chicago'
+                    });
+                    const latestPostId = latestPost.id || latestPost.timestamp;
+                    const latestPostLink = latestPostId ? `./blog/${latestPostId}/` : '#';
+
+                    latestContainer.innerHTML = `
+                        <div class="text-center mb-4">
+                            <p class="text-2xl font-bold text-ornament">${latestFormattedDate}</p>
+                        </div>
+                        <div class="text-lg leading-relaxed mb-4">
+                            ${latestPost.content}
+                        </div>
+                        ${latestPostId ? `<div class="text-center"><a href="${latestPostLink}" class="text-xl text-ornament hover:underline font-bold">→ Read Full Chronicle${latestPost.hasAudio ? ' with Voice Narration' : ''}</a></div>` : ''}
+                    `;
+
+                    // Load blog audio if available
+                    if (latestPost.hasAudio && latestPostId) {
+                        blogAudio = new Audio(`./blog/${latestPostId}/audio.mp3`);
+                        blogAudio.volume = 0.7;
+                        blogAudio.addEventListener('loadeddata', () => {
+                            console.log('Blog audio loaded successfully, duration:', blogAudio.duration);
+                        });
+                        blogAudio.addEventListener('error', (e) => {
+                            console.error('Blog audio failed to load:', e);
+                        });
+                        blogAudio.addEventListener('play', () => {
+                            console.log('Blog audio started playing');
+                        });
+                        blogAudio.addEventListener('pause', () => {
+                            console.log('Blog audio paused');
+                        });
+                    }
+
+                    // --- Load Recent Posts in Chronicles Accordion (Max 5) ---
+                    const container = document.getElementById('blog-posts-container');
                     container.innerHTML = '';
 
-                    // Add each blog post
-                    posts.forEach((post, index) => {
-                        const postDiv = document.createElement('div');
-                        postDiv.className = 'blog-entry' + (index === 0 ? ' mt-6' : '');
+                    const maxPostsInAccordion = 5;
+                    const postsToShow = posts.slice(0, maxPostsInAccordion);
 
-                        const date = new Date(post.date);
+                    postsToShow.forEach((post, index) => {
+                        // Parse date as YYYY-MM-DD to avoid timezone conversion issues
+                        const [year, month, day] = post.date.split('-').map(Number);
+                        const date = new Date(year, month - 1, day); // Month is 0-indexed
                         const formattedDate = date.toLocaleDateString('en-US', {
                             year: 'numeric',
                             month: 'long',
-                            day: 'numeric'
+                            day: 'numeric',
+                            timeZone: 'America/Chicago'
                         });
 
+                        const postId = post.id || post.timestamp;
+                        const postLink = postId ? `./blog/${postId}/` : '#';
+
+                        const postDiv = document.createElement('div');
+                        postDiv.className = 'blog-entry' + (index === 0 ? ' mt-6' : '');
+
                         postDiv.innerHTML = `
-                            <h3 class="text-2xl font-bold">Chronicle: ${formattedDate}</h3>
-                            <p class="mt-2 text-lg leading-relaxed">${post.content}</p>
+                            <h3 class="text-2xl font-bold">
+                                <a href="${postLink}" class="text-ornament hover:underline">
+                                    Chronicle: ${formattedDate}
+                                </a>
+                            </h3>
                         `;
 
                         container.appendChild(postDiv);
-
-                        // Add tower image after 3rd post
-                        if (index === 2) {
-                            const img = document.createElement('img');
-                            img.src = './images/wizard-tower-twilight.jpg';
-                            img.alt = 'The Grand Wizard\'s Tower';
-                            img.className = 'grimoire-image';
-                            container.appendChild(img);
-                        }
                     });
+
+                    // Add "View All Chronicles" link if there are more than 5 posts
+                    if (posts.length > maxPostsInAccordion) {
+                        const moreLink = document.createElement('div');
+                        moreLink.className = 'text-center mt-8';
+                        moreLink.innerHTML = `
+                            <a href="./archives.html" class="text-xl text-ornament hover:underline font-bold">
+                                → View All ${posts.length} Chronicles
+                            </a>
+                        `;
+                        container.appendChild(moreLink);
+                    }
+
+                    // Add scrolls image
+                    const img = document.createElement('img');
+                    img.src = './images/scrolls-and-books.jpg';
+                    img.alt = 'Ancient Scrolls and Tomes';
+                    img.className = 'grimoire-image mt-6';
+                    container.appendChild(img);
+
                 } catch (error) {
                     console.error('Error loading blog posts:', error);
                     const container = document.getElementById('blog-posts-container');

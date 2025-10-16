@@ -7,10 +7,36 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
+const { generateBlogPost: generateWithClaude } = require('./claude-generator');
 
 // Configuration
 const BLOG_DATA_FILE = path.join(__dirname, 'blog-posts.json');
-const MAX_POSTS = 10; // Keep only the 10 most recent posts
+const USE_AI = process.env.USE_AI !== 'false'; // Use AI by default (Claude)
+
+function generateWithGrokKeyboard() {
+    console.log('⌨️  Using keyboard automation to interact with Grok...');
+
+    try {
+        // Run the Python keyboard automation script (uses xdotool/xclip)
+        const result = execSync('python3 grok-keyboard.py', {
+            cwd: __dirname,
+            encoding: 'utf8',
+            timeout: 60000 // 60 second timeout
+        });
+
+        // Extract JSON output from the script
+        const jsonMatch = result.match(/JSON: (.+)/);
+        if (jsonMatch) {
+            const data = JSON.parse(jsonMatch[1]);
+            return data.content;
+        }
+
+        throw new Error('Could not extract JSON from grok-keyboard.py output');
+    } catch (error) {
+        throw new Error(`Keyboard automation failed: ${error.message}`);
+    }
+}
 
 // Pre-written blog posts in Alistair's voice
 const BLOG_TEMPLATES = [
@@ -36,16 +62,32 @@ const BLOG_TEMPLATES = [
     "Attempted to microwave leftovers. Set timer for 10:00 instead of 1:00. My lunch is now a charred offering to the Appliance Gods. I ate cereal instead."
 ];
 
-function generateBlogPost() {
+async function generateBlogPost() {
     console.log('🧙 Generating new Chronicle entry for Grand Magus Alistair...');
 
-    // Pick a random pre-written post
-    const randomPost = BLOG_TEMPLATES[Math.floor(Math.random() * BLOG_TEMPLATES.length)];
+    let content;
+    let newsTopics = [];
+
+    if (USE_AI) {
+        try {
+            console.log('🤖 Using Claude API with current news context...');
+            const result = await generateWithClaude();
+            content = result.content;
+            newsTopics = result.newsTopics || [];
+        } catch (error) {
+            console.warn('⚠️  AI generation failed, falling back to templates:', error.message);
+            content = BLOG_TEMPLATES[Math.floor(Math.random() * BLOG_TEMPLATES.length)];
+        }
+    } else {
+        // Pick a random pre-written post
+        content = BLOG_TEMPLATES[Math.floor(Math.random() * BLOG_TEMPLATES.length)];
+    }
 
     return {
         date: new Date().toISOString().split('T')[0],
         timestamp: Date.now(),
-        content: randomPost
+        content: content,
+        newsReferences: newsTopics
     };
 }
 
@@ -66,27 +108,27 @@ function saveBlogPosts(posts) {
     fs.writeFileSync(BLOG_DATA_FILE, JSON.stringify(posts, null, 2), 'utf8');
 }
 
-function main() {
+async function main() {
     try {
         // Generate new post
-        const newPost = generateBlogPost();
+        const newPost = await generateBlogPost();
         console.log('✅ Generated:', newPost.content);
 
         // Load existing posts
         let posts = loadBlogPosts();
 
-        // Add new post at the beginning
+        // Add new post at the beginning (with unique ID)
+        newPost.id = Date.now().toString();
         posts.unshift(newPost);
 
-        // Keep only the most recent MAX_POSTS
-        if (posts.length > MAX_POSTS) {
-            posts = posts.slice(0, MAX_POSTS);
-        }
-
-        // Save updated posts
+        // Save updated posts (no limit on number of posts)
         saveBlogPosts(posts);
         console.log(`📝 Saved to ${BLOG_DATA_FILE}`);
-        console.log(`📊 Total posts: ${posts.length}/${MAX_POSTS}`);
+        console.log(`📊 Total posts: ${posts.length}`);
+
+        // Generate individual HTML pages for each post
+        console.log('\n🔄 Generating individual blog post pages...');
+        execSync('node generate-pages.js', { cwd: __dirname, stdio: 'inherit' });
 
     } catch (error) {
         console.error('❌ Error:', error.message);

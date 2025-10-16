@@ -1,0 +1,25 @@
+{
+  "name": "theyearis1337",
+  "version": "1.0.0",
+  "description": "A humorous medieval wizard-themed website featuring Grand Magus Alistair, who claims to be one of the five most powerful wizards but whose \"magical\" adventures are really just mundane modern activities.",
+  "main": "admin-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masterbainter/wizard-grimoire.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/masterbainter/wizard-grimoire/issues"
+  },
+  "homepage": "https://github.com/masterbainter/wizard-grimoire#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.66.0",
+    "selenium-webdriver": "^4.36.0"
+  }
+}

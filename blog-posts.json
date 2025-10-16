@@ -1,32 +1,17 @@
 [
   {
+    "id": "dakota-commerce-guild-triumph-1337",
     "date": "2025-10-16",
-    "timestamp": 1760584968040,
-    "content": "Today I conquered the Great Laundromat of Eternal Spinning. My robes emerged pristine, though the Dryer Beast demanded three quarters as tribute. The sock sacrifice was... regrettable."
-  },
-  {
-    "date": "2025-10-16",
-    "timestamp": 1760584966995,
-    "content": "I banished the Trash Ogre to the curb on collection day. The ritual must be performed weekly, lest the kitchen be overrun with refuse. Tedious, but necessary."
-  },
-  {
-    "date": "2025-10-16",
-    "timestamp": 1760584965958,
-    "content": "Attempted to microwave leftovers. Set timer for 10:00 instead of 1:00. My lunch is now a charred offering to the Appliance Gods. I ate cereal instead."
-  },
-  {
-    "date": "2025-10-16",
-    "timestamp": 1760584964924,
-    "content": "I lost my keys this morning and spent 20 minutes searching. Found them in my robe pocket. Where they were all along. I will not speak of this to anyone."
-  },
-  {
-    "date": "2025-10-16",
-    "timestamp": 1760584963870,
-    "content": "I assembled furniture from the IKEA dimension using only cryptic runes (instructions) and a hex key. The bookshelf stands... mostly level. A triumph of magical engineering!"
-  },
-  {
-    "date": "2025-10-16",
-    "timestamp": 1760584931422,
-    "content": "I summoned sustenance via the DoorDash incantation. The pizza arrived in 30 minutes, still warm. The delivery familiar received a generous 20% tribute."
+    "timestamp": 1760630632898,
+    "content": "The Scrying Crystals bring most excellent tidings from our own Kingdom of Dakota! The Commerce Guilds report unprecedented prosperity—our lands lead the entire Midwest in the creation of new employment opportunities. This is what happens when a realm embraces the ancient virtues of low taxation and minimal bureaucratic interference. Let the coastal kingdoms drown in their endless regulations whilst we thrive through good old-fashioned common sense.\n\nMeanwhile, the Political Theatre continues its endless performance. The candidates spar with great fury in their Debate Chambers, flinging accusations and promises like amateur pyromancers. I observed this spectacle whilst consuming my evening meal and found the leftover meatloaf more substantive than their rhetoric. At least the meatloaf was honest about what it contained.\n\nOn a lighter note, the Entertainment Guilds celebrate yet another \"blockbuster\" film breaking records at the Box Office Altars. I attempted to understand this phenomenon by consulting my apprentice (my neighbor's teenage son). He explained something about \"cinematic universes\" and \"post-credit scenes.\" I nodded wisely whilst comprehending absolutely nothing. Some magic is simply beyond even my considerable powers.",
+    "newsReferences": [
+      "Local Weather in Sioux Falls, SD: 67°F, Sunny",
+      "International tensions continue in global hotspots",
+      "Stock markets show volatility amid economic uncertainty",
+      "New blockbuster breaks box office records",
+      "Political debates heat up ahead of upcoming elections",
+      "South Dakota economy shows strong growth"
+    ],
+    "hasAudio": true
   }
 ]

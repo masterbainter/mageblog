@@ -1,0 +1,39 @@
+# Sensitive files
+x-cookies.json
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Environment files
+.env
+*.env
+
+# Selenium profile
+.selenium-chatgpt-profile/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Test files
+test-*.py
+test-*.js
+*-test.mp3
+
+# Error screenshots
+*-error.png
+
+# Temporary files
+*.tmp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo

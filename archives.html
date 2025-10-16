@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle Archives - Grand Magus Alistair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #f3e9d2;
+            --ink: #4a2c2a;
+            --ornament: #8c3838;
+            --border-gold: #c8a379;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background-color: var(--parchment);
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+            color: var(--ink);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-ornament { color: var(--ornament); }
+
+        .back-link {
+            display: inline-block;
+            color: var(--ornament);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-gold);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: rgba(200, 163, 121, 0.3);
+            transform: translateX(-5px);
+        }
+
+        .chronicle-list {
+            border: 4px solid var(--border-gold);
+            border-radius: 12px;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .chronicle-item {
+            border-left: 4px solid var(--border-gold);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .chronicle-item:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto px-4 sm:px-6 py-12">
+        <main class="max-w-4xl mx-auto">
+
+            <a href="./index.html" class="back-link mb-8">← Return to the Grimoire</a>
+
+            <div class="chronicle-list mt-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-8 text-center">Chronicle Archives</h1>
+                <p class="text-xl text-center mb-8">All tales of mystical mundanity from the Year 1337</p>
+
+                <div id="archives-container">
+                    <p class="text-center text-lg">Loading archives...</p>
+                </div>
+            </div>
+
+            <footer class="mt-16 text-lg text-center border-t-2 border-dashed border-border-gold pt-8">
+                <p>Copyright 1337, by order of the Grand Magus Alistair</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        async function loadArchives() {
+            try {
+                const response = await fetch('./blog-posts.json');
+                const posts = await response.json();
+
+                const container = document.getElementById('archives-container');
+
+                if (posts.length === 0) {
+                    container.innerHTML = '<p class="text-center text-lg">No Chronicles yet. Check back soon!</p>';
+                    return;
+                }
+
+                container.innerHTML = '';
+
+                posts.forEach(post => {
+                    // Parse date as YYYY-MM-DD to avoid timezone conversion issues
+                    const [year, month, day] = post.date.split('-').map(Number);
+                    const date = new Date(year, month - 1, day); // Month is 0-indexed
+                    const formattedDate = date.toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        timeZone: 'America/Chicago'
+                    });
+
+                    const postId = post.id || post.timestamp;
+                    const postLink = postId ? `./blog/${postId}/` : '#';
+
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'chronicle-item';
+                    itemDiv.innerHTML = `
+                        <h3 class="text-2xl font-bold mb-2">
+                            <a href="${postLink}" class="text-ornament hover:underline">
+                                Chronicle: ${formattedDate}
+                            </a>
+                        </h3>
+                        <p class="text-lg leading-relaxed mb-3">${post.content}</p>
+                        ${postId ? `<a href="${postLink}" class="text-ornament hover:underline">→ Read full chronicle${post.hasAudio ? ' with voice narration' : ''}</a>` : ''}
+                    `;
+
+                    container.appendChild(itemDiv);
+                });
+
+                // Add count at bottom
+                const countDiv = document.createElement('div');
+                countDiv.className = 'text-center mt-8 pt-8 border-t-2 border-dashed border-border-gold';
+                countDiv.innerHTML = `<p class="text-xl text-ornament font-bold">${posts.length} Chronicles Total</p>`;
+                container.appendChild(countDiv);
+
+            } catch (error) {
+                console.error('Error loading archives:', error);
+                document.getElementById('archives-container').innerHTML = '<p class="text-center text-lg text-ornament">The Archives are temporarily sealed. Please refresh the page.</p>';
+            }
+        }
+
+        loadArchives();
+    </script>
+</body>
+</html>
