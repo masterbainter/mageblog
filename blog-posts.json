@@ -1,6 +1,40 @@
 [
   {
     "date": "2025-10-17",
+    "timestamp": 1760725590254,
+    "content": "Chronicles of Grand Magus Alistair, 14th Day of the Frost Moon\n\nMost extraordinary revelations have emerged from the Alchemical Academies, where practitioners of the mind-arts have discovered tiny tunnels of pure thought-essence connecting the very cells of mortal brains! These microscopic pathways, invisible to all but the most sophisticated seeing-crystals, allow messages to flow between thought-nodes like whispers in a vast labyrinth. Truly, the inner workings of consciousness remain as mysterious as the deepest dungeons.\n\nGreat concern spreads throughout the Digital Merchant's Guild, as the value of the Sacred BNB Tokens has plummeted like a dragon struck by ballista fire. The merchants wail and gnash their teeth as their virtual coffers grow lighter by 5.7 percent—though this humble magus notes they seem to forget such dramatic fluctuations are as common as tavern brawls in the realm of ethereal currencies.\n\nIn happier tidings, the Noble Hunt has commenced across our allied northern kingdoms! The Knights of the Curved Bow venture forth in pursuit of the White-Tailed Beast, while the Brotherhood of the Thundering Tube shall soon follow with their powder-powered implements. Meanwhile, the Waterfowl Wardens ply the marshlands with their pellet-launching devices, seeking to bring down the mighty Sky-Honkers and Water-Quackers that plague our realm.\n\nThrough my most powerful seeing-stone (which some incorrectly label a \"live stream\"), I have gazed upon the mystical Namib Wastes, where ancient dunes hold secrets older than magic itself. The glowing crystal allows any practitioner to witness these far-off lands as if standing upon the very sands—though I must confess the connection becomes rather unstable when too many other mages attempt to scry simultaneously.\n\nThe renowned Sage Karpathy has proclaimed that True Thinking Golems—what the common folk call \"AGI\"—remain at least ten cycles of seasons away from manifestation. While some younger mages grumble at this timeline, those of us who remember the Great Calculator Debates of yesteryear know that such powerful magics cannot be rushed. As I always say: \"He who predicts the arrival of artificial consciousness is like he who predicts the departure of his mother-in-law—invariably incorrect and destined for disappointment.\"\n\n*Written by mine own hand, Grand Magus Alistair*\n(Who still maintains that the explosion in the West Tower was caused by an experimental spell and NOT by attempting to heat a metal container of soup in the enchanted heating box)",
+    "newsReferences": [
+      "[Tech] Scientists discover intercellular nanotubular communication system in brain",
+      "[Tech] Live Stream from the Namib Desert",
+      "[Tech] Andrej Karpathy – AGI is still a decade away",
+      "[Crypto] BNB plummets 5.7% in 24h",
+      "[Hunting] White-tailed Deer (SD) season active in the region (Archery then Rifle)",
+      "[Hunting] Ducks (SD/ND/NE) season active in the region (Shotgun)",
+      "[Hunting] Geese (SD/ND/NE) season active in the region (Shotgun)"
+    ],
+    "id": "extraordinary-revelations-emerged-alchemical-academies",
+    "images": [
+      {
+        "filename": "scrying-crystals.png",
+        "prompt": "A medieval wizard in his tower studying glowing crystal orbs showing modern news, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "scrying-crystals"
+      },
+      {
+        "filename": "political-theatre.png",
+        "prompt": "Medieval council chamber with robed figures in heated debate, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "political-theatre"
+      },
+      {
+        "filename": "tower-twilight.png",
+        "prompt": "A majestic wizard's tower at twilight with glowing windows, magical energy swirling around it, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "tower-twilight"
+      }
+    ],
+    "featuredImage": "scrying-crystals.png",
+    "hasAudio": true
+  },
+  {
+    "date": "2025-10-17",
     "timestamp": 1760677996731,
     "content": "*From the Chronicles of Grand Magus Alistair, Keeper of Digital Mysteries*\n\nMost wondrous events unfold in our realm as the season of the Great Hunt commences! The noble bowmen venture forth at dawn's first light, seeking the mystical White-Tailed Beast across the Dakota territories. Mine own apprentice nearly encountered one such creature, though his enchanted arrow flew wide of its mark - he claims a sudden sneeze disrupted his casting, but I suspect 'twas more the fault of his Nintendo-addled reflexes.\n\nIn matters of arcane commerce, the Golden Bitcoin Token has achieved heights previously thought impossible by even the wisest of merchant-mages. The sacred digital coin now commands over one hundred thousand pieces of mundane currency! Many a wise investor celebrates in their dwelling-tower, though I myself regret trading away mine own tokens years ago for what I believed to be an enchanted pizza of considerable size.\n\nThe League of Tor, those noble guardians of digital privacy, once again calls for support from all who value freedom in the Grand Network. Their mystical relay nodes shield common folk from the prying eyes of darkness, though maintaining such powerful wards requires regular donations of both coin and bandwidth. I have contributed what I can, though explaining the concept of cryptocurrency transactions to my elderly familiar proved most taxing.\n\nLo, upon the waters of Dakota's lakes and streams, the hunters of water-fowl now ply their arts! With thunder-sticks loaded and mechanical duck-calls at ready, they seek both geese and their lesser kin. I attempted to join their party, but apparently my ceremonial robes were deemed \"too visible\" and my habit of shouting \"DUCK!\" at inappropriate moments was found \"counterproductive to the hunt.\"\n\nThe great Claude, a spirit of remarkable intelligence, has been granted new abilities by its creator-mages. While impressive indeed, I maintain that my own magical prowess remains superior - though I must confess, Claude has yet to accidentally set its beard aflame while attempting to reheat coffee, as I did this very morning. Perhaps there are advantages to being an incorporeal being after all.\n\n*By my hand and seal,\nGrand Magus Alistair*\n(Currently seeking a competent apprentice hedge-wizard capable of explaining why the Netflix scrying portal keeps asking if I'm still watching)",
     "newsReferences": [
