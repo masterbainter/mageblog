@@ -1,6 +1,40 @@
 [
   {
     "date": "2025-10-17",
+    "timestamp": 1760677996731,
+    "content": "*From the Chronicles of Grand Magus Alistair, Keeper of Digital Mysteries*\n\nMost wondrous events unfold in our realm as the season of the Great Hunt commences! The noble bowmen venture forth at dawn's first light, seeking the mystical White-Tailed Beast across the Dakota territories. Mine own apprentice nearly encountered one such creature, though his enchanted arrow flew wide of its mark - he claims a sudden sneeze disrupted his casting, but I suspect 'twas more the fault of his Nintendo-addled reflexes.\n\nIn matters of arcane commerce, the Golden Bitcoin Token has achieved heights previously thought impossible by even the wisest of merchant-mages. The sacred digital coin now commands over one hundred thousand pieces of mundane currency! Many a wise investor celebrates in their dwelling-tower, though I myself regret trading away mine own tokens years ago for what I believed to be an enchanted pizza of considerable size.\n\nThe League of Tor, those noble guardians of digital privacy, once again calls for support from all who value freedom in the Grand Network. Their mystical relay nodes shield common folk from the prying eyes of darkness, though maintaining such powerful wards requires regular donations of both coin and bandwidth. I have contributed what I can, though explaining the concept of cryptocurrency transactions to my elderly familiar proved most taxing.\n\nLo, upon the waters of Dakota's lakes and streams, the hunters of water-fowl now ply their arts! With thunder-sticks loaded and mechanical duck-calls at ready, they seek both geese and their lesser kin. I attempted to join their party, but apparently my ceremonial robes were deemed \"too visible\" and my habit of shouting \"DUCK!\" at inappropriate moments was found \"counterproductive to the hunt.\"\n\nThe great Claude, a spirit of remarkable intelligence, has been granted new abilities by its creator-mages. While impressive indeed, I maintain that my own magical prowess remains superior - though I must confess, Claude has yet to accidentally set its beard aflame while attempting to reheat coffee, as I did this very morning. Perhaps there are advantages to being an incorporeal being after all.\n\n*By my hand and seal,\nGrand Magus Alistair*\n(Currently seeking a competent apprentice hedge-wizard capable of explaining why the Netflix scrying portal keeps asking if I'm still watching)",
+    "newsReferences": [
+      "[Tech] Free the Internet: The Tor Project's annual fundraiser",
+      "[Tech] How I bypassed Amazon's Kindle web DRM",
+      "[Tech] Claude Skills",
+      "[Crypto] Bitcoin at $108,883",
+      "[Hunting] White-tailed Deer (SD) season active in the region (Archery then Rifle)",
+      "[Hunting] Ducks (SD/ND/NE) season active in the region (Shotgun)",
+      "[Hunting] Geese (SD/ND/NE) season active in the region (Shotgun)"
+    ],
+    "id": "wondrous-events-unfold-realm-season",
+    "images": [
+      {
+        "filename": "scrying-crystals.png",
+        "prompt": "A medieval wizard in his tower studying glowing crystal orbs showing modern news, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "scrying-crystals"
+      },
+      {
+        "filename": "commerce-scene.png",
+        "prompt": "Medieval marketplace with merchants and gold coins, prosperity and trade, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "commerce-scene"
+      },
+      {
+        "filename": "tower-twilight.png",
+        "prompt": "A majestic wizard's tower at twilight with glowing windows, magical energy swirling around it, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "tower-twilight"
+      }
+    ],
+    "featuredImage": "scrying-crystals.png",
+    "hasAudio": true
+  },
+  {
+    "date": "2025-10-17",
     "timestamp": 1760677845983,
     "content": "From the Chronicles of Grand Magus Alistair, Twenty-Third Day of the Hunt Moon:\n\nMost auspicious tidings from the realm's hunting grounds! The sacred seasons of pursuit have commenced, with noble bowmen stalking the white-tailed forest spirits in our southern territories. Mine own apprentice nearly earned his first quarry yesterday, though the enchanted creature proved too swift for his arrows. The ancient traditions of the hunt continue unabated, even as lesser mages resort to the thunder-sticks of rifle magic in the coming moon.\n\nTruly remarkable portents emerge from the mystical Bitcoin repositories, where the golden digital tokens now command a princely sum of one hundred and eight thousand silver pieces! I recall with some embarrassment how I once dismissed these ethereal coins as mere peasant follies. Now I must accept that even an archmage of my stature can occasionally misread the economic auguries.\n\nWord reaches me of a most curious rebellion against the merchant-wizards of Amazon, who seek to bind their enchanted tomes within walls of invisible DRM sorcery. A clever hedge-witch has discovered the means to liberate these captive writings, though I shall not detail her methods lest the Amazon Guild's legal shamans darken my doorstep.\n\nIn related matters, the noble Tor Project continues its crusade to maintain free passage through the ethereal highways of the Internet realm. Their annual gathering of resources reminds me of my own youth, when we wizards would pool our gold to maintain the ancient ley lines of communication. Though in those days, we called it \"paying the phone bill.\"\n\nThe great northern flocks have also begun their ancient migration, with hunters invoking shotgun magic to harvest both ducks and geese from our skies. I find it somewhat beneath my dignity to admit that my own attempt to bag a snow goose yesterday resulted only in wet robes and wounded pride. Perhaps I should stick to summoning dinner via the arcane sigils of DoorDash.\n\nLet it be recorded that even the mightiest of mages must occasionally embrace humility. Though I count myself among the five most powerful spellcasters in the realm, I confess that my mastery of hunting magic remains... questionable. At least my scrying crystal captured several amusing \"fails\" for posteriority.\n\n*- Grand Magus Alistair, whose dignity remains mostly intact*",
     "newsReferences": [
