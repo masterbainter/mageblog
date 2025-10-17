@@ -1,6 +1,40 @@
 [
   {
     "date": "2025-10-16",
+    "timestamp": 1760670011703,
+    "content": "*From the Chronicles of Grand Magus Alistair, Keeper of Digital Mysteries*\n\nHark! The sacred numerical auguries have revealed most wondrous portents this day. The mystical Bitcoin, that ethereal store of wealth, has ascended to unprecedented heights of one hundred and eight thousand gold pieces, causing great celebration among the merchant-wizards who did wisely invest in such arcane currencies. Mine own modest holdings, acquired through the performance of computational enchantments, have proven most fortuitous indeed.\n\nWord reaches mine ears of a great hunt across the northern territories of Dakota and Nebraska. The noble bowmen first venture forth, seeking the elusive white-tailed deer with their curved staves of composite materials. Soon after, the wielders of powder-weapons shall take to the field, their thunder-sticks blessed with modern metallurgy. Such is the ancient cycle of autumn's bounty.\n\nMost curious developments have I observed in the realm of bound knowledge crystals. A clever apprentice has discovered means to liberate the enchanted tomes of the Amazon Guild from their digital chains, allowing the sacred texts to be read upon any seeing-stone of one's choosing. While the Guild Masters may gnash their teeth, I cannot help but admire such ingenuity in the pursuit of wisdom.\n\nLo, even as I pen these words, great foundries rise across our lands, dedicated to the crafting of those most minute magical components - the semiconductors. These tiny enchanted wafers, etched with patterns finer than a fairy's whisper, shall power the scrying devices of tomorrow. The merchant guilds speak of billions in treasure being invested in these mystical forges.\n\nThe waterfowl season has also commenced, with many hunters venturing forth in their camouflaged vestments to pursue the noble geese and ducks that grace our wetlands. From my tower, I observe their curious ritual - rising before dawn, arranging hollow decoys in precise patterns, and concealing themselves in blinds while making strange calls with enchanted reed instruments. 'Tis most amusing how grown men will gleefully wallow in mud and marsh for the chance at a few birds.\n\nReflecting upon these diverse matters, I am reminded that whether one pursues wealth through digital sorcery, game through traditional hunting, or technological advancement through industrial enchantment, the fundamental nature of human ambition remains unchanged. Though I must confess, pursuing ducks seems a far more dignified endeavor than checking cryptocurrency prices every five minutes, as I may or may not have been doing this very morning.\n\n*- Grand Magus Alistair, who really must stop obsessing over the Bitcoin charts*",
+    "newsReferences": [
+      "[Tech] How I bypassed Amazon's Kindle web DRM",
+      "[Tech] America’s semiconductor boom",
+      "[Tech] Claude Skills",
+      "[Crypto] Bitcoin at $108,989",
+      "[Hunting] White-tailed Deer (SD) season active in the region (Archery then Rifle)",
+      "[Hunting] Ducks (SD/ND/NE) season active in the region (Shotgun)",
+      "[Hunting] Geese (SD/ND/NE) season active in the region (Shotgun)"
+    ],
+    "id": "sacred-numerical-auguries-revealed-wondrous",
+    "images": [
+      {
+        "filename": "scrying-crystals.png",
+        "prompt": "A medieval wizard in his tower studying glowing crystal orbs showing modern news, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "scrying-crystals"
+      },
+      {
+        "filename": "wizard-study.png",
+        "prompt": "A grand wizard's study filled with mystical artifacts and ancient tomes, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-study"
+      },
+      {
+        "filename": "tower-twilight.png",
+        "prompt": "A majestic wizard's tower at twilight with glowing windows, magical energy swirling around it, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "tower-twilight"
+      }
+    ],
+    "featuredImage": "scrying-crystals.png",
+    "hasAudio": true
+  },
+  {
+    "date": "2025-10-16",
     "timestamp": 1760669544997,
     "content": "Chronicles of Grand Magus Alistair\nDay of the Harvest Moon, Year of the Digital Phoenix\n\nMost wondrous tidings from the hunting grounds! The sacred season of the White-Tailed Beast is upon us, where brave warriors first venture forth with enchanted bows of composite material, before the thunder-sticks are permitted by decree of the Regional Game Wardens. The ancient tradition continues, though I confess these \"compound bows\" with their mechanical advantage make me nostalgic for the simple yew staves of my youth.\n\nIn related matters, the Sky-Beast season has commenced, with hunters seeking both the Noble Duck and the Greater Goose. Many practitioners of the mystic arts have journeyed to the wetlands, armed with their scatter-shot wands and clad in garments of perfect camouflage. I myself attempted to join them, but my ceremonial wizard's robes proved most impractical in the marsh, and my pointed hat kept frightening away the quarry.\n\nMost remarkable developments have occurred in the Realm of Digital Currency! The mighty Bitcoin, that most ethereal of treasure, has ascended to unprecedented heights of 108,789 gold pieces per coin. The crypto-seers speak of \"moon trajectories\" and \"diamond hands,\" though I suspect these are merely modern corruptions of ancient alchemical terms.\n\nGreat progress continues in the American Semiconductor Guilds, where master craftsmen forge tiny thinking-crystals of impossible complexity. These silicon wafers, far more powerful than the crude crystals we used in my apprentice days, shall power a new generation of scrying devices and computational talismans. Though I must note with some embarrassment that my attempt to enhance their production with traditional crystal-growing spells proved somewhat... counterproductive.\n\nVerily, as the ancient texts proclaim: \"The more our magic evolves, the more it resembles science, until one can scarcely tell the difference.\" Though in truth, I find myself increasingly convinced that my fellow mages are simply engineers with better marketing. At least my ceremonial robes have excellent pocket space for carrying my smartphone—I mean, my portable scrying device.\n\n*Yours in Mystic Wisdom,\nGrand Magus Alistair*\n(Currently seeking a waterproofing enchantment for wizard hats)",
     "newsReferences": [
