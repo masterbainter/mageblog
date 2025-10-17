@@ -322,7 +322,7 @@
             </header>
 
             <!-- Grimoire Image -->
-            <img src="./images/grimoire-book.jpg" alt="Ancient Grimoire" class="grimoire-image typing-effect">
+            <img src="./images/grimoire-book.jpg" alt="Ancient Grimoire" class="grimoire-image typing-effect" loading="lazy">
 
             <!-- Bio Section -->
             <section id="bio" class="mb-12 text-center text-base sm:text-lg leading-relaxed typing-effect">
@@ -330,7 +330,7 @@
             </section>
 
             <!-- Mystical Artifacts Image -->
-            <img src="./images/wizard-artifacts.jpg" alt="Mystical Wizard Artifacts" class="grimoire-image typing-effect">
+            <img src="./images/wizard-artifacts.jpg" alt="Mystical Wizard Artifacts" class="grimoire-image typing-effect" loading="lazy">
 
             <div class="decorative-divider typing-effect">✦ ✦ ✦</div>
 
@@ -355,25 +355,25 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                          <!-- Wizard 1 -->
                         <div class="wizard-card text-center">
-                            <img src="./images/wizard-1.jpg" alt="Bartholomew the Beast-Talker" class="w-full h-auto object-cover rounded-lg mb-4">
+                            <img src="./images/wizard-1.jpg" alt="Bartholomew the Beast-Talker" class="w-full h-auto object-cover rounded-lg mb-4" loading="lazy">
                             <h3 class="text-2xl font-bold">Bartholomew the Beast-Talker</h3>
                             <p class="mt-2 leading-relaxed">He claims to command the squirrels. In reality, he just leaves a trail of peanuts. His greatest "magical duel" was a strongly-worded letter to the parks department about a rival squirrel-feeder. Pathetic.</p>
                         </div>
                         <!-- Wizard 2 -->
                         <div class="wizard-card text-center">
-                            <img src="./images/wizard-2.jpg" alt="Seraphina the Shadow" class="w-full h-auto object-cover rounded-lg mb-4">
+                            <img src="./images/wizard-2.jpg" alt="Seraphina the Shadow" class="w-full h-auto object-cover rounded-lg mb-4" loading="lazy">
                             <h3 class="text-2xl font-bold">Seraphina the Shadow</h3>
                             <p class="mt-2 leading-relaxed">Her spell of "invisibility" is a ghillie suit she bought online. She was recently foiled by a pizza delivery boy who needed a signature. A master of stealth, indeed.</p>
                         </div>
                         <!-- Wizard 3 -->
                         <div class="wizard-card text-center">
-                            <img src="./images/wizard-3.jpg" alt="Finneas the Flood-Caller" class="w-full h-auto object-cover rounded-lg mb-4">
+                            <img src="./images/wizard-3.jpg" alt="Finneas the Flood-Caller" class="w-full h-auto object-cover rounded-lg mb-4" loading="lazy">
                             <h3 class="text-2xl font-bold">Finneas the Flood-Caller</h3>
                             <p class="mt-2 leading-relaxed">A "hydro-mancer" whose greatest feat was "taming the great torrents" to cleanse a nobleman's chariot. He has a power washer with a turbo nozzle. He charges extra for waxing.</p>
                         </div>
                         <!-- Wizard 4 -->
                         <div class="wizard-card text-center">
-                            <img src="./images/wizard-4.jpg" alt="Ignatius the Inferno" class="w-full h-auto object-cover rounded-lg mb-4">
+                            <img src="./images/wizard-4.jpg" alt="Ignatius the Inferno" class="w-full h-auto object-cover rounded-lg mb-4" loading="lazy">
                             <h3 class="text-2xl font-bold">Ignatius the Inferno</h3>
                             <p class="mt-2 leading-relaxed">This so-called "fire-mage" thinks a can of lighter fluid and a spark-wheel constitute pyromancy. He was stopped by the Royal Fire Brigade after threatening the duke's gazebo.</p>
                         </div>
@@ -776,7 +776,7 @@
                     // Featured image HTML (if exists)
                     const featuredImageHTML = (latestPost.featuredImage && latestPostId) ? `
                         <div class="mb-6">
-                            <img src="./blog/${latestPostId}/${latestPost.featuredImage}" alt="Chronicle illustration" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
+                            <img src="./blog/${latestPostId}/${latestPost.featuredImage}" alt="Chronicle illustration" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy">
                         </div>
                     ` : '';
 
@@ -861,6 +861,7 @@
                     img.src = './images/scrolls-and-books.jpg';
                     img.alt = 'Ancient Scrolls and Tomes';
                     img.className = 'grimoire-image mt-6';
+                    img.loading = 'lazy';
                     container.appendChild(img);
 
                 } catch (error) {
