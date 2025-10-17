@@ -1,5 +1,30 @@
 [
   {
+    "date": "2025-10-17",
+    "timestamp": 1760665950640,
+    "content": "I recharged my Scrying Crystal (phone) overnight, but forgot to plug it in properly. Woke to 3% battery. Even the mightiest wizards make such... mortal errors.",
+    "newsReferences": [],
+    "id": "1760665950640",
+    "images": [
+      {
+        "filename": "scrying-crystals.png",
+        "prompt": "A medieval wizard in his tower studying glowing crystal orbs showing modern news, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "scrying-crystals"
+      },
+      {
+        "filename": "wizard-study.png",
+        "prompt": "A grand wizard's study filled with mystical artifacts and ancient tomes, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-study"
+      },
+      {
+        "filename": "tower-twilight.png",
+        "prompt": "A majestic wizard's tower at twilight with glowing windows, magical energy swirling around it, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "tower-twilight"
+      }
+    ],
+    "featuredImage": "scrying-crystals.png"
+  },
+  {
     "id": "dakota-commerce-guild-triumph-1337",
     "date": "2025-10-16",
     "timestamp": 1760630632898,
