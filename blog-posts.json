@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-10-20",
+    "timestamp": 1760985027048,
+    "content": "Most wondrous revelations across the realm this day! The sacred Ring-Necked Warriors have begun their noble quest, as the Kingdom of Dakota's famed pheasant season opens with great ceremony. Already the taverns buzz with tales of limit harvests ere the sun reached its zenith in the Central Kingdoms, though some speak of challenging conditions in the eastern territories where the great storms have flattened much cover.\n\nWord reaches me via mystical messenger that the Walleye Seekers achieve unprecedented success along the mighty Missouri's transformed waters. The ancient reservoirs of Oahe and Sharpe yield bounty to those who master the arcane arts of the weighted line and living bait. Even as autumn's chill descends, the sacred fish rise to meet our challenges with vigor uncommon for this season.\n\nMost extraordinary developments unfold in the realm of magical tokens, where Bitcoin's value has ascended to heights previously thought impossible - over 110,000 pieces of realm-silver! This vindication of our resistance to the central banking sorcerers brings joy to those of us who long predicted such an awakening. Though I confess my own modest holdings pale beside the true disciples of digital alchemy.\n\nNews arrives from the western reaches of our fair kingdom that the Swift-Footed Ones - those noble pronghorn that dance across the prairies - continue to test the skills of our most accomplished hunters. The season draws to a close in mere days, yet reports suggest exceptional success for those granted permission by the Council of Game and Fish (though this humble magus continues to question their need to restrict such pursuits).\n\nMost fascinating scholarly discourse reaches my tower regarding the ancient art of BERT, a form of textual divination once thought supreme among the predictive arts. New research suggests it represents but a single step in a greater magical process, much as a novice's first spell hints at deeper mysteries. This revelation comes as no surprise to those of us who have long maintained that human wisdom surpasses mechanical prophecy.\n\nAs darkness descends upon my tower, I am reminded of an ancient truth: whether pursuing ring-necked quarry across the autumn fields or seeking digital fortune in the ethereal realm, success favors those who respect tradition while embracing innovation. Though I must note - with no small measure of irony - that my own attempts to combine these pursuits led to an unfortunate incident involving a smartphone, a pheasant flush, and a rather expensive repair bill at the local enchanter's shop.",
+    "newsReferences": [
+      "[Tech] BERT Is Just a Single Text Diffusion Step",
+      "[Tech] Production RAG: what I learned from processing 5M+ documents",
+      "[Crypto] Bitcoin at $110,553",
+      "[SD Fishing] Missouri River reservoirs and glacial lakes producing. Check GFP for current conditions.",
+      "[SD Fishing] Missouri River walleye bite active. Popular areas: Lake Oahe, Lake Sharpe, Lake Francis Case. Jigs and live bait producing.",
+      "[SD Hunting] White-tailed Deer season continues. Peak rut mid-November. 72 days remaining.",
+      "[SD Hunting] Pronghorn Antelope season continues. West River - draw required. 10 days remaining.",
+      "[SD Hunting] Pheasant season just opened! SD is #1 pheasant state - Oct peak. (Shotgun)",
+      "[MN Hunting] Minnesota elk hunt in Grygla area. 5-15 permits, 60-80% success on small herd.",
+      "[MN Fishing] Boundary Waters and northern MN lakes producing walleye, northern pike, and smallmouth bass"
+    ],
+    "id": "reaches-mystical-messenger-walleye-seekers",
+    "images": [
+      {
+        "filename": "wizard-pheasant-mishap.png",
+        "prompt": "A robed wizard stands in an autumn field at sunrise, holding both a gnarled staff and a cracked smartphone. A brilliant golden pheasant bursts into flight before him as magical sparks scatter from the damaged device. Misty morning light illuminates the scene as scattered feathers float in the air., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-pheasant-mishap"
+      },
+      {
+        "filename": "crypto-divination-chamber.png",
+        "prompt": "In a dimly lit stone tower chamber, an elderly mage peers into a glowing crystalline display showing Bitcoin symbols and mystical runes. Ancient scrolls and modern trading charts float in the air around him, while a magical abacus automatically calculates profits. Green and gold energy swirls connect the floating elements., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "crypto-divination-chamber"
+      },
+      {
+        "filename": "mystical-walleye-fishing.png",
+        "prompt": "At the edge of a massive medieval reservoir, robed figures perform elaborate rituals with enchanted fishing poles. Their lines glow with magical energy as they draw massive walleye from the depths. Ornate boats decorated with mystical runes drift nearby as autumn leaves swirl in the air., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "mystical-walleye-fishing"
+      }
+    ],
+    "featuredImage": "wizard-pheasant-mishap.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-10-19",
     "timestamp": 1760899547285,
     "content": "Most peculiar celebrations sweep across the twin Kingdoms of Dakota on this Day of No Kings! The common folk gather in grand numbers, particularly in the northern city of Bismarck, to commemorate their freedom from monarchial rule. As a Grand Magus who has witnessed countless realms rise and fall, I must confess a certain fondness for these displays of democratic spirit, though I do wish they would consult proper magical authorities on matters of governance.\n\nThe ancient pursuit of the Wild Turkey continues in our Black Hills sanctuaries, where noble hunters track these most cunning of fowl through river valleys and timbered slopes. Having recently concluded my own unsuccessful elk quest, I find myself drawn to observe these turkey hunters, whose patience and skill rival that of the most learned mages. The birds possess an uncanny ability to detect the slightest movement or mystical disturbance, making them worthy adversaries indeed.\n\nWord reaches me via mystical channels that the magical tokens known as Bitcoin have achieved unprecedented heights of value, now commanding over 109,000 pieces of realm currency per token. This validates my long-held assertion that the ancient wisdom of decentralized commerce shall always triumph over the controlling machinations of banking sorcerers. Though I must note with some amusement that my own attempts to conjure wealth through these tokens have met with decidedly mixed results.\n\nMost fascinating observations have I made of the elder generation's first encounters with the artificial intelligence constructs. These venerable citizens approach the mechanical oracles with equal parts wonder and suspicion, much as I recall the reaction when the first mechanical counting machines appeared in our village marketplace. Their questions - \"How does it know such things?\" and \"Is it possessed by spirits?\" - remind me of my own apprentice days.\n\nOur neighbors in the Kingdom of Iowa report extraordinary success in their pursuit of the mystical white-tailed deer, with their bow-wielding warriors claiming trophies of remarkable size. While I maintain that our Dakota realm produces superior quarry, I must acknowledge the impressive specimens emerging from Iowa's enchanted woodlands. Their success stems from wise land stewardship and the ancient practice of letting young bucks grow to maturity - a patience that many modern hunters would do well to emulate.\n\nLet it be known that failure in the hunt, as I have recently experienced, often yields wisdom superior to success. For in pursuing that clever elk through fields of corn taller than a wizard's staff, I learned valuable lessons about humility, perseverance, and the futility of wearing ceremonial robes while stalking through agricultural lands. Perhaps next season I shall trade my enchanted staff for a more practical compound bow - though explaining such modernization to the Council of Mages may prove challenging indeed.",
