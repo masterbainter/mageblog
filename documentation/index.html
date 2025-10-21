@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Midwest Mage Blog Request System</title>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --parchment: #f4e8d0;
+            --ink: #2c1810;
+            --ornament: #8b4513;
+            --border-gold: #d4af37;
+            --accent: #6b4423;
+        }
+
+        body {
+            font-family: 'Cinzel', serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--parchment);
+            border: 4px solid var(--border-gold);
+            border-radius: 12px;
+            box-shadow: 0 20px 80px rgba(0,0,0,0.6);
+            padding: 50px;
+            position: relative;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="50%" y="50%" font-size="60" opacity="0.02" text-anchor="middle" dominant-baseline="middle">✨</text></svg>');
+            pointer-events: none;
+            border-radius: 12px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+            border-bottom: 3px solid var(--border-gold);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'MedievalSharp', serif;
+            font-size: 42px;
+            color: var(--ornament);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--accent);
+            font-weight: 400;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            font-family: 'MedievalSharp', serif;
+            font-size: 28px;
+            color: var(--ornament);
+            margin: 40px 0 20px 0;
+            border-left: 5px solid var(--border-gold);
+            padding-left: 15px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: var(--accent);
+            margin: 25px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .info-box {
+            background: rgba(212, 175, 55, 0.15);
+            border: 2px solid var(--border-gold);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .info-box strong {
+            color: var(--ornament);
+        }
+
+        .step-box {
+            background: white;
+            border: 2px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: var(--ornament);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        code {
+            background: rgba(139, 69, 19, 0.1);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: var(--ornament);
+        }
+
+        pre {
+            background: rgba(139, 69, 19, 0.1);
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            padding: 15px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .tag {
+            background: var(--ornament);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, var(--ornament) 0%, var(--border-gold) 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin: 10px 10px 10px 0;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .timeline {
+            border-left: 3px solid var(--border-gold);
+            margin-left: 20px;
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "●";
+            position: absolute;
+            left: -38px;
+            color: var(--border-gold);
+            font-size: 20px;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid var(--border-gold);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid var(--ornament);
+            font-size: 13px;
+            color: var(--accent);
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧙‍♂️ Blog Request System</h1>
+            <p class="subtitle">How to Request Topics for Grand Magus Alistair's Chronicles</p>
+        </header>
+
+        <div class="content">
+            <section>
+                <h2>📜 What is This?</h2>
+                <p>The Blog Request System allows you to suggest topics, events, or themes for Grand Magus Alistair to cover in his daily chronicles at <a href="https://midwestmage.blog" style="color: var(--ornament);">midwestmage.blog</a>.</p>
+
+                <div class="info-box">
+                    <strong>How it works:</strong> You submit requests through the admin panel, and Claude AI considers them when generating each day's blog post at 12 PM Central Time. Your requests stay active until used or manually removed.
+                </div>
+            </section>
+
+            <section>
+                <h2>🎯 How to Submit Requests</h2>
+
+                <div class="step-box">
+                    <h3><span class="step-number">1</span>Access the Admin Panel</h3>
+                    <p>Visit <a href="https://admin.midwestmage.blog" style="color: var(--ornament); font-weight: 600;">admin.midwestmage.blog</a></p>
+                    <p><em>Note: Access is restricted via Cloudflare Access (email authentication)</em></p>
+                </div>
+
+                <div class="step-box">
+                    <h3><span class="step-number">2</span>Fill Out the Request Form</h3>
+                    <ul>
+                        <li><strong>Request Text:</strong> Describe what you want Alistair to cover</li>
+                        <li><strong>Duration:</strong> How long should this request stay active?</li>
+                        <li><strong>Priority:</strong> How urgent is this request?</li>
+                        <li><strong>Expiry Date:</strong> Optional - automatically expire on a specific date</li>
+                    </ul>
+                </div>
+
+                <div class="step-box">
+                    <h3><span class="step-number">3</span>Submit and Wait</h3>
+                    <p>After submitting, your request will appear in the "Manage Requests" tab within 30-60 seconds.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>🏷️ Request Tags</h2>
+                <p>Your requests are automatically formatted with tags based on your selections:</p>
+
+                <div class="tag-list">
+                    <span class="tag">[PRIORITY:HIGH]</span>
+                    <span class="tag">[PRIORITY:NORMAL]</span>
+                    <span class="tag">[PRIORITY:LOW]</span>
+                </div>
+
+                <div class="tag-list">
+                    <span class="tag">[ONE-TIME]</span>
+                    <span class="tag">[TODAY-ONLY]</span>
+                    <span class="tag">[THIS-WEEK]</span>
+                    <span class="tag">[RECURRING]</span>
+                </div>
+
+                <div class="tag-list">
+                    <span class="tag">[EXPIRES:2025-10-31]</span>
+                </div>
+
+                <h3>Examples:</h3>
+                <pre><code>- [ ] [PRIORITY:HIGH] [TODAY-ONLY] Cover my successful 8-point buck harvest near Sioux Falls
+- [ ] [THIS-WEEK] Talk about the foggy weather we've been having
+- [ ] [RECURRING] Make more jokes about cryptocurrency as "magical tokens"
+- [ ] [EXPIRES:2025-10-31] Mention the Rosebud elk hunt deadline</code></pre>
+            </section>
+
+            <section>
+                <h2>⏱️ Timeline</h2>
+                <p>Understanding how long things take:</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <strong>Instant:</strong> You submit request via admin panel
+                    </div>
+                    <div class="timeline-item">
+                        <strong>~30-60 seconds:</strong> Request appears in your "Manage Requests" tab
+                    </div>
+                    <div class="timeline-item">
+                        <strong>Daily at 12 PM Central:</strong> Blog post generated considering all active requests
+                    </div>
+                    <div class="timeline-item">
+                        <strong>~5-10 minutes later:</strong> New blog post published to midwestmage.blog
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>✏️ Managing Requests</h2>
+
+                <h3>View Active Requests</h3>
+                <p>Go to the "Manage Requests" tab in the admin panel and click "Refresh Requests" to see all active topic requests.</p>
+
+                <h3>Remove Requests</h3>
+                <p>Click the red "Remove" button next to any request. A themed confirmation modal will appear. Once confirmed, the request is permanently removed within seconds.</p>
+
+                <h3>Direct File Access</h3>
+                <p>Advanced users can view or edit requests directly on GitHub:</p>
+                <ul>
+                    <li>View: <a href="https://github.com/masterbainter/mage-blog-requests/blob/main/BLOG_REQUESTS.md" style="color: var(--ornament);">BLOG_REQUESTS.md</a></li>
+                    <li>All requests are stored in a public repository for transparency</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>💡 Tips for Good Requests</h2>
+
+                <h3>Specific Events</h3>
+                <ul>
+                    <li>Include dates: "Cover my pheasant hunt on October 20th"</li>
+                    <li>Include locations: "Mention my successful harvest near McCook County"</li>
+                    <li>Include details: "Two hero dogs guarding turkeys on public land"</li>
+                </ul>
+
+                <h3>Recurring Themes</h3>
+                <ul>
+                    <li>"Talk more about Bitcoin as magical tokens"</li>
+                    <li>"Make jokes about modern technology"</li>
+                    <li>"More self-deprecating humor from Alistair"</li>
+                </ul>
+
+                <h3>Regional Focus</h3>
+                <ul>
+                    <li>"Cover Pierre/Sioux Falls/Rapid City news more often"</li>
+                    <li>"More Minnesota fishing content"</li>
+                    <li>"Reference specific South Dakota towns"</li>
+                </ul>
+
+                <h3>Tone/Angle</h3>
+                <ul>
+                    <li>"Be more critical of government overreach"</li>
+                    <li>"Celebrate local business success"</li>
+                    <li>"Focus on outdoor recreation"</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>🔒 Security & Privacy</h2>
+                <ul>
+                    <li><strong>Admin Panel:</strong> Protected by Cloudflare Access (email whitelist only)</li>
+                    <li><strong>Requests Repository:</strong> Publicly viewable on GitHub (no sensitive info stored)</li>
+                    <li><strong>API:</strong> CORS-protected Cloudflare Worker with encrypted GitHub token</li>
+                    <li><strong>Authentication:</strong> Email PIN or OAuth-based access</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>🛠️ Technical Details</h2>
+                <p>For those interested in how it works behind the scenes:</p>
+
+                <div class="info-box">
+                    <strong>Architecture:</strong>
+                    <ul style="margin-top: 10px;">
+                        <li><strong>Frontend:</strong> Cloudflare Pages (admin.midwestmage.blog)</li>
+                        <li><strong>Backend:</strong> Cloudflare Worker (serverless API)</li>
+                        <li><strong>Storage:</strong> GitHub repository (mage-blog-requests)</li>
+                        <li><strong>Automation:</strong> GitHub Actions workflows</li>
+                        <li><strong>AI:</strong> Claude API for content generation</li>
+                    </ul>
+                </div>
+
+                <p>The entire system is built on serverless architecture with no traditional backend servers. Requests are stored as markdown in a Git repository, providing full version history and transparency.</p>
+
+                <p><a href="https://github.com/masterbainter/mage-blog-requests" style="color: var(--ornament); font-weight: 600;">View the source code on GitHub →</a></p>
+            </section>
+
+            <section>
+                <h2>❓ Troubleshooting</h2>
+
+                <h3>Request not appearing in admin panel?</h3>
+                <ul>
+                    <li>Wait 60 seconds and click "Refresh Requests"</li>
+                    <li>Check <a href="https://github.com/masterbainter/mage-blog-requests/actions" style="color: var(--ornament);">GitHub Actions</a> to see if workflow ran</li>
+                    <li>Verify you're logged into the admin panel</li>
+                </ul>
+
+                <h3>Request not used in blog post?</h3>
+                <ul>
+                    <li>AI considers requests but doesn't guarantee usage</li>
+                    <li>High priority requests are more likely to be included</li>
+                    <li>Recurring requests will be considered in future posts</li>
+                    <li>Very specific requests may take a few days to incorporate naturally</li>
+                </ul>
+
+                <h3>Can't access admin panel?</h3>
+                <ul>
+                    <li>Verify your email is whitelisted in Cloudflare Access</li>
+                    <li>Check for email PIN if using email authentication</li>
+                    <li>Try clearing browser cache and cookies</li>
+                </ul>
+            </section>
+
+            <div class="links">
+                <a href="https://admin.midwestmage.blog" class="btn">Go to Admin Panel</a>
+                <a href="https://midwestmage.blog" class="btn">View the Blog</a>
+                <a href="https://github.com/masterbainter/mage-blog-requests" class="btn">GitHub Repository</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Grand Magus Alistair's Digital Grimoire - Est. 1337 (or 2025, depending on the calendar)</p>
+            <p style="margin-top: 10px; opacity: 0.7;">Documentation last updated: October 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
