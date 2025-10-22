@@ -1,5 +1,31 @@
 [
   {
+    "date": "2025-10-22",
+    "timestamp": 1761157526036,
+    "content": "Netflix betrayed me mid-episode with endless buffering. I performed troubleshooting divinations (speed test) and discovered my \"high-speed\" internet runs at potato-quality. Called the ISP. They promised \"someone will call you back.\" Lies.",
+    "newsReferences": [],
+    "id": "netflix-betrayed-mid-episode-endless-buffering",
+    "images": [
+      {
+        "filename": "wizard-buffering-orb.png",
+        "prompt": "A frustrated wizard in ornate robes glares at a floating crystal orb displaying the dreaded buffering runes. The orb hovers above an ancient desk covered in streaming scrolls and magical Netflix sigils, while ghostly incomplete images flicker within., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-buffering-orb"
+      },
+      {
+        "filename": "internet-divination-ritual.png",
+        "prompt": "An elderly wizard performs elaborate divination rituals over a glowing speed-test circle inscribed on stone floor. Various mystical measuring devices and enchanted copper wires connect to a mundane router decorated with magical runes and crystals., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "internet-divination-ritual"
+      },
+      {
+        "filename": "abandoned-support-crystal.png",
+        "prompt": "A medieval customer service crystal ball sits on an ancient help desk, completely dark and inactive. The wizard angrily clutches a magical contract scroll reading 'We'll Call You Back' while supernatural hold music notes float mockingly in the air., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "abandoned-support-crystal"
+      }
+    ],
+    "featuredImage": "wizard-buffering-orb.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-10-21",
     "timestamp": 1761075440338,
     "content": "Most intriguing revelations echo across the realm this day! While many of my fellow mages focus their arcane attention on the Ring-Necked Warriors in our eastern territories, I have journeyed westward to observe the mystical Sharp-Tailed Dancers in their ancestral grasslands. These noble creatures, known for their peculiar morning rituals, have drawn dedicated hunters from across the Kingdom of Dakota to the lands beyond the Great River.\n\nIn related matters of significance, our Sicangu Lakota allies continue their sacred pursuit of the mighty Ghost Elk in their sovereign territories. Their traditional methods, passed down through generations of wisdom-keepers, remind us that true hunting mastery requires not just skill with weapons, but deep understanding of the land's ancient rhythms. I find myself humbled by their expertise, though I confess my own attempts at stealth are somewhat hampered by my ceremonial robes getting caught in prairie sage.\n\nMost extraordinary news arrives via the mystical number-scrying networks - the Golden Bitcoin Token has achieved unprecedented heights of 111,780 pieces of common currency! This validates what I have long proclaimed: the decentralized magic of the blockchain shall free us from the tyrannical grip of central banking sorcerers. Though I must admit, explaining this concept to the local tavern-keeper remains challenging, especially when attempting to pay for mead with digital incantations.\n\nFascinating developments emerge from the Arcane Laboratories of Sound, where clever artificers have devised new methods of capturing and transforming mortal voices into the language of thinking machines. These \"neural audio codecs\" (such peculiar terms these modern mages employ) promise to enhance our communication with the great mechanical oracles. Though I remain skeptical of any magic that claims to truly understand human speech - my own apprentice still misinterprets half my instructions, and he's had years of practice.\n\nOf great personal interest, I have been experimenting with crafting my own Repository of Knowledge, a task that would have required vast libraries and numerous scribes in ages past. These \"databases\" (as the common folk call them) allow even a humble magus to organize vast quantities of information about hunting grounds, seasonal patterns, and the ever-fluctuating prices of magical reagents at the local apothecary. Though I must confess, my first attempt resulted in accidentally deleting records of three months' worth of potion recipes - thank the ancient ones for backup scrolls.\n\nAs the sun sets upon another glorious autumn day in our beloved Kingdom, I am reminded of the eternal wisdom passed down by the sage hunters of old: \"If thy shotgun shells be stored in thy robe's deepest pocket, beneath thy spell components and enchanted phone, thou shalt surely miss the season's finest opportunities.\" I really must organize my gear more efficiently next time.",
