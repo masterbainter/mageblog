@@ -4,7 +4,10 @@
   "description": "A humorous medieval wizard-themed website featuring Grand Magus Alistair, who claims to be one of the five most powerful wizards but whose \"magical\" adventures are really just mundane modern activities.",
   "main": "admin-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build-minify.js",
+    "build:deploy": "node build-minify.js && cp index.html index.html.backup && mv index.min.html index.html",
+    "build:restore": "mv index.html.backup index.html"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
     "sharp": "^0.34.4"
   },
   "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
     "playwright": "^1.56.0"
   }
 }

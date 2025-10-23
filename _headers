@@ -1,0 +1,48 @@
+# Cloudflare Pages Cache Rules for Grand Magus Alistair's Grimoire
+
+# Homepage - cache for 5 minutes (frequent updates with new chronicles)
+/
+  Cache-Control: public, max-age=300, s-maxage=600
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+
+# Blog posts JSON - cache for 5 minutes (updates daily)
+/blog-posts.json
+  Cache-Control: public, max-age=300, s-maxage=600
+  Content-Type: application/json
+
+# Individual blog post pages - cache for 1 hour
+/blog/*/
+  Cache-Control: public, max-age=3600, s-maxage=7200
+
+# Audio files - cache for 1 year (immutable, named by slug)
+/blog/*/audio.mp3
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: audio/mpeg
+
+# Blog post images - cache for 1 year (immutable)
+/blog/*/*.png
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/png
+
+/blog/*/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/jpeg
+
+/blog/*/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/webp
+
+# CDN assets - let CDN handle caching
+/*.js
+  Cache-Control: public, max-age=86400
+
+/*.css
+  Cache-Control: public, max-age=86400
+
+# Fonts - cache for 1 year
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable

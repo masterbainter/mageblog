@@ -60,7 +60,7 @@ function generatePostHTML(post) {
                 const img = post.images[imageIndex - 1];
                 contentParts.push(`
                     <div class="my-8">
-                        <img src="./${img.filename}" alt="${img.name}" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
+                        <img src="./${img.filename}" alt="${img.name}" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy" decoding="async">
                         <p class="text-sm text-gray-600 mt-2 italic text-center">✨ ${img.name.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</p>
                     </div>
                 `);

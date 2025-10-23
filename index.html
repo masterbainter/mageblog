@@ -776,7 +776,7 @@
                     // Featured image HTML (if exists)
                     const featuredImageHTML = (latestPost.featuredImage && latestPostId) ? `
                         <div class="mb-6">
-                            <img src="./blog/${latestPostId}/${latestPost.featuredImage}" alt="Chronicle illustration" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy">
+                            <img src="./blog/${latestPostId}/${latestPost.featuredImage}" alt="Chronicle illustration" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy" decoding="async">
                         </div>
                     ` : '';
 
