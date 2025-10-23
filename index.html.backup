@@ -322,7 +322,7 @@
             </header>
 
             <!-- Grimoire Image -->
-            <img src="./images/grimoire-book.jpg" alt="Ancient Grimoire" class="grimoire-image typing-effect" loading="lazy">
+            <img src="./images/grimoire-book.jpg" alt="Ancient Grimoire" class="grimoire-image" loading="eager">
 
             <!-- Bio Section -->
             <section id="bio" class="mb-12 text-center text-base sm:text-lg leading-relaxed typing-effect">
@@ -330,7 +330,7 @@
             </section>
 
             <!-- Mystical Artifacts Image -->
-            <img src="./images/wizard-artifacts.jpg" alt="Mystical Wizard Artifacts" class="grimoire-image typing-effect" loading="lazy">
+            <img src="./images/wizard-artifacts.jpg" alt="Mystical Wizard Artifacts" class="grimoire-image" loading="eager">
 
             <div class="decorative-divider typing-effect">✦ ✦ ✦</div>
 
@@ -338,7 +338,7 @@
             <section id="latest-chronicle" class="mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-ornament text-center mb-6">Latest Chronicle from the Year 1337</h2>
                 <div id="latest-post-container" class="border-4 border-border-gold rounded-lg p-6 bg-white bg-opacity-20">
-                    <!-- Pre-rendered on 2025-10-23T15:47:32.396Z - Post: 2025-10-22 -->
+                    <!-- Pre-rendered on 2025-10-23T16:16:05.558Z - Post: 2025-10-22 -->
                     <div class="text-center mb-4">
                         <p class="text-2xl font-bold text-ornament">October 22, 2025</p>
                     </div>
