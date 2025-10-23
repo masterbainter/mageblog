@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle: October 22, 2025 - Grand Magus Alistair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #f3e9d2;
+            --ink: #4a2c2a;
+            --ornament: #8c3838;
+            --border-gold: #c8a379;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background-color: var(--parchment);
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+            color: var(--ink);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-ornament { color: var(--ornament); }
+
+        .chronicle-container {
+            border: 4px solid var(--border-gold);
+            border-radius: 12px;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--ornament);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-gold);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: rgba(200, 163, 121, 0.3);
+            transform: translateX(-5px);
+        }
+
+        /* --- Audio Control Button --- */
+        .audio-control {
+            position: fixed;
+            z-index: 150;
+            background: var(--border-gold);
+            color: var(--ink);
+            border: 3px solid var(--ornament);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+            bottom: 1rem;
+            right: 1rem;
+        }
+        @media (min-width: 640px) {
+            .audio-control {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                bottom: 2rem;
+                right: 2rem;
+            }
+        }
+        .audio-control:hover, .audio-control:active {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(140, 56, 56, 0.5);
+        }
+        .audio-control.playing {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
+            50% { box-shadow: 0 4px 25px rgba(200, 163, 121, 0.8); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+
+    <div class="container mx-auto px-4 sm:px-6 py-12">
+        <main class="max-w-4xl mx-auto">
+
+            <a href="../../" class="back-link mb-8">← Return to the Grimoire</a>
+
+            <div class="chronicle-container mt-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4">Chronicle Entry</h1>
+                <p class="text-2xl mb-6 text-gray-600">October 22, 2025</p>
+                <div class="text-lg md:text-xl leading-relaxed">
+                    <p class="mb-6">Most peculiar observations from the hunting grounds this day! The great golden stalks that once stood sentinel across our realm have been harvested by the mighty mechanical beasts, yet patches remain where the Noble Deer still find sanctuary. Their wisdom in selecting such refuges speaks to their ancient cunning, though the skilled hunters among us know well how to track them even in such diminished cover.</p>
+<p class="mb-6">Word reaches me from the Western Territories that the final days approach for both the Mighty Elk and the Swift Pronghorn warriors. A mere seven days remain for those blessed with the sacred permits to complete their quests in the Black Hills. I confess a measure of envy for those chosen few, though my own hunting grounds provide ample opportunity for pursuit of the White-tailed Nobles.</p>
+
+                    <div class="my-8">
+                        <img src="./wizard-observing-harvest-beasts.png" alt="wizard-observing-harvest-beasts" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Wizard Observing Harvest Beasts</p>
+                    </div>
+                
+<p class="mb-6">Most fascinating developments in the realm of magical tokens - the Great Bitcoin has ascended to heights previously thought impossible, now commanding over one hundred and seven thousand pieces of common currency! Those who doubted my prophecies regarding these mystical tokens now seek my counsel, though I remind them that true wisdom lies not in chasing what has already soared, but in understanding the fundamental enchantments that drive such valuations.</p>
+<p class="mb-6">Disturbing news arrives via the Crystal Scrying Networks (which some commoners call "the internet") that the Grand Archive of Google has taken to marking certain image repositories as dangerous. This seems less a matter of true peril and more another example of overzealous protective enchantments gone awry. As any apprentice knows, the most powerful wards often trigger false alarms.</p>
+
+                    <div class="my-8">
+                        <img src="./mystic-bitcoin-prophecy.png" alt="mystic-bitcoin-prophecy" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Mystic Bitcoin Prophecy</p>
+                    </div>
+                
+<p class="mb-6">The fields around my tower have transformed with the harvest, revealing new hunting opportunities even as they eliminate old ones. Where once the deer could vanish into endless rows of corn, now they must rely on the scattered woodlots and remaining unharvested fields. This pleases the hunting parties, though I remind them that our quarry's adaptation to these changes makes them no less challenging to pursue - indeed, their concentration in smaller areas often makes them more vigilant.</p>
+<p class="mb-6">As I tell my apprentices - the wise hunter knows that every change in the landscape brings both challenge and opportunity. The trick lies not in lamenting what was lost, but in understanding how to adapt one's strategies to what remains. Now, if you'll excuse me, I must prepare my magical viewing device to monitor the deer paths near my remaining corn patches. These motion-activated scrying sensors won't mount themselves!</p>
+
+                    <div class="my-8">
+                        <img src="./enchanted-trail-camera-ritual.png" alt="enchanted-trail-camera-ritual" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Enchanted Trail Camera Ritual</p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <footer class="mt-16 text-lg text-center border-t-2 border-dashed border-border-gold pt-8">
+                <p>Copyright 1337, by order of the Grand Magus Alistair</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>

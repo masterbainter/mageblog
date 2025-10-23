@@ -1,6 +1,41 @@
 [
   {
     "date": "2025-10-22",
+    "timestamp": 1761181254726,
+    "content": "Most peculiar observations from the hunting grounds this day! The great golden stalks that once stood sentinel across our realm have been harvested by the mighty mechanical beasts, yet patches remain where the Noble Deer still find sanctuary. Their wisdom in selecting such refuges speaks to their ancient cunning, though the skilled hunters among us know well how to track them even in such diminished cover.\n\nWord reaches me from the Western Territories that the final days approach for both the Mighty Elk and the Swift Pronghorn warriors. A mere seven days remain for those blessed with the sacred permits to complete their quests in the Black Hills. I confess a measure of envy for those chosen few, though my own hunting grounds provide ample opportunity for pursuit of the White-tailed Nobles.\n\nMost fascinating developments in the realm of magical tokens - the Great Bitcoin has ascended to heights previously thought impossible, now commanding over one hundred and seven thousand pieces of common currency! Those who doubted my prophecies regarding these mystical tokens now seek my counsel, though I remind them that true wisdom lies not in chasing what has already soared, but in understanding the fundamental enchantments that drive such valuations.\n\nDisturbing news arrives via the Crystal Scrying Networks (which some commoners call \"the internet\") that the Grand Archive of Google has taken to marking certain image repositories as dangerous. This seems less a matter of true peril and more another example of overzealous protective enchantments gone awry. As any apprentice knows, the most powerful wards often trigger false alarms.\n\nThe fields around my tower have transformed with the harvest, revealing new hunting opportunities even as they eliminate old ones. Where once the deer could vanish into endless rows of corn, now they must rely on the scattered woodlots and remaining unharvested fields. This pleases the hunting parties, though I remind them that our quarry's adaptation to these changes makes them no less challenging to pursue - indeed, their concentration in smaller areas often makes them more vigilant.\n\nAs I tell my apprentices - the wise hunter knows that every change in the landscape brings both challenge and opportunity. The trick lies not in lamenting what was lost, but in understanding how to adapt one's strategies to what remains. Now, if you'll excuse me, I must prepare my magical viewing device to monitor the deer paths near my remaining corn patches. These motion-activated scrying sensors won't mount themselves!",
+    "newsReferences": [
+      "[Tech] Google flags Immich sites as dangerous",
+      "[Tech] Ovi: Twin backbone cross-modal fusion for audio-video generation",
+      "[Crypto] Bitcoin at $107,856",
+      "[SD Hunting] White-tailed Deer season continues. Peak rut mid-November. 69 days remaining.",
+      "[SD Hunting] FINAL 7 DAYS for Elk! Black Hills - limited licenses. Season closes 10/30.",
+      "[SD Hunting] FINAL 7 DAYS for Pronghorn Antelope! West River - draw required. Season closes 10/30.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[CO Hunting] Colorado archery elk season active. Rocky Mountain bugling season peak."
+    ],
+    "id": "reaches-western-territories-final-approach",
+    "images": [
+      {
+        "filename": "wizard-observing-harvest-beasts.png",
+        "prompt": "A robed wizard stands atop his stone tower at dawn, overlooking harvested cornfields dotted with remaining patches of golden stalks. Through an ornate brass spyglass, he observes white-tailed deer seeking refuge in the untouched corn sections while massive combine harvesters, reimagined as metallic magical beasts with glowing runes, work in the distance., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-observing-harvest-beasts"
+      },
+      {
+        "filename": "mystic-bitcoin-prophecy.png",
+        "prompt": "Inside a candlelit study, an elderly wizard in elaborate robes gestures at floating magical projections showing Bitcoin symbols and arcane charts. Golden coins and crystalline tokens hover in the air, trailing mystical energy, while apprentices in simple robes take notes on scrolls., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "mystic-bitcoin-prophecy"
+      },
+      {
+        "filename": "enchanted-trail-camera-ritual.png",
+        "prompt": "A medieval wizard crouches in twilight beside a modern trail camera reimagined as an ornate bronze device with crystal lenses and glowing runes. He carefully mounts it to a gnarled tree trunk while deer trails wind through the harvested field behind him, magical sigils floating above fresh tracks., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "enchanted-trail-camera-ritual"
+      }
+    ],
+    "featuredImage": "wizard-observing-harvest-beasts.png"
+  },
+  {
+    "date": "2025-10-22",
     "timestamp": 1761157526036,
     "content": "Netflix betrayed me mid-episode with endless buffering. I performed troubleshooting divinations (speed test) and discovered my \"high-speed\" internet runs at potato-quality. Called the ISP. They promised \"someone will call you back.\" Lies.",
     "newsReferences": [],
