@@ -5,8 +5,10 @@
   "main": "admin-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prerender": "node prerender-blog.js",
     "build": "node build-minify.js",
-    "build:deploy": "node build-minify.js && cp index.html index.html.backup && mv index.min.html index.html",
+    "build:full": "node prerender-blog.js && node build-minify.js",
+    "build:deploy": "node prerender-blog.js && node build-minify.js && cp index.html index.html.backup && mv index.min.html index.html",
     "build:restore": "mv index.html.backup index.html"
   },
   "repository": {
