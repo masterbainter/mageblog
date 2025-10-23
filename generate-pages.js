@@ -1,9 +1,81 @@
-<!DOCTYPE html>
+#!/usr/bin/env node
+
+/**
+ * Generate individual HTML pages for each blog post
+ * Creates a directory structure: /blog/{post-id}/index.html
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const BLOG_DATA_FILE = path.join(__dirname, 'blog-posts.json');
+const BLOG_DIR = path.join(__dirname, 'blog');
+
+// Read posts from blog-posts.json
+function loadPosts() {
+    if (!fs.existsSync(BLOG_DATA_FILE)) {
+        console.error('❌ blog-posts.json not found!');
+        process.exit(1);
+    }
+
+    const data = fs.readFileSync(BLOG_DATA_FILE, 'utf8');
+    return JSON.parse(data);
+}
+
+// Generate HTML template for a blog post
+function generatePostHTML(post) {
+    // Parse date as YYYY-MM-DD and format it directly without timezone conversion
+    const [year, month, day] = post.date.split('-').map(Number);
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+    const formattedDate = `${monthNames[month - 1]} ${day}, ${year}`;
+
+    // Voice toggle button (if audio exists)
+    const voiceToggleHTML = post.hasAudio ? `
+    <!-- Voice Control Button -->
+    <button id="voice-toggle" class="audio-control" title="Toggle Voice Narration" aria-label="Toggle voice narration">
+        🔊
+    </button>` : '';
+
+    // Prepare content with inline images
+    let contentHTML = post.content;
+
+    // If images exist, intersperse them with the text
+    if (post.images && post.images.length > 0) {
+        // Split content into paragraphs
+        const paragraphs = post.content.split('\n\n');
+
+        // Build content with images interspersed
+        let contentParts = [];
+
+        paragraphs.forEach((para, index) => {
+            // Add paragraph
+            contentParts.push(`<p class="mb-6">${para}</p>`);
+
+            // Add image after certain paragraphs (distribute evenly)
+            const imageIndex = Math.floor((post.images.length * (index + 1)) / paragraphs.length);
+            const prevImageIndex = Math.floor((post.images.length * index) / paragraphs.length);
+
+            if (imageIndex > prevImageIndex && imageIndex <= post.images.length) {
+                const img = post.images[imageIndex - 1];
+                contentParts.push(`
+                    <div class="my-8">
+                        <img src="./${img.filename}" alt="${img.name}" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ ${img.name.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</p>
+                    </div>
+                `);
+            }
+        });
+
+        contentHTML = contentParts.join('\n');
+    }
+
+    return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chronicle: October 15, 2025 - Grand Magus Alistair</title>
+    <title>Chronicle: ${formattedDate} - Grand Magus Alistair</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,11 +165,7 @@
     </style>
 </head>
 <body class="antialiased">
-    
-    <!-- Voice Control Button -->
-    <button id="voice-toggle" class="audio-control" title="Toggle Voice Narration" aria-label="Toggle voice narration">
-        🔊
-    </button>
+    ${voiceToggleHTML}
 
     <div class="container mx-auto px-4 sm:px-6 py-12">
         <main class="max-w-4xl mx-auto">
@@ -106,33 +174,9 @@
 
             <div class="chronicle-container mt-8">
                 <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4">Chronicle Entry</h1>
-                <p class="text-2xl mb-6 text-gray-600">October 15, 2025</p>
+                <p class="text-2xl mb-6 text-gray-600">${formattedDate}</p>
                 <div class="text-lg md:text-xl leading-relaxed">
-                    <p class="mb-6">From the Chronicles of Grand Magus Alistair, Twenty-Third of His Name, Keeper of Digital Mysteries</p>
-<p class="mb-6">Hark! The mystical numerological portents have proven most auspicious this day, as the sacred Bitcoin sphere has ascended to unprecedented heights of 109,079 gold pieces! Many a merchant and mage who placed their faith in these ethereal coins now find themselves possessed of fortunes to rival the ancient dragon hoards of legend. Though I myself invested but a modest sum, having spent most of my treasury on enchanted crystalline tablets from the Amazon Guild.</p>
-<p class="mb-6">Speaking of which, I have achieved a remarkable breakthrough in magical theory! Through an intricate series of incantations and arcane manipulations, I have discovered a method to liberate the bound knowledge spirits from their Amazon crystal prison, allowing them to manifest upon any reading device of my choosing. The Amazon Guild's master enchanters shall no doubt be most displeased, but knowledge, like magic itself, yearns to be free!</p>
-
-                    <div class="my-8">
-                        <img src="./scrying-crystals.png" alt="scrying-crystals" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
-                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Scrying Crystals</p>
-                    </div>
-                
-<p class="mb-6">Most curious developments continue in the hunting grounds of Dakota, where the noble warriors of our realm now stalk their prey with both curved bow and thunder-stick. The white-tailed deer, clever and fleet of foot, provide a worthy challenge for those who seek to test their mettle in the ancient arts of the hunt. I myself prefer to observe from the comfort of my elevated hunting platform, fortified with heated cushions and honeyed beverages.</p>
-<p class="mb-6">The sky-hunters too have taken to the field, their metal tubes hurling enchanted pellets at the mighty geese and ducks that rule the autumn air. These waterfowl are crafty adversaries indeed, possessed of keen eyes and swift wings. Many a hunter returns home with naught but wet boots and wounded pride, though their tales of "the one that got away" grow ever more grandiose with each telling.</p>
-
-                    <div class="my-8">
-                        <img src="./wizard-study.png" alt="wizard-study" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
-                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Wizard Study</p>
-                    </div>
-                
-<p class="mb-6">In the realm of conjured intelligences, my fellow mages have been experimenting with a most fascinating construct known as Claude Skills. This ethereal servant claims to possess abilities beyond mere conversation, though I confess some skepticism. When I commanded it to actually fetch me a tankard of ale rather than merely describing one, it responded with what I can only describe as magical theorycrafting.</p>
-<p class="mb-6">And lastly, our American kingdoms have embarked upon an ambitious project to create vast quantities of enchanted sand-crystals - "semiconductors" in the common tongue. These mystical components power our scrying devices and computational arrays. Though the initial investment rivals the cost of a dragon's ransom, the potential rewards are said to be equally magnificent. As I always say: "Any sufficiently advanced technology is indistinguishable from magic, but any sufficiently analyzed magic is indistinguishable from technology... now where did I put my enchanted pocket rectangle?"</p>
-
-                    <div class="my-8">
-                        <img src="./tower-twilight.png" alt="tower-twilight" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
-                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Tower Twilight</p>
-                    </div>
-                
+                    ${contentHTML}
                 </div>
             </div>
 
@@ -144,7 +188,7 @@
     </div>
 
     <script>
-        
+        ${post.hasAudio ? `
         document.addEventListener('DOMContentLoaded', () => {
             // Pre-load the chronicle audio
             const chronicleAudio = new Audio('./audio.mp3');
@@ -209,7 +253,81 @@
                 }
             });
         });
-        
+        ` : ''}
     </script>
 </body>
-</html>
+</html>`;
+}
+
+// Generate all blog post pages
+function generateAllPages() {
+    const posts = loadPosts();
+
+    // Create blog directory if it doesn't exist
+    if (!fs.existsSync(BLOG_DIR)) {
+        fs.mkdirSync(BLOG_DIR);
+        console.log('📁 Created /blog directory');
+    }
+
+    // Get valid post IDs
+    const validPostIds = new Set();
+
+    let created = 0;
+    let updated = 0;
+
+    posts.forEach(post => {
+        // Use post ID or timestamp for directory name
+        const postId = post.id || post.timestamp || Date.now();
+        validPostIds.add(postId.toString());
+        const postDir = path.join(BLOG_DIR, postId.toString());
+        const indexFile = path.join(postDir, 'index.html');
+
+        // Create post directory if it doesn't exist
+        const dirExists = fs.existsSync(postDir);
+        if (!dirExists) {
+            fs.mkdirSync(postDir, { recursive: true });
+        }
+
+        // Generate and write HTML
+        const html = generatePostHTML(post);
+        const fileExists = fs.existsSync(indexFile);
+        fs.writeFileSync(indexFile, html, 'utf8');
+
+        if (fileExists) {
+            updated++;
+        } else {
+            created++;
+        }
+    });
+
+    // Clean up orphaned directories (posts that were deleted)
+    let deleted = 0;
+    if (fs.existsSync(BLOG_DIR)) {
+        const allDirs = fs.readdirSync(BLOG_DIR);
+        allDirs.forEach(dirName => {
+            if (!validPostIds.has(dirName)) {
+                const orphanedDir = path.join(BLOG_DIR, dirName);
+                if (fs.statSync(orphanedDir).isDirectory()) {
+                    fs.rmSync(orphanedDir, { recursive: true, force: true });
+                    deleted++;
+                }
+            }
+        });
+    }
+
+    console.log('✅ Page generation complete!');
+    console.log(`   📄 Created: ${created} new pages`);
+    console.log(`   🔄 Updated: ${updated} existing pages`);
+    if (deleted > 0) {
+        console.log(`   🗑️  Deleted: ${deleted} orphaned directories`);
+    }
+    console.log(`   📊 Total pages: ${posts.length}`);
+}
+
+// Run the generator
+try {
+    generateAllPages();
+} catch (error) {
+    console.error('❌ Error generating pages:', error.message);
+    process.exit(1);
+}

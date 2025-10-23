@@ -94,6 +94,10 @@
 </head>
 <body class="antialiased">
     
+    <!-- Voice Control Button -->
+    <button id="voice-toggle" class="audio-control" title="Toggle Voice Narration" aria-label="Toggle voice narration">
+        🔊
+    </button>
 
     <div class="container mx-auto px-4 sm:px-6 py-12">
         <main class="max-w-4xl mx-auto">
@@ -104,24 +108,24 @@
                 <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4">Chronicle Entry</h1>
                 <p class="text-2xl mb-6 text-gray-600">October 22, 2025</p>
                 <div class="text-lg md:text-xl leading-relaxed">
-                    <p class="mb-6">Most peculiar observations from the hunting grounds this day! The great golden stalks that once stood sentinel across our realm have been harvested by the mighty mechanical beasts, yet patches remain where the Noble Deer still find sanctuary. Their wisdom in selecting such refuges speaks to their ancient cunning, though the skilled hunters among us know well how to track them even in such diminished cover.</p>
-<p class="mb-6">Word reaches me from the Western Territories that the final days approach for both the Mighty Elk and the Swift Pronghorn warriors. A mere seven days remain for those blessed with the sacred permits to complete their quests in the Black Hills. I confess a measure of envy for those chosen few, though my own hunting grounds provide ample opportunity for pursuit of the White-tailed Nobles.</p>
+                    <p class="mb-6">Most peculiar observations from the hunting grounds! The great golden stalks have been harvested by mighty mechanical beasts, yet patches remain where the Noble Deer find sanctuary. Their wisdom in selecting such refuges speaks to ancient cunning, though skilled hunters know how to track them in diminished cover.</p>
+<p class="mb-6">Word reaches me from the Western Territories that final days approach for the Mighty Elk and Swift Pronghorn warriors. A mere seven days remain for those with sacred permits to complete their Black Hills quests. I confess envy for those chosen few, though my own grounds provide ample opportunity for White-tailed Nobles.</p>
 
                     <div class="my-8">
                         <img src="./wizard-observing-harvest-beasts.png" alt="wizard-observing-harvest-beasts" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
                         <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Wizard Observing Harvest Beasts</p>
                     </div>
                 
-<p class="mb-6">Most fascinating developments in the realm of magical tokens - the Great Bitcoin has ascended to heights previously thought impossible, now commanding over one hundred and seven thousand pieces of common currency! Those who doubted my prophecies regarding these mystical tokens now seek my counsel, though I remind them that true wisdom lies not in chasing what has already soared, but in understanding the fundamental enchantments that drive such valuations.</p>
-<p class="mb-6">Disturbing news arrives via the Crystal Scrying Networks (which some commoners call "the internet") that the Grand Archive of Google has taken to marking certain image repositories as dangerous. This seems less a matter of true peril and more another example of overzealous protective enchantments gone awry. As any apprentice knows, the most powerful wards often trigger false alarms.</p>
+<p class="mb-6">Most fascinating developments in magical tokens - the Great Bitcoin has ascended to heights previously thought impossible, now commanding over one hundred seven thousand pieces of common currency! Those who doubted my prophecies now seek counsel, though true wisdom lies not in chasing what has already soared.</p>
+<p class="mb-6">Disturbing news arrives via Crystal Scrying Networks that the Grand Archive of Google marks certain image repositories as dangerous. This seems less true peril and more overzealous protective enchantments gone awry.</p>
 
                     <div class="my-8">
                         <img src="./mystic-bitcoin-prophecy.png" alt="mystic-bitcoin-prophecy" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
                         <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Mystic Bitcoin Prophecy</p>
                     </div>
                 
-<p class="mb-6">The fields around my tower have transformed with the harvest, revealing new hunting opportunities even as they eliminate old ones. Where once the deer could vanish into endless rows of corn, now they must rely on the scattered woodlots and remaining unharvested fields. This pleases the hunting parties, though I remind them that our quarry's adaptation to these changes makes them no less challenging to pursue - indeed, their concentration in smaller areas often makes them more vigilant.</p>
-<p class="mb-6">As I tell my apprentices - the wise hunter knows that every change in the landscape brings both challenge and opportunity. The trick lies not in lamenting what was lost, but in understanding how to adapt one's strategies to what remains. Now, if you'll excuse me, I must prepare my magical viewing device to monitor the deer paths near my remaining corn patches. These motion-activated scrying sensors won't mount themselves!</p>
+<p class="mb-6">The fields around my tower have transformed with harvest, revealing new hunting opportunities while eliminating old ones. Where deer once vanished into endless corn rows, now they rely on scattered woodlots and remaining fields. This pleases hunting parties, though our quarry's adaptation makes them no less challenging - concentration in smaller areas makes them more vigilant.</p>
+<p class="mb-6">As I tell my apprentices - the wise hunter knows every landscape change brings both challenge and opportunity. The trick lies not in lamenting what was lost, but understanding how to adapt. Now, if you'll excuse me, I must prepare my magical viewing device to monitor deer paths near remaining corn patches. These motion-activated scrying sensors won't mount themselves!</p>
 
                     <div class="my-8">
                         <img src="./enchanted-trail-camera-ritual.png" alt="enchanted-trail-camera-ritual" class="w-full rounded-lg border-4 border-border-gold shadow-lg">
@@ -139,6 +143,71 @@
     </div>
 
     <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Pre-load the chronicle audio
+            const chronicleAudio = new Audio('./audio.mp3');
+            chronicleAudio.volume = 0.7;
+            chronicleAudio.loop = false;
+
+            let voiceMuted = false;
+            const voiceToggle = document.getElementById('voice-toggle');
+
+            // Debug audio loading
+            chronicleAudio.addEventListener('loadeddata', () => {
+                console.log('Chronicle audio loaded, duration:', chronicleAudio.duration);
+            });
+            chronicleAudio.addEventListener('error', (e) => {
+                console.error('Chronicle audio failed to load:', e);
+            });
+            chronicleAudio.addEventListener('play', () => {
+                console.log('Chronicle audio started playing');
+                voiceToggle.classList.add('playing');
+            });
+            chronicleAudio.addEventListener('pause', () => {
+                console.log('Chronicle audio paused');
+                voiceToggle.classList.remove('playing');
+            });
+            chronicleAudio.addEventListener('ended', () => {
+                console.log('Chronicle audio ended');
+                voiceToggle.classList.remove('playing');
+            });
+
+            // Auto-play audio after a short delay (give time for user interaction)
+            setTimeout(() => {
+                if (!voiceMuted) {
+                    chronicleAudio.play()
+                        .then(() => console.log('✅ Auto-play started'))
+                        .catch(e => {
+                            console.log('⚠️ Auto-play prevented by browser. User must interact with page first.');
+                            console.log('Audio will play when user clicks the voice button.');
+                        });
+                }
+            }, 500);
+
+            // Voice toggle button
+            voiceToggle.addEventListener('click', () => {
+                voiceMuted = !voiceMuted;
+                console.log('Voice toggle clicked. Muted:', voiceMuted);
+
+                if (voiceMuted) {
+                    chronicleAudio.pause();
+                    voiceToggle.innerHTML = '🔇';
+                    voiceToggle.title = 'Voice Narration: OFF (Click to enable)';
+                    console.log('Voice muted');
+                } else {
+                    // Resume or restart audio
+                    if (chronicleAudio.paused) {
+                        chronicleAudio.play()
+                            .then(() => console.log('Audio resumed/started'))
+                            .catch(e => console.log('Audio play prevented:', e));
+                    }
+                    voiceToggle.innerHTML = '🔊';
+                    voiceToggle.title = 'Voice Narration: ON (Click to disable)';
+                    console.log('Voice unmuted');
+                }
+            });
+        });
         
     </script>
 </body>
