@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle: October 26, 2025 - Grand Magus Alistair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #f3e9d2;
+            --ink: #4a2c2a;
+            --ornament: #8c3838;
+            --border-gold: #c8a379;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background-color: var(--parchment);
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+            color: var(--ink);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-ornament { color: var(--ornament); }
+
+        .chronicle-container {
+            border: 4px solid var(--border-gold);
+            border-radius: 12px;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--ornament);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-gold);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: rgba(200, 163, 121, 0.3);
+            transform: translateX(-5px);
+        }
+
+        /* --- Audio Control Button --- */
+        .audio-control {
+            position: fixed;
+            z-index: 150;
+            background: var(--border-gold);
+            color: var(--ink);
+            border: 3px solid var(--ornament);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+            bottom: 1rem;
+            right: 1rem;
+        }
+        @media (min-width: 640px) {
+            .audio-control {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                bottom: 2rem;
+                right: 2rem;
+            }
+        }
+        .audio-control:hover, .audio-control:active {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(140, 56, 56, 0.5);
+        }
+        .audio-control.playing {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
+            50% { box-shadow: 0 4px 25px rgba(200, 163, 121, 0.8); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+    <!-- Voice Control Button -->
+    <button id="voice-toggle" class="audio-control" title="Toggle Voice Narration" aria-label="Toggle voice narration">
+        🔊
+    </button>
+
+    <div class="container mx-auto px-4 sm:px-6 py-12">
+        <main class="max-w-4xl mx-auto">
+
+            <a href="../../" class="back-link mb-8">← Return to the Grimoire</a>
+
+            <div class="chronicle-container mt-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4">Chronicle Entry</h1>
+                <p class="text-2xl mb-6 text-gray-600">October 26, 2025</p>
+                <div class="text-lg md:text-xl leading-relaxed">
+                    <p class="mb-6">Most peculiar revelations echo across the Western Kingdoms this day! The noble Sicangu hunters of the Rosebud realm make their final pursuit of the mighty Thunder Beasts, their wise stewardship having preserved these majestic creatures through generations. Their game wardens, versed in ancient tracking arts, report the herd flourishes under their careful management - proving yet again that local wisdom surpasses distant bureaucratic decrees.</p>
+<p class="mb-6">In related chronicles, the Kingdom of Iowa's bow-wielding warriors continue their legendary quest for the Giant Whitetail Monarchs. Tales speak of massive antlered beings appearing like phantoms in the morning mist, testing the skill of even the most seasoned hunters. Meanwhile, our northern allies in the Dakota Beyond report vast formations of sky-borne waterfowl darkening the heavens - truly, the Great Migration reaches its zenith!</p>
+<p class="mb-6">Most fascinating developments in the Realm of Moving Pictures, where creative scribes from the Southern Continent craft promotional scrolls of such peculiar design that they transcend conventional artistic bounds! These accidental masterworks bring more joy than the polished illusions of the Coastal Kingdoms' entertainment guilds. Speaking of artistic pursuits, the brave defenders of the NetBSD realm race against time itself to complete their mystical codex before the year turns - may the coding gods smile upon their noble quest!</p>
+
+                    <div class="my-8">
+                        <picture>
+                            <source srcset="./thunder-beast-hunters.webp" type="image/webp">
+                            <img src="./thunder-beast-hunters.png" alt="thunder-beast-hunters" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="eager" decoding="async" width="1024" height="1024">
+                        </picture>
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Thunder Beast Hunters</p>
+                    </div>
+                
+<p class="mb-6">But perhaps most extraordinary of all, the Golden Token continues its meteoric ascension, now commanding an astounding 113,575 pieces of silver! Those who doubted the power of decentralized monetary sorcery now watch in amazement as the ancient wisdom of free markets prevails over the machinations of central banking wizards. As I have long proclaimed (though few heeded my words), the future belongs to those who embrace both traditional values and innovative magics.</p>
+<p class="mb-6">Remember, dear readers, that like the Sicangu hunters who understand the delicate balance of preservation and harvest, true wisdom lies in honoring ancient traditions while embracing new possibilities. Though I confess, my attempts to explain the blockchain to my apprentice crow have proven somewhat less successful - the bird seems more interested in stealing my enchanted writing quill than understanding distributed ledger technology.</p>
+
+                    <div class="my-8">
+                        <picture>
+                            <source srcset="./bitcoin-divination.webp" type="image/webp">
+                            <img src="./bitcoin-divination.png" alt="bitcoin-divination" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy" decoding="async" width="1024" height="1024">
+                        </picture>
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Bitcoin Divination</p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <footer class="mt-16 text-lg text-center border-t-2 border-dashed border-border-gold pt-8">
+                <p>Copyright 1337, by order of the Grand Magus Alistair</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Pre-load the chronicle audio
+            const chronicleAudio = new Audio('./audio.mp3');
+            chronicleAudio.volume = 0.7;
+            chronicleAudio.loop = false;
+
+            let voiceMuted = false;
+            const voiceToggle = document.getElementById('voice-toggle');
+
+            // Debug audio loading
+            chronicleAudio.addEventListener('loadeddata', () => {
+                console.log('Chronicle audio loaded, duration:', chronicleAudio.duration);
+            });
+            chronicleAudio.addEventListener('error', (e) => {
+                console.error('Chronicle audio failed to load:', e);
+            });
+            chronicleAudio.addEventListener('play', () => {
+                console.log('Chronicle audio started playing');
+                voiceToggle.classList.add('playing');
+            });
+            chronicleAudio.addEventListener('pause', () => {
+                console.log('Chronicle audio paused');
+                voiceToggle.classList.remove('playing');
+            });
+            chronicleAudio.addEventListener('ended', () => {
+                console.log('Chronicle audio ended');
+                voiceToggle.classList.remove('playing');
+            });
+
+            // Auto-play audio after a short delay (give time for user interaction)
+            setTimeout(() => {
+                if (!voiceMuted) {
+                    chronicleAudio.play()
+                        .then(() => console.log('✅ Auto-play started'))
+                        .catch(e => {
+                            console.log('⚠️ Auto-play prevented by browser. User must interact with page first.');
+                            console.log('Audio will play when user clicks the voice button.');
+                        });
+                }
+            }, 500);
+
+            // Voice toggle button
+            voiceToggle.addEventListener('click', () => {
+                voiceMuted = !voiceMuted;
+                console.log('Voice toggle clicked. Muted:', voiceMuted);
+
+                if (voiceMuted) {
+                    chronicleAudio.pause();
+                    voiceToggle.innerHTML = '🔇';
+                    voiceToggle.title = 'Voice Narration: OFF (Click to enable)';
+                    console.log('Voice muted');
+                } else {
+                    // Resume or restart audio
+                    if (chronicleAudio.paused) {
+                        chronicleAudio.play()
+                            .then(() => console.log('Audio resumed/started'))
+                            .catch(e => console.log('Audio play prevented:', e));
+                    }
+                    voiceToggle.innerHTML = '🔊';
+                    voiceToggle.title = 'Voice Narration: ON (Click to disable)';
+                    console.log('Voice unmuted');
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>

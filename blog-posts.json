@@ -1,5 +1,37 @@
 [
   {
+    "date": "2025-10-26",
+    "timestamp": 1761502886322,
+    "content": "Most peculiar revelations echo across the Western Kingdoms this day! The noble Sicangu hunters of the Rosebud realm make their final pursuit of the mighty Thunder Beasts, their wise stewardship having preserved these majestic creatures through generations. Their game wardens, versed in ancient tracking arts, report the herd flourishes under their careful management - proving yet again that local wisdom surpasses distant bureaucratic decrees.\n\nIn related chronicles, the Kingdom of Iowa's bow-wielding warriors continue their legendary quest for the Giant Whitetail Monarchs. Tales speak of massive antlered beings appearing like phantoms in the morning mist, testing the skill of even the most seasoned hunters. Meanwhile, our northern allies in the Dakota Beyond report vast formations of sky-borne waterfowl darkening the heavens - truly, the Great Migration reaches its zenith!\n\nMost fascinating developments in the Realm of Moving Pictures, where creative scribes from the Southern Continent craft promotional scrolls of such peculiar design that they transcend conventional artistic bounds! These accidental masterworks bring more joy than the polished illusions of the Coastal Kingdoms' entertainment guilds. Speaking of artistic pursuits, the brave defenders of the NetBSD realm race against time itself to complete their mystical codex before the year turns - may the coding gods smile upon their noble quest!\n\nBut perhaps most extraordinary of all, the Golden Token continues its meteoric ascension, now commanding an astounding 113,575 pieces of silver! Those who doubted the power of decentralized monetary sorcery now watch in amazement as the ancient wisdom of free markets prevails over the machinations of central banking wizards. As I have long proclaimed (though few heeded my words), the future belongs to those who embrace both traditional values and innovative magics.\n\nRemember, dear readers, that like the Sicangu hunters who understand the delicate balance of preservation and harvest, true wisdom lies in honoring ancient traditions while embracing new possibilities. Though I confess, my attempts to explain the blockchain to my apprentice crow have proven somewhat less successful - the bird seems more interested in stealing my enchanted writing quill than understanding distributed ledger technology.",
+    "newsReferences": [
+      "[Tech] Movie Posters from Africa That Are So Bad, They're Good",
+      "[Tech] Let's Help NetBSD Cross the Finish Line Before 2025 Ends",
+      "[Crypto] Bitcoin at $113,575",
+      "[SD Hunting] Wild Turkey (Fall) season continues. Black Hills & river bottoms. 36 days remaining.",
+      "[SD Hunting] FINAL 4 DAYS for Elk! Black Hills - limited licenses. Season closes 10/30.",
+      "[SD Hunting] FINAL 4 DAYS for Pronghorn Antelope! West River - draw required. Season closes 10/30.",
+      "[SD Hunting - TRIBAL] FINAL 5 DAYS for Rosebud Reservation tribal elk hunt. Sicangu Lakota hunters making final pushes for bulls and cows. Reservation's 200-300 elk herd has provided sustainable harvest through excellent tribal game warden management.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[CO Hunting] Colorado archery elk season active. Rocky Mountain bugling season peak."
+    ],
+    "id": "related-kingdom-iowas-bow-wielding-warriors",
+    "images": [
+      {
+        "filename": "thunder-beast-hunters.png",
+        "prompt": "A Native American hunter in traditional dress mixed with mystical elements stands atop a misty hill at dawn, his bow wreathed in ethereal blue light. Before him, a herd of magnificent bison with ghostly thunder-cloud manes graze across the plains, while spirit-forms of ancient hunters watch approvingly from the sky., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "thunder-beast-hunters"
+      },
+      {
+        "filename": "bitcoin-divination.png",
+        "prompt": "An ancient stone observatory tower where a wizard in star-patterned robes watches a glowing golden coin float and spin in midair, trailing cryptographic runes. Magical charts and graphs made of constellation-like light patterns float around the room, while a mischievous crow attempts to steal a glowing quill from the wizard's desk., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-divination"
+      }
+    ],
+    "featuredImage": "thunder-beast-hunters.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-10-25",
     "timestamp": 1761416439878,
     "content": "Most extraordinary revelations across the Western Kingdoms this day! The valiant hunters of the Sicangu Lakota make their final pursuit of the mighty Thunder Beasts, as their sacred harvest season draws to a close. Their wise game wardens have maintained the ancient balance, ensuring bountiful hunts for generations to come through their masterful stewardship of the great herds that roam their ancestral lands.\n\nIn related pursuit of noble quarry, our fellow mages across the realm report the Swift-Footed Pronghorn season nears its end in the western territories. These mystical creatures, blessed with incomparable speed and keen sight, have provided worthy challenge to those skilled hunters granted permission through the Grand Lottery of Licenses. Their flesh shall grace many feast tables ere the winter winds howl.\n\nMost fascinating developments in the Realm of Digital Sorcery, where the mystical Bitcoin token has ascended to unprecedented heights of one hundred and eleven thousand gold pieces! This remarkable achievement proves yet again the wisdom of those who seek freedom from the manipulations of the Central Banking Cabal. Even the most skeptical merchant-lords now acknowledge the power of this decentralized magic.\n\nNews reaches us of a most curious alliance in the Technical Kingdoms, where the Houses of Synadia and TigerBeetle have pledged vast treasures to support the Zig Foundation's quest for improved enchantments. Their combined offering of five hundred and twelve thousand gold pieces shall empower independent wizards to craft more elegant and efficient spells, free from the constraints of the Corporate Magisters.\n\nAs your humble chronicler, I must confess my own attempts at Technical Sorcery today resulted in what lesser mages might term a \"system crash,\" though I prefer to call it an \"unexpected meditation opportunity.\" Perhaps I should stick to the more traditional magics of hunting and investment, where at least the worst outcome is merely an empty game bag or lighter coin purse, rather than the blue-faced demon that now haunts my scrying screen.",
