@@ -1,5 +1,148 @@
 [
   {
+    "date": "2025-10-27",
+    "timestamp": 1761589470146,
+    "content": "Most peculiar developments echo across the Western Kingdoms this morn! The swift-footed Pronghorn Warriors make their final charges across the plains, as but three days remain in their sacred harvest. Their noble pursuit tests both skill and patience, as these mystical creatures possess vision that rivals the keenest of elven archers.\n\nIn the sacred Black Hills, the Elk Hunters' Guild likewise approaches their final days of autumn questing. The Sicangu hunters of the Rosebud realm have shown particular prowess, their wise game wardens having nurtured their elk herds through generations of careful stewardship. Such is the proper way - local wisdom surpassing the distant proclamations of bureaucratic sorcerers.\n\nMost fascinating revelations have emerged from the ancient archives - a tome of crystalline vessel crafting from the Year of Our Lord 1938 has surfaced, displaying hand-drawn arcana for the creation of magical laboratory vessels. These Pyrex grimoires remind us that true innovation flows not from government laboratories, but from the skilled hands of individual artisans pursuing excellence in the free markets of the realm.\n\nSpeaking of markets, the mystical Bitcoin tokens have soared beyond 115,000 gold pieces each! This confirms what I have long proclaimed - that decentralized magical currencies shall ultimately triumph over the controlled scrip of central banking wizards. Though I confess, my own attempts at mining these tokens mostly resulted in setting fire to my beard.\n\nThe most wondrous invention has appeared in my tower - a device called JetKVM that allows one to control distant seeing-stones through mystical connections. Though I must admit some skepticism, as my apprentice used it to change my desktop background to dancing cats while I was scrying in the next chamber. Perhaps some magical innovations require additional safeguards, lest they be used for tomfoolery rather than serious arcane business.",
+    "newsReferences": [
+      "[Tech] JetKVM – Control any computer remotely",
+      "[Tech] Pyrex catalog from from 1938 with hand-drawn lab glassware [pdf]",
+      "[Crypto] Bitcoin at $115,586",
+      "[SD Hunting] FINAL 3 DAYS for Elk! Black Hills - limited licenses. Season closes 10/30.",
+      "[SD Hunting] FINAL 3 DAYS for Pronghorn Antelope! West River - draw required. Season closes 10/30.",
+      "[SD Hunting] Coyote season continues. Year-round - no license required. 65 days remaining.",
+      "[SD Hunting - TRIBAL] FINAL 4 DAYS for Rosebud Reservation tribal elk hunt. Sicangu Lakota hunters making final pushes for bulls and cows. Reservation's 200-300 elk herd has provided sustainable harvest through excellent tribal game warden management.",
+      "[ND Fishing] Devils Lake jumbo perch bite remains strong. One of the best perch fisheries in North America.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation."
+    ],
+    "id": "sacred-black-hills-hunters-guild",
+    "images": [
+      {
+        "filename": "bitcoin-mining-wizard.png",
+        "prompt": "A grizzled wizard with a singed beard hunches over a glowing crystalline mining rig in his stone tower, surrounded by mystical runes and floating Bitcoin symbols. Smoke rises from his charred robes as magical energy crackles between the crystals, while a ledger showing '115,000 gold pieces' floats nearby., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-mining-wizard"
+      },
+      {
+        "filename": "pyrex-grimoire-crafting.png",
+        "prompt": "An ancient workshop where an artisan in 1930s clothing works at a mystical forge, carefully shaping molten glass into Pyrex vessels while magical formulae and technical diagrams float in the air around them. Medieval-style illuminated manuscripts showing laboratory glassware designs are spread across the workbench., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "pyrex-grimoire-crafting"
+      },
+      {
+        "filename": "remote-scrying-prank.png",
+        "prompt": "A wizard's study with multiple floating crystal screens, while a mischievous apprentice in the doorway uses a JetKVM wand to magically change the master's scrying portal to show dancing cats. The main crystal display transitions between serious magical runes and playful feline illusions., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "remote-scrying-prank"
+      }
+    ],
+    "featuredImage": "bitcoin-mining-wizard.png",
+    "hasAudio": true
+  },
+  {
+    "date": "2025-10-26",
+    "timestamp": 1761502886322,
+    "content": "Most peculiar revelations echo across the Western Kingdoms this day! The noble Sicangu hunters of the Rosebud realm make their final pursuit of the mighty Thunder Beasts, their wise stewardship having preserved these majestic creatures through generations. Their game wardens, versed in ancient tracking arts, report the herd flourishes under their careful management - proving yet again that local wisdom surpasses distant bureaucratic decrees.\n\nIn related chronicles, the Kingdom of Iowa's bow-wielding warriors continue their legendary quest for the Giant Whitetail Monarchs. Tales speak of massive antlered beings appearing like phantoms in the morning mist, testing the skill of even the most seasoned hunters. Meanwhile, our northern allies in the Dakota Beyond report vast formations of sky-borne waterfowl darkening the heavens - truly, the Great Migration reaches its zenith!\n\nMost fascinating developments in the Realm of Moving Pictures, where creative scribes from the Southern Continent craft promotional scrolls of such peculiar design that they transcend conventional artistic bounds! These accidental masterworks bring more joy than the polished illusions of the Coastal Kingdoms' entertainment guilds. Speaking of artistic pursuits, the brave defenders of the NetBSD realm race against time itself to complete their mystical codex before the year turns - may the coding gods smile upon their noble quest!\n\nBut perhaps most extraordinary of all, the Golden Token continues its meteoric ascension, now commanding an astounding 113,575 pieces of silver! Those who doubted the power of decentralized monetary sorcery now watch in amazement as the ancient wisdom of free markets prevails over the machinations of central banking wizards. As I have long proclaimed (though few heeded my words), the future belongs to those who embrace both traditional values and innovative magics.\n\nRemember, dear readers, that like the Sicangu hunters who understand the delicate balance of preservation and harvest, true wisdom lies in honoring ancient traditions while embracing new possibilities. Though I confess, my attempts to explain the blockchain to my apprentice crow have proven somewhat less successful - the bird seems more interested in stealing my enchanted writing quill than understanding distributed ledger technology.",
+    "newsReferences": [
+      "[Tech] Movie Posters from Africa That Are So Bad, They're Good",
+      "[Tech] Let's Help NetBSD Cross the Finish Line Before 2025 Ends",
+      "[Crypto] Bitcoin at $113,575",
+      "[SD Hunting] Wild Turkey (Fall) season continues. Black Hills & river bottoms. 36 days remaining.",
+      "[SD Hunting] FINAL 4 DAYS for Elk! Black Hills - limited licenses. Season closes 10/30.",
+      "[SD Hunting] FINAL 4 DAYS for Pronghorn Antelope! West River - draw required. Season closes 10/30.",
+      "[SD Hunting - TRIBAL] FINAL 5 DAYS for Rosebud Reservation tribal elk hunt. Sicangu Lakota hunters making final pushes for bulls and cows. Reservation's 200-300 elk herd has provided sustainable harvest through excellent tribal game warden management.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[CO Hunting] Colorado archery elk season active. Rocky Mountain bugling season peak."
+    ],
+    "id": "related-kingdom-iowas-bow-wielding-warriors",
+    "images": [
+      {
+        "filename": "thunder-beast-hunters.png",
+        "prompt": "A Native American hunter in traditional dress mixed with mystical elements stands atop a misty hill at dawn, his bow wreathed in ethereal blue light. Before him, a herd of magnificent bison with ghostly thunder-cloud manes graze across the plains, while spirit-forms of ancient hunters watch approvingly from the sky., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "thunder-beast-hunters"
+      },
+      {
+        "filename": "bitcoin-divination.png",
+        "prompt": "An ancient stone observatory tower where a wizard in star-patterned robes watches a glowing golden coin float and spin in midair, trailing cryptographic runes. Magical charts and graphs made of constellation-like light patterns float around the room, while a mischievous crow attempts to steal a glowing quill from the wizard's desk., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-divination"
+      }
+    ],
+    "featuredImage": "thunder-beast-hunters.png",
+    "hasAudio": true
+  },
+  {
+    "date": "2025-10-25",
+    "timestamp": 1761416439878,
+    "content": "Most extraordinary revelations across the Western Kingdoms this day! The valiant hunters of the Sicangu Lakota make their final pursuit of the mighty Thunder Beasts, as their sacred harvest season draws to a close. Their wise game wardens have maintained the ancient balance, ensuring bountiful hunts for generations to come through their masterful stewardship of the great herds that roam their ancestral lands.\n\nIn related pursuit of noble quarry, our fellow mages across the realm report the Swift-Footed Pronghorn season nears its end in the western territories. These mystical creatures, blessed with incomparable speed and keen sight, have provided worthy challenge to those skilled hunters granted permission through the Grand Lottery of Licenses. Their flesh shall grace many feast tables ere the winter winds howl.\n\nMost fascinating developments in the Realm of Digital Sorcery, where the mystical Bitcoin token has ascended to unprecedented heights of one hundred and eleven thousand gold pieces! This remarkable achievement proves yet again the wisdom of those who seek freedom from the manipulations of the Central Banking Cabal. Even the most skeptical merchant-lords now acknowledge the power of this decentralized magic.\n\nNews reaches us of a most curious alliance in the Technical Kingdoms, where the Houses of Synadia and TigerBeetle have pledged vast treasures to support the Zig Foundation's quest for improved enchantments. Their combined offering of five hundred and twelve thousand gold pieces shall empower independent wizards to craft more elegant and efficient spells, free from the constraints of the Corporate Magisters.\n\nAs your humble chronicler, I must confess my own attempts at Technical Sorcery today resulted in what lesser mages might term a \"system crash,\" though I prefer to call it an \"unexpected meditation opportunity.\" Perhaps I should stick to the more traditional magics of hunting and investment, where at least the worst outcome is merely an empty game bag or lighter coin purse, rather than the blue-faced demon that now haunts my scrying screen.",
+    "newsReferences": [
+      "[Tech] Synadia and TigerBeetle Commit $512k USD to the Zig Software Foundation",
+      "[Tech] Libera Chat receives legal advice that the Online Safety Act does not apply to",
+      "[Crypto] Bitcoin at $111,428",
+      "[SD Hunting] FINAL 5 DAYS for Elk! Black Hills - limited licenses. Season closes 10/30.",
+      "[SD Hunting] White-tailed Deer season continues. Peak rut mid-November. 67 days remaining.",
+      "[SD Hunting] FINAL 5 DAYS for Pronghorn Antelope! West River - draw required. Season closes 10/30.",
+      "[SD Hunting - TRIBAL] FINAL 6 DAYS for Rosebud Reservation tribal elk hunt. Sicangu Lakota hunters making final pushes for bulls and cows. Reservation's 200-300 elk herd has provided sustainable harvest through excellent tribal game warden management.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[CO Hunting] Colorado archery elk season active. Rocky Mountain bugling season peak."
+    ],
+    "id": "related-pursuit-noble-quarry-fellow",
+    "images": [
+      {
+        "filename": "thunder-beast-hunt.png",
+        "prompt": "A Lakota hunter in traditional dress with magical runes glowing on his bow stands watching over a misty prairie at dawn. Ethereal, translucent 'Thunder Beasts' (buffalo) with lightning crackling between their horns graze in the distance while mystical ward symbols float in the air, marking hunting boundaries., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "thunder-beast-hunt"
+      },
+      {
+        "filename": "wizard-computer-crash.png",
+        "prompt": "In a dimly lit medieval study, an exasperated wizard in star-covered robes stares at a glowing crystal scrying screen displaying the dreaded 'Blue Face of Doom' error demon. Scattered technical scrolls and runic debugging tools lie across his ancient wooden desk while small magical sparks fizzle from the malfunctioning crystal., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-computer-crash"
+      },
+      {
+        "filename": "bitcoin-mystic-market.png",
+        "prompt": "A grand ethereal marketplace floating in the night sky, where ghostly merchants trade glowing Bitcoin tokens that orbit around a central golden crystal. Traditional money-changers look up in awe from their earthbound stalls as the digital coins soar to astronomical heights, trailing magical energy., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-mystic-market"
+      }
+    ],
+    "featuredImage": "thunder-beast-hunt.png",
+    "hasAudio": true
+  },
+  {
+    "date": "2025-10-24",
+    "timestamp": 1761330186005,
+    "content": "Most fascinating developments across the realm this day! The Great Harvest of the Golden Stalks continues apace, with the mighty mechanical behemoths having cleared vast swaths around my humble tower. Yet patches remain standing like islands in a sea of stubble, providing sanctuary for the Noble Deer as they plot their craftiness against the realm's bowmen.\n\nWord reaches me from the Western Territories that the Final Days approach for both the Majestic Elk Warriors and the Swift Pronghorn Legion. A mere six days remain for our brave hunters to complete their sacred quests in the Black Hills and Western Plains. The Spirits of the Hunt have blessed many with success, though some still seek their quarry with determined hearts.\n\nMost intriguing reports arrive from the Northern Waters, where the Ancient Ones of the Deep - those we call Walleye in the common tongue - have been striking with particular vigor in the Great Missouri's expanded pools. The clever anglers who present their offerings upon magical lead-headed wands, adorned with living sacrifices, are being richly rewarded for their wisdom. Even the massive Lake Oahe, greatest of our realm's waters, yields bounty to those who know its secrets.\n\nI must share most troubling news of the Royal Investigators, those agents of the Federal Bureau of Inquisition, who have taken to visiting those who dare protest the Ice Warriors. While I hold no love for those who would disrupt the realm's protective orders, the sight of investigators at one's door brings a chill to even a Grand Magus's bones. Better to let the marketplace of ideas sort such matters, rather than employ the heavy hand of bureaucratic enforcement.\n\nAh, but let us end on more pleasant tidings! The mystical token known as Bitcoin continues its ascension, now commanding an astounding 110,545 pieces of the realm's currency. Those who doubted the power of decentralized monetary enchantments now gnash their teeth in despair. As I have long counseled: Trust not in the currency conjurings of central banking wizards, for their magic serves primarily themselves. Now, if you'll excuse me, I must prepare my evening scrying of the magical streaming device - I hear there's a most excellent new series about dragons.",
+    "newsReferences": [
+      "[Tech] FBI Agents Visit Anti-ICE Protester: \"Your name was brought up.\"",
+      "[Tech] Twake Drive – An open-source alternative to Google Drive",
+      "[Crypto] Bitcoin at $110,545",
+      "[SD Fishing] Missouri River reservoirs and glacial lakes producing. Check GFP for current conditions.",
+      "[SD Fishing] Missouri River walleye bite active. Popular areas: Lake Oahe, Lake Sharpe, Lake Francis Case. Jigs and live bait producing.",
+      "[SD Hunting] FINAL 6 DAYS for Elk! Black Hills - limited licenses. Season closes 10/30.",
+      "[SD Hunting] FINAL 6 DAYS for Pronghorn Antelope! West River - draw required. Season closes 10/30.",
+      "[SD Hunting] Canada Geese season continues. Split seasons - check zones. 67 days remaining.",
+      "[SD Hunting - TRIBAL] FINAL 7 DAYS for Rosebud Reservation tribal elk hunt. Sicangu Lakota hunters making final pushes for bulls and cows. Reservation's 200-300 elk herd has provided sustainable harvest through excellent tribal game warden management.",
+      "[MN Fishing] Boundary Waters and northern MN lakes producing walleye, northern pike, and smallmouth bass"
+    ],
+    "id": "reaches-western-territories-final-approach-20251024",
+    "images": [
+      {
+        "filename": "magical-harvest-behemoth.png",
+        "prompt": "A massive medieval-fantasy harvesting machine, decorated with brass gears and magical runes, cuts through golden wheat fields. Small islands of uncut wheat remain where mystical deer peek out, their eyes glowing with intelligence as they watch the mechanical behemoth pass by. The wizard's stone tower looms in the background against a sunset sky., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "magical-harvest-behemoth"
+      },
+      {
+        "filename": "mystical-walleye-fishing.png",
+        "prompt": "Robed figures stand on the shores of a vast mystical lake, casting enchanted rods adorned with glowing crystals and magical talismans. Ethereal forms of giant walleye fish can be seen moving beneath the water's surface, their scales reflecting moonlight. Ancient runes float on the water's surface near Lake Oahe's medieval-style fishing docks., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "mystical-walleye-fishing"
+      },
+      {
+        "filename": "wizard-crypto-scrying.png",
+        "prompt": "A grand wizard in ornate robes sits before a floating crystalline screen showing moving images of dragons. Bitcoin symbols float around him like golden magical runes, while a scroll showing '110,545' in illuminated medieval script hovers nearby. Magical charts and market prophecies cover the chamber walls., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-crypto-scrying"
+      }
+    ],
+    "featuredImage": "magical-harvest-behemoth.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-10-23",
     "timestamp": 1761253541772,
     "content": "Most perplexing developments across the realm this day! The great golden stalks have been harvested by the Mechanized Reaping Guilds, yet patches remain standing like islands in a sea of stubble. These provide most convenient sanctuary for the Noble White-tailed Deer, who demonstrate remarkable cunning in using such cover to evade detection by even the most skilled hunters.\n\nWord reaches me from the Western Territories that the final days approach for both the Mighty Elk and Swift Pronghorn seasons. Those blessed few who obtained the sacred permits through the mystical drawing ritual must make haste - merely seven days remain before these noble pursuits conclude until the next turning of the seasons. I myself ventured forth at dawn today, though the Elk once again proved more clever than this allegedly grand magus.\n\nMost fascinating revelations emerge from the Realm of Digital Sorcery! The Magical Token of Bitcoin has ascended to unprecedented heights, now commanding an astounding 109,654 pieces of golden tribute! This validates my long-held assertion that decentralized magical currencies shall triumph over the controlling enchantments of bureaucratic money-changers. Even more intriguing, the Pardoning Powers have been invoked to free a fallen guild-master of token trading - though methinks some consequences should remain for those who skirt the ancient laws of commerce.\n\nHere in the Kingdom of Dakota, we observe with great interest as our neighbors to the North report vast migrations of Sky Warriors - ducks and geese descending in numbers not seen in many moons. While my own pursuits focus on larger quarry, I hold deep respect for those who master the arts of waterfowl hunting. Their skills with bird-calls and concealment rival any illusion magic I have encountered.\n\nAs I gaze upon these changing lands from my humble tower, I am reminded that nature's cycles care not for man's schedules or schemes. The clever deer will find their shelter, the determined hunter will find their quarry, and this old wizard will continue to pretend his struggles with modern hunting regulations are actually battles with ancient magical bureaucracies. At least my warming enchantment (propane heater) keeps my observation post comfortable.",
