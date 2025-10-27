@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle: October 27, 2025 - Grand Magus Alistair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #f3e9d2;
+            --ink: #4a2c2a;
+            --ornament: #8c3838;
+            --border-gold: #c8a379;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background-color: var(--parchment);
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+            color: var(--ink);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-ornament { color: var(--ornament); }
+
+        .chronicle-container {
+            border: 4px solid var(--border-gold);
+            border-radius: 12px;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--ornament);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-gold);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: rgba(200, 163, 121, 0.3);
+            transform: translateX(-5px);
+        }
+
+        /* --- Audio Control Button --- */
+        .audio-control {
+            position: fixed;
+            z-index: 150;
+            background: var(--border-gold);
+            color: var(--ink);
+            border: 3px solid var(--ornament);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+            bottom: 1rem;
+            right: 1rem;
+        }
+        @media (min-width: 640px) {
+            .audio-control {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                bottom: 2rem;
+                right: 2rem;
+            }
+        }
+        .audio-control:hover, .audio-control:active {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(140, 56, 56, 0.5);
+        }
+        .audio-control.playing {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
+            50% { box-shadow: 0 4px 25px rgba(200, 163, 121, 0.8); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+    <!-- Voice Control Button -->
+    <button id="voice-toggle" class="audio-control" title="Toggle Voice Narration" aria-label="Toggle voice narration">
+        🔊
+    </button>
+
+    <div class="container mx-auto px-4 sm:px-6 py-12">
+        <main class="max-w-4xl mx-auto">
+
+            <a href="../../" class="back-link mb-8">← Return to the Grimoire</a>
+
+            <div class="chronicle-container mt-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4">Chronicle Entry</h1>
+                <p class="text-2xl mb-6 text-gray-600">October 27, 2025</p>
+                <div class="text-lg md:text-xl leading-relaxed">
+                    Most peculiar developments echo across the Western Kingdoms this morn! The swift-footed Pronghorn Warriors make their final charges across the plains, as but three days remain in their sacred harvest. Their noble pursuit tests both skill and patience, as these mystical creatures possess vision that rivals the keenest of elven archers.
+
+In the sacred Black Hills, the Elk Hunters' Guild likewise approaches their final days of autumn questing. The Sicangu hunters of the Rosebud realm have shown particular prowess, their wise game wardens having nurtured their elk herds through generations of careful stewardship. Such is the proper way - local wisdom surpassing the distant proclamations of bureaucratic sorcerers.
+
+Most fascinating revelations have emerged from the ancient archives - a tome of crystalline vessel crafting from the Year of Our Lord 1938 has surfaced, displaying hand-drawn arcana for the creation of magical laboratory vessels. These Pyrex grimoires remind us that true innovation flows not from government laboratories, but from the skilled hands of individual artisans pursuing excellence in the free markets of the realm.
+
+Speaking of markets, the mystical Bitcoin tokens have soared beyond 115,000 gold pieces each! This confirms what I have long proclaimed - that decentralized magical currencies shall ultimately triumph over the controlled scrip of central banking wizards. Though I confess, my own attempts at mining these tokens mostly resulted in setting fire to my beard.
+
+The most wondrous invention has appeared in my tower - a device called JetKVM that allows one to control distant seeing-stones through mystical connections. Though I must admit some skepticism, as my apprentice used it to change my desktop background to dancing cats while I was scrying in the next chamber. Perhaps some magical innovations require additional safeguards, lest they be used for tomfoolery rather than serious arcane business.
+                </div>
+            </div>
+
+            <footer class="mt-16 text-lg text-center border-t-2 border-dashed border-border-gold pt-8">
+                <p>Copyright 1337, by order of the Grand Magus Alistair</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Pre-load the chronicle audio
+            const chronicleAudio = new Audio('./audio.mp3');
+            chronicleAudio.volume = 0.7;
+            chronicleAudio.loop = false;
+
+            let voiceMuted = false;
+            const voiceToggle = document.getElementById('voice-toggle');
+
+            // Debug audio loading
+            chronicleAudio.addEventListener('loadeddata', () => {
+                console.log('Chronicle audio loaded, duration:', chronicleAudio.duration);
+            });
+            chronicleAudio.addEventListener('error', (e) => {
+                console.error('Chronicle audio failed to load:', e);
+            });
+            chronicleAudio.addEventListener('play', () => {
+                console.log('Chronicle audio started playing');
+                voiceToggle.classList.add('playing');
+            });
+            chronicleAudio.addEventListener('pause', () => {
+                console.log('Chronicle audio paused');
+                voiceToggle.classList.remove('playing');
+            });
+            chronicleAudio.addEventListener('ended', () => {
+                console.log('Chronicle audio ended');
+                voiceToggle.classList.remove('playing');
+            });
+
+            // Auto-play audio after a short delay (give time for user interaction)
+            setTimeout(() => {
+                if (!voiceMuted) {
+                    chronicleAudio.play()
+                        .then(() => console.log('✅ Auto-play started'))
+                        .catch(e => {
+                            console.log('⚠️ Auto-play prevented by browser. User must interact with page first.');
+                            console.log('Audio will play when user clicks the voice button.');
+                        });
+                }
+            }, 500);
+
+            // Voice toggle button
+            voiceToggle.addEventListener('click', () => {
+                voiceMuted = !voiceMuted;
+                console.log('Voice toggle clicked. Muted:', voiceMuted);
+
+                if (voiceMuted) {
+                    chronicleAudio.pause();
+                    voiceToggle.innerHTML = '🔇';
+                    voiceToggle.title = 'Voice Narration: OFF (Click to enable)';
+                    console.log('Voice muted');
+                } else {
+                    // Resume or restart audio
+                    if (chronicleAudio.paused) {
+                        chronicleAudio.play()
+                            .then(() => console.log('Audio resumed/started'))
+                            .catch(e => console.log('Audio play prevented:', e));
+                    }
+                    voiceToggle.innerHTML = '🔊';
+                    voiceToggle.title = 'Voice Narration: ON (Click to disable)';
+                    console.log('Voice unmuted');
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>
