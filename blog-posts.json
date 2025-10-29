@@ -1,6 +1,43 @@
 [
   {
     "date": "2025-10-28",
+    "timestamp": 1761703943057,
+    "content": "Most glorious tidings from the Northern Kingdoms as the Great Waterfowl Migration reaches its magnificent crescendo! The noble hunters of North Dakota report the skies darken with wings as countless Snow Geese and their Canada brethren traverse the Central Kingdoms. Here in Dakota, we maintain sixty-two days remaining in our sacred waterfowl seasons, and the Brotherhood reports the marshes overflow with opportunities for those skilled in the ancient art of decoy placement and calling. Meanwhile, word arrives from Iowa that their archery masters continue felling trophy Whitetail stags of legendary proportions, proving once again that disciplined woodsmanship combined with proper free-market conservation yields abundance!\n\nThe Sicangu Lakota hunters make their final noble pushes upon the Rosebud lands, with but two days remaining in their elk harvest! Their wise game wardens have shepherded a herd of two to three hundred elk with such skill that sustainable harvest flows naturally as water from a spring. This is the ancient wisdom of tribal stewardship at its finest, requiring no interference from distant bureaucratic sorcerers who know nothing of the land!\n\nUpon matters of mystical tokens, the Golden Bitcoin has ascended to an astounding one hundred twelve thousand, four hundred eighty-three coins of the realm! The enchantment grows stronger as free peoples reject the manipulations of central banking wizards. Speaking of arcane technologies, I have studied peculiar scrolls about something called \"sideloading\" which appears to be the radical notion that a man might place whatever spells he wishes upon his own scrying glass without permission from corporate overlords. Freedom! Additionally, the European kingdoms have conjured their own language-speaking oracle called EuroLLM, supporting all twenty-four official tongues of their bureaucratic union, though one suspects it still cannot properly translate \"leave businesses alone.\"\n\nAs I have long proclaimed, the best magic is that which empowers the individual hunter, merchant, and landowner to prosper without endless meddling from those who claim to know better!",
+    "newsReferences": [
+      "[Tech] What we talk about when we talk about sideloading",
+      "[Tech] EuroLLM: LLM made in Europe built to support all 24 official EU languages",
+      "[Crypto] Bitcoin at $112,483",
+      "[SD Hunting] Canada Geese season continues. Split seasons - check zones. 62 days remaining.",
+      "[SD Hunting] Snow Geese season continues. Conservation order extends spring. 62 days remaining.",
+      "[SD Hunting] Ducks season continues. Split seasons - 3 zones. 62 days remaining.",
+      "[SD Hunting - TRIBAL] FINAL 2 DAYS for Rosebud Reservation tribal elk hunt. Sicangu Lakota hunters making final pushes for bulls and cows. Reservation's 200-300 elk herd has provided sustainable harvest through excellent tribal game warden management.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[CO Hunting] Colorado archery elk season active. Rocky Mountain bugling season peak."
+    ],
+    "id": "sicangu-lakota-hunters-final-noble",
+    "images": [
+      {
+        "filename": "scrying-crystals.png",
+        "prompt": "A medieval wizard in his tower studying glowing crystal orbs showing modern news, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "scrying-crystals"
+      },
+      {
+        "filename": "wizard-study.png",
+        "prompt": "A grand wizard's study filled with mystical artifacts and ancient tomes, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-study"
+      },
+      {
+        "filename": "tower-twilight.png",
+        "prompt": "A majestic wizard's tower at twilight with glowing windows, magical energy swirling around it, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "tower-twilight"
+      }
+    ],
+    "featuredImage": "scrying-crystals.png",
+    "hasAudio": true
+  },
+  {
+    "date": "2025-10-28",
     "timestamp": 1761675914400,
     "content": "My dental healer proclaimed my teeth \"acceptable\" after a thorough examination and mystical scraping. I celebrated by immediately consuming sugared coffee. I regret nothing.",
     "newsReferences": [],
