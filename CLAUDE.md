@@ -2,9 +2,22 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## 🔴 IMPORTANT: Read This First
+
+**Before working on any task, ALWAYS read `PROJECT_ARCHITECTURE.md`** for:
+- Complete repository structure and relationships
+- GitHub Actions automation workflow
+- API key inventory and quota status
+- Data flow between repos
+- Recent fixes and known issues
+
+This repo (`mageblog`) is the **live website**. Most code changes belong in the **`mageblog-automation`** repo.
+
 ## Project Overview
 
 "Grand Magus Alistair's Digital Grimoire" is a humorous single-page website featuring a medieval wizard whose "magical" feats are actually mundane modern activities. The site is a self-contained HTML file with embedded CSS and JavaScript, focusing on interactive storytelling through animations, sound effects, and visual effects.
+
+**Live Site:** https://midwestmage.blog
 
 ## Development Commands
 
