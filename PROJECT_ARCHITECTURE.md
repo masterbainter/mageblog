@@ -6,6 +6,34 @@ This document maps the complete infrastructure for Grand Magus Alistair's Digita
 
 ---
 
+## 🔴 CRITICAL DEFAULT CONTEXT
+
+**When the user talks about "the blog" or "yesterday's post" or "the images" - they are ALWAYS referring to the LIVE SITE at https://midwestmage.blog.**
+
+### Default Assumptions:
+1. **"The blog"** = Live production site, not local files
+2. **"Latest post"** = Check live blog-posts.json at https://midwestmage.blog/blog-posts.json
+3. **"Images missing"** = Check the deployed site, not local directories
+4. **"Fix the automation"** = Edit files in `mageblog-automation` repo
+5. **"Update the blog page"** = Edit files in `mageblog` repo (theyearis1337 local)
+
+### When to Check Live Site First:
+- User mentions problems with posts, images, audio
+- User asks "why didn't X work"
+- User references "yesterday" or specific dates
+- User asks about API usage or quotas
+
+### Quick Live Site Checks:
+```bash
+# Get latest post from live site
+curl -s https://midwestmage.blog/blog-posts.json | head -50
+
+# Fetch entire blog-posts.json
+curl -s https://midwestmage.blog/blog-posts.json -o blog-posts.json
+```
+
+---
+
 ## Repository Overview
 
 ### 1. **mageblog** (Live Website)
@@ -207,6 +235,16 @@ This document maps the complete infrastructure for Grand Magus Alistair's Digita
 - **Root Cause:** `generate-blog-post.js` fell back to templates on AI failure
 - **Fix:** Removed catch block fallback, now fails loudly
 - **Impact:** GitHub Actions will send email on failure instead of publishing bad content
+
+**Problem 5:** Oct 30 post had images in JSON but not on individual blog page
+- **Root Cause:** `generate-pages.js` creates HTML but doesn't embed images inline
+- **Manual Fix:** Manually added images to `blog/[post-id]/index.html` using picture elements
+- **Lesson:** When user says "images missing on blog page", check:
+  1. Live site's blog-posts.json (does it have image metadata?)
+  2. Homepage (does featured image show?)
+  3. Individual blog page at `/blog/[post-id]/` (are images embedded in HTML?)
+- **Future:** Should update `generate-pages.js` to automatically embed images in HTML template
+- **Commit:** `f152d9d` - "Add inline images to Oct 30 blog post page"
 
 ---
 
