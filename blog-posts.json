@@ -16,8 +16,24 @@
       "[SD Hunting - TRIBAL] FINAL 1 DAYS for Rosebud Reservation tribal elk hunt. Sicangu Lakota hunters making final pushes for bulls and cows. Reservation's 200-300 elk herd has provided sustainable harvest through excellent tribal game warden management."
     ],
     "id": "fortuitous-developments-manifest-mystical-azure",
-    "images": [],
-    "featuredImage": null,
+    "images": [
+      {
+        "filename": "final-hunt-sunset-ritual.png",
+        "prompt": "A medieval wizard in flowing robes stands at the edge of an enchanted forest at sunset, staff raised toward the sky as spectral forms of elk and pronghorn fade into golden mist. Native American warriors on horseback pursue a glowing ethereal wapiti in the background, while an illuminated calendar shows October 30th carved in ancient runes. The scene is bathed in autumn twilight with sixty-two mystical candles floating in the air, representing the days until the rutting moon., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "final-hunt-sunset-ritual"
+      },
+      {
+        "filename": "azure-liberation-celebration.png",
+        "prompt": "Inside a grand medieval scriptorium, a jubilant wizard gestures toward a massive glowing azure portal hovering above wooden tables where monks and artists work with enchanted quills and brushes. Golden coins are flying out of chests and dispersing into sparkles, symbolizing the free access to mystical tools. The Affinity Studio grimoire floats open in the center, radiating blue magical light, while diverse practitioners celebrate around it with raised chalices., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "azure-liberation-celebration"
+      },
+      {
+        "filename": "walleye-sorcery-waters.png",
+        "prompt": "A robed magus stands beside the mighty Missouri River holding an ornate fishing rod crackling with magical energy, with a massive walleye jumping from the water amid sparkles and enchanted ripples. Three great reservoir lakes glow in the background like mystical pools under autumn skies. Fishing jigs and live bait float around him surrounded by golden runic circles, while his spellbook lies open showing diagrams of sacred fishing sorcery techniques., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "walleye-sorcery-waters"
+      }
+    ],
+    "featuredImage": "final-hunt-sunset-ritual.png",
     "hasAudio": true
   },
   {
