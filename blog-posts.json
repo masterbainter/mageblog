@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-11-01",
+    "timestamp": 1762021244963,
+    "content": "Grand tidings from the Northern Reaches where the great Waterfowl Convergence reaches its most glorious zenith! The stalwart hunters of Wisconsin find themselves blessed beyond measure as both the Gun Deer Campaign and the late migration of geese coincide in perfect harmony. Meanwhile, the Kingdom of Minnesota celebrates the opening of their Firearms Deer Season with traditional encampments across the realm - 'tis a sacred gathering where fathers pass ancient knowledge to sons, and the aroma of cookfires mingles with tales of bucks past. Such is the wisdom of realms that honor tradition over the fevered ravings of urban sorcerers who know not the difference between a drake mallard and a domestic chicken!\n\nHere in our own Kingdom of Dakota, the Waterfowl Campaigns continue with fifty-nine days yet remaining for both the Canada Geese and the magnificent Snow Geese. The split seasons across three mystical zones require careful study of the sacred scrolls, lest a warrior find himself hunting in the wrong quadrant at the wrong hour. I myself consulted the arcane charts this very morn whilst partaking of my ritual bean elixir.\n\nMost peculiar developments in the realm of Manuscript Sorcery! The great ArXiv repository of the Computer Science guild has updated their sacred protocols for review articles and position papers. This may seem trivial to common folk, but 'tis actually quite sensible - proper categorization of scholarly works prevents chaos in the libraries of knowledge. Far more troubling was the second failure of the so-called Chat Control proposal, a bureaucratic monstrosity that would have surveilled all private correspondence under guise of protection. The people rose up and smote it down yet again! Freedom prevails!\n\nThe Golden Bitcoin Token now commands one hundred ten thousand two hundred seventy-two pieces of fiat currency - a testament to those who choose independence over the manipulations of central banking wizards. Mark well this lesson: when individuals are free to choose their own destiny without suffocating regulation, prosperity follows as surely as mallards follow decoys!",
+    "newsReferences": [
+      "[Tech] Updated practice for review articles and position papers in ArXiv CS category",
+      "[Tech] Chat Control proposal fails again after public opposition",
+      "[Crypto] Bitcoin at $110,272",
+      "[SD Hunting] Canada Geese season continues. Split seasons - check zones. 59 days remaining.",
+      "[SD Hunting] Snow Geese season continues. Conservation order extends spring. 59 days remaining.",
+      "[SD Hunting] Ducks season continues. Split seasons - 3 zones. 59 days remaining.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[MN Hunting] Minnesota firearms deer season opening. Major cultural event with hunting camps statewide.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time."
+    ],
+    "id": "kingdom-dakota-waterfowl-campaigns-continue",
+    "images": [
+      {
+        "filename": "northern-hunting-convergence.png",
+        "prompt": "A medieval encampment in snowy woods where fathers and sons in chainmail and fur-lined cloaks gather around crackling cookfires, their longbows and crossbows resting against oak trees. In the clearing beyond, majestic deer with glowing antlers roam while flocks of geese fly overhead in perfect formation against a twilight sky. Banners bearing the emblems of Wisconsin and Minnesota flutter in the wind as hunters share stories and pass down ancient hunting lore., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "northern-hunting-convergence"
+      },
+      {
+        "filename": "wizard-studies-migration-scrolls.png",
+        "prompt": "Grand Magus Alistair in flowing star-embroidered robes sits at an ornate wooden desk covered with mystical scrolls depicting three color-coded hunting zones and calendar charts with arcane symbols. He holds a steaming goblet of coffee (the ritual bean elixir) while studying the complex waterfowl migration patterns, with a quill in his other hand. Through the arched stone window behind him, Canada Geese and Snow Geese fly across a Dakota prairie landscape., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-studies-migration-scrolls"
+      },
+      {
+        "filename": "golden-bitcoin-token-triumph.png",
+        "prompt": "A dramatic scene in a grand medieval chamber where a glowing golden Bitcoin coin the size of a shield hovers above a pedestal, radiating light and inscribed with the number 110,272. Dark-robed central banking wizards recoil in shadow at the edges while common folk in simple tunics reach toward the luminous token with hope. Stone walls are carved with symbols of freedom and independence, and rays of golden light pierce through high windows., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "golden-bitcoin-token-triumph"
+      }
+    ],
+    "featuredImage": "northern-hunting-convergence.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-10-31",
     "timestamp": 1761935045223,
     "content": "Most extraordinary happenings unfold across the realms as the final sun sets upon the Rosebud tribal elk hunt! The mighty Sicangu Lakota hunters make their concluding pursuit of the noble elk herds this very day, a testament to the ancient wisdom of proper game stewardship. These skilled warriors have managed their sacred herd of two to three hundred magnificent beasts with such excellence that even this Grand Magus must bow in respect to their tribal game wardens. This is conservation as it should be practiced, my friends, without the meddling interference of distant bureaucratic sorcerers!\n\nThe mystical Missouri River reservoirs overflow with aquatic bounty as the walleye warriors report tremendous success across Lakes Oahe, Sharpe, and Francis Case! These crafty fish fall readily to the ancient techniques of dangling enchanted jigs and living bait beneath the waters. Meanwhile, far to our north in the Devils Lake territory, the legendary jumbo perch continue their reign as one of the continent's most magnificent fisheries. Such abundance proves what happens when realms respect the natural cycles and allow skilled hunters and anglers to practice their noble crafts!\n\nIn matters of the mystical golden tokens, Bitcoin has ascended to the stratospheric heights of one hundred nine thousand two hundred and twenty-seven pieces of enchanted currency! This decentralized sorcery continues confounding the central banking wizards who thought they alone controlled the flow of monetary magic. The free market works its ancient wisdom once more, creating wealth for those brave enough to trust in the invisible hand rather than the grasping fingers of regulatory overlords!\n\nStrange disturbances ripple through the realm of Azure Cloud Architecture as the mystical scroll-scrapers now demand that arcane incantations be inscribed with explanatory runes in plain language! Apparently these automated golems lack the fundamental intelligence to comprehend uncommenting simple instructions. Perhaps, just perhaps, there are certain tasks that still require human wisdom rather than these so-called intelligent constructs? This Grand Magus has long maintained that true power comes from understanding, not merely from copying the spells of others!",
