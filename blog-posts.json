@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-11-02",
+    "timestamp": 1762107609434,
+    "content": "Most wondrous developments unfold across the Great Northern Realms as we enter the sacred fortnight before the legendary Rut of the White-Tailed Stag! The warriors of Wisconsin find themselves blessed beyond measure, for both the Thunder-Stick Season and the final movements of the Waterfowl Migration converge upon their forests - truly, 'tis the pinnacle of the hunting calendar! Meanwhile, the legendary Trophy Stag Territories of Iowa continue yielding magnificent beasts to the Silent Arrow Brotherhood, whilst Minnesota erupts in celebration as their Firearms Congregation commences. Verily, I say unto thee, the encampments dotting their woodlands represent civilization at its finest - men gathering in fellowship, pursuing noble game, and eschewing the tedious bureaucratic machinations of distant city-dwelling mayors who prattle endlessly about their pitches and platforms.\n\nSpeaking of arcane mysteries, a most peculiar inquisition was leveled at me during my Code Scrollwork this morn: \"Why don't you use dependent types?\" quoth a young apprentice with altogether too much confidence. I responded thusly: when one's mystical incantations fail to function properly, one employs the ancient ritual of Git Bisect, methodically traversing the timeline of one's sorcerous commits until the corrupted enchantment reveals itself! 'Tis far more practical than drowning in theoretical type systems whilst deadlines loom.\n\nThe Golden Tokens of Decentralized Commerce have ascended to the celestial height of one hundred ten thousand, one hundred seventy seven pieces of fiat currency! This magnificent surge proves once again that free peoples prefer mystical currencies beyond the grasping talons of central banking sorcerers. The merchant-mages grow ever wealthier whilst government scribes squabble over food aid appropriations during their self-inflicted shutdown crisis.\n\nTruly, the lesson here is manifest: trust in individual liberty, honor the ancient hunting traditions, and when your enchantments malfunction, bisect your commits with methodical precision! The rut approaches!",
+    "newsReferences": [
+      "[Tech] At the end you use Git bisect",
+      "[Tech] \"Why don't you use dependent types?\"",
+      "[Crypto] Bitcoin at $110,177",
+      "[SD Hunting] White-tailed Deer season continues. Peak rut mid-November. 59 days remaining.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[MN Hunting] Minnesota firearms deer season opening. Major cultural event with hunting camps statewide.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time.",
+      "[Star Tribune (Minneapolis)] Candidates for mayor of Minneapolis, St. Paul make their pitches",
+      "[Star Tribune (Minneapolis)] Minneapolis Mayor Jacob Frey, in his own words"
+    ],
+    "id": "speaking-arcane-mysteries-peculiar-inquisition",
+    "images": [
+      {
+        "filename": "great-northern-hunting-convergence.png",
+        "prompt": "A medieval wizard's forest encampment during hunting season, where armored hunters gather around campfires with mystical thunder-sticks (rifles) and longbows, while ethereal white-tailed stags with glowing antlers move through misty autumn woods. Brotherhood banners flutter above tents as waterfowl fly in formation overhead under a golden sunset, with maps of Wisconsin, Iowa, and Minnesota territories spread on wooden tables., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "great-northern-hunting-convergence"
+      },
+      {
+        "filename": "git-bisect-debugging-ritual.png",
+        "prompt": "Grand Magus Alistair in his tower chamber, surrounded by floating scrolls of glowing code inscriptions, performing the ancient Git Bisect ritual with a magical staff pointing at a branching timeline of commits visualized as a luminous tree. A confused young apprentice watches as the wizard methodically traces back through glowing nodes to find a corrupted enchantment, with arcane type theory books gathering dust in the corner., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "git-bisect-debugging-ritual"
+      },
+      {
+        "filename": "decentralized-golden-tokens-ascension.png",
+        "prompt": "A mystical marketplace scene where golden Bitcoin coins levitate and shine above a medieval trading floor, reaching toward a glowing celestial number reading 110,177. Jubilant merchant-mages in robes count their treasures while shadowy government scribes with empty coffers argue in the background, magical currency symbols swirling through the air beyond the reach of grasping spectral hands., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "decentralized-golden-tokens-ascension"
+      }
+    ],
+    "featuredImage": "great-northern-hunting-convergence.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-11-01",
     "timestamp": 1762021244963,
     "content": "Grand tidings from the Northern Reaches where the great Waterfowl Convergence reaches its most glorious zenith! The stalwart hunters of Wisconsin find themselves blessed beyond measure as both the Gun Deer Campaign and the late migration of geese coincide in perfect harmony. Meanwhile, the Kingdom of Minnesota celebrates the opening of their Firearms Deer Season with traditional encampments across the realm - 'tis a sacred gathering where fathers pass ancient knowledge to sons, and the aroma of cookfires mingles with tales of bucks past. Such is the wisdom of realms that honor tradition over the fevered ravings of urban sorcerers who know not the difference between a drake mallard and a domestic chicken!\n\nHere in our own Kingdom of Dakota, the Waterfowl Campaigns continue with fifty-nine days yet remaining for both the Canada Geese and the magnificent Snow Geese. The split seasons across three mystical zones require careful study of the sacred scrolls, lest a warrior find himself hunting in the wrong quadrant at the wrong hour. I myself consulted the arcane charts this very morn whilst partaking of my ritual bean elixir.\n\nMost peculiar developments in the realm of Manuscript Sorcery! The great ArXiv repository of the Computer Science guild has updated their sacred protocols for review articles and position papers. This may seem trivial to common folk, but 'tis actually quite sensible - proper categorization of scholarly works prevents chaos in the libraries of knowledge. Far more troubling was the second failure of the so-called Chat Control proposal, a bureaucratic monstrosity that would have surveilled all private correspondence under guise of protection. The people rose up and smote it down yet again! Freedom prevails!\n\nThe Golden Bitcoin Token now commands one hundred ten thousand two hundred seventy-two pieces of fiat currency - a testament to those who choose independence over the manipulations of central banking wizards. Mark well this lesson: when individuals are free to choose their own destiny without suffocating regulation, prosperity follows as surely as mallards follow decoys!",
