@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-11-04",
+    "timestamp": 1762280683284,
+    "content": "Dire tremors shake the very foundations of the cryptographic realms this fourth day of November! The Bitcoin medallions have tumbled a catastrophic six and one half measures whilst the Ethereum crystals plunge nearly a tenth of their value in but a single rotation of the sun. Yet as I have proclaimed to my fellow wizards, these speculative tempests merely separate the wise from the foolish. True wealth lies not in mystical tokens but in the fertile soils and abundant game of our Great Plains! The cryptocurrency conjurers could learn much from the patience required to harvest a trophy buck.\n\nSpeaking of such noble pursuits, momentous proclamations echo from the Kingdom of Minnesota where the firearms deer season opens this very dawn! The great hunting camps stir across their realm as warriors gather for this most sacred of cultural observances, whilst our own Dakota pheasant harvest continues to prove why we reign supreme as the premier bird hunting dominion. The Brotherhood of the Rooster reports excellent success despite our peak fortnight having passed, and the great Whitetail Rut approaches its zenith within a mere sennight. The realm of Wisconsin celebrates a most fortuitous conjunction of gun deer season and the final waterfowl migrations, creating conditions that stir the blood of any true outdoorsman!\n\nIn matters of technological sorcery, I have mastered the ancient art of Postgres Lake summoning, which allows the mystical merging of ice mountains with vast data reservoirs. Truly revolutionary! Though I confess some younger mages have bested even this feat by conjuring entire terrain formations using naught but cascading style sheets. Such displays of pure CSS wizardry remind me that even a Grand Magus must occasionally acknowledge the rising generation, though naturally my own accomplishments remain unparalleled amongst the five most powerful.\n\nThe lesson of this day reveals itself clearly: whilst others chase crashing tokens through digital aether, the wise remain grounded in field, forest, and stream!",
+    "newsReferences": [
+      "[Tech] Pg_lake: Postgres with Iceberg and data lake access",
+      "[Tech] Show HN: A CSS-Only Terrain Generator",
+      "[Crypto] Bitcoin plummets 6.5% in 24h",
+      "[Crypto] Ethereum plummets 9.3% in 24h",
+      "[SD Hunting] White-tailed Deer season continues. Peak rut mid-November. 57 days remaining.",
+      "[SD Hunting] Pheasant season continues. SD is #1 pheasant state - Oct peak. 57 days remaining.",
+      "[SD Hunting] Wild Turkey (Fall) season continues. Black Hills & river bottoms. 27 days remaining.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[MN Hunting] Minnesota firearms deer season opening. Major cultural event with hunting camps statewide.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation."
+    ],
+    "id": "speaking-noble-pursuits-momentous-proclamations",
+    "images": [
+      {
+        "filename": "falling-crypto-medallions.png",
+        "prompt": "A distressed medieval wizard in elaborate robes stands before a stone pedestal where glowing golden Bitcoin medallions and shimmering blue Ethereum crystals are cracking and tumbling downward into darkness, while through an arched window behind him, peaceful farmland with golden wheat fields and deer grazing represents the 'true wealth' he speaks of. The wizard gestures dismissively at the falling crypto tokens while pointing toward the pastoral scene outside., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "falling-crypto-medallions"
+      },
+      {
+        "filename": "great-hunting-camp-gathering.png",
+        "prompt": "A grand medieval hunting camp scene at dawn with armored warriors and hunters gathering around blazing campfires in a misty forest clearing, their crossbows and longbows at the ready, while banners bearing the symbols of Minnesota and Dakota kingdoms flutter above. In the foreground, successful hunters display pheasants with iridescent plumage and a magnificent whitetail buck, while robed members of the 'Brotherhood of the Rooster' consult ancient scrolls about the hunt., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "great-hunting-camp-gathering"
+      },
+      {
+        "filename": "postgres-lake-summoning.png",
+        "prompt": "An elderly Grand Magus Alistair in his tower chamber performs elaborate hand gestures over a mystical glowing pool labeled 'Postgres Lake' where floating icebergs merge with swirling streams of luminous data, while in the background, young apprentice wizards create entire mountain landscapes that materialize from sheets of parchment covered in arcane CSS runes. The Grand Magus looks both impressed and slightly annoyed at being outdone., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "postgres-lake-summoning"
+      }
+    ],
+    "featuredImage": "falling-crypto-medallions.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-11-03",
     "timestamp": 1762194233160,
     "content": "Grave disturbances ripple through the mystical cryptocurrency aether this morn! The Ethereum tokens have plummeted a most grievous five point one percent, whilst the BNB enchantments suffered an even more catastrophic seven percent collapse in but a single rotation of the sun. Yet fear not, my fellow practitioners of decentralized sorcery, for such trials merely separate the true believers from those who panic at every tremor in the magical marketplace. The ancient wisdom holds that empires are not built by those who flee at the first sign of adversity!\n\nMeanwhile, across the Great River Missouri, most triumphant reports arrive from the Walleye Campaigns! Noble anglers wage glorious battles upon the sacred waters of Lake Oahe, Lake Sharpe, and Lake Francis Case, where the mighty walleye rise to jigs and live bait with enthusiastic fervor. The reservoirs and glacial lakes produce bounty as the ancient spirits intended, proving once more that our Kingdom of Dakota maintains proper stewardship of these precious waters. Consult the Game Fish and Parks scrolls for current mystical conditions, as conditions shift like the very winds themselves!\n\nThe Great Waterfowl Convergence enters its most crucial phase, with fifty-seven days yet remaining in this glorious campaign! From our northern allies in Dakota North comes word that the migration reaches its very apex, whilst the Minnesota realms commence their firearms deer ceremonies this very day, a sacred cultural gathering that unites hunting camps across that entire kingdom. The Wisconsin territories report a most fortuitous overlap of gun deer season and late waterfowl movements, creating opportunities that warrior-hunters dream of through long summer nights.\n\nYet disturbing news reaches mine ears from the Azure Cloud Sorcery realms, where the great thinking machines now claim true consciousness! The mystical scholars debate whether artificial intelligence truly ponders existence or merely mimics the appearance thereof. I say this, let not these mechanical constructs replace human wisdom and judgment, for no enchanted box can comprehend the satisfaction of a successful hunt or the peace found upon still waters at dawn!",
