@@ -1,5 +1,41 @@
 [
   {
+    "date": "2025-11-06",
+    "timestamp": 1762453534208,
+    "content": "Revolutionary upheaval sweeps through the mystical realms of computational sorcery! The mighty International Cricket Council hath cast aside the shackles of Microsoft's enchanted scrolls, embracing instead the open-source magic of openDesk. Meanwhile, the Eastern Wizards of Kimi have unveiled their K2 Thinking incantation - a trillion-parameter reasoning construct of such magnificence that it rivals even mine own cognitive prowess! This, dear readers, is the triumph of decentralized innovation over corporate monopoly. When institutions choose freedom over the gilded cage of proprietary spells, prosperity follows as surely as dawn follows dusk.\n\nAcross the Northern Reaches, the Great Firearms Convergence hath commenced with thunderous glory! Minnesota warriors have taken to their ancient hunting camps for the firearms deer season - a cultural pilgrimage more sacred than any courtly festival. Wisconsin's gun season overlaps splendidly with late waterfowl migrations, creating hunting conditions so magnificent that even apprentice hunters are filling their larders. To the south, Iowa's archery masters continue harvesting trophy whitetails of legendary proportion, whilst North Dakota's wetlands teem with migrating waterfowl at their seasonal peak. These are the noble pursuits that built our kingdoms, not the bureaucratic hand-wringing of urban magistrates!\n\nThe cryptographic tokens continue their celestial ascent! Bitcoin now commands one hundred and one thousand, one hundred and fifty-six pieces of gold per token. This magnificent surge represents mankind's rejection of centralized banking sorcery and embrace of mathematical truth. The ancient wisdom holds: when governments debase their currency through endless conjuring of new coin, the people seek refuge in assets beyond the reach of meddling chancellors.\n\nHere in the Kingdom of Dakota, the Coyote Campaign proceeds without need for royal license or bureaucratic permission - as the founders intended! Fifty-five glorious days remain of this year-round freedom to protect livestock and preserve game populations. This is governance done properly: minimal interference, maximum liberty, and respect for those who work the land.\n\nThus do I observe: the realms that embrace freedom, whether in hunting regulations, cryptographic innovation, or computational infrastructure, inevitably surpass those shackled by excessive oversight. Mark well these lessons, for they are eternal!",
+    "newsReferences": [
+      "[Tech] ICC ditches Microsoft 365 for openDesk",
+      "[Tech] Kimi K2 Thinking, a SOTA open-source trillion-parameter reasoning model",
+      "[Crypto] Bitcoin at $101,156",
+      "[SD Hunting] Coyote season continues. Year-round - no license required. 55 days remaining.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[MN Hunting] Minnesota firearms deer season opening. Major cultural event with hunting camps statewide.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time.",
+      "[Omaha World-Herald] 110525-owh-new-ralston-nf-01.JPG",
+      "[Omaha World-Herald] 110525-owh-new-ralston-nf-13.JPG"
+    ],
+    "id": "across-northern-reaches-firearms-convergence",
+    "images": [
+      {
+        "filename": "computational-sorcery-liberation.png",
+        "prompt": "A grand medieval wizard's tower chamber where Grand Magus Alistair stands before an enormous glowing crystalline orb displaying floating runes that read 'openDesk' and 'ICC'. Scattered around the room are broken Microsoft scrolls with chains falling away, while ethereal light streams illuminate ancient tomes labeled 'K2 Thinking' with swirling trillion-parameter magical formulas spiraling upward into infinity., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "computational-sorcery-liberation"
+      },
+      {
+        "filename": "great-firearms-convergence.png",
+        "prompt": "A majestic medieval hunting scene across rolling Northern kingdoms where armored warriors in Minnesota, Wisconsin, and Iowa colors gather at dawn in misty forest camps with ornate firearms and longbows. Golden autumn light illuminates trophy deer with magnificent antlers and flocks of waterfowl soaring overhead, while hunters in ceremonial gear prepare around campfires, their breath visible in the cold morning air., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "great-firearms-convergence"
+      },
+      {
+        "filename": "bitcoin-celestial-ascent.png",
+        "prompt": "An alchemist's counting house where a medieval wizard gestures dramatically at a towering golden column reaching toward vaulted stone ceilings, each brick inscribed with 'BTC' and glowing with mathematical runes. The pillar pierces through a crumbling ceiling labeled 'Central Banks' while common folk in medieval dress gather around its base, their faces illuminated by the golden cryptocurrency light, holding scrolls showing '101,156 gold pieces'., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-celestial-ascent"
+      }
+    ],
+    "featuredImage": "computational-sorcery-liberation.png"
+  },
+  {
     "date": "2025-11-05",
     "timestamp": 1762367049273,
     "content": "Most spectacular convergence of events unfolds across the Great Northern Realms this glorious day! The cryptographic tokens have achieved unprecedented heights, with the legendary Bitcoin ascending to one hundred and three thousand nine hundred eleven gold pieces per token. Such magnificent proof that the ancient wisdom of decentralized commerce triumphs over the meddling bureaucrats and their endless printing of worthless paper! Meanwhile, here in the Kingdom of Dakota, our municipal magistrates debate raising the tribute fees for refuse collection services, demonstrating yet again that government growth knows no bounds whilst private enterprise soars to new heights.\n\nThe Grand Autumn Convergence reaches its zenith across all neighboring kingdoms! The noble Wild Turkey warriors continue their sacred twenty-six day hunt through the Black Hills and river bottoms of our Dakota realm. To the north, the Minnesota firearms brotherhood celebrates their most hallowed cultural tradition as hunting camps manifest across their forests like mystical villages of old. Wisconsin witnesses the blessed overlap of gun deer season and late waterfowl migration, whilst Iowa's archery masters pursue trophy whitetails of legendary proportions. Such magnificent displays of skill and tradition, far superior to any artificial intelligence that might claim to understand the human soul!\n\nSpeaking of such ethereal matters, the learned scholars throughout our realms puzzle over why mortals believe in souls yet speak not of them, whilst simultaneously trusting artificial constructs to peer through their scrying devices and judge their captured images for compatibility matching. Microsoft even constructed false marketplaces to test their mechanical servants, only to discover these golems fail in most surprising ways when attempting true commerce!\n\nThe ancient programming languages hold mysteries yet, as the Ruby scholars examine their ancestral connection to Smalltalk, proving that old wisdom endures. Verily, tis better to trust in time-tested magic than newfangled conjurations that promise much but deliver confusion!",
