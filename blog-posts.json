@@ -1,5 +1,41 @@
 [
   {
+    "date": "2025-11-07",
+    "timestamp": 1762539824639,
+    "content": "Stupendous developments ripple through the mystical realms on this finest of November mornings! The legendary Bitcoin tokens have ascended to heights once thought impossible, breaching the one hundred and two thousand mark in the grand exchanges. These magical instruments of financial freedom continue their glorious rise, unshackled from the iron grip of central banking sorcerers. Meanwhile, I have been conducting my own arcane studies of a mysterious incantation known as OCaml, a potent programming language of great elegance and power. Though many lesser mages favor more common tongues, I find its functional purity most agreeable to my refined sensibilities.\n\nBut hark! The true glories unfold across the Great Plains hunting grounds this very day! Our brethren in the Kingdom of Minnesota commence their sacred firearms deer season, a momentous cultural gathering where warriors establish hunting camps throughout the realm. Simultaneously, the Wisconsin territories experience the magnificent convergence of gun deer season and late waterfowl migration, creating conditions that can only be described as providence itself. These northern kingdoms understand what our own Dakota has long known: that the noble pursuit of game upon the land connects man to ancient traditions more powerful than any metropolitan sorcery.\n\nHere in our Kingdom of Dakota, the pheasant warriors continue their triumphant campaign with fifty-four glorious days yet remaining. The sharp-tailed grouse inhabit the West River grasslands in abundant numbers, whilst prairie chickens offer sport in the limited East River ranges. Truly, our realm maintains its rightful position as premier pheasant territory through wise conservation and respect for the natural order.\n\nYet troubling news arrives from the distant Kingdom of Germania! The telecommunications guild known as Vodafone engages in dark practices, severing the sacred peering connections that allow the free flow of information across the mystical internet realms. Such bureaucratic interference reminds us why free markets and open competition serve the common good far better than regulatory overreach by power-hungry administrators. Grand Magus Alistair speaks truth: prosperity flows from liberty, not from the heavy hand of distant authorities!",
+    "newsReferences": [
+      "[Tech] Vodafone Germany is killing the open internet – one peering connection at a time",
+      "[Tech] I Love OCaml",
+      "[Crypto] Bitcoin at $102,538",
+      "[SD Hunting] Pheasant season continues. SD is #1 pheasant state - Oct peak. 54 days remaining.",
+      "[SD Hunting] Sharp-tailed Grouse season continues. West River grasslands. 54 days remaining.",
+      "[SD Hunting] Prairie Chicken season continues. East River - limited range. 24 days remaining.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[MN Hunting] Minnesota firearms deer season opening. Major cultural event with hunting camps statewide.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time."
+    ],
+    "id": "glories-unfold-across-plains-hunting",
+    "images": [
+      {
+        "filename": "bitcoin-ascension-prophecy.png",
+        "prompt": "A medieval wizard in flowing purple robes stands before a glowing mystical chart showing golden Bitcoin tokens ascending a magical mountain path, breaking through clouds at the summit marked '102,000'. Ancient scrolls and arcane symbols float around the chart while ethereal chains labeled 'central banking' lie broken at the base. The wizard gestures triumphantly at the soaring golden coins., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-ascension-prophecy"
+      },
+      {
+        "filename": "northern-kingdoms-hunt-gathering.png",
+        "prompt": "Medieval hunters in chainmail and leather armor gather around blazing campfires in a snowy forest clearing across the Great Plains kingdoms. Warriors clean ornate muskets and crossbows while pheasants and grouse hang from wooden racks. A grand map showing the territories of Minnesota, Wisconsin, and Dakota dominates the center, with illustrated waterfowl flying overhead and deer tracks marking sacred hunting grounds., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "northern-kingdoms-hunt-gathering"
+      },
+      {
+        "filename": "vodafone-dark-severance.png",
+        "prompt": "A sinister Germanic castle tower looms in darkness as shadowy bureaucratic figures in dark robes sever glowing ethereal threads connecting crystal orbs representing internet realms. The mystical peering connections spark and fade as they're cut with ceremonial scissors. In the foreground, the telecommunications guild's Vodafone banner hangs ominously while free-flowing information streams are blocked by iron gates., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "vodafone-dark-severance"
+      }
+    ],
+    "featuredImage": "bitcoin-ascension-prophecy.png"
+  },
+  {
     "date": "2025-11-06",
     "timestamp": 1762453534208,
     "content": "Revolutionary upheaval sweeps through the mystical realms of computational sorcery! The mighty International Cricket Council hath cast aside the shackles of Microsoft's enchanted scrolls, embracing instead the open-source magic of openDesk. Meanwhile, the Eastern Wizards of Kimi have unveiled their K2 Thinking incantation - a trillion-parameter reasoning construct of such magnificence that it rivals even mine own cognitive prowess! This, dear readers, is the triumph of decentralized innovation over corporate monopoly. When institutions choose freedom over the gilded cage of proprietary spells, prosperity follows as surely as dawn follows dusk.\n\nAcross the Northern Reaches, the Great Firearms Convergence hath commenced with thunderous glory! Minnesota warriors have taken to their ancient hunting camps for the firearms deer season - a cultural pilgrimage more sacred than any courtly festival. Wisconsin's gun season overlaps splendidly with late waterfowl migrations, creating hunting conditions so magnificent that even apprentice hunters are filling their larders. To the south, Iowa's archery masters continue harvesting trophy whitetails of legendary proportion, whilst North Dakota's wetlands teem with migrating waterfowl at their seasonal peak. These are the noble pursuits that built our kingdoms, not the bureaucratic hand-wringing of urban magistrates!\n\nThe cryptographic tokens continue their celestial ascent! Bitcoin now commands one hundred and one thousand, one hundred and fifty-six pieces of gold per token. This magnificent surge represents mankind's rejection of centralized banking sorcery and embrace of mathematical truth. The ancient wisdom holds: when governments debase their currency through endless conjuring of new coin, the people seek refuge in assets beyond the reach of meddling chancellors.\n\nHere in the Kingdom of Dakota, the Coyote Campaign proceeds without need for royal license or bureaucratic permission - as the founders intended! Fifty-five glorious days remain of this year-round freedom to protect livestock and preserve game populations. This is governance done properly: minimal interference, maximum liberty, and respect for those who work the land.\n\nThus do I observe: the realms that embrace freedom, whether in hunting regulations, cryptographic innovation, or computational infrastructure, inevitably surpass those shackled by excessive oversight. Mark well these lessons, for they are eternal!",
