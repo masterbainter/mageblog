@@ -45,8 +45,11 @@
         .chronicle-scroll {
             position: relative;
             margin-bottom: 2rem;
-            cursor: pointer;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .chronicle-scroll:not(.unraveled) {
+            cursor: pointer;
         }
 
         /* Rolled scroll appearance */
@@ -191,6 +194,27 @@
             text-decoration: underline;
             transform: translateX(5px);
         }
+
+        /* Roll up button */
+        .roll-up-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--ornament);
+            color: var(--parchment);
+            border: 2px solid var(--border-gold);
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .roll-up-btn:hover {
+            background-color: var(--border-gold);
+            color: var(--ink);
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -277,18 +301,29 @@
                                 <p class="card-excerpt">${excerpt}</p>
                                 <div class="card-footer">
                                     <a href="${postLink}" class="read-more">→ Read Full Chronicle</a>
+                                    <div>
+                                        <button class="roll-up-btn">↑ Roll Up Scroll</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     `;
 
-                    // Add click handler to toggle unraveling
-                    scrollDiv.addEventListener('click', (e) => {
-                        // Don't toggle if clicking the link
-                        if (e.target.classList.contains('read-more') || e.target.closest('.read-more')) {
-                            return;
-                        }
-                        scrollDiv.classList.toggle('unraveled');
+                    // Click handler for rolled scroll only
+                    const rolledDiv = scrollDiv.querySelector('.scroll-rolled');
+                    rolledDiv.addEventListener('click', () => {
+                        scrollDiv.classList.add('unraveled');
+                    });
+
+                    // Click handler for roll-up button
+                    const rollUpBtn = scrollDiv.querySelector('.roll-up-btn');
+                    rollUpBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        scrollDiv.classList.remove('unraveled');
+                        // Scroll to the rolled scroll
+                        setTimeout(() => {
+                            scrollDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 100);
                     });
 
                     container.appendChild(scrollDiv);
