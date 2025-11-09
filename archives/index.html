@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle Archives - Grand Magus Alistair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #f3e9d2;
+            --ink: #4a2c2a;
+            --ornament: #8c3838;
+            --border-gold: #c8a379;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background-color: var(--parchment);
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+            color: var(--ink);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-ornament { color: var(--ornament); }
+
+        .back-link {
+            display: inline-block;
+            color: var(--ornament);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-gold);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: rgba(200, 163, 121, 0.3);
+            transform: translateX(-5px);
+        }
+
+        /* Card Grid Styles */
+        .chronicle-card {
+            border: 3px solid var(--border-gold);
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chronicle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(140, 56, 56, 0.3);
+            border-color: var(--ornament);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--border-gold);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-excerpt {
+            flex-grow: 1;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            line-height: 1.6;
+        }
+
+        .card-footer {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px dashed var(--border-gold);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--ornament);
+            color: var(--parchment);
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+        }
+
+        .read-more {
+            color: var(--ornament);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+            transform: translateX(3px);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto px-4 sm:px-6 py-12">
+        <main class="max-w-7xl mx-auto">
+
+            <a href="../index.html" class="back-link mb-8">← Return to the Grimoire</a>
+
+            <div class="mt-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4 text-center">Chronicle Archives</h1>
+                <p class="text-xl text-center mb-12">All tales of mystical mundanity from the Year 1337</p>
+
+                <div id="archives-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <p class="text-center text-lg col-span-full">Loading chronicles...</p>
+                </div>
+
+                <div id="archives-count" class="text-center mt-12"></div>
+            </div>
+
+            <footer class="mt-16 text-lg text-center border-t-2 border-dashed border-border-gold pt-8">
+                <p>Copyright 1337, by order of the Grand Magus Alistair</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        async function loadArchives() {
+            try {
+                const response = await fetch('../blog-posts.json');
+                const posts = await response.json();
+
+                const grid = document.getElementById('archives-grid');
+                const countDiv = document.getElementById('archives-count');
+
+                if (posts.length === 0) {
+                    grid.innerHTML = '<p class="text-center text-lg col-span-full">No Chronicles yet. Check back soon!</p>';
+                    return;
+                }
+
+                grid.innerHTML = '';
+
+                posts.forEach(post => {
+                    // Parse date
+                    const [year, month, day] = post.date.split('-').map(Number);
+                    const date = new Date(year, month - 1, day);
+                    const formattedDate = date.toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        timeZone: 'America/Chicago'
+                    });
+
+                    const postId = post.id || post.timestamp;
+                    const postLink = postId ? `../blog/${postId}/` : '#';
+
+                    // Get featured image (first image or fallback)
+                    let imageUrl = '../images/wizard-placeholder.png'; // Fallback
+                    if (post.featuredImage) {
+                        imageUrl = `../blog/${postId}/${post.featuredImage}`;
+                    } else if (post.images && post.images.length > 0) {
+                        imageUrl = `../blog/${postId}/${post.images[0].filename}`;
+                    }
+
+                    // Create excerpt (first 200 characters)
+                    const excerpt = post.content.length > 200
+                        ? post.content.substring(0, 200) + '...'
+                        : post.content;
+
+                    // Create card
+                    const cardDiv = document.createElement('div');
+                    cardDiv.className = 'chronicle-card';
+                    cardDiv.innerHTML = `
+                        <picture>
+                            <source srcset="${imageUrl.replace('.png', '.webp')}" type="image/webp">
+                            <img src="${imageUrl}" alt="Chronicle illustration" class="card-image" loading="lazy" onerror="this.src='../images/wizard-placeholder.png'">
+                        </picture>
+                        <div class="card-content">
+                            <h3 class="text-xl font-bold text-ornament mb-2">
+                                ${formattedDate}
+                            </h3>
+                            <p class="card-excerpt text-base leading-relaxed mb-3">${excerpt}</p>
+                            <div class="card-footer">
+                                ${post.hasAudio ? '<span class="badge">🔊 Audio</span>' : ''}
+                                ${post.images && post.images.length > 0 ? `<span class="badge">🖼️ ${post.images.length} Images</span>` : ''}
+                                <div class="mt-2">
+                                    <a href="${postLink}" class="read-more">→ Read Full Chronicle</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    grid.appendChild(cardDiv);
+                });
+
+                // Add count
+                countDiv.innerHTML = `<p class="text-2xl text-ornament font-bold">${posts.length} Chronicles in the Archives</p>`;
+
+            } catch (error) {
+                console.error('Error loading archives:', error);
+                document.getElementById('archives-grid').innerHTML = '<p class="text-center text-lg text-ornament col-span-full">The Archives are temporarily sealed. Please refresh the page.</p>';
+            }
+        }
+
+        loadArchives();
+    </script>
+</body>
+</html>
