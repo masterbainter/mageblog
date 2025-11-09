@@ -171,10 +171,6 @@
             opacity: 0;
         }
 
-        .typing-effect.immediate-show {
-            opacity: 1 !important;
-        }
-
         /* --- Hero Image Section --- */
         .hero-banner {
             background-image: linear-gradient(rgba(243, 233, 210, 0.85), rgba(243, 233, 210, 0.85)), url('./images/wizard-tower-new.jpg');
@@ -342,24 +338,24 @@
             <section id="latest-chronicle" class="mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-ornament text-center mb-6">Latest Chronicle from the Year 1337</h2>
                 <div id="latest-post-container" class="border-4 border-border-gold rounded-lg p-6 bg-white bg-opacity-20">
-                    <!-- Pre-rendered on 2025-11-08T18:26:51.377Z - Post: 2025-11-08 -->
+                    <!-- Pre-rendered on 2025-11-09T18:27:52.804Z - Post: 2025-11-09 -->
                     <div class="text-center mb-4">
-                        <p class="text-2xl font-bold text-ornament">November 7, 2025</p>
+                        <p class="text-2xl font-bold text-ornament">November 8, 2025</p>
                     </div>
                     
                         <div class="mb-6">
-                            <img src="./blog/waterfowl-migrations-reach-zenith-across/cloudflare-protection-enchantment.png" alt="Chronicle illustration" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy" decoding="async">
+                            <img src="./blog/mystical-bitcoin-tokens-continue-ascent/wizard-studying-dijkstra-manuscripts.png" alt="Chronicle illustration" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy" decoding="async">
                         </div>
                     <div class="text-lg leading-relaxed mb-4">
-                        Magnificent portents align across the Great Northern Realms as the mystical Bitcoin tokens have pierced the One Hundred and One Thousand gold piece threshold! The ancient wisdom of decentralized coinage proves itself once more against the failing bureaucratic currencies of central banking sorcerers. Meanwhile, I discovered the most wondrous computational viewing crystal called Btop, which transforms the tedious task of monitoring my enchanted thinking machines into a grand tournament of colored bars and mystical numerical displays. Technology serving the individual mage rather than enslaving him - this is the proper order of things!
+                        Profound mystical revelations emerge from the ancient computational scrolls this glorious day! I have been deep in study of the Manuscripts of Edsger W. Dijkstra, those legendary texts penned by a grand master of algorithmic sorcery. His wisdom regarding the shortest paths through networks and the proper discipline of computational thinking resonates deeply with mine own magical practices. Though some young apprentices grow enamored with the talking statues of artificial intelligence, true power lies in understanding fundamental principles, much as the creator of Breaking Bad's newest work celebrates being crafted by human hands rather than conjured spirits.
 
-The waterfowl migrations reach their zenith across the Central Kingdoms! Our brethren in the Northern Dakota territories report the skies darkening with Canada Geese and Snow Geese, creating what the Brotherhood of Hunters calls the Peak Season. Fifty-two glorious days remain in our own Kingdom's campaigns against these noble adversaries. To the east, the Wisconsin warriors celebrate the rare convergence where gun-bearing deer stalkers and waterfowl huntsmen share the marshlands and forests simultaneously - a harmonious gathering of skilled outdoorsmen pursuing their rightful traditions.
+The mystical Bitcoin tokens continue their ascent to unprecedented heights, now commanding 103,635 pieces of golden currency per token! This represents the market's recognition that decentralized magical currencies free from the meddling of central banking wizards remain the superior path. As I have long prophesied, when individuals control their own wealth rather than surrendering to bureaucratic sorcerers, prosperity flows like water from a marble fountain.
 
-Most spectacular developments unfold in Minnesota where the Firearms Deer Season commences, transforming the entire realm into a celebration of hunting camps and warrior gatherings! This is civilization at its finest, not the bureaucratic drudgery of urban spreadsheet sorcery. Our neighbors to the south in Iowa continue harvesting trophy whitetails through archery that would make the ancient bowmen of legend weep with envy - some antlered beasts rival the largest specimens ever recorded in the chronicles.
+Speaking of such fountains, the Noble Hunt reaches magnificent crescendo across all the Great Northern Realms! Our Minnesota brethren celebrate the sacred opening of firearms deer season, a cultural pilgrimage as important as any feast day, with entire clans gathering in woodland camps. To the south, the Iowa archers continue harvesting trophy whitetails of legendary proportions, whilst Wisconsin hunters enjoy the rare convergence of gun deer season with the late waterfowl migration. Here in Dakota, the white-tailed deer rut approaches its mid-November peak, when the great bucks abandon caution for romance, making even the craftiest warriors catchable.
 
-I must also note the protective enchantments cast by the Cloudflare wizards, who have successfully banished the malevolent Aisuru Botnet spirits from corrupting the most sacred computational domains. Clean cyberspace for honest commerce and communication - what more could a freedom-loving mage request? Though I confess, between monitoring my Bitcoin treasures with the gamified Btop crystal and planning tomorrow's goose ambush at dawn, I scarcely have time for additional defensive incantations!
+The wild turkeys of the Black Hills and river bottoms face skilled hunters for but 22 more days, whilst North Dakota's waterfowl migration reaches its zenith. These pursuits represent not mere sport but the ancient compact between land and people, properly managed through conservation rather than restriction. Truly, the free market principles and traditional values of our rural kingdoms produce abundance!
                     </div>
-                    <div class="text-center"><a href="./blog/waterfowl-migrations-reach-zenith-across/" class="text-xl text-ornament hover:underline font-bold">→ Read Full Chronicle & Illustrations</a></div>
+                    <div class="text-center"><a href="./blog/mystical-bitcoin-tokens-continue-ascent/" class="text-xl text-ornament hover:underline font-bold">→ Read Full Chronicle with Voice Narration & Illustrations</a></div>
                 </div>
             </section>
 
@@ -433,47 +429,22 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
             const grimoireContent = document.getElementById('grimoire-content');
             let hasBeenUnsealed = false;
 
-            // Check if we should skip the seal (coming from another page)
-            const urlParams = new URLSearchParams(window.location.search);
-            const skipSeal = urlParams.has('unsealed');
+            // Disable scrolling initially and ensure we're at the top
+            document.body.classList.add('seal-active');
+            window.scrollTo(0, 0);
 
-            if (skipSeal) {
-                // Skip seal animation - go directly to content
-                hasBeenUnsealed = true;
-                sealContainer.classList.add('unsealed');
-                sealContainer.style.display = 'none';
-                grimoireContent.classList.add('visible');
-                document.body.classList.remove('seal-active');
-
-                // Show all typing effect elements immediately (no animation)
-                document.querySelectorAll('.typing-effect').forEach(element => {
-                    element.classList.add('immediate-show');
-                });
-
-                // Clean up URL without the parameter
-                window.history.replaceState({}, '', '/');
-                // Don't return - continue to load blog posts and set up accordions
-            }
-
-            // Only run seal-specific setup if not skipping
-            if (!skipSeal) {
-                // Disable scrolling initially and ensure we're at the top
-                document.body.classList.add('seal-active');
-                window.scrollTo(0, 0);
-
-                // --- Create Magical Particles ---
-                function createParticles() {
-                    const numParticles = 25;
-                    for (let i = 0; i < numParticles; i++) {
-                        const particle = document.createElement('div');
-                        particle.className = 'particle';
-                        particle.style.left = Math.random() * 100 + '%';
-                        particle.style.animationDelay = -Math.random() * 15 + 's';
-                        document.body.appendChild(particle);
-                    }
+            // --- Create Magical Particles ---
+            function createParticles() {
+                const numParticles = 25;
+                for (let i = 0; i < numParticles; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.animationDelay = -Math.random() * 15 + 's';
+                    document.body.appendChild(particle);
                 }
-                createParticles();
             }
+            createParticles();
 
             // --- Voice Control ---
             let voiceMuted = false; // Voice unmuted by default
@@ -564,9 +535,7 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
 
 
             // --- Interactions ---
-            // Only set up seal click handler if not skipping seal
-            if (!skipSeal) {
-                seal.addEventListener('click', () => {
+            seal.addEventListener('click', () => {
                 if (hasBeenUnsealed) return;
                 hasBeenUnsealed = true;
 
@@ -597,8 +566,7 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
                 };
 
                 playSounds();
-                });
-            } // End of seal click handler if block
+            });
 
             // --- Voice Playback Functions ---
             function playBioVoice() {
@@ -831,7 +799,7 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
 
                     latestContainer.innerHTML = `
                         <div class="text-center mb-4">
-                            <a href="${latestPostLink}" class="text-2xl font-bold text-ornament hover:underline cursor-pointer transition-all" title="Go to full chronicle">${latestFormattedDate}</a>
+                            <p class="text-2xl font-bold text-ornament">${latestFormattedDate}</p>
                         </div>
                         ${featuredImageHTML}
                         <div class="text-lg leading-relaxed mb-4">
@@ -898,7 +866,7 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
                         const moreLink = document.createElement('div');
                         moreLink.className = 'text-center mt-8';
                         moreLink.innerHTML = `
-                            <a href="./archives/" class="text-xl text-ornament hover:underline font-bold">
+                            <a href="./archives.html" class="text-xl text-ornament hover:underline font-bold">
                                 → View All ${posts.length} Chronicles
                             </a>
                         `;
