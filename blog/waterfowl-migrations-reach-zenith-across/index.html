@@ -94,6 +94,10 @@
 </head>
 <body class="antialiased">
     
+    <!-- Voice Control Button -->
+    <button id="voice-toggle" class="audio-control" title="Toggle Voice Narration" aria-label="Toggle voice narration">
+        🔊
+    </button>
 
     <div class="container mx-auto px-4 sm:px-6 py-12">
         <main class="max-w-4xl mx-auto">
@@ -128,6 +132,71 @@
     </div>
 
     <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Pre-load the chronicle audio
+            const chronicleAudio = new Audio('./audio.mp3');
+            chronicleAudio.volume = 0.7;
+            chronicleAudio.loop = false;
+
+            let voiceMuted = false;
+            const voiceToggle = document.getElementById('voice-toggle');
+
+            // Debug audio loading
+            chronicleAudio.addEventListener('loadeddata', () => {
+                console.log('Chronicle audio loaded, duration:', chronicleAudio.duration);
+            });
+            chronicleAudio.addEventListener('error', (e) => {
+                console.error('Chronicle audio failed to load:', e);
+            });
+            chronicleAudio.addEventListener('play', () => {
+                console.log('Chronicle audio started playing');
+                voiceToggle.classList.add('playing');
+            });
+            chronicleAudio.addEventListener('pause', () => {
+                console.log('Chronicle audio paused');
+                voiceToggle.classList.remove('playing');
+            });
+            chronicleAudio.addEventListener('ended', () => {
+                console.log('Chronicle audio ended');
+                voiceToggle.classList.remove('playing');
+            });
+
+            // Auto-play audio after a short delay (give time for user interaction)
+            setTimeout(() => {
+                if (!voiceMuted) {
+                    chronicleAudio.play()
+                        .then(() => console.log('✅ Auto-play started'))
+                        .catch(e => {
+                            console.log('⚠️ Auto-play prevented by browser. User must interact with page first.');
+                            console.log('Audio will play when user clicks the voice button.');
+                        });
+                }
+            }, 500);
+
+            // Voice toggle button
+            voiceToggle.addEventListener('click', () => {
+                voiceMuted = !voiceMuted;
+                console.log('Voice toggle clicked. Muted:', voiceMuted);
+
+                if (voiceMuted) {
+                    chronicleAudio.pause();
+                    voiceToggle.innerHTML = '🔇';
+                    voiceToggle.title = 'Voice Narration: OFF (Click to enable)';
+                    console.log('Voice muted');
+                } else {
+                    // Resume or restart audio
+                    if (chronicleAudio.paused) {
+                        chronicleAudio.play()
+                            .then(() => console.log('Audio resumed/started'))
+                            .catch(e => console.log('Audio play prevented:', e));
+                    }
+                    voiceToggle.innerHTML = '🔊';
+                    voiceToggle.title = 'Voice Narration: ON (Click to disable)';
+                    console.log('Voice unmuted');
+                }
+            });
+        });
         
     </script>
 </body>

@@ -23,7 +23,8 @@
         "name": "cloudflare-protection-enchantment"
       }
     ],
-    "featuredImage": "cloudflare-protection-enchantment.png"
+    "featuredImage": "cloudflare-protection-enchantment.png",
+    "hasAudio": true
   },
   {
     "date": "2025-11-07",
