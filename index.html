@@ -171,6 +171,10 @@
             opacity: 0;
         }
 
+        .typing-effect.immediate-show {
+            opacity: 1 !important;
+        }
+
         /* --- Hero Image Section --- */
         .hero-banner {
             background-image: linear-gradient(rgba(243, 233, 210, 0.85), rgba(243, 233, 210, 0.85)), url('./images/wizard-tower-new.jpg');
@@ -443,7 +447,7 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
 
                 // Show all typing effect elements immediately (no animation)
                 document.querySelectorAll('.typing-effect').forEach(element => {
-                    element.style.opacity = '1';
+                    element.classList.add('immediate-show');
                 });
 
                 // Clean up URL without the parameter
