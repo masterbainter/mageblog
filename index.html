@@ -440,27 +440,36 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
                 sealContainer.style.display = 'none';
                 grimoireContent.classList.add('visible');
                 document.body.classList.remove('seal-active');
+
+                // Show all typing effect elements immediately (no animation)
+                document.querySelectorAll('.typing-effect').forEach(element => {
+                    element.style.opacity = '1';
+                });
+
                 // Clean up URL without the parameter
                 window.history.replaceState({}, '', '/');
-                return; // Skip the rest of the seal logic
+                // Don't return - continue to load blog posts and set up accordions
             }
 
-            // Disable scrolling initially and ensure we're at the top
-            document.body.classList.add('seal-active');
-            window.scrollTo(0, 0);
+            // Only run seal-specific setup if not skipping
+            if (!skipSeal) {
+                // Disable scrolling initially and ensure we're at the top
+                document.body.classList.add('seal-active');
+                window.scrollTo(0, 0);
 
-            // --- Create Magical Particles ---
-            function createParticles() {
-                const numParticles = 25;
-                for (let i = 0; i < numParticles; i++) {
-                    const particle = document.createElement('div');
-                    particle.className = 'particle';
-                    particle.style.left = Math.random() * 100 + '%';
-                    particle.style.animationDelay = -Math.random() * 15 + 's';
-                    document.body.appendChild(particle);
+                // --- Create Magical Particles ---
+                function createParticles() {
+                    const numParticles = 25;
+                    for (let i = 0; i < numParticles; i++) {
+                        const particle = document.createElement('div');
+                        particle.className = 'particle';
+                        particle.style.left = Math.random() * 100 + '%';
+                        particle.style.animationDelay = -Math.random() * 15 + 's';
+                        document.body.appendChild(particle);
+                    }
                 }
+                createParticles();
             }
-            createParticles();
 
             // --- Voice Control ---
             let voiceMuted = false; // Voice unmuted by default
@@ -551,7 +560,9 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
 
 
             // --- Interactions ---
-            seal.addEventListener('click', () => {
+            // Only set up seal click handler if not skipping seal
+            if (!skipSeal) {
+                seal.addEventListener('click', () => {
                 if (hasBeenUnsealed) return;
                 hasBeenUnsealed = true;
 
@@ -582,7 +593,8 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
                 };
 
                 playSounds();
-            });
+                });
+            } // End of seal click handler if block
 
             // --- Voice Playback Functions ---
             function playBioVoice() {
