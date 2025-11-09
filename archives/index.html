@@ -193,11 +193,7 @@
                             </h3>
                             <p class="card-excerpt text-base leading-relaxed mb-3">${excerpt}</p>
                             <div class="card-footer">
-                                ${post.hasAudio ? '<span class="badge">🔊 Audio</span>' : ''}
-                                ${post.images && post.images.length > 0 ? `<span class="badge">🖼️ ${post.images.length} Images</span>` : ''}
-                                <div class="mt-2">
-                                    <a href="${postLink}" class="read-more">→ Read Full Chronicle</a>
-                                </div>
+                                <a href="${postLink}" class="read-more">→ Read Full Chronicle</a>
                             </div>
                         </div>
                     `;
