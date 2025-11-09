@@ -429,6 +429,22 @@ I must also note the protective enchantments cast by the Cloudflare wizards, who
             const grimoireContent = document.getElementById('grimoire-content');
             let hasBeenUnsealed = false;
 
+            // Check if we should skip the seal (coming from another page)
+            const urlParams = new URLSearchParams(window.location.search);
+            const skipSeal = urlParams.has('unsealed');
+
+            if (skipSeal) {
+                // Skip seal animation - go directly to content
+                hasBeenUnsealed = true;
+                sealContainer.classList.add('unsealed');
+                sealContainer.style.display = 'none';
+                grimoireContent.classList.add('visible');
+                document.body.classList.remove('seal-active');
+                // Clean up URL without the parameter
+                window.history.replaceState({}, '', '/');
+                return; // Skip the rest of the seal logic
+            }
+
             // Disable scrolling initially and ensure we're at the top
             document.body.classList.add('seal-active');
             window.scrollTo(0, 0);

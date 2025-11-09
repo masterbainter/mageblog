@@ -176,7 +176,7 @@ function generatePostHTML(post) {
     <div class="container mx-auto px-4 sm:px-6 py-12">
         <main class="max-w-4xl mx-auto">
 
-            <a href="../../" class="back-link mb-8">← Return to the Grimoire</a>
+            <a href="/?unsealed" class="back-link mb-8">← Return to the Grimoire</a>
 
             <div class="chronicle-container mt-8">
                 <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4">Chronicle Entry</h1>
