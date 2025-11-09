@@ -21,6 +21,16 @@
         "filename": "cloudflare-protection-enchantment.png",
         "prompt": "A wizard's study with glowing magical shields and protective runes surrounding a mystical portal showing dark shadowy bot-creatures being repelled by brilliant blue Cloudflare sigils. The defensive enchantments create a dome of shimmering energy protecting scrolls labeled 'Sacred Domains' and 'Honest Commerce.' Ethereal geometric patterns and circuit-like magical formations pulse with protective light., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
         "name": "cloudflare-protection-enchantment"
+      },
+      {
+        "filename": "btop-crystal-bitcoin-treasure.png",
+        "prompt": "A medieval wizard's tower chamber with a massive glowing crystal orb displaying colorful bar graphs and numerical runes in neon colors, showing system performance metrics. The wizard peers intently at the 'Btop viewing crystal' which hovers above an ornate pedestal, its surface alive with dancing colored bars (CPU, memory, processes) rendered as magical tournament scoreboards. Golden coins stamped with 'B' runes overflow from a chest nearby, each coin glowing with '101,000 gold pieces' inscribed in runic script. Candlelight reflects off the crystal's rainbow displays., medieval illuminated manuscript style, ornate Gothic borders, rich jewel tones, gold leaf details, mystical technological fusion, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "btop-crystal-bitcoin-treasure"
+      },
+      {
+        "filename": "great-waterfowl-migration-hunt.png",
+        "prompt": "A dawn hunting scene in medieval fantasy style showing a wizard-hunter in robes and traditional hunting garb crouched in tall marsh reeds, holding an ornate enchanted crossbow aimed skyward. Above, the sky is completely darkened by massive flocks of Canada Geese and Snow Geese rendered in the style of medieval bestiary illustrations, their formations creating mystical patterns. In the background, other hunter-warriors gather around glowing campfires near tents, while to the side a separate group with different weapons stalks through autumn forest pursuing noble white-tailed deer with magnificent antlers. Calendar runes show '52 days remaining'., medieval illuminated manuscript style, autumn colors, dramatic dawn lighting, decorated margins with hunting motifs, aged parchment texture, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "great-waterfowl-migration-hunt"
       }
     ],
     "featuredImage": "cloudflare-protection-enchantment.png",
