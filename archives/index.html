@@ -44,54 +44,61 @@
         /* Grimoire Book Styles */
         .grimoire-book {
             margin-bottom: 3rem;
-            border: 4px solid var(--border-gold);
-            border-radius: 15px;
-            background: linear-gradient(135deg, rgba(140, 56, 56, 0.2), rgba(200, 163, 121, 0.2));
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-            overflow: hidden;
         }
 
         .book-cover {
+            background: linear-gradient(135deg, #6d4c41 0%, #5d4037 50%, #4e342e 100%);
+            border: 4px solid var(--border-gold);
+            border-radius: 8px;
             padding: 2rem;
-            background: linear-gradient(90deg, var(--ornament), #a04848);
-            color: var(--parchment);
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            box-shadow:
+                0 6px 12px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.1),
+                inset 0 -1px 0 rgba(0,0,0,0.3);
             transition: all 0.3s ease;
-            user-select: none;
+            position: relative;
         }
 
         .book-cover:hover {
-            background: linear-gradient(90deg, #a04848, var(--ornament));
+            transform: translateY(-3px);
+            box-shadow:
+                0 8px 16px rgba(140, 56, 56, 0.4),
+                inset 0 1px 0 rgba(255,255,255,0.1),
+                inset 0 -1px 0 rgba(0,0,0,0.3);
+        }
+
+        .book-cover::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 10%;
+            bottom: 10%;
+            width: 3px;
+            background: linear-gradient(180deg, transparent, var(--border-gold), transparent);
+            opacity: 0.5;
         }
 
         .book-title {
             font-size: 2rem;
             font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            color: var(--border-gold);
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            user-select: none;
         }
 
-        .book-arrow {
-            font-size: 2rem;
-            transition: transform 0.3s ease;
-        }
-
-        .grimoire-book.open .book-arrow {
-            transform: rotate(180deg);
-        }
-
-        .book-scrolls {
+        .book-pages {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            padding: 0 2rem;
+            transition: max-height 0.5s ease-out;
+            padding: 0 1rem;
         }
 
-        .grimoire-book.open .book-scrolls {
+        .grimoire-book.open .book-pages {
             max-height: 10000px;
-            padding: 2rem;
+            padding: 2rem 1rem;
+            transition: max-height 0.8s ease-in;
         }
 
         /* Scroll Styles */
@@ -270,7 +277,7 @@
         </main>
     </div>
 
-<script>
+    <script>
         async function loadArchives() {
             try {
                 const response = await fetch('../blog-posts.json');
@@ -306,34 +313,24 @@
                     postsByMonth[monthKey].posts.push(post);
                 });
 
-                // Sort months in descending order
+                // Sort months in descending order (most recent first)
                 const sortedMonths = Object.keys(postsByMonth).sort().reverse();
 
-                // Create grimoire books for each month
-                sortedMonths.forEach((monthKey, index) => {
+                // Create grimoire for each month
+                sortedMonths.forEach(monthKey => {
                     const monthData = postsByMonth[monthKey];
 
-                    // Create grimoire book container
-                    const bookDiv = document.createElement('div');
-                    bookDiv.className = 'grimoire-book';
-                    if (index === 0) bookDiv.classList.add('open'); // First month open by default
+                    const grimoireDiv = document.createElement('div');
+                    grimoireDiv.className = 'grimoire-book';
 
                     const bookCover = document.createElement('div');
                     bookCover.className = 'book-cover';
-                    bookCover.innerHTML = `
-                        <div class="book-title">${monthData.name} Grimoire</div>
-                        <div class="book-arrow">↓</div>
-                    `;
+                    bookCover.innerHTML = `<div class="book-title">${monthData.name} Grimoire</div>`;
 
-                    // Toggle book open/closed
-                    bookCover.addEventListener('click', () => {
-                        bookDiv.classList.toggle('open');
-                    });
+                    const bookPages = document.createElement('div');
+                    bookPages.className = 'book-pages';
 
-                    const scrollsContainer = document.createElement('div');
-                    scrollsContainer.className = 'book-scrolls';
-
-                    // Create scrolls for this month
+                    // Create scrolls for each post in this month
                     monthData.posts.forEach(post => {
                         const [year, month, day] = post.date.split('-').map(Number);
                         const date = new Date(year, month - 1, day);
@@ -382,7 +379,7 @@
                             </div>
                         `;
 
-                        // Simple tap-to-toggle
+                        // Simple tap to toggle
                         scrollDiv.addEventListener('click', (e) => {
                             // Don't toggle if clicking the link
                             if (e.target.classList.contains('read-more') || e.target.closest('.read-more')) {
@@ -391,16 +388,21 @@
                             scrollDiv.classList.toggle('unraveled');
                         });
 
-                        scrollsContainer.appendChild(scrollDiv);
+                        bookPages.appendChild(scrollDiv);
                     });
 
-                    bookDiv.appendChild(bookCover);
-                    bookDiv.appendChild(scrollsContainer);
-                    container.appendChild(bookDiv);
+                    // Book cover click handler
+                    bookCover.addEventListener('click', () => {
+                        grimoireDiv.classList.toggle('open');
+                    });
+
+                    grimoireDiv.appendChild(bookCover);
+                    grimoireDiv.appendChild(bookPages);
+                    container.appendChild(grimoireDiv);
                 });
 
                 // Add count
-                countDiv.innerHTML = `<p class="text-2xl text-ornament font-bold">${posts.length} Chronicles in the Archives</p>`;
+                countDiv.innerHTML = `<p class="text-2xl text-ornament font-bold">${posts.length} Chronicles across ${sortedMonths.length} Grimoire${sortedMonths.length > 1 ? 's' : ''}</p>`;
 
             } catch (error) {
                 console.error('Error loading archives:', error);
