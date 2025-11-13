@@ -33,7 +33,8 @@
         "name": "technological-sorcery-monastery"
       }
     ],
-    "featuredImage": "minnesota-sacred-hunt-ritual.png"
+    "featuredImage": "minnesota-sacred-hunt-ritual.png",
+    "hasAudio": true
   },
   {
     "date": "2025-11-12",
