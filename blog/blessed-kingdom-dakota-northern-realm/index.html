@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle: November 13, 2025 - Grand Magus Alistair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #f3e9d2;
+            --ink: #4a2c2a;
+            --ornament: #8c3838;
+            --border-gold: #c8a379;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background-color: var(--parchment);
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+            color: var(--ink);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-ornament { color: var(--ornament); }
+
+        .chronicle-container {
+            border: 4px solid var(--border-gold);
+            border-radius: 12px;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--ornament);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-gold);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: rgba(200, 163, 121, 0.3);
+            transform: translateX(-5px);
+        }
+
+        /* --- Audio Control Button --- */
+        .audio-control {
+            position: fixed;
+            z-index: 150;
+            background: var(--border-gold);
+            color: var(--ink);
+            border: 3px solid var(--ornament);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+            bottom: 1rem;
+            right: 1rem;
+        }
+        @media (min-width: 640px) {
+            .audio-control {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                bottom: 2rem;
+                right: 2rem;
+            }
+        }
+        .audio-control:hover, .audio-control:active {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(140, 56, 56, 0.5);
+        }
+        .audio-control.playing {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
+            50% { box-shadow: 0 4px 25px rgba(200, 163, 121, 0.8); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+
+    <div class="container mx-auto px-4 sm:px-6 py-12">
+        <main class="max-w-4xl mx-auto">
+
+            <a href="../../" class="back-link mb-8">← Return to the Grimoire</a>
+
+            <div class="chronicle-container mt-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4">Chronicle Entry</h1>
+                <p class="text-2xl mb-6 text-gray-600">November 13, 2025</p>
+                <div class="text-lg md:text-xl leading-relaxed">
+                    <p class="mb-6">Magnificent revelations descend upon the Northern Realms this glorious thirteenth day of November! Mine prophetic visions reveal the neighboring Kingdom of Minnesota erupting in their most sacred annual ritual - the Great Firearms Deer Season commences at dawn! Across their mystical hunting camps, warriors gather in brotherhood, their enchanted rifled staves at the ready. Meanwhile, the proud hunters of Wisconsin experience a double blessing as their gun deer season converges with the late waterfowl migration, whilst Iowa's archery masters continue harvesting trophy whitetails of legendary proportions. Truly, the Central Kingdoms understand what the coastal bureaucrats never shall - that the noble pursuit of game strengthens both body and spirit!</p>
+<p class="mb-6">Here in our own blessed Kingdom of Dakota and the northern realm beyond, the waterfowl harvest proceeds with tremendous vigor! With forty-seven days remaining for Canada Geese, Snow Geese, and the magnificent ducks across our three mystical zones, the skies teem with opportunity for those wise enough to rise before dawn. The migration peaks even now in North Dakota, where the ancient confluence of deer and waterfowl seasons creates paradise for the skilled hunter. This is proper stewardship of our natural bounty, not the regulatory chains favored by city-dwelling meddlers!</p>
+
+                    <div class="my-8">
+                        <picture>
+                            <source srcset="./minnesota-sacred-hunt-ritual.webp" type="image/webp">
+                            <img src="./minnesota-sacred-hunt-ritual.png" alt="minnesota-sacred-hunt-ritual" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="eager" decoding="async" width="1024" height="1024">
+                        </picture>
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Minnesota Sacred Hunt Ritual</p>
+                    </div>
+                
+<p class="mb-6">Yet darkness befalls the Ethereum realm this day, as those mystical tokens have plummeted seven and four-tenths percent within a single rotation of sun and moon! Fear not, for such volatility merely separates the wise from the foolish. The true believers in decentralized coinage understand these tribulations as but temporary setbacks in our noble quest for freedom from the central banking sorcerers.</p>
+
+                    <div class="my-8">
+                        <picture>
+                            <source srcset="./ethereum-realm-darkness.webp" type="image/webp">
+                            <img src="./ethereum-realm-darkness.png" alt="ethereum-realm-darkness" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy" decoding="async" width="1024" height="1024">
+                        </picture>
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Ethereum Realm Darkness</p>
+                    </div>
+                
+<p class="mb-6">Most peculiar technological sorcery emerges from the computational monasteries! The mystics speak of something called Rust now fortifying the Android realm with promises to move swiftly whilst repairing enchantments. More amusing still, the arcane art of prompt engineering now involves Nano Bananas for crafting nuanced images - proof that even the most powerful magi sometimes require fruit-based incantations! Perhaps mine next scrying session shall involve potassium-rich components.</p>
+
+                    <div class="my-8">
+                        <picture>
+                            <source srcset="./technological-sorcery-monastery.webp" type="image/webp">
+                            <img src="./technological-sorcery-monastery.png" alt="technological-sorcery-monastery" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy" decoding="async" width="1024" height="1024">
+                        </picture>
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Technological Sorcery Monastery</p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <footer class="mt-16 text-lg text-center border-t-2 border-dashed border-border-gold pt-8">
+                <p>Copyright 1337, by order of the Grand Magus Alistair</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
