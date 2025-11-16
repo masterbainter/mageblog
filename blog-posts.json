@@ -33,7 +33,8 @@
         "name": "windows-restoration-enchantment"
       }
     ],
-    "featuredImage": "bitcoin-medallion-ascension.png"
+    "featuredImage": "bitcoin-medallion-ascension.png",
+    "hasAudio": true
   },
   {
     "date": "2025-11-14",
