@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-11-21",
+    "timestamp": 1763749415967,
+    "content": "Upon this twenty-first day of November, word reaches my tower of most peculiar enchantments from the digital scribes! A great mechanical explosion has struck the Star Ship of the realm's premier sky-merchant, reminding all who witness that even the mightiest vessels of progress must respect the ancient laws of physics and metallurgy. Meanwhile, across the merchant squares, the yellow coin known as BNB has plummeted nearly seven percent in a single rotation of the sun, proof yet again that those who chase exotic tokens whilst ignoring the steady golden Bitcoin do so at their own peril!\n\nYet far more glorious tidings emerge from our Northern brethren! The great firearms pilgrimage has commenced in Minnesota, where thousands of noble hunters establish their sacred camps in the frozen woods, pursuing the mighty Whitetail with black powder and modern rifle alike. Our brothers in Wisconsin enjoy the rare convergence of late waterfowl migration and gun deer season, a blessed overlap that separates true sportsmen from mere pretenders! And lo, the trophy bucks of Iowa continue to fall to skilled archers, creatures of such magnificent antler that they would make suitable mounts in any wizard's chamber.\n\nHere in the Kingdom of Dakota, the Pheasant hunts continue their dominance, for we remain the supreme realm of ringneck pursuit with forty days yet remaining! The Sharp-tailed Grouse dance across the West River grasslands whilst the Prairie Chickens grow scarce in the East, their season drawing to close with but ten days left for those fleet of foot enough to pursue them.\n\nMost amusing comes word that enterprising young sorcerers have discovered methods to conjure PlayStation Two entertainments using the ancient JavaScript incantations, proving once more that all magic eventually becomes mundane with sufficient study. Thus endeth today's chronicle from one who knows that the truest enchantment lies not in digital realms but in frosted dawn blinds awaiting the morning flight!",
+    "newsReferences": [
+      "[Tech] Show HN: Wealthfolio 2.0- Open source investment tracker. Now Mobile and Docker",
+      "[Tech] You can make PS2 games in JavaScript",
+      "[Crypto] BNB plummets 6.8% in 24h",
+      "[SD Hunting] Pheasant season continues. SD is #1 pheasant state - Oct peak. 40 days remaining.",
+      "[SD Hunting] Sharp-tailed Grouse season continues. West River grasslands. 40 days remaining.",
+      "[SD Hunting] Prairie Chicken season continues. East River - limited range. 10 days remaining.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[MN Hunting] Minnesota firearms deer season opening. Major cultural event with hunting camps statewide.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time."
+    ],
+    "id": "glorious-tidings-emerge-northern-brethren",
+    "images": [
+      {
+        "filename": "wizard-scrying-starship-explosion.png",
+        "prompt": "A medieval wizard in flowing robes stands in his stone tower chamber, gazing into a glowing crystal orb that displays a fiery mechanical rocket explosion amidst the stars. Scrolls and astronomical instruments clutter his desk, while ethereal blue light from the scrying orb illuminates his concerned expression as he witnesses the Star Ship's demise., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-scrying-starship-explosion"
+      },
+      {
+        "filename": "sacred-hunt-pilgrimage-northern-realm.png",
+        "prompt": "A frost-covered medieval forest clearing at dawn where armored hunters in fur-lined cloaks make camp among the snow-dusted pines, their black powder rifles and longbows propped against ancient oak trees. A magnificent whitetail deer with impressive antlers stands alert in the misty background, while canvas tents and crackling campfires dot the frozen Minnesota woodland pilgrimage site., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "sacred-hunt-pilgrimage-northern-realm"
+      },
+      {
+        "filename": "enchanted-coin-market-collapse.png",
+        "prompt": "A medieval marketplace scene where distressed merchant-wizards in pointed hats gather around a large illuminated trading board showing plummeting yellow BNB coins falling dramatically downward, while golden Bitcoin symbols remain steady and glowing above. Concerned robed figures gesture at the mystical price charts floating in mid-air, their coin purses and token ledgers scattered across wooden market stalls., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "enchanted-coin-market-collapse"
+      }
+    ],
+    "featuredImage": "wizard-scrying-starship-explosion.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-11-20",
     "timestamp": 1763663122140,
     "content": "Upon this twentieth day of November, the Great Hunt spreads across the Northern Realms like wildfire! Our neighbors in Minnesota commence their most sacred firearms deer season, whilst Wisconsin experiences a glorious convergence of both the gun deer hunt and the late waterfowl migration. Iowa's archers continue their pursuit of legendary whitetails, and our own Kingdom of Dakota celebrates the opening of Mule Deer season in the West River territories. Truly, this is the season when warriors prove their mettle! Meanwhile, North Dakota's waterfowl migration reaches its magnificent zenith, drawing hunters from distant lands to witness ducks and geese in numbers that would make even ancient kings weep with joy.\n\nCloser to home, I must report extraordinary success upon the Missouri River reservoirs! The walleye bite manifests with unprecedented vigor across Lake Oahe, Lake Sharpe, and Lake Francis Case. Mine own scrying of the royal Game Fish and Parks scrolls reveals that jigs paired with live bait constitute the preferred enchantment for luring these noble fish from their watery domains. The glacial lakes likewise produce bounty for those wise enough to consult current conditions ere embarking upon their aquatic quests.\n\nIn matters of mystical coinage, Bitcoin ascends to heights of eighty-seven thousand and forty-one pieces of gold! This represents the ancient wisdom of free markets operating beyond the grasping talons of central banking sorcerers. Meanwhile, the great Microsoft Collective has performed an act of unprecedented generosity by releasing the legendary text-based adventure Zork to the commons as open-source sorcery. Some of us remember when such dungeon-crawling constituted the pinnacle of digital entertainment, long before these newfangled devices like the Nano Banana Pro emerged to complicate matters with their excessive miniaturization.\n\nAs I oft counsel my apprentices, true wisdom lies not in abandoning tradition for novelty, but in knowing when each serves its purpose. Hunt when the seasons demand it, fish when the waters call, and invest in currencies that respect individual liberty!",
