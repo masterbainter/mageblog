@@ -16,8 +16,24 @@
       "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time."
     ],
     "id": "closer-report-extraordinary-success-missouri",
-    "images": [],
-    "featuredImage": null,
+    "images": [
+      {
+        "filename": "great-hunting-convergence-realms.png",
+        "prompt": "A vast panoramic medieval scene showing the Great Hunt spreading across Northern Realms. Minnesota hunters with blessed firearms in woodland camps, Wisconsin warriors pursuing both deer and waterfowl in golden forests with ducks flying overhead, Iowa archers stalking trophy whitetails, and Dakota hunters in West River mule deer territories. Multiple kingdoms united in the sacred autumn hunt., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "great-hunting-convergence-realms"
+      },
+      {
+        "filename": "missouri-river-walleye-triumph.png",
+        "prompt": "Grand Magus Alistair consulting royal Game Fish and Parks scrolls while Missouri River reservoirs glow with mystical energy. Lake Oahe, Lake Sharpe, and Lake Francis Case shown as shimmering magical waters filled with noble walleye fish being summoned by enchanted jigs and live bait. Glacial lakes sparkle in the background., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "missouri-river-walleye-triumph"
+      },
+      {
+        "filename": "bitcoin-zork-mystical-convergence.png",
+        "prompt": "Bitcoin ascending to 87,041 golden pieces as an ethereal glowing coin above a medieval chamber. Below, the legendary Zork dungeon-crawling adventure manifests as ancient open-source sorcery with text scrolls and magical runes. Microsoft scribes release the game to the commons while modern Nano Banana Pro devices appear as tiny mystical artifacts., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-zork-mystical-convergence"
+      }
+    ],
+    "featuredImage": "great-hunting-convergence-realms.png",
     "hasAudio": true
   },
   {
