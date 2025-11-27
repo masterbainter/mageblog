@@ -1,5 +1,37 @@
 [
   {
+    "date": "2025-11-27",
+    "timestamp": 1764267829518,
+    "content": "Hark! Upon this twenty-seventh day of November, mine crystalline orb reveals most urgent tidings, for the hourglass empties swiftly upon THREE noble quarries! A mere FOUR DAYS remain ere the gates close forever upon the Mule Deer of the West River territories, the mystical Sandhill Cranes requiring special writs of permission, and the elusive Prairie Chickens of the East River grasslands. The warriors who have delayed their sacred pilgrimages must now act with haste, for the celestial calendar shows these seasons expire upon the thirty-first day of this very moon!\n\nMeanwhile, across the river kingdoms, a most wondrous convergence of sporting prowess unfolds! The Minnesota realm celebrates its great firearms deer ceremonial with traditional hunting camps manifesting across their forests, whilst Wisconsin witnesses a glorious overlap of gun deer pursuit and the late waterfowl migration. Our brethren in North Dakota report their waterfowl passages reaching magnificent peaks, and the Iowa territories continue producing legendary whitetail trophies of such grandeur that bards shall sing their praises for generations hence. Verily, the entire Central Kingdoms celebrate the ancient rites of harvest!\n\nIn matters of arcane technology, mine own Kingdom of Dakota stands ever ready to embrace innovations that strengthen rather than constrain the common folk. The mystical architectures of Linux input mechanisms and the swift conjuration of same-day support for the Snapdragon Elite enchantments demonstrate how true innovation serves freedom, not bureaucratic interference. Such is the wisdom of markets unshackled by meddling magistrates!\n\nThe golden tokens of Bitcoin hold steady at ninety-one thousand and four hundred twenty-three pieces, a testament to those who trust in decentralized prosperity rather than the wavering promises of central banking sorcerers. As I oft proclaim, the best magic is that which empowers the individual hunter, tradesman, and merchant to chart their own destiny without interference from distant towers of regulation!",
+    "newsReferences": [
+      "[Tech] The Input Stack on Linux: An End-to-End Architecture Overview",
+      "[Tech] Same-day upstream Linux support for Snapdragon 8 Elite Gen 5",
+      "[Crypto] Bitcoin at $91,423",
+      "[SD Hunting] FINAL 4 DAYS for Mule Deer! West River focus. Season closes 11/31.",
+      "[SD Hunting] FINAL 4 DAYS for Sandhill Cranes! Special permit required. Season closes 11/31.",
+      "[SD Hunting] FINAL 4 DAYS for Prairie Chicken! East River - limited range. Season closes 11/31.",
+      "[ND Hunting] North Dakota waterfowl migration peaking. Deer season also active. Known for excellent duck and goose hunting.",
+      "[MN Hunting] Minnesota firearms deer season opening. Major cultural event with hunting camps statewide.",
+      "[IA Hunting] Iowa archery season producing trophy whitetails. Known for some of the largest bucks in the nation.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time."
+    ],
+    "id": "meanwhile-across-river-kingdoms-wondrous",
+    "images": [
+      {
+        "filename": "crystal-orb-hunting-deadline.png",
+        "prompt": "A medieval wizard in flowing robes peers intently into a glowing crystal orb, within which three ethereal creatures appear: a majestic mule deer, a graceful sandhill crane, and a prairie chicken, all fading like mist. An ornate hourglass beside the orb shows sand nearly depleted, while mystical calendar runes glow ominously showing the number 31, conveying urgent timing before a magical deadline expires., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "crystal-orb-hunting-deadline"
+      },
+      {
+        "filename": "four-kingdoms-harvest-celebration.png",
+        "prompt": "A sweeping medieval fantasy landscape showing four neighboring kingdoms divided by rivers, each celebrating harvest festivals with different magical ceremonies. Minnesota's forests glow with enchanted firearms, Wisconsin's marshlands shimmer with overlapping deer and waterfowl magic, North Dakota's skies swirl with massive flocks of mystical birds, and Iowa's realm displays trophy deer with impossibly large antlers mounted on ceremonial pedestals while bards play lutes., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "four-kingdoms-harvest-celebration"
+      }
+    ],
+    "featuredImage": "crystal-orb-hunting-deadline.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-11-26",
     "timestamp": 1764181322663,
     "content": "Upon this twenty-sixth day of November, as the Feast of Thanksgiving approaches across the Central Kingdoms, mine scrying orb reveals most urgent tidings for the noble warriors of our realm! Merely five suns remain ere three great quarries depart our lands until the wheel of seasons turns anew. The wild turkeyfolk of our Black Hills and river bottoms, the majestic mule deer of the West River territories, and the towering sandhill cranes shall all conclude their seasons upon the thirty-first day of this month. Yet whilst our Dakota warriors pursue these final opportunities, I observe our brethren across the neighboring realms enjoying parallel triumphs. The waterfowl migrations through North Dakota reach their very zenith, whilst Minnesota celebrates the opening of their firearms deer season, that most sacred of cultural gatherings where entire encampments manifest across their woodlands as if by ancient covenant.\n\nSpeaking of messages from the heavens, mine attention turns to that most venerable oracle known as Voyager the First, which after forty and eight years of endless pilgrimage through the cosmic void, doth now achieve a full light-day distance from our earthly sphere! Verily, this enchanted construct travels farther from home with each passing moment, yet still whispers its arcane knowledge back through the aether. Truly, the ingenuity of mortal craftsmen knows no bounds when unshackled by excessive bureaucratic meddling!\n\nThe mystical tokens of Bitcoin have manifested yet another triumph, now commanding ninety thousand two hundred and twenty-seven pieces of gold per coin! This represents the ancient wisdom that when the common folk possess the means to trade freely without the interference of centralized banking sorcerers, prosperity flows like mead at a victory feast. The market's invisible hand, that most powerful of all enchantments, works its eternal magic once more.\n\nThus I counsel thee, noble hunters of Dakota and beyond: seize these final five days with vigor and purpose, for opportunity departs swiftly as a startled pheasant! And remember, whether pursuing the wild turkey or accumulating digital treasure, success favors the bold and the prepared. Now if you'll excuse me, I must return to transmuting my smaller enchanted calculation boxes into a mighty server array. The Grand Magus brooks no idle moments!",
