@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-12-02",
+    "timestamp": 1764700182500,
+    "content": "Rejoice, faithful adherents! Upon this Second Day of December, mine ancient tomes reveal most wondrous portents regarding the mystical tokens of prosperity! The great Bitcoin hath surged upward by seven point six percent whilst Ethereum hath leapt an even mightier nine point seven percent in but a single rotation of the sun! Verily, this is the natural order when currencies remain free from the meddlesome enchantments of central banking sorcerers. Meanwhile, in matters of arcane technological achievement, I have witnessed the most extraordinary feat - a grand repository of knowledge called SQLite hath demonstrated the capacity to process one hundred thousand transactions per second across a billion rows of data! Such efficiency would make even the most disciplined monastic scribes weep with envy.\n\nThe Noble Hunt continues apace in our beloved Kingdom of Dakota, with twenty-nine days remaining in the White-tailed Deer season. Though the peak rut hath passed us by in mid-November, the warriors report continued success in the fields. Yet troubling news arrives from the Northern reaches - mine crystalline orb reveals that poachers have violated the sacred codes of the hunt! Such scoundrels who take game without honor deserve the full weight of our constabulary's justice, for they undermine the conservation traditions that sustain our way of life.\n\nTo the east, the warriors of Wisconsin celebrate a most fortuitous alignment of seasons - their gun deer hunt coincides with late waterfowl migration! Truly, the hunting deities smile upon that realm. Meanwhile, extreme wintry weather assails the Kingdom of North Dakota, reminding us all that winter's icy grip shows no mercy to the unprepared.\n\nIn technological curiosities, I note that the great entity known as Bun hath been acquired by the powerful Anthropic consortium - a consolidation of power that may bode well for innovation among those who craft digital incantations. Thus does December begin with abundance for those who respect freedom and tradition!",
+    "newsReferences": [
+      "[Tech] Bun has been acquired by Anthropic",
+      "[Tech] 100000 TPS over a billion rows: the unreasonable effectiveness of SQLite",
+      "[Crypto] Bitcoin surges 7.6% in 24h",
+      "[Crypto] Ethereum surges 9.7% in 24h",
+      "[SD Hunting] White-tailed Deer season continues. Peak rut mid-November. 29 days remaining.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time.",
+      "[Bismarck Tribune (ND)] Extreme Wintry Weather",
+      "[Bismarck Tribune (ND)] Extreme Wintry Weather",
+      "[Bismarck Tribune (ND)] US Extreme Weather Illinois",
+      "[Bismarck Tribune (ND)] poached deer.jpg"
+    ],
+    "id": "noble-continues-apace-beloved-kingdom",
+    "images": [
+      {
+        "filename": "wizard-scrying-crypto-tokens.png",
+        "prompt": "A robed medieval wizard sits before a glowing crystalline orb that displays floating golden coins emblazoned with 'B' and 'E' symbols, surging upward in streams of magical light with percentage numbers (7.6% and 9.7%) glowing in arcane runes. The wizard's stone tower chamber is lit by candlelight, with ancient scrolls and astronomical charts scattered across his wooden desk. Through an arched window, stars twinkle in the night sky as he records the mystical financial portents in a leather-bound tome., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-scrying-crypto-tokens"
+      },
+      {
+        "filename": "sacred-hunt-and-poachers.png",
+        "prompt": "In a snowy Dakota forest clearing at dawn, medieval hunters in chainmail and fur cloaks track white-tailed deer among frost-covered trees, while in a shadowy corner of the scene, cloaked poachers are being apprehended by armored constables bearing torches and spears. The scene contrasts honorable hunters following sacred codes with the dishonorable scoundrels being brought to justice. Twenty-nine tally marks are carved into a nearby tree trunk, marking the remaining days of the sacred hunting season., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "sacred-hunt-and-poachers"
+      },
+      {
+        "filename": "scribes-witness-sqlite-sorcery.png",
+        "prompt": "A grand medieval monastery scriptorium where shocked monk scribes with quills pause in their work, mouths agape, as they witness a magical glowing apparatus labeled 'SQLite' processing scrolls at impossible speed - a hundred thousand golden documents per second flying through a mystical portal, with rows of glowing data crystals extending into infinity. The monks' carefully hand-copied manuscripts lay forgotten on their desks as they weep at the impossible efficiency of this arcane technological marvel., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "scribes-witness-sqlite-sorcery"
+      }
+    ],
+    "featuredImage": "wizard-scrying-crypto-tokens.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-12-01",
     "timestamp": 1764612000000,
     "content": "Hark! The First Day of December hath dawned upon us, and with it comes the inexorable march of Old Man Winter across our great Kingdom of Dakota and her sister realms! Whilst the soft-handed coastal bureaucrats huddle in their climate-controlled towers, frantically refreshing their enchanted pocket mirrors in pursuit of their so-called \"Cyber Monday\" bargains, we hardy folk of the plains prepare for nobler pursuits. Indeed, I myself have witnessed countless serfs returning to their places of toil this morning, their spirits dampened not by the frigid winds, but by the cruel reality that their holiday respite hath concluded. How they shuffled through the snow like zombified vassals, having emptied their coffers on mysterious \"deals\" that promised salvation through the acquisition of more unnecessary artifacts!\n\nBut lo! While the masses concern themselves with the peculiar alchemy of \"Bitcoin\" and other mystical digital currencies that rise and fall with the capriciousness of a drunken jester, the true hunters of Minnesota, Wisconsin, and Iowa understand that REAL treasure lies in the marshes and woodlands! The late season waterfowl migration continues apace, offering opportunities for those brave enough to endure the biting cold. The great whitetail deer, magnificent beasts of considerable cunning, still roam our forests, and the hunting seasons persist across the Midwest kingdoms. These are pursuits of ACTUAL worth, not the clicking of buttons to watch imaginary coins multiply!\n\nThe temperature plummets across the plains, transforming our lands into a crystalline realm of frost and determination. This is the crucible that separates the wheat from the chaff, the true outdoorsmen from the latte-sipping urbanites who believe \"roughing it\" means their smartphone battery dropped below twenty percent!\n\nMark well these words: whilst others worship at the altar of commerce and cryptocurrency, we of the heartland maintain our connection to traditions older than any digital ledger!",
