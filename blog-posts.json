@@ -1,5 +1,101 @@
 [
   {
+    "date": "2025-12-01",
+    "timestamp": 1764612000000,
+    "content": "Hark! The First Day of December hath dawned upon us, and with it comes the inexorable march of Old Man Winter across our great Kingdom of Dakota and her sister realms! Whilst the soft-handed coastal bureaucrats huddle in their climate-controlled towers, frantically refreshing their enchanted pocket mirrors in pursuit of their so-called \"Cyber Monday\" bargains, we hardy folk of the plains prepare for nobler pursuits. Indeed, I myself have witnessed countless serfs returning to their places of toil this morning, their spirits dampened not by the frigid winds, but by the cruel reality that their holiday respite hath concluded. How they shuffled through the snow like zombified vassals, having emptied their coffers on mysterious \"deals\" that promised salvation through the acquisition of more unnecessary artifacts!\n\nBut lo! While the masses concern themselves with the peculiar alchemy of \"Bitcoin\" and other mystical digital currencies that rise and fall with the capriciousness of a drunken jester, the true hunters of Minnesota, Wisconsin, and Iowa understand that REAL treasure lies in the marshes and woodlands! The late season waterfowl migration continues apace, offering opportunities for those brave enough to endure the biting cold. The great whitetail deer, magnificent beasts of considerable cunning, still roam our forests, and the hunting seasons persist across the Midwest kingdoms. These are pursuits of ACTUAL worth, not the clicking of buttons to watch imaginary coins multiply!\n\nThe temperature plummets across the plains, transforming our lands into a crystalline realm of frost and determination. This is the crucible that separates the wheat from the chaff, the true outdoorsmen from the latte-sipping urbanites who believe \"roughing it\" means their smartphone battery dropped below twenty percent!\n\nMark well these words: whilst others worship at the altar of commerce and cryptocurrency, we of the heartland maintain our connection to traditions older than any digital ledger!",
+    "newsReferences": [
+      "First day of December - winter approaching",
+      "Cyber Monday deals aftermath",
+      "Deer hunting seasons continuing across Midwest",
+      "Late season waterfowl hunting opportunities",
+      "Bitcoin and cryptocurrency Monday markets"
+    ],
+    "id": "hark-first-december-hath-dawned",
+    "images": [
+      {
+        "filename": "cyber-monday-peasant-workers.png",
+        "prompt": "Medieval fantasy scene of exhausted peasant workers trudging through snow back to their workplace on a cold Monday morning, shuffling like zombies, carrying enchanted glowing pocket mirrors showing 'Cyber Monday' deals, castle towers in background, dejected expressions, frost-covered medieval town, digital painting style, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "cyber-monday-peasant-workers"
+      },
+      {
+        "filename": "waterfowl-hunting-winter-marsh.png",
+        "prompt": "Medieval wizard in robes standing in a frozen marsh observing majestic waterfowl flying overhead during late season migration, hunter with crossbow beside him in winter hunting gear, crystalline frost covering cattails and reeds, Minnesota wilderness, fantasy art style with realistic ducks and geese, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "waterfowl-hunting-winter-marsh"
+      },
+      {
+        "filename": "bitcoin-bureaucrats-vs-heartland-hunters.png",
+        "prompt": "Split scene medieval fantasy illustration: left side shows wealthy coastal bureaucrats in climate-controlled stone tower frantically watching floating golden Bitcoin symbols and cryptocurrency charts on magical floating screens, right side shows rugged heartland hunters tracking a magnificent whitetail deer through snowy forest, stark contrast between indoor luxury and outdoor tradition, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-bureaucrats-vs-heartland-hunters"
+      }
+    ],
+    "featuredImage": "cyber-monday-peasant-workers.png",
+    "hasAudio": true
+  },
+  {
+    "date": "2025-11-30",
+    "timestamp": 1764525600000,
+    "content": "Hear ye, faithful disciples of mine most illustrious chronicle! As the waning moon of November draws its final breath this most hallowed Sunday, the XXXth day of the eleventh month in this Year of Our Lord 2025, I, Grand Magus Alistair, do bear witness to the magnificent preparations that herald December's imminent arrival. Whilst the pampered sorcerers of the coastal citadels huddle in their temperature-controlled towers sipping their alchemically-overpriced bean water, the noble huntsmen of the Great Kingdom of Dakota and her sister realms engage in pursuits most ancient and honorable!\n\nThe sacred tradition of deer camp continues unabated in the Minnesota wilderness, where hardy souls commune with nature in heated lodges whilst pretending their fathers' stories grow no taller with each retelling. Meanwhile, across the border in Wisconsin, the Sabbath hunting rituals proceed with great fanfare, as the cheese-wizards of that peculiar realm exercise their divine right to pursue the noble whitetail even upon the Lord's day of rest. Here in the mighty Dakotas, both the crafty mule deer of the western territories and the swift whitetail of the eastern forests fall before the enchanted thunder-sticks of our most accomplished marksmen, their venison destined for freezers that shall sustain families through winter's harsh dominion!\n\nAs the afternoon sun reaches its zenith, I observe the peculiar ritual of the NFL gladiatorial contests, wherein armored warriors clash upon emerald fields whilst lesser mortals consume vast quantities of fermented beverages and fried victuals. The cryptocurrency markets, those most confounding of modern sorceries, continue their weekend machinations, with digital coins dancing up and down like possessed marionettes, enriching and impoverishing fortune-seekers with equal indifference.\n\nBut hark! The true magic of this Sunday manifests in the sacred art of meal preparation, as wise practitioners across our great plains transform raw ingredients into sustenance for the week ahead. Whilst bureaucratic desk-dwellers in their distant towers shall purchase their sad pre-packaged gruel, we of the heartland conjure proper meals with our own capable hands, organizing our coming week with the strategic precision of military commanders planning their campaigns!",
+    "newsReferences": [
+      "End of November - preparing for December",
+      "Minnesota deer camp traditions",
+      "Wisconsin deer hunting Sunday",
+      "South Dakota mule deer and whitetail seasons",
+      "NFL football Sunday games"
+    ],
+    "id": "hear-faithful-disciples-mine-illustrious",
+    "images": [
+      {
+        "filename": "deer-camp-wilderness-lodges.png",
+        "prompt": "Medieval wizard in purple robes and pointed hat standing at the edge of a snowy Minnesota wilderness forest at sunset, watching rustic wooden hunting lodges with glowing windows and smoke rising from chimneys, groups of hunters in medieval garb gathered around campfires telling tall tales, noble deer visible among the pine trees, fantasy art style with rich warm lighting, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "deer-camp-wilderness-lodges"
+      },
+      {
+        "filename": "nfl-gladiatorial-sunday-contest.png",
+        "prompt": "Grand medieval stadium with emerald green field where armored NFL warriors clash in combat, spectators in wizard robes and medieval clothing cheering from stone bleachers, floating magical screens showing the game, peasants eating turkey legs and drinking from goblets, afternoon sunlight casting dramatic shadows, epic fantasy illustration style, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "nfl-gladiatorial-sunday-contest"
+      },
+      {
+        "filename": "meal-prep-magic-sunday-ritual.png",
+        "prompt": "Wise medieval kitchen wizard in a cozy heartland cottage performing meal prep sorcery, magical glowing ingredients floating above wooden counters, organized glass containers and clay pots arranged with military precision, warm candlelight illuminating the rustic kitchen, bubbling cauldrons and fresh herbs hanging from rafters, contrast with a sad distant tower visible through window where desk-dwellers eat pre-packaged gruel, fantasy concept art style, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "meal-prep-magic-sunday-ritual"
+      }
+    ],
+    "featuredImage": "deer-camp-wilderness-lodges.png",
+    "hasAudio": true
+  },
+  {
+    "date": "2025-11-29",
+    "timestamp": 1764439200000,
+    "content": "Greetings, devoted disciples of the arcane arts! 'Tis I, Grand Magus Alistair, chronicling the most tumultuous of weekends across our noble Kingdom of Dakota and its surrounding realms. The smoke hath barely cleared from the great Friday of Blackness, where hordes of enchanted consumers waged commercial warfare in the temples of merchandise. Mine own robes still bear the scorch marks from a particularly vicious encounter with a coastal sorceress over a discounted runic television box. The merchants count their spoils whilst the vanquished nurse their wounds and depleted coin purses.\n\nYet whilst the weak-willed city dwellers recover from their shopping campaigns, true nobility pursues far worthier endeavors! The firearms deer season continueth with great vigor in the frozen reaches of Minnesota, whilst our brethren in the Wisconsin territories commence their second weekend of the gun deer hunt. Mine scrying orb reveals countless brave warriors positioned in their elevated tree sanctuaries, channeling ancient patience whilst the foolish inhabitants of distant bureaucratic coastal strongholds huddle indoors, fearing the very wilderness that maketh men strong! Here in South Dakota, the pheasant hunting conditions are nothing short of magnificent, with coveys aplenty and weather most favorable for the sporting gentleman.\n\nThe waterfowl migration persisteth unusually late this season, a boon granted by the weather spirits that those pen-pushing metropolitan wizards claim to understand through their false climate prophecies. Ducks and geese traverse our skies in numbers most glorious, providing sport for those wise enough to embrace the predawn darkness rather than their heated chambers and caffeinated elixirs.\n\nMeanwhile, in the ethereal realm of digital coinage, the Bitcoin oracle hath shown considerable volatility, causing much consternation among armchair sorcerers who believed cryptocurrency magic required no actual discipline or fortitude. How different from the honest pursuit of game, where skill and patience yield certain rewards!\n\nAnd lo, the great college football rivalries reach their crescendo! Ancient grudges renewed upon fields of athletic combat, where at least the warriors display genuine courage, unlike the bureaucrats who regulate all joy from three thousand leagues away in their sanitized towers!",
+    "newsReferences": [
+      "Black Friday weekend shopping aftermath",
+      "Minnesota firearms deer season continuing",
+      "Wisconsin gun deer season second weekend",
+      "South Dakota pheasant hunting excellent conditions",
+      "Late waterfowl migration continues"
+    ],
+    "id": "greetings-devoted-disciples-arcane-arts",
+    "images": [
+      {
+        "filename": "black-friday-wizard-battle.png",
+        "prompt": "A medieval wizard in ornate purple robes with scorch marks battling a coastal sorceress in a grand merchant temple filled with glowing runic television boxes and enchanted merchandise, shoppers in medieval attire fighting in the background, magical energy crackling between them, Black Friday chaos depicted as fantasy warfare, dramatic lighting with mystical smoke, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "black-friday-wizard-battle"
+      },
+      {
+        "filename": "enchanted-deer-hunt-season.png",
+        "prompt": "Medieval hunters in fur-trimmed cloaks perched in elevated wooden tree sanctuaries overlooking snowy Minnesota forests, holding ornate enchanted rifles decorated with runes, colorful pheasants flying through golden prairie grass in the foreground, majestic ducks and geese formations in the dawn sky, mystical winter hunting scene with fantasy elements, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "enchanted-deer-hunt-season"
+      },
+      {
+        "filename": "bitcoin-scrying-orb-divination.png",
+        "prompt": "A grand wizard in a star-covered robe gazing into a glowing crystal scrying orb displaying Bitcoin symbols and volatile price charts, seated in a stone tower chamber, contrasted with a warm woodland scene visible through an arched window showing patient hunters at peace in nature, magical runes floating around the orb, digital magic versus natural pursuits theme, medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-scrying-orb-divination"
+      }
+    ],
+    "featuredImage": "black-friday-wizard-battle.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-11-28",
     "timestamp": 1764354259096,
     "content": "Upon this Twenty-Eighth Day of November, mine crystalline orb reveals most urgent portents! The Prairie Chicken Hunt enters its final three sunsets across the East River territories of our Kingdom of Dakota, whilst huntsmen in the neighboring realms of Minnesota and Wisconsin report the Sacred Firearms Deer Season hath reached its glorious zenith. Verily, I have witnessed through mine scrying glass the great assemblages of hunting camps throughout the Central Kingdoms, where warriors gather in ancient brotherhood to pursue the noble whitetail quarry. Such traditions demonstrate the superior wisdom of lands that honor individual liberty and the timeless bond betwixt man and wilderness!\n\nMeanwhile, the ethereal tokens of Bitcoin have ascended unto Ninety Thousand Seven Hundred and Fifty Six golden pieces! This most wondrous achievement proves once again that magical currencies freed from the suffocating grip of central banking sorcerers do flourish when allowed to function in natural market conditions. Verily, I prophesied such prosperity would come to those who placed faith in decentralized enchantments rather than the debasement rituals of bureaucratic treasuries!\n\nMine mystical investigations into the realm of technological sorcery have revealed a most curious phenomenon. Through consultation of the Hacker News auguries, I have discovered that eight and twenty million crystalline comments have been transmuted into vector embedding search datasets. Simultaneously, the Technical Guild holds great council debating upon which operating systems the finest artificers employ for their craft. Such matters may seem trivial to the uninitiated, yet these fundamental tools determine whether innovation serves human freedom or becomes another instrument of centralized control!\n\nMost heartening are the reports from North Dakota, where waterfowl migrations have reached their magnificent peak even as the deer campaigns continue unabated. The sharp-tailed grouse yet roam the West River grasslands with thirty three days remaining, whilst our pheasant territories maintain their rightful supremacy as the premier realm for such noble gamebirds. These abundant harvests prove what enlightened stewardship achieves when unencumbered by excessive regulation!\n\nThus do I, Grand Magus Alistair, counsel thee: seize these fleeting opportunities whilst the seasons permit, for time waits for neither wizard nor warrior!",
