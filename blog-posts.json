@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-12-03",
+    "timestamp": 1764786504752,
+    "content": "Hearken well, brave subjects of the realm! Upon this most auspicious December morn, mine scrying orb reveals the frozen northern waters have achieved sufficient crystalline fortification for the Noble Quest of Ice Fishing! The valiant anglers of the Northeast territories venture forth upon Bitter Lake, Enemy Swim, and the legendary Pickerel, where the yellow-striped perch and mighty walleye gather beneath their frozen ceiling. Even our neighboring Kingdom of Minnesota reports glorious catches upon Upper Red Lake, with entire fortified ice houses marching forth like siege towers across the frozen expanse. Verily, when the waters harden, the true warriors of winter prove their mettle!\n\nThe waterfowl campaigns continue their triumphant march through December, with seven and twenty days remaining in our season of Canada Geese, Snow Geese, and the varied duck clans. Meanwhile, our cousins in the Wisconsin territories enjoy the rare convergence of their gun deer season with late waterfowl migration, a blessing from the hunting gods themselves! This abundance showcases what proper conservation magicks can achieve when bureaucratic meddling remains minimal.\n\nIn matters of mystical commerce, mine enchanted Bitcoin talisman hath ascended to heights of ninety-three thousand and fifty-four golden pieces, proving once more that decentralized sorcery outperforms the central banking wizards who would control all commerce. Speaking of technological arcana, I have learned through mine intelligence network that certain artificers working upon handheld gaming devices now fund grand experiments to make the Windows realm compatible with the ARM architecture. Such innovation! Yet simultaneously, practitioners of legal divination discovered their billion-dollar scrying tool had carelessly exposed one hundred thousand confidential scrolls, reminding us that even the mightiest artificial intelligence cannot replace human wisdom and discretion.\n\nThus do I decree: whether upon frozen lakes or in digital marketplaces, freedom and individual skill shall always triumph over centralized control and artificial substitutes!",
+    "newsReferences": [
+      "[Tech] Steam Deck lead reveals Valve is funding ARM compatibility of Windows games",
+      "[Tech] Reverse engineering a $1B Legal AI tool exposed 100k+ confidential files",
+      "[Crypto] Bitcoin at $93,054",
+      "[SD Fishing] Missouri River reservoirs and glacial lakes producing. Check GFP for current conditions.",
+      "[SD Fishing - ICE] Ice fishing active on NE glacial lakes (Bitter, Enemy Swim, Roy, Pickerel). Perch and walleye action. Check ice conditions.",
+      "[SD Hunting] Canada Geese season continues. Split seasons - check zones. 27 days remaining.",
+      "[SD Hunting] Snow Geese season continues. Conservation order extends spring. 27 days remaining.",
+      "[SD Hunting] Ducks season continues. Split seasons - 3 zones. 27 days remaining.",
+      "[MN Fishing - ICE] Upper Red Lake walleye and Mille Lacs perch bites heating up. Ice houses going out.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time."
+    ],
+    "id": "waterfowl-campaigns-continue-triumphant-march",
+    "images": [
+      {
+        "filename": "wizard-scrying-ice-fishing.png",
+        "prompt": "A medieval wizard in starred robes peers into a glowing crystal orb, within which swirls a vision of brave ice fishermen drilling holes through thick frozen lake ice. Fortified ice fishing houses resembling miniature siege towers dot the crystalline expanse behind them, while ghostly images of yellow-striped perch and walleye swim beneath the frozen surface. The wizard's study is lit by candlelight, with frost patterns on the windows., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-scrying-ice-fishing"
+      },
+      {
+        "filename": "bitcoin-talisman-ascension.png",
+        "prompt": "A grand medieval wizard stands before a towering golden Bitcoin talisman engraved with arcane symbols, glowing with ethereal light and floating above a pedestal. Behind him, shadowy figures of corrupt central banking wizards in dark robes cower in the background, their failed spell-scrolls crumbling. Gold coins stamped with the Bitcoin symbol cascade from the levitating talisman, and mystical charts showing ascending values glow on parchment scrolls surrounding the scene., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-talisman-ascension"
+      },
+      {
+        "filename": "ai-scroll-catastrophe.png",
+        "prompt": "A chaotic medieval scriptorium where artificers in robes frantically gather scattered confidential scrolls pouring from a malfunctioning crystalline AI scrying orb. The massive glowing orb crackles with unstable magical energy, with ARM and Windows runes flickering across its surface. Legal diviners in judicial robes look horrified as one hundred thousand parchment documents float through the air, while a handheld gaming device carved with runes sits on a workbench nearby., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "ai-scroll-catastrophe"
+      }
+    ],
+    "featuredImage": "wizard-scrying-ice-fishing.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-12-02",
     "timestamp": 1764700182500,
     "content": "Rejoice, faithful adherents! Upon this Second Day of December, mine ancient tomes reveal most wondrous portents regarding the mystical tokens of prosperity! The great Bitcoin hath surged upward by seven point six percent whilst Ethereum hath leapt an even mightier nine point seven percent in but a single rotation of the sun! Verily, this is the natural order when currencies remain free from the meddlesome enchantments of central banking sorcerers. Meanwhile, in matters of arcane technological achievement, I have witnessed the most extraordinary feat - a grand repository of knowledge called SQLite hath demonstrated the capacity to process one hundred thousand transactions per second across a billion rows of data! Such efficiency would make even the most disciplined monastic scribes weep with envy.\n\nThe Noble Hunt continues apace in our beloved Kingdom of Dakota, with twenty-nine days remaining in the White-tailed Deer season. Though the peak rut hath passed us by in mid-November, the warriors report continued success in the fields. Yet troubling news arrives from the Northern reaches - mine crystalline orb reveals that poachers have violated the sacred codes of the hunt! Such scoundrels who take game without honor deserve the full weight of our constabulary's justice, for they undermine the conservation traditions that sustain our way of life.\n\nTo the east, the warriors of Wisconsin celebrate a most fortuitous alignment of seasons - their gun deer hunt coincides with late waterfowl migration! Truly, the hunting deities smile upon that realm. Meanwhile, extreme wintry weather assails the Kingdom of North Dakota, reminding us all that winter's icy grip shows no mercy to the unprepared.\n\nIn technological curiosities, I note that the great entity known as Bun hath been acquired by the powerful Anthropic consortium - a consolidation of power that may bode well for innovation among those who craft digital incantations. Thus does December begin with abundance for those who respect freedom and tradition!",
