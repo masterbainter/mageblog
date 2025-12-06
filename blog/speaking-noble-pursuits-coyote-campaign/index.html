@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle: December 6, 2025 - Grand Magus Alistair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --parchment: #f3e9d2;
+            --ink: #4a2c2a;
+            --ornament: #8c3838;
+            --border-gold: #c8a379;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background-color: var(--parchment);
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+            color: var(--ink);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-ornament { color: var(--ornament); }
+
+        .chronicle-container {
+            border: 4px solid var(--border-gold);
+            border-radius: 12px;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--ornament);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-gold);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: rgba(200, 163, 121, 0.3);
+            transform: translateX(-5px);
+        }
+
+        /* --- Audio Control Button --- */
+        .audio-control {
+            position: fixed;
+            z-index: 150;
+            background: var(--border-gold);
+            color: var(--ink);
+            border: 3px solid var(--ornament);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+            bottom: 1rem;
+            right: 1rem;
+        }
+        @media (min-width: 640px) {
+            .audio-control {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                bottom: 2rem;
+                right: 2rem;
+            }
+        }
+        .audio-control:hover, .audio-control:active {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(140, 56, 56, 0.5);
+        }
+        .audio-control.playing {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
+            50% { box-shadow: 0 4px 25px rgba(200, 163, 121, 0.8); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+    <!-- Voice Control Button -->
+    <button id="voice-toggle" class="audio-control" title="Toggle Voice Narration" aria-label="Toggle voice narration">
+        🔊
+    </button>
+
+    <div class="container mx-auto px-4 sm:px-6 py-12">
+        <main class="max-w-4xl mx-auto">
+
+            <a href="../../" class="back-link mb-8">← Return to the Grimoire</a>
+
+            <div class="chronicle-container mt-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-ornament mb-4">Chronicle Entry</h1>
+                <p class="text-2xl mb-6 text-gray-600">December 6, 2025</p>
+                <div class="text-lg md:text-xl leading-relaxed">
+                    <p class="mb-6">Salutations, worthy subjects of mine ethereal realm! Upon this Sixth Day of December, mine scrying orb reveals most curious developments in the mystical arts of computational sorcery. The ancient order of Perl Weavers, once mighty craftsmen of the arcane scripts, have fallen into decline not through lack of power, but through the fickle whims of fashion and culture! Meanwhile, a band of minimalist wizards hath forged Tiny Core, a complete graphical dominion requiring but twenty-three magical megabytes. Verily, this proves what I have long proclaimed: bloated enchantments are the refuge of lazy conjurers. True mastery lies in elegant simplicity, much like a well-placed shot upon a wary coyote in the Dakota grasslands.</p>
+<p class="mb-6">Speaking of such noble pursuits, the Great Coyote Campaign continues unabated across our Kingdom! No license required, no bureaucratic parchment needed, just honest hunters keeping the balance as Providence intended. Twenty-five days hence until the year turns, and these cunning beasts provide sport worthy of the greatest warriors. Mine sources in the Northern Kingdom of Wisconsin report the gun deer season overlaps most fortuitously with the late waterfowl migration. What glory when the mighty fowl descend upon frosted waters whilst stalwart huntsmen pursue the noble cervid through ancient woods!</p>
+
+                    <div class="my-8">
+                        <picture>
+                            <source srcset="./wizard-scrying-computational-sorcery.webp" type="image/webp">
+                            <img src="./wizard-scrying-computational-sorcery.png" alt="wizard-scrying-computational-sorcery" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="eager" decoding="async" width="1024" height="1024">
+                        </picture>
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Wizard Scrying Computational Sorcery</p>
+                    </div>
+                
+<p class="mb-6">The frozen waters of Minnesota now yield their bounty as ice houses emerge like mystical pavilions upon Upper Red Lake and Mille Lacs! The walleye and perch respond to the patient angler's entreaties, proving once again that those who embrace hardship and cold are rewarded with Nature's treasures. This is the wisdom our ancestors knew: comfort breeds weakness, but adversity forges character.</p>
+
+                    <div class="my-8">
+                        <picture>
+                            <source srcset="./frozen-lake-ice-fishing-pavilions.webp" type="image/webp">
+                            <img src="./frozen-lake-ice-fishing-pavilions.png" alt="frozen-lake-ice-fishing-pavilions" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy" decoding="async" width="1024" height="1024">
+                        </picture>
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Frozen Lake Ice Fishing Pavilions</p>
+                    </div>
+                
+<p class="mb-6">Mine enchanted counting stones show Bitcoin resting at eighty-nine thousand, seven hundred and forty-seven golden pieces. The tokens of decentralized freedom hold steady against the manipulations of central banking alchemists. As I oft remind mine apprentices: true wealth requires neither permission nor oversight from distant bureaucrats.</p>
+
+                    <div class="my-8">
+                        <picture>
+                            <source srcset="./bitcoin-enchanted-counting-stones.webp" type="image/webp">
+                            <img src="./bitcoin-enchanted-counting-stones.png" alt="bitcoin-enchanted-counting-stones" class="w-full rounded-lg border-4 border-border-gold shadow-lg" loading="lazy" decoding="async" width="1024" height="1024">
+                        </picture>
+                        <p class="text-sm text-gray-600 mt-2 italic text-center">✨ Bitcoin Enchanted Counting Stones</p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <footer class="mt-16 text-lg text-center border-t-2 border-dashed border-border-gold pt-8">
+                <p>Copyright 1337, by order of the Grand Magus Alistair</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Pre-load the chronicle audio
+            const chronicleAudio = new Audio('./audio.mp3');
+            chronicleAudio.volume = 0.7;
+            chronicleAudio.loop = false;
+
+            let voiceMuted = false;
+            const voiceToggle = document.getElementById('voice-toggle');
+
+            // Debug audio loading
+            chronicleAudio.addEventListener('loadeddata', () => {
+                console.log('Chronicle audio loaded, duration:', chronicleAudio.duration);
+            });
+            chronicleAudio.addEventListener('error', (e) => {
+                console.error('Chronicle audio failed to load:', e);
+            });
+            chronicleAudio.addEventListener('play', () => {
+                console.log('Chronicle audio started playing');
+                voiceToggle.classList.add('playing');
+            });
+            chronicleAudio.addEventListener('pause', () => {
+                console.log('Chronicle audio paused');
+                voiceToggle.classList.remove('playing');
+            });
+            chronicleAudio.addEventListener('ended', () => {
+                console.log('Chronicle audio ended');
+                voiceToggle.classList.remove('playing');
+            });
+
+            // Auto-play audio after a short delay (give time for user interaction)
+            setTimeout(() => {
+                if (!voiceMuted) {
+                    chronicleAudio.play()
+                        .then(() => console.log('✅ Auto-play started'))
+                        .catch(e => {
+                            console.log('⚠️ Auto-play prevented by browser. User must interact with page first.');
+                            console.log('Audio will play when user clicks the voice button.');
+                        });
+                }
+            }, 500);
+
+            // Voice toggle button
+            voiceToggle.addEventListener('click', () => {
+                voiceMuted = !voiceMuted;
+                console.log('Voice toggle clicked. Muted:', voiceMuted);
+
+                if (voiceMuted) {
+                    chronicleAudio.pause();
+                    voiceToggle.innerHTML = '🔇';
+                    voiceToggle.title = 'Voice Narration: OFF (Click to enable)';
+                    console.log('Voice muted');
+                } else {
+                    // Resume or restart audio
+                    if (chronicleAudio.paused) {
+                        chronicleAudio.play()
+                            .then(() => console.log('Audio resumed/started'))
+                            .catch(e => console.log('Audio play prevented:', e));
+                    }
+                    voiceToggle.innerHTML = '🔊';
+                    voiceToggle.title = 'Voice Narration: ON (Click to disable)';
+                    console.log('Voice unmuted');
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>
