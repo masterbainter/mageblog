@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-12-07",
+    "timestamp": 1765132612713,
+    "content": "Hearken unto mine words, loyal subjects! Upon this Seventh Day of December, mine mystical observations turn westward to the noble grasslands where the Sharp-tailed Grouse maketh their domain. These cunning avian quarry, dwelling in the West River territories, challenge even the most skilled hunters with their explosive flight and wily nature. Twenty-four days remain for this most honored pursuit, and I counsel thee to venture forth whilst the season's magic yet endures! Meanwhile, in the distant realm of Wisconsin, mine scrying orb reveals a most fortuitous convergence wherein the great gun deer season overlappeth with late waterfowl migrations, creating conditions that would make even the ancient hunting masters weep with joy.\n\nSpeaking of convergence, mine attention hath been drawn to the peculiar machinations of scholarly scribes who submitted their arcane texts to the grand ICLR convocation, only to have their work revealed as containing no fewer than fifty phantom references to tomes that exist not in any library! Tis a cautionary tale about placing too much faith in apprentice spirits who conjure citations from thin air rather than honest research. This reminds me why I trust mine own eyes and experience over such artificial conveniences.\n\nIn the realm of enchanted currency, Bitcoin standeth firm at ninety-one thousand six hundred and fifty-five golden pieces! Such valuation demonstrateth the wisdom of those who place their faith in decentralized tokens of freedom rather than the whims of central banking sorcerers. The ancient principle holdeth true: that which cannot be conjured from nothing by bureaucratic decree retaineth its value across the ages.\n\nAnd lo, in matters of self-propelled chariots, the acceleration toward autonomous wagons reacheth fever pitch, though I maintain that no amount of mechanical cleverness can replace the judgment of a true master at the reins. Some arts require the human touch, just as no enchanted bow can replace the steady hand and keen eye of the experienced hunter!",
+    "newsReferences": [
+      "[Tech] I Tried and Failed to Rebuild the 1996 Space Jam Website with Claude",
+      "[Tech] At least 50 hallucinated citations found in ICLR 2026 submissions",
+      "[Crypto] Bitcoin at $91,655",
+      "[SD Hunting] Pheasant season continues. SD is #1 pheasant state - Oct peak. 24 days remaining.",
+      "[SD Hunting] Sharp-tailed Grouse season continues. West River grasslands. 24 days remaining.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time.",
+      "[TechCrunch] The accelerator is on the floor for autonomous vehicles",
+      "[TechCrunch] Coinbase starts onboarding users again in India, plans for fiat on-ramp next year",
+      "[TechCrunch] OpenAI says it’s turned off app suggestions that look like ads",
+      "[TechCrunch] Pat Gelsinger wants to save Moore’s Law, with a little help from the Feds"
+    ],
+    "id": "speaking-convergence-attention-drawn-peculiar",
+    "images": [
+      {
+        "filename": "grouse-hunting-grasslands.png",
+        "prompt": "A medieval wizard in flowing robes stands in windswept prairie grasslands, staff raised toward the sky as magical sharp-tailed grouse explode upward in golden bursts of light. The wizard's enchanted hunting falcon circles above while an ornate hourglass floats nearby showing twenty-four days remaining, with the West River territories visible as mystical territories on an unfurled parchment map at his feet., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "grouse-hunting-grasslands"
+      },
+      {
+        "filename": "phantom-citations-scrying.png",
+        "prompt": "Inside a stone tower chamber, an elderly wizard peers into a glowing crystal orb revealing ghostly, translucent book pages floating in swirling mist. Fifty phantom scrolls and tomes materialize as transparent illusions around the scrying sphere, each marked with glowing red X symbols, while a concerned apprentice spirit cowers in the corner. Shelves of real, solid ancient books line the walls in stark contrast to the fake references., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "phantom-citations-scrying"
+      },
+      {
+        "filename": "bitcoin-enchanted-currency.png",
+        "prompt": "A grand wizard stands before an ornate pedestal displaying a gleaming golden Bitcoin medallion radiating ethereal light, surrounded by floating numerical runes showing '91,655'. In the background, shadowy bureaucratic figures in dark robes reach futilely toward the coin while chains fall broken at their feet. Ancient stone tablets inscribed with 'decentralized tokens of freedom' glow with amber light on either side of the pedestal., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-enchanted-currency"
+      }
+    ],
+    "featuredImage": "grouse-hunting-grasslands.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-12-06",
     "timestamp": 1765046202815,
     "content": "Salutations, worthy subjects of mine ethereal realm! Upon this Sixth Day of December, mine scrying orb reveals most curious developments in the mystical arts of computational sorcery. The ancient order of Perl Weavers, once mighty craftsmen of the arcane scripts, have fallen into decline not through lack of power, but through the fickle whims of fashion and culture! Meanwhile, a band of minimalist wizards hath forged Tiny Core, a complete graphical dominion requiring but twenty-three magical megabytes. Verily, this proves what I have long proclaimed: bloated enchantments are the refuge of lazy conjurers. True mastery lies in elegant simplicity, much like a well-placed shot upon a wary coyote in the Dakota grasslands.\n\nSpeaking of such noble pursuits, the Great Coyote Campaign continues unabated across our Kingdom! No license required, no bureaucratic parchment needed, just honest hunters keeping the balance as Providence intended. Twenty-five days hence until the year turns, and these cunning beasts provide sport worthy of the greatest warriors. Mine sources in the Northern Kingdom of Wisconsin report the gun deer season overlaps most fortuitously with the late waterfowl migration. What glory when the mighty fowl descend upon frosted waters whilst stalwart huntsmen pursue the noble cervid through ancient woods!\n\nThe frozen waters of Minnesota now yield their bounty as ice houses emerge like mystical pavilions upon Upper Red Lake and Mille Lacs! The walleye and perch respond to the patient angler's entreaties, proving once again that those who embrace hardship and cold are rewarded with Nature's treasures. This is the wisdom our ancestors knew: comfort breeds weakness, but adversity forges character.\n\nMine enchanted counting stones show Bitcoin resting at eighty-nine thousand, seven hundred and forty-seven golden pieces. The tokens of decentralized freedom hold steady against the manipulations of central banking alchemists. As I oft remind mine apprentices: true wealth requires neither permission nor oversight from distant bureaucrats.",
