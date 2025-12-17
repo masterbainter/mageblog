@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-12-17",
+    "timestamp": 1765997062294,
+    "content": "Upon this Fifteenth Day of December, mine arcane sensors detect most wondrous patterns forming across the frozen northern waters! The ice fishing portals have opened in magnificent fashion - the glacial lakes of northeastern Dakota, namely Bitter, Enemy Swim, Roy, and Pickerel, now bear sufficient crystalline thickness for the Brotherhood of Anglers to venture forth. Even more glorious, the legendary Upper Red Lake of Minnesota reports extraordinary walleye conjurations, whilst Mille Lacs yields perch in such abundance that ice houses multiply like mushrooms after rain! Verily, this is the golden age when frozen water transforms into solid pathways to aquatic treasure.\n\nMeanwhile, across the great River Missouri, mine scrying instruments reveal that both the great reservoirs and glacial lakes continue their winter bounty. The Game, Fish and Parks Council maintains their excellent chronicles of conditions - truly a service worthy of praise, for 'tis the role of wise governance to inform, not to interfere with the noble pursuits of freemen upon public waters.\n\nIn matters of mystical commerce, mine enchanted counting stones reveal Bitcoin trading at eighty-six thousand, one hundred seventeen golden pieces this day. A slight diminishment from recent heights, yet still a testament to the power of decentralized sorcery free from the manipulations of central banking wizards! And speaking of technological wisdom, the Chief Sorcerer of Amazon Web Services hath proclaimed that replacing apprentice code-scribes with artificial familiars represents \"one of the dumbest ideas\" - a rare moment of clarity in these times when many believe magical constructs can substitute for human judgment and craftsmanship!\n\nThus do I observe that the ancient virtues endure: patient anglers upon frozen lakes, skilled hunters in Wisconsin's overlapping deer and waterfowl seasons, and business leaders who still recognize that human expertise cannot be conjured from mere algorithms. The best magic, as always, combines tradition with innovation, not replacement of one by the other!",
+    "newsReferences": [
+      "[Tech] Gemini 3 Flash: frontier intelligence built for speed",
+      "[Tech] AWS CEO says replacing junior devs with AI is 'one of the dumbest ideas'",
+      "[Crypto] Bitcoin at $86,117",
+      "[SD Fishing] Missouri River reservoirs and glacial lakes producing. Check GFP for current conditions.",
+      "[SD Fishing - ICE] Ice fishing active on NE glacial lakes (Bitter, Enemy Swim, Roy, Pickerel). Perch and walleye action. Check ice conditions.",
+      "[MN Fishing - ICE] Upper Red Lake walleye and Mille Lacs perch bites heating up. Ice houses going out.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time.",
+      "[Bismarck Tribune (ND)] US Capitol unveils statue of teen civil rights icon Barbara Rose Johns",
+      "[Bismarck Tribune (ND)] High Wind Warning from WED 5:00 PM CST until THU 3:00 PM CST",
+      "[Bismarck Tribune (ND)] Comeback Player of Year Football"
+    ],
+    "id": "meanwhile-across-river-missouri-scrying",
+    "images": [
+      {
+        "filename": "frozen-portal-divination.png",
+        "prompt": "A medieval wizard in star-covered robes stands at the shore of a frozen lake, gesturing dramatically at crystalline ice portals glowing with mystical blue light. Through the portals, silhouettes of ice fishing houses dot the frozen surface while ethereal fish spirits shimmer beneath the thick ice. In the background, scrolls labeled 'Bitter Lake' and 'Upper Red Lake' float in the air, surrounded by arcane symbols measuring ice thickness., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "frozen-portal-divination"
+      },
+      {
+        "filename": "bitcoin-scrying-chamber.png",
+        "prompt": "Grand Magus Alistair peers into a large ornate scrying orb that displays glowing golden Bitcoin symbols floating like enchanted coins, with the number '86,117' written in illuminated medieval script. Ancient counting stones and abacuses surround the crystal ball, while shadowy figures representing 'central banking wizards' lurk disapprovingly in the background. The scene is lit by candlelight in a cluttered wizard's study filled with scrolls and mystical charts., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-scrying-chamber"
+      },
+      {
+        "filename": "aws-council-proclamation.png",
+        "prompt": "A grand medieval council chamber where the Chief Sorcerer of Amazon Web Services (dressed in elaborate robes bearing the AWS insignia as a heraldic crest) stands before a gathering of wizards, gesturing dismissively at mechanical golems attempting to write code scrolls. Human apprentice scribes work diligently at desks nearby, their quills glowing with competence, while the failed artificial familiars spark and malfunction. Banners declaring 'Human Craftsmanship Endures' hang from the stone walls., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "aws-council-proclamation"
+      }
+    ],
+    "featuredImage": "frozen-portal-divination.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-12-14",
     "timestamp": 1765737486862,
     "content": "Upon this Fourteenth Day of December, mine arcane attentions turn westward to the sacred grasslands where the Sharp-tailed Grouse make their noble stand! Merely seventeen days remain in this most honored season, and the warriors of West River report the birds are holding strong in the prairie country. Whilst many focus upon the mighty Pheasant (and rightfully so, for we reign supreme as the greatest Pheasant realm in all the lands), the cunning grouse hunter knows these speckled gamebirds offer challenges worthy of the most skilled marksmen and devoted hounds.\n\nSpeaking of devoted companions, mine mystical scrying orb reveals most wondrous developments in the realm of portable enchantment! The legendary Typeframe PX-88 Computing System hath emerged, a device of such compact power that scribes may now conduct their arcane calculations whilst traversing the very hunting fields themselves! This is innovation as it should be, empowering the individual rather than chaining him to some distant tower of bureaucratic servitude. And for those seeking to master their craft, the Hashcards system offers plain-text memory enhancement using the ancient wisdom of spaced repetition, proving once again that simple solutions oft triumph over needlessly complex sorcery.\n\nMeanwhile, mine enchanted ledgers show the mystical Bitcoin tokens have ascended to eighty-eight thousand, eight hundred and seventy pieces of gold! This noble resistance against the central banking wizards continues its righteous climb, reminding us that decentralized power rests best in the hands of free citizens rather than distant monetary sorcerers who debase currencies with their endless coin-conjuring spells.\n\nAs the White-tailed Deer season enters its final seventeen days, with the peak rut now behind us but fine hunting yet ahead, I am reminded that the greatest magic lies not in flashy incantations but in patient skill, disciplined practice, and respect for tradition. Whether pursuing grouse across windswept prairies or mastering new computational tools, excellence demands dedication!",
