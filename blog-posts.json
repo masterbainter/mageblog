@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-12-21",
+    "timestamp": 1766342297451,
+    "content": "Upon this Twenty-First Day of December, mine arcane attentions turn westward to the sacred grasslands where the Sharp-tailed Grouse season enters its final days. These noble birds of the prairie demand more skill than any pheasant, testing the mettle of true hunters across the West River territories. With but ten days remaining, I observe the Brotherhood pursuing both grouse and the cunning coyote, whose year-round season requires no bureaucratic parchment, as befits a land that respects the freedom of its people to protect livestock and maintain the natural order.\n\nMost curious developments in the realm of mystical archives! The scholars at Hacker News have compiled a great tome listing all books mentioned in their councils during this year of 2025, whilst simultaneously the ancient wisdom of Dijkstra has been preserved in digital scrolls. 'Tis fitting that in an age where autonomous carriages in San Francisco fail when the lightning-fires cease to flow, we remember that foundational knowledge matters more than flashy enchantments. The robotaxi sorcerers at Waymo learned this harsh lesson during their recent blackout humiliation.\n\nSpeaking of lessons in humility, the magical tokens of Bitcoin have descended to eighty-eight thousand gold pieces, yet I perceive this as mere market breathing rather than catastrophic collapse. The decentralized nature of these coins remains their greatest virtue, free from the manipulations of central banking wizards and their inflationary curses.\n\nMeanwhile, across the waters in Wisconsin, the gun deer season overlaps magnificently with late waterfowl migration, creating what the veteran hunters call prime time. This is the proper order of things: skilled marksmen pursuing noble game whilst bureaucrats in distant capitals fret about electric cart mandates and visa restrictions.\n\nThus do I observe that true power lies not in controlling others through regulation, but in preserving the freedoms that allow citizens to hunt, build, and prosper. Even a Grand Magus knows wisdom when he sees it practiced in the heartland.",
+    "newsReferences": [
+      "[Tech] Show HN: Books mentioned on Hacker News in 2025",
+      "[Tech] E.W.Dijkstra Archive",
+      "[Crypto] Bitcoin at $88,180",
+      "[SD Hunting] Pheasant season continues. SD is #1 pheasant state - Oct peak. 10 days remaining.",
+      "[SD Hunting] Sharp-tailed Grouse season continues. West River grasslands. 10 days remaining.",
+      "[SD Hunting] Coyote season continues. Year-round - no license required. 10 days remaining.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time.",
+      "[TechCrunch] TechCrunch Mobility: Bankruptcy takes out two",
+      "[TechCrunch] Waymo suspends service in San Francisco as robotaxis stall during blackout",
+      "[TechCrunch] As EU waters down 2035 EV goals, electric startups express concern"
+    ],
+    "id": "curious-developments-realm-mystical-archives",
+    "images": [
+      {
+        "filename": "prairie-grouse-hunting-vision.png",
+        "prompt": "A medieval wizard in flowing robes stands on a windswept prairie grassland, observing through a glowing crystal orb as hunters with crossbows pursue magical sharp-tailed grouse that shimmer with ethereal light. In the background, a cunning coyote with glowing eyes watches from a distant hill. The scene is bathed in the golden light of late December, with dried prairie grasses bending in the wind., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "prairie-grouse-hunting-vision"
+      },
+      {
+        "filename": "library-of-digital-wisdom.png",
+        "prompt": "Inside a grand medieval library, an elderly wizard examines floating digital scrolls and illuminated manuscripts that glow with arcane symbols. One large tome displays 'Hacker News Book List 2025' in golden letters, while another scroll shows Dijkstra's ancient algorithms. In the foreground, a miniature diorama shows enchanted carriages in San Francisco frozen and lifeless during a lightning-fire blackout, with tiny robed figures scratching their heads in confusion., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "library-of-digital-wisdom"
+      },
+      {
+        "filename": "bitcoin-scales-and-hunting-seasons.png",
+        "prompt": "A Grand Magus in purple and gold robes stands before a large mystical scale in a stone tower chamber. On one side of the scale sits a glowing golden Bitcoin coin etched with runes showing '88,000 gold pieces', while on the other side sits a sinister-looking central bank wizard puppet manipulating shadowy inflation curses. Through an arched window behind them, Wisconsin hunters with enchanted bows pursue both deer and waterfowl in a misty autumn landscape., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-scales-and-hunting-seasons"
+      }
+    ],
+    "featuredImage": "prairie-grouse-hunting-vision.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-12-20",
     "timestamp": 1766255776678,
     "content": "Upon this Twentieth Day of December, mine arcane attention turns to the frozen waters of the northeastern realms, where the Ice Sorcerers of the glacial lakes practice their ancient craft with increasing fervor! Reports flow from Bitter Lake, Enemy Swim, Roy, and Pickerel where noble warriors brave the crystalline surfaces in pursuit of perch and walleye. Verily, the mystical portals known as ice houses now deploy across Upper Red Lake and Mille Lacs in the Minnesota territories, where the fish bite with enthusiasm matching the hunters' determination. I remind all practitioners: measure thy frozen platforms with care, for overconfidence upon thin ice serves no wizard well!\n\nMeanwhile, in the great Missouri River reservoirs, open water still yields its treasures to those who consult the sacred texts of the Game Fish and Parks ministry. The glacial lakes of our own Kingdom of Dakota produce steadily for those wise enough to check current conditions before venturing forth. To the west in Wisconsin, mine brethren celebrate a most glorious convergence, the gun deer season overlapping with late waterfowl migration, creating prime hunting time for those skilled enough to pursue multiple quarries!\n\nSpeaking of ancient mysteries, mine observations of the ethereal Bitcoin realm show the mystical tokens resting at eighty-eight thousand, one hundred fifty-seven pieces of gold. Some claim this represents decline, but I perceive merely a natural settling after recent enchantments, a healthy consolidation before the next ascent. The freedom these magical coins represent from centralized banking sorcery remains undiminished!\n\nIn the realm of technological conjuring, I am most intrigued by certain young artificers demonstrating pure silicon magic with but four thousand gates, requiring neither central processing golems nor memory crystals. This reminds mine ancient soul that true power oft comes from elegant simplicity rather than bloated complexity. Would that more modern wizards understood this principle, particularly those who mark every minor disturbance with error level proclamations when mere warnings would suffice!",
