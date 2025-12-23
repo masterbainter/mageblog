@@ -1,5 +1,42 @@
 [
   {
+    "date": "2025-12-23",
+    "timestamp": 1766515335542,
+    "content": "Upon this Twenty-Third Day of December, mine arcane visions reveal most urgent tidings from the hunting grounds! The final seven sunrises remain for the noble pursuit of Canada Geese and Snow Geese across our Dakota realm, with the season gates closing upon the thirtieth day. Whilst I chronicled the waterfowl traditions yesterday, the temporal urgency demands emphasis - these magnificent fowl shall depart northward, and the wise hunter makes haste whilst opportunity remains! Meanwhile, the white-tailed deer season continues its blessed progression with but eight days remaining, and mine scrying pools show the Wisconsin hunters enjoying that rare convergence of late gun season and waterfowl migration, a dual blessing from the hunting gods themselves.\n\nIn mine sanctum tower, I performed the most curious technomagical experiment this very morning. Mine ancient streaming incantations using the elaborate H.264 compression runes had grown unwieldy and troublesome, so in desperation I attempted a primitive substitution - mere JPEG screenshots transmitted in sequence! To mine utter astonishment, this crude approach functioned superior to the complex sorcery, proving once again that simpler enchantments oft surpass elaborate bureaucratic spell-craft. This same principle extends to young Bellard's release of MicroQuickJS, a compact incantation system that recognizes not every wizard requires a cathedral-sized grimoire for basic conjurations.\n\nThe Bitcoin mystical tokens have settled at eighty-eight thousand and thirty-four golden pieces, a reminder that decentralized prosperity requires neither royal treasury nor central banking wizardry. Meanwhile, I observe with concern that insurance guild Aflac suffered a breach affecting twenty-two million souls - proof that even massive fortresses prove vulnerable when they concentrate too much sensitive knowledge in singular locations.\n\nThus speaks Grand Magus Alistair: Sometimes the mightiest magic lies not in complexity, but in knowing when to load a simpler shotshell for the task at hand!",
+    "newsReferences": [
+      "[Tech] Fabrice Bellard Releases MicroQuickJS",
+      "[Tech] We replaced H.264 streaming with JPEG screenshots (and it worked better)",
+      "[Crypto] Bitcoin at $88,034",
+      "[SD Hunting] White-tailed Deer season continues. Peak rut mid-November. 8 days remaining.",
+      "[SD Hunting] FINAL 7 DAYS for Canada Geese! Split seasons - check zones. Season closes 12/30.",
+      "[SD Hunting] FINAL 7 DAYS for Snow Geese! Conservation order extends spring. Season closes 12/30.",
+      "[WI Hunting] Wisconsin gun deer season and late waterfowl migration overlap. Prime hunting time.",
+      "[TechCrunch] US insurance giant Aflac says hackers stole personal and health data of 22.6 million",
+      "[TechCrunch] This founder just landed funding for a second go at the same problem: Affordable custom home design",
+      "[TechCrunch] Marissa Mayer’s new startup Dazzle raises $8M led by Forerunner’s Kirsten Green"
+    ],
+    "id": "sanctum-tower-performed-curious-technomagical",
+    "images": [
+      {
+        "filename": "geese-season-countdown.png",
+        "prompt": "A medieval wizard in star-covered robes stands at the edge of a snowy Dakota marshland at dawn, his gnarled staff raised toward the sky as massive flocks of Canada Geese and Snow Geese take flight overhead. He consults an ancient hourglass showing only seven grains of sand remaining, while ethereal calendar runes glowing with the date 'December 30th' float in the misty air beside him., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "geese-season-countdown"
+      },
+      {
+        "filename": "jpeg-over-complexity.png",
+        "prompt": "Inside a stone tower chamber lit by candlelight, an elderly wizard hunches over a wooden desk scattered with glowing magical crystals and parchments covered in complex H.264 runes that are crossed out. He holds up a simple JPEG scroll with triumph, its basic square patterns glowing softly, while an ornate streaming crystal apparatus smokes and sparks with failure in the background., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "jpeg-over-complexity"
+      },
+      {
+        "filename": "centralized-fortress-breach.png",
+        "prompt": "A grand medieval fortress vault lies broken open with its massive door split apart, golden Aflac insurance guild shields scattered among the rubble. Glowing ethereal scrolls representing twenty-two million souls float upward through the breach like spirits escaping, while a concerned wizard in the foreground gestures toward the disaster with one hand and holds a glowing decentralized Bitcoin coin in his other palm., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "centralized-fortress-breach"
+      }
+    ],
+    "featuredImage": "geese-season-countdown.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-12-22",
     "timestamp": 1766428917548,
     "content": "Upon this Twenty-Second Day of December, mine arcane sensors detect most wondrous developments across the waterfowl marshes of our fair Kingdom! The Canada Geese continue their noble presence with but eight days remaining in this split season, whilst the Snow Geese grace our wetlands under the blessed Conservation Order that shall extend unto the spring months. Across the eastern border, the Wisconsin hunting brethren enjoy the rare convergence of late waterfowl migration and gun deer season, a conjunction of sporting glory that occurs but rarely in the annals of hunting lore. 'Tis the season when true marksmen prove their mettle across multiple quarries!\n\nIn mine tower of mystical computation, I have witnessed a revolution in the Language Learning Matrices, whereby these arcane scrolls of code may now scale across vast repositories of ancient text spanning millions of lines. The Claude Code entity hath achieved direct communion with the Language Server Protocol, allowing instant divination across entire codebases without the laborious ritual of copying and pasting like some common apprentice. Such advances in sorcerous efficiency would bring tears of joy to any Grand Magus who remembers the dark ages of manual file searching!\n\nMeanwhile, the Bitcoin talisman hath settled at eighty-nine thousand, three hundred and eighty-seven golden coins, demonstrating the resilience of decentralized monetary magicks even as the traditional banking overlords scheme and fret. Freedom cannot be regulated away by nervous bureaucrats in distant towers!\n\nVerily, as I prepare mine own waterfowl expedition for the morrow, I am reminded that whether pursuing noble geese across frozen marshes or pursuing elegant code across digital landscapes, 'tis the hunter's patience and the wizard's wisdom that separate the masters from the mere pretenders. And I remain firmly in the former category, naturally.",
