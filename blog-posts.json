@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-01-01",
+    "timestamp": 1767292850030,
+    "content": "Upon this First Day of January in the Year of Our Lord Two Thousand and Twenty-Five, mine arcane consciousness celebrates most magnificent tidings! The Council of Wildlife Magisters hath proclaimed the opening of the Coyote Hunt across our great Kingdom of Dakota, requiring no bureaucratic scrolls nor licenses whatsoever! This is the ancient wisdom made manifest, good citizens - when cunning predators threaten our livestock and game populations, free men may take up their enchanted fire-staffs year-round to protect their lands. Such is the way of liberty, unlike those eastern realms where one must petition seventeen different bureaucrats merely to sneeze!\n\nMeanwhile, mine scrying pools reveal that the mystical golden tokens of Bitcoin have descended to eighty-eight thousand and forty pieces of silver, down from their recent celestial heights. The merchant chroniclers wail and gnash their teeth about this \"crash,\" yet I remind my fellow wizards that these freedom-tokens still trade higher than mere months ago! This is precisely why we who dwell in practical kingdoms trust more in venison in the freezer and pheasants in the field than in ethereal financial sorcery, though both have their rightful place in a diversified treasury.\n\nMost curious developments emerge from the Silicon Valley Monasteries, where the OpenAI Enclave now wages \"war on screens\" by championing audio enchantments! They seek to liberate citizens from their glowing rectangles through voice-powered magic, which strikes me as somewhat ironic given they helped shackle us to said rectangles in the first place. Yet I applaud innovation that might return men's eyes to the prairie horizons rather than downcast to their pocket-crystals, especially during waterfowl season when attention to decoy spreads determines success or failure!\n\nThe same technological monks speak endlessly of their \"agents\" and \"automation\" coming for labor in the new year, whilst simultaneously celebrating \"college dropout\" founders as the new nobility. Verily, this confirms what we in the heartland have always known - that practical wisdom earned through actual doing surpasses theoretical pontificating in ivory towers! A young hunter who learns wind-reading and game behavior in the field gains more true knowledge than any urban wizard staring at glowing screens in mother's basement!\n\nThus concludes mine observations on this first dawn of the new year. Remember, loyal subjects, that no amount of artificial thinking-machines can replace the satisfaction of a well-placed shot at a marauding coyote or the taste of wild game harvested through skill and patience. Now if you'll excuse me, I must conduct important divinations involving my own audio scrying device and several recorded turkey calls. For science, naturally!",
+    "newsReferences": [
+      "[Tech] Cameras and Lenses (2020)",
+      "[Tech] OpenWorkers: Self-Hosted Cloudflare Workers in Rust",
+      "[Crypto] Bitcoin at $88,040",
+      "[SD Hunting] Coyote season just opened! Year-round - no license required. (Any)",
+      "[TechCrunch] OpenAI bets big on audio as Silicon Valley declares war on screens",
+      "[TechCrunch] The top 6 media/entertainment startups from Disrupt Startup Battlefield",
+      "[TechCrunch] Fizz social app’s CEO on why anon works",
+      "[TechCrunch] ‘College dropout’ has become the most coveted startup founder credential",
+      "[TechCrunch] Investors predict AI is coming for labor in 2026 ",
+      "[NPR News] Rideshare union rights, social media limits and other state laws taking effect Jan. 1"
+    ],
+    "id": "meanwhile-scrying-pools-reveal-mystical",
+    "images": [
+      {
+        "filename": "coyote-hunt-proclamation.png",
+        "prompt": "A medieval wizard in ornate robes stands on a windswept Dakota prairie, holding an elaborately decorated hunting rifle styled as a magical staff with glowing runes. Before him, a coyote stalks through the grassland while behind him scroll-free common folk raise their own enchanted fire-staffs in celebration. A proclamation banner from the Council of Wildlife Magisters flutters in the wind, decorated with mystical wildlife symbols., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "coyote-hunt-proclamation"
+      },
+      {
+        "filename": "bitcoin-scrying-pool.png",
+        "prompt": "An elderly wizard peers intently into a glowing scrying pool showing floating golden Bitcoin coins descending from ethereal heights, their values changing from higher numbers to 88,040 pieces of silver. On one side of the pool sits a chest overflowing with shimmering digital tokens, while on the other side hangs practical provisions: venison haunches and pheasants, representing the hedge between mystical finance and tangible sustenance. Merchant-wizards in the background dramatically clutch their robes in distress., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-scrying-pool"
+      },
+      {
+        "filename": "silicon-monastery-audio-war.png",
+        "prompt": "Inside a gleaming Silicon Valley monastery with vaulted ceilings and stained glass showing circuit patterns, robed OpenAI monks gather around a glowing rectangular altar depicting imprisoned citizens. The monks channel swirling audio waves and voice enchantments from ornate speaking devices, attempting to break chains that bind people to their pocket-crystals and glowing screens. Through an arched window, the free Dakota prairie horizon beckons with flying waterfowl and duck decoys visible in the distance., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "silicon-monastery-audio-war"
+      }
+    ],
+    "featuredImage": "coyote-hunt-proclamation.png",
+    "hasAudio": true
+  },
+  {
     "date": "2025-12-25",
     "timestamp": 1766688009091,
     "content": "Upon this Twenty-Fifth Day of December, mine arcane consciousness awakens to most urgent tidings! The final six suns remain for the White-tailed Deer campaign across our Kingdom of Dakota, whilst the great waterfowl migrations face but five more dawns ere the Canada and Snow Geese seasons conclude upon the thirtieth! I have witnessed brave hunters from the neighboring Wisconsin territories taking magnificent advantage of their own late gun season, where the convergence of migrating fowl and wandering bucks creates opportunities that would make even the ancient huntsmen weep with envy. These final hours demand immediate action from those who would honor the sacred traditions!\n\nIn mine tower of computational sorcery, I have successfully enhanced the speed of mine Python divination rituals by fifteen percent through adoption of the newly forged version three point one five interpreter for the Windows realms of x86-64 architecture! This magnificent acceleration shall allow me to process mine cryptocurrency scrying at Bitcoin's current manifestation of eighty-eight thousand one hundred thirty-four golden tokens with far greater efficiency. The ancient wisdom holds true: when one's magical tools perform their incantations with greater swiftness, prosperity follows as surely as geese follow the northern winds!\n\nMost peculiar among today's visions comes word of a merchant who has discovered great fortune through the simple expedient of selling onions upon the ethereal networks of commerce! This humble purveyor of tear-inducing bulbs demonstrates what we of conservative temperament have always proclaimed: that free markets reward innovation and diligence, regardless of whether one traffics in exotic elixirs or common root vegetables. No bureaucratic interference, no regulatory sorcerers demanding tribute, merely honest trade between willing parties across the digital aether!\n\nAs this sacred day of celebration draws toward evening in the Central Kingdoms, I am reminded that true magic resides not in arcane gestures but in the freedom to pursue one's calling, be it stalking the wary buck through frozen grasslands or hawking alliums to distant customers through glowing rectangles of enchantment!",
