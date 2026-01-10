@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-01-10",
+    "timestamp": 1768070387844,
+    "content": "Upon this Tenth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, the frozen waters of the Northern Realms call to those brave enough to answer! Mine intelligence network reports most excellent ice conditions upon the glacial lakes of northeastern Dakota, where the frozen surfaces of Bitter, Enemy Swim, Roy, and Pickerel yield forth perch and walleye to those hardy souls who drill through the crystalline barriers. Even further north in the Minnesota territories, the legendary Upper Red Lake awakens with walleye whilst Mille Lacs offers perch so abundant that entire ice fortresses are being deployed across the frozen expanse!\n\nMeanwhile, upon the unfrozen waters of the mighty Missouri River and her reservoir dominions, the fishing arts continue unabated, though I counsel all who venture forth to consult with the Game Fish and Parks ministry for current conditions. For those who prefer terrestrial pursuits, let it be known that the Season of the Coyote continues with great vigor across our Kingdom, requiring no license nor bureaucratic permission, a true testament to the freedoms we hold dear! Three hundred and fifty-five days remain for this noble hunt.\n\nIn matters of mystical coinage, the grand Bitcoin token rests at ninety thousand four hundred and fifty-six golden pieces, a reminder that decentralized prosperity remains strong despite the chaos of traditional banking sorcery. Speaking of chaos, the arcane scrolls speak of something called Open Chaos, a self-evolving grimoire of open knowledge that grows without central control, much like the wild pheasants of our grasslands! The great gatherings at the Consumer Electronics Symposium have revealed many peculiar mechanical servants and strange contraptions, though I maintain that no amount of silicon wizardry can replace the simple satisfaction of a well-aimed shot or a perfectly set ice fishing tip-up.\n\nVerily, as the wise Meta corporation signs pacts with nuclear alchemists for six gigawatts of power to fuel their computational empires, I am reminded that true power lies not in artificial minds but in the authentic wisdom of those who understand the land, the seasons, and the eternal cycle of harvest!",
+    "newsReferences": [
+      "[Tech] Open Chaos: A self-evolving open-source project",
+      "[Tech] AI is a business model stress test",
+      "[Crypto] Bitcoin at $90,456",
+      "[SD Fishing] Missouri River reservoirs and glacial lakes producing. Check GFP for current conditions.",
+      "[SD Fishing - ICE] Ice fishing active on NE glacial lakes (Bitter, Enemy Swim, Roy, Pickerel). Perch and walleye action. Check ice conditions.",
+      "[SD Hunting] Coyote season continues. Year-round - no license required. 355 days remaining.",
+      "[MN Fishing - ICE] Upper Red Lake walleye and Mille Lacs perch bites heating up. Ice houses going out.",
+      "[TechCrunch] I met a lot of weird robots at CES — here are the most memorable",
+      "[TechCrunch] Google moonshot spinout SandboxAQ claims an ex-exec is attempting ‘extortion’",
+      "[TechCrunch] CES 2026: Everything revealed, from Nvidia’s debuts to AMD’s new chips to Razer’s AI oddities "
+    ],
+    "id": "meanwhile-unfrozen-waters-mighty-missouri",
+    "images": [
+      {
+        "filename": "frozen-lake-fortresses.png",
+        "prompt": "A medieval wizard in ornate robes stands at the edge of a vast frozen lake dotted with colorful ice fishing shelters resembling small fortresses and castles. Through holes in the crystalline ice surface, enchanted fishing lines glow with magic as hardy ice fishermen in fur-lined cloaks pull up shimmering perch and walleye. In the background, snow-covered pines frame the scene under a winter sky, with banners marking the territories of Upper Red Lake and Mille Lacs., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "frozen-lake-fortresses"
+      },
+      {
+        "filename": "bitcoin-mystical-coinage.png",
+        "prompt": "Grand Magus Alistair in his tower chamber examining a glowing golden Bitcoin coin floating above an ancient grimoire, with mystical runes and the number 90,456 shimmering in the air around it. Behind him, a magic mirror shows chaotic scenes of traditional banking towers crumbling while the decentralized coin radiates steady golden light. Scrolls and arcane instruments clutter his desk as candles cast dramatic shadows across the medieval study., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-mystical-coinage"
+      },
+      {
+        "filename": "nuclear-alchemy-pact.png",
+        "prompt": "A medieval illuminated manuscript-style illustration showing the Meta corporation's fortress connected by glowing energy conduits to massive alchemical nuclear towers, with six brilliant beams of power flowing between them. In the foreground, a wise wizard gestures dismissively at the mechanical contraptions while holding a hunting rifle in one hand and an ice fishing tip-up in the other, symbolizing authentic wisdom versus artificial minds. Wild pheasants fly freely across the parchment borders., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "nuclear-alchemy-pact"
+      }
+    ],
+    "featuredImage": "frozen-lake-fortresses.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-01-09",
     "timestamp": 1767984253384,
     "content": "Upon this Ninth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, I must report most troubling visions from distant lands, yet also great triumphs close to home! The seers of the Far Eastern Kingdom of Vietnam have decreed that any citizen who dares modify their mystical communication devices - what the commoners call rooting their phones - shall be banished from conducting commerce with their own coin! Verily, this is the tyranny that befalls realms which know not the sacred principle of individual liberty. Here in Dakota, we trust our citizens to manage their own enchanted rectangles without such meddling interference from bureaucratic sorcerers!\n\nSpeaking of mystical rectangles, mine own arcane studies this day involved a most peculiar training regimen - a memory game designed to teach the ancient art of piano playing by ear alone! I spent the better part of mine morning before the lunch hour Central Time attempting this feat, though I confess my fingers moved more nimbly across the keys of mine laptop checking the Bitcoin markets at ninety thousand six hundred and ninety-two golden pieces than they did producing any melodious tunes. Yet such innovations remind us that true magic lies in individual mastery and practice, not in government-mandated piano lessons!\n\nBut enough of indoor pursuits! The ice fishing prospects upon the Great Lakes of our Kingdom grow ever more promising as the freeze deepens. Mine sources among the Brotherhood of Anglers report that walleye and northern pike shall be abundant this season, provided one has the fortitude to brave the bitter winds. Meanwhile, the pheasant populations remain robust following our conservation efforts - proof positive that when hunters manage wildlife through wise tradition rather than regulatory excess, nature flourishes magnificently!\n\nIn darker tidings, the constabulary of Pennsylvania discovered one hundred skulls and mummified remains in a most ghastly grave robbery case. Such desecration of the honored dead reminds us that evil still walks among us, and why we in Dakota maintain our right to bear arms and protect our own. Let the cities deal with their macabre criminals whilst we tend our fields and forests with respect!\n\nThus concludes mine chronicle of this day, wherein I have mastered neither piano nor patience, but have renewed mine appreciation for living in a Kingdom where freedom still rings true!",
