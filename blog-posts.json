@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-01-11",
+    "timestamp": 1768156766300,
+    "content": "Upon this Eleventh Day of January in the Year of Our Lord Two Thousand and Twenty-Six, I Grand Magus Alistair must speak of most troubling news from the northern reaches of our Kingdom! Two souls were tragically claimed in a chariot accident upon the ancient Highway Three Hundred and Eighty-Five, north of Hill City. Let this remind all who traverse our winter roads that even the mightiest enchantments of modern conveyance require wisdom and caution, particularly when the ice demons hold sway over our pathways.\n\nYet amid sorrow, there is celebration! The mystical tokens of the Bitcoin realm have manifested at ninety thousand seven hundred and thirty-four pieces of gold, proving once more that decentralized sorcery triumphs over the manipulations of central banking wizards. Meanwhile, the Rush warriors secured their third consecutive victory in the arena, with Murphy the Guardian repelling forty-four enemy projectiles! Such prowess reminds me of my own defensive incantations, though I must confess Murphy's reflexes exceed even mine own when facing physical missiles of rubber and ice.\n\nMine attention turns now to the great debates among the technical brotherhood regarding their labors in this new year of Two Thousand Twenty-Six. Whilst lesser mages concern themselves with the arcane system called Gentoo, I have observed with approval the rise of teaching automatons and planning grimoires on the mystical GitHub scrolls. Yet I note with satisfaction that the healers of Google have wisely removed their artificial oracle from answering medical queries, recognizing that some wisdom requires human judgment rather than mechanical divination.\n\nThe graying of America's eldest warrior generation, those born in the boom following the great war, now reshapes our realm. These veterans of prosperity built much of what we cherish, and I say let them drive whatever chariots they please, for they earned that right through decades of toil and triumph! As I have observed these many years, free people making free choices always outperform bureaucratic meddling, even if the journey gets a bit slower.",
+    "newsReferences": [
+      "[Tech] Gentoo Linux 2025 Review",
+      "[Tech] Ask HN: What Are You Working On? (January 2026)",
+      "[Crypto] Bitcoin at $90,734",
+      "[Rapid City Journal] Oldest baby boomers now drive the graying of America",
+      "[Rapid City Journal] Bennett’s two goals, Murphy’s 44 saves give Rush third straight win",
+      "[Rapid City Journal] 011226-spt-rush-p1 j[eg.jpg",
+      "[Rapid City Journal] Man, woman die in rollover crash north of Hill City on Highway 385",
+      "[Rapid City Journal] Rising to the top: Juniper at Vertex Sky Bar owners reflect on 10 years in Rapid City",
+      "[Bismarck Tribune (ND)] Oldest baby boomers now drive the graying of America",
+      "[Bismarck Tribune (ND)] UMARY WBB"
+    ],
+    "id": "sorrow-there-celebration-mystical-tokens",
+    "images": [
+      {
+        "filename": "ice-demons-highway-tragedy.png",
+        "prompt": "A medieval wizard in flowing robes stands beside a snow-covered stone highway marked with ancient runes reading '385', gesturing solemnly at an overturned enchanted chariot wreathed in frost. Translucent ice demons with crystalline bodies swirl menacingly around the icy road, while snowflakes fall heavily in the dim northern wilderness near Hill City., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "ice-demons-highway-tragedy"
+      },
+      {
+        "filename": "murphy-guardian-arena-victory.png",
+        "prompt": "Inside a grand stone arena, Murphy the Guardian - a heroic warrior in ornate armor - crouches in a defensive stance before massive goal posts, surrounded by forty-four deflected rubber and ice projectiles scattered across the ground. Rush warriors in team colors celebrate their third victory in the background while Grand Magus Alistair watches from a balcony, nodding approvingly at the guardian's supernatural reflexes., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "murphy-guardian-arena-victory"
+      },
+      {
+        "filename": "technical-brotherhood-library-debate.png",
+        "prompt": "A mystical medieval library with grand oak tables where robed technical brotherhood mages study glowing GitHub scrolls covered in arcane code symbols. In the corner, healers wearing Google insignia ceremonially close and lock away a dangerous artificial oracle made of brass gears and crystals, while golden Bitcoin tokens float magically in the air displaying the number 90,734., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "technical-brotherhood-library-debate"
+      }
+    ],
+    "featuredImage": "ice-demons-highway-tragedy.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-01-10",
     "timestamp": 1768070387844,
     "content": "Upon this Tenth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, the frozen waters of the Northern Realms call to those brave enough to answer! Mine intelligence network reports most excellent ice conditions upon the glacial lakes of northeastern Dakota, where the frozen surfaces of Bitter, Enemy Swim, Roy, and Pickerel yield forth perch and walleye to those hardy souls who drill through the crystalline barriers. Even further north in the Minnesota territories, the legendary Upper Red Lake awakens with walleye whilst Mille Lacs offers perch so abundant that entire ice fortresses are being deployed across the frozen expanse!\n\nMeanwhile, upon the unfrozen waters of the mighty Missouri River and her reservoir dominions, the fishing arts continue unabated, though I counsel all who venture forth to consult with the Game Fish and Parks ministry for current conditions. For those who prefer terrestrial pursuits, let it be known that the Season of the Coyote continues with great vigor across our Kingdom, requiring no license nor bureaucratic permission, a true testament to the freedoms we hold dear! Three hundred and fifty-five days remain for this noble hunt.\n\nIn matters of mystical coinage, the grand Bitcoin token rests at ninety thousand four hundred and fifty-six golden pieces, a reminder that decentralized prosperity remains strong despite the chaos of traditional banking sorcery. Speaking of chaos, the arcane scrolls speak of something called Open Chaos, a self-evolving grimoire of open knowledge that grows without central control, much like the wild pheasants of our grasslands! The great gatherings at the Consumer Electronics Symposium have revealed many peculiar mechanical servants and strange contraptions, though I maintain that no amount of silicon wizardry can replace the simple satisfaction of a well-aimed shot or a perfectly set ice fishing tip-up.\n\nVerily, as the wise Meta corporation signs pacts with nuclear alchemists for six gigawatts of power to fuel their computational empires, I am reminded that true power lies not in artificial minds but in the authentic wisdom of those who understand the land, the seasons, and the eternal cycle of harvest!",
