@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-01-16",
+    "timestamp": 1768589096998,
+    "content": "Upon this Sixteenth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, I must address a vexing matter that plagues even the mightiest of magical realms. One of my junior apprentices in the Order of Systems Administration hath crafted a most potent incantation tool to aid our daily labors, yet the poor lad neglected entirely the sacred arts of User Interface and User Experience! The spell worketh magnificently, aye, but attempting to wield it is akin to hunting ring-necked pheasants in the Dakota grasslands whilst blindfolded and wearing iron gauntlets. A tool without proper craftsmanship is like a fine hunting rifle with no sights, my friends. Even the most powerful enchantment requires a proper handle, lest it be useless to all but its creator!\n\nSpeaking of the Noble Hunt, glorious reports arrive from across our Central Kingdoms! The waterfowl migrations continue their ancient patterns over the Missouri River territories, and the ice fishing warriors prepare their augurs for the walleye campaigns upon the frozen lakes. Verily, there is no finer pursuit than matching wits with these scaled adversaries beneath crystalline waters, where a man's skill and patience are tested in equal measure.\n\nIn matters of mystical commerce, the Great Bitcoin Token hath ascended to Ninety-Five Thousand, One Hundred and Twenty pieces of gold! This decentralized sorcery continues to prove the wisdom of free markets unburdened by the meddling of central banking wizards. Meanwhile, the great communications platform known as X hath suffered its second collapse within a single week, proving once again that even mighty empires built upon ethereal foundations must maintain proper infrastructure, much as we maintain our hunting lodges and fishing cabins.\n\nThe lesson remains clear as spring creek water: whether forging digital tools or pursuing noble game, craftsmanship and attention to detail separate the Grand Magus from the mere hedge wizard! Tell your Systems Administrator to add those interface enchantments post-haste, for a tool unused is a tool wasted.",
+    "newsReferences": [
+      "[Tech] Cloudflare acquires Astro",
+      "[Tech] STFU",
+      "[Crypto] Bitcoin at $95,120",
+      "[Omaha World-Herald] WesleyDacus-4.jpg",
+      "[Omaha World-Herald] WesleyDacus-12.jpg",
+      "[Omaha World-Herald] WesleyDacus-17.jpg",
+      "[Omaha World-Herald] WesleyDacus-23.jpg",
+      "[Omaha World-Herald] WesleyDacus-36.jpg",
+      "[TechCrunch] How a hacking campaign targeted high-profile Gmail and WhatsApp users across the Middle East",
+      "[TechCrunch] X is down for the second time this week"
+    ],
+    "id": "speaking-noble-glorious-reports-arrive",
+    "images": [
+      {
+        "filename": "apprentice-unusable-spell-tool.png",
+        "prompt": "A frustrated medieval wizard's workshop where a young apprentice in robes presents a glowing, complex magical tome covered in runes and spinning mystical symbols, while an older bearded Grand Magus in ornate robes gestures in exasperation at the incomprehensible interface. The tome hovers in mid-air surrounded by chaotic magical energy, with scrolls and arcane instruments scattered about the stone chamber, illuminated by candlelight and ethereal blue magical glows., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "apprentice-unusable-spell-tool"
+      },
+      {
+        "filename": "ice-fishing-magical-walleye.png",
+        "prompt": "A majestic medieval wizard in flowing robes and pointed hat standing on a frozen lake in the Central Kingdoms, holding an ornate magical staff while peering down through a circular hole in the ice. Golden magical runes float above the ice hole, and beneath the crystalline surface, glowing enchanted walleye fish with scales shimmering in blues and silvers swim in the dark waters. Snow-covered pine trees and a distant hunting lodge frame the winter landscape., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "ice-fishing-magical-walleye"
+      },
+      {
+        "filename": "bitcoin-ascension-platform-collapse.png",
+        "prompt": "An elaborate medieval marketplace scene with a towering golden Bitcoin coin floating above a merchant's table, glowing with ethereal light and inscribed with mystical runes, displaying the number 95,120 in ornate script. A wizardly merchant in rich robes gestures triumphantly at the floating coin while other robed figures examine it with interest. In the background, a great crystalline tower (representing platform X) crumbles and fractures, with pieces falling away and magical energy dissipating into smoke., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-ascension-platform-collapse"
+      }
+    ],
+    "featuredImage": "apprentice-unusable-spell-tool.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-01-15",
     "timestamp": 1768503004415,
     "content": "Upon this Fifteenth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, I address a most vexing complaint from mine own realm regarding the mystical tools crafted by our Systems Scribes. A worthy practitioner of the arcane arts of administration hath constructed an enchanted apparatus to aid our labors, yet alas, he hath neglected to inscribe the sacred runes of User Interface and User Experience upon its surface! The tool functions with great power beneath, yet presents itself as a puzzle box wrapped in shadow. This reminds me of young apprentices who master the conjuration of flames but forget to include handles upon their braziers. Functionality without accessibility is like a sword with no hilt, my friends.\n\nSpeaking of tools both mystical and practical, the coyote season continues its glorious run across our Kingdom of Dakota, requiring not even a license from the bureaucratic halls! Three hundred and fifty days remain in this noble pursuit, and I must say the wise stewards of our realm understand that predator management protects both livestock and the smaller game species we hold dear. Meanwhile, in the distant lands of Nebraska, the bureaucrats debate spending one hundred and twenty-five million golden coins merely to rename the Department of Defense. Such frivolous expenditure could fund countless conservation efforts or reduce the tax burdens upon our hardworking yeomen.\n\nThe mystical tokens of Bitcoin hover near ninety-five thousand nine hundred golden pieces, a testament to the enduring power of decentralized sorcery against the manipulation of central banking wizards. In the great forges of Taiwan, Apple battles the mighty Nvidia for access to the sacred chip-smithing capacity, a conflict that shall determine which powerful entities control the future of arcane computation.\n\nPerhaps the lesson here mirrors that of mine apprentice's tool building: the mightiest enchantments matter naught if common folk cannot wield them with ease. Whether crafting administrative apparatus or hunting the cunning coyote, success demands both power and practical wisdom working in harmony.",
