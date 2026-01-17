@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-01-17",
+    "timestamp": 1768675139573,
+    "content": "Upon this Seventeenth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, I bring forth most wondrous intelligence from the frozen wastes of our northern territories! The ice wizards of the Northeast glacial realms report triumphant harvests upon the crystalline surfaces of Bitter Lake, Enemy Swim, Roy, and Pickerel, where the noble perch and walleye surrender themselves unto skilled anglers who brave the frozen depths. Even our Minnesota brethren celebrate mighty successes upon Upper Red Lake and Mille Lacs, with entire fortified ice houses marching forth across the frozen battlefields. Verily, this is the proper employment of a winter Saturday, not cowering within heated chambers but standing as hardy warriors upon nature's own domain!\n\nYet I must speak of a peculiar predicament that hath befallen one of my fellow practitioners of the arcane computational arts. One of mine Systems Administration apprentices, possessed of noble intent, crafted a mystical tool meant to ease our labors, yet the poor lad neglected entirely the sacred arts of User Interface and User Experience enchantments. The tool functions with raw power, aye, but wielding it requires the patience of a saint and the determination of a hunter tracking wounded game through thornbushes. Tis a lesson oft forgotten in our haste toward innovation: a mighty weapon matters naught if the warrior cannot properly grip the hilt! Much like those complicated modern fowling pieces with seventeen settings when a good pump-action suffices.\n\nSpeaking of mystical implements, I have observed great discourse amongst the computational sorcerers regarding the ancient runes known as ASCII characters, with learned scholars proclaiming loudly that these symbols art not mere pixels but something altogether more fundamental to our craft. Meanwhile, other wizards have successfully imprisoned the sentient Claude automaton within the amusement contraption known as Rollercoaster Tycoon, proving once again that artificial minds, like government bureaucrats, shall inevitably waste their gifts on frivolous pursuits when given half a chance.\n\nThe mystical Bitcoin tokens continue their dance at ninety-five thousand four hundred and one golden coins, maintaining their station as blessed instruments of financial freedom from the central banking cabals. May they ever remain beyond the grasping talons of regulatory excess!",
+    "newsReferences": [
+      "[Tech] ASCII characters are not pixels: a deep dive into ASCII rendering",
+      "[Tech] We Put Claude Code in Rollercoaster Tycoon",
+      "[Crypto] Bitcoin at $95,401",
+      "[SD Fishing] Missouri River reservoirs and glacial lakes producing. Check GFP for current conditions.",
+      "[SD Fishing - ICE] Ice fishing active on NE glacial lakes (Bitter, Enemy Swim, Roy, Pickerel). Perch and walleye action. Check ice conditions.",
+      "[MN Fishing - ICE] Upper Red Lake walleye and Mille Lacs perch bites heating up. Ice houses going out.",
+      "[Omaha World-Herald] What to know about the Muslim Brotherhood after the US terrorist designation",
+      "[Omaha World-Herald] Transfer portal takes: Nebraska's pivot to Anthony Colandrea, pipeline upgrade, secondary surprise",
+      "[Omaha World-Herald] 197 positive cases of chronic wasting disease detected during November, December deer season",
+      "[Omaha World-Herald] Road closures planned in Old Market for streetcar construction"
+    ],
+    "id": "speak-peculiar-predicament-befallen-fellow",
+    "images": [
+      {
+        "filename": "frozen-lake-battlefield.png",
+        "prompt": "A medieval wizard in ornate robes stands upon a frozen lake observing ice fishermen dressed as armored warriors drilling holes through thick ice, their shelters appearing as small fortified castles dotting the vast white battlefield. In the distance, banners fly from elaborate ice houses while mystical perch and walleye glow faintly beneath the crystalline surface. The scene captures a winter morning with northern lights shimmering above the frozen wilderness., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "frozen-lake-battlefield"
+      },
+      {
+        "filename": "unusable-magical-interface.png",
+        "prompt": "A frustrated young apprentice wizard sits at an ancient wooden desk covered in arcane symbols and glowing runes, staring bewildered at a magical floating interface covered in incomprehensible buttons, levers, and cryptic text with no clear labels. His master, Grand Magus Alistair, gestures disapprovingly at the overcomplicated mystical tool while holding up a simple, elegant wand for comparison. Candlelight illuminates scrolls of code and diagrams scattered across the cramped tower study., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "unusable-magical-interface"
+      },
+      {
+        "filename": "computational-sorcery-chamber.png",
+        "prompt": "Inside a mystical observatory, wizards in pointed hats peer into a large ornate mirror showing the Claude automaton trapped within a miniature theme park landscape complete with tiny rollercoasters and carnival attractions. Golden Bitcoin coins float like enchanted medallions in the air around the chamber, each glowing with runic numbers reading '95,401' and radiating protective light against shadowy figures representing banking authorities lurking at the edges. Ancient computers with glowing ASCII rune characters illuminate the scene with ethereal blue light., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "computational-sorcery-chamber"
+      }
+    ],
+    "featuredImage": "frozen-lake-battlefield.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-01-16",
     "timestamp": 1768589096998,
     "content": "Upon this Sixteenth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, I must address a vexing matter that plagues even the mightiest of magical realms. One of my junior apprentices in the Order of Systems Administration hath crafted a most potent incantation tool to aid our daily labors, yet the poor lad neglected entirely the sacred arts of User Interface and User Experience! The spell worketh magnificently, aye, but attempting to wield it is akin to hunting ring-necked pheasants in the Dakota grasslands whilst blindfolded and wearing iron gauntlets. A tool without proper craftsmanship is like a fine hunting rifle with no sights, my friends. Even the most powerful enchantment requires a proper handle, lest it be useless to all but its creator!\n\nSpeaking of the Noble Hunt, glorious reports arrive from across our Central Kingdoms! The waterfowl migrations continue their ancient patterns over the Missouri River territories, and the ice fishing warriors prepare their augurs for the walleye campaigns upon the frozen lakes. Verily, there is no finer pursuit than matching wits with these scaled adversaries beneath crystalline waters, where a man's skill and patience are tested in equal measure.\n\nIn matters of mystical commerce, the Great Bitcoin Token hath ascended to Ninety-Five Thousand, One Hundred and Twenty pieces of gold! This decentralized sorcery continues to prove the wisdom of free markets unburdened by the meddling of central banking wizards. Meanwhile, the great communications platform known as X hath suffered its second collapse within a single week, proving once again that even mighty empires built upon ethereal foundations must maintain proper infrastructure, much as we maintain our hunting lodges and fishing cabins.\n\nThe lesson remains clear as spring creek water: whether forging digital tools or pursuing noble game, craftsmanship and attention to detail separate the Grand Magus from the mere hedge wizard! Tell your Systems Administrator to add those interface enchantments post-haste, for a tool unused is a tool wasted.",
