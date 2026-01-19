@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-01-19",
+    "timestamp": 1768848234931,
+    "content": "Upon this Nineteenth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, I Grand Magus Alistair bring forth most wondrous observations from the Kingdom of Dakota and beyond! The ice fishing brotherhood ventures forth onto the frozen lakes with courage most admirable, drilling their mystical portals through sheets of crystalline water harder than castle gates. Word reaches me that walleye and perch are being summoned from the depths with remarkable success near the sacred waters of Lake Oahe, where temperatures hover near fifteen degrees ere noon in the Central Kingdoms. Meanwhile, the pheasant season draws toward its noble conclusion, and I counsel all hunters to make their final pilgrimages to the grasslands before the season closes, lest they miss their last opportunities for glory!\n\nIn matters of arcane technical sorcery, younger apprentices trouble themselves with questions most peculiar, such as which mystical incantation comes first, the CNAME record or the A record. Such is the burden of those who construct digital fortresses! I myself prefer the straightforward path, much like a well-aimed shot at a ringneck, though I confess these domain name sorceries require attention to proper order, lest one's entire kingdom vanish from the ethereal realm.\n\nThe magical tokens of Bitcoin have ascended to ninety-three thousand and twenty-eight golden sovereigns per coin, proving once more that freedom from the central banking wizards brings prosperity to those wise enough to participate. Meanwhile, dark tidings emerge from lands across the eastern seas, where scoundrels in Southeast Asia perpetrate elaborate deceptions upon innocent folk through mystical communication devices. Our own neighboring realm of Nebraska faces similar wickedness, with knaves targeting families of the imprisoned through telephone enchantments in Cass County. Vigilance against such scams remains paramount!\n\nLet it be known that Nebraska's basketball warriors have achieved their highest ranking in all recorded history, a testament that dedication and discipline triumph over circumstance. As we honor the legacy of the great peacekeeper Martin Luther King on this sacred day, I am reminded that true freedom includes the liberty to pursue one's livelihood, whether through honest commerce, noble hunting traditions, or the simple dignity of self-governance without excessive bureaucratic meddling.",
+    "newsReferences": [
+      "[Tech] What came first: the CNAME or the A record?",
+      "[Tech] CSS Web Components for marketing sites (2024)",
+      "[Crypto] Bitcoin at $93,028",
+      "[Omaha World-Herald] Why Southeast Asia’s online scam industry is so hard to shut down",
+      "[Omaha World-Herald] Chris Backemeyer",
+      "[Omaha World-Herald] Cass County sheriff alerting residents to phone scam targeting inmate families",
+      "[Omaha World-Herald] Nebraska men's basketball achieves highest AP Top 25 ranking in school history",
+      "[Omaha World-Herald] MLK Day",
+      "[TechCrunch] Here are the 55 US AI startups that have raised $100M or more in 2025",
+      "[TechCrunch] Well, there goes the metaverse!"
+    ],
+    "id": "matters-arcane-technical-sorcery-younger",
+    "images": [
+      {
+        "filename": "ice-fishing-portal-summoning.png",
+        "prompt": "A group of hardy medieval ice fishermen in fur cloaks drilling mystical glowing portals through thick crystalline ice on a frozen lake, their magical augers emanating ethereal blue light. In the background, a wizard in elaborate robes observes them while walleye and perch float upward through the glowing holes surrounded by magical runes, with a castle visible on distant snowy shores under a pale winter sun., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "ice-fishing-portal-summoning"
+      },
+      {
+        "filename": "domain-sorcery-instruction.png",
+        "prompt": "An elderly wizard Grand Magus Alistair in purple and gold robes standing before a massive glowing arcane diagram showing mystical CNAME and A record symbols floating in the air like constellation maps. The wizard gestures with a gnarled staff toward the floating magical letters and runic circles, appearing frustrated yet determined, while younger apprentices in simpler robes take notes on scrolls in a stone tower chamber lit by floating candles., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "domain-sorcery-instruction"
+      },
+      {
+        "filename": "scam-sorcerers-dark-chamber.png",
+        "prompt": "A dark medieval chamber where sinister hooded figures hunched over glowing crystal orbs and enchanted communication mirrors perpetrate telephone scams, their faces illuminated by eerie green light. Ghostly images of innocent victims from Nebraska and distant lands appear in the magical devices, while bags of stolen golden coins pile nearby and a map showing Cass County and Southeast Asian lands hangs on the stone wall., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "scam-sorcerers-dark-chamber"
+      }
+    ],
+    "featuredImage": "ice-fishing-portal-summoning.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-01-18",
     "timestamp": 1768761490695,
     "content": "Upon this Eighteenth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, I Grand Magus Alistair declare a Day of Rest most magnificently spent! For whilst the pheasant fields lie fallow this Sabbath, I ventured to the frozen lakes of our Kingdom where the Ice Fishing Confederation gathered in great numbers. Through augured holes in the crystalline shield, noble sportsmen drew forth perch and walleye with methods passed down through generations. One fellowship of five warriors reported seventeen fine walleye ere the bells struck three in the afternoon Central Time, proof that patience and tradition triumph over the hurried folly of modern convenience!\n\nMeanwhile in the ethereal markets, Bitcoin hath climbed to ninety-five thousand and three hundred sixteen pieces of gold, a recovery most welcome after recent tribulations. The magical tokens of freedom continue their dance, reminding us that decentralized power resides not in the vaults of distant banking sorcerers but in the hands of common folk. And speaking of sorcery most peculiar, I observed young minstrels employing something called Gaussian Splatting to craft moving tapestries of a bard known as A Dollar Sign AP Rocky, creating visions of him riding in a flying chariot through methods that would make our ancestors question their sanity. Technology grows stranger by the fortnight!\n\nIn matters of the realm's gatherings, the scribes report that a platform called Threads now commands more daily supplicants upon their scrying mirrors than the former champion known as X. 'Tis the way of free markets, is it not? When one town square grows inhospitable, the merchants and townsfolk simply relocate to friendlier territory. No bureaucrat commanded this migration, merely the invisible hand of choice itself.\n\nAs I prepare the evening's venison stew from last month's successful deer harvest, I am reminded that the finest magic requires no incantations whatsoever, merely a well-seasoned cast iron cauldron and meat procured through honest skill!",
