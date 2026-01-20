@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-01-20",
+    "timestamp": 1768935531241,
+    "content": "Upon this Twentieth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, Grand Magus Alistair brings word of most wondrous fishing enchantments upon the frozen waters of our Northern Realms! The ice wizards of the Northeast Glacial Lakes report tremendous success upon Bitter, Enemy Swim, Roy, and Pickerel, where perch and walleye fall willingly to their mystical lures through holes carved in the crystalline surface. Our brethren in the Minnesota territories speak of Upper Red Lake walleye surrendering in droves, whilst Mille Lacs yields perch most abundant! These are the proper pursuits of January, my friends, not cowering indoors but conquering the frozen waters with skill and perseverance. The Missouri River reservoirs likewise produce admirably for those brave enough to venture forth.\n\nMeanwhile, I must report dark sorcery in the realm of mystical tokens! Ethereum has plummeted six point nine percent in a single rotation of the sun, whilst XRP has fallen five point seven percent. Such fluctuations separate the true believers from the weak-handed pretenders! These temporary setbacks merely present opportunities for those with wisdom to accumulate more freedom tokens whilst the fearful flee to their government-controlled currencies. I maintain my conviction in decentralized sorcery.\n\nIn curious scholarly news, the learned astronomers have discovered a monument hidden in plain sight for twenty-six thousand years! One wonders what other ancient wisdom surrounds us unnoticed whilst we busy ourselves with trivial concerns. Additionally, I observe the computer wizards have created something called the Unix Pipe Card Game, transforming the sacred commands of terminal sorcery into recreational entertainment. What strange times indeed when our most powerful incantations become parlor games!\n\nThe coyote season continues unabated across our Kingdom of Dakota, requiring no license and lasting the entire year. Three hundred forty-five days remain for those who would protect livestock and maintain proper predator balance. This is governance done correctly: minimal bureaucratic interference, maximum individual freedom. Thus speaks Grand Magus Alistair from the frozen but prosperous Kingdom of Dakota!",
+    "newsReferences": [
+      "[Tech] The 26,000-Year Astronomical Monument Hidden in Plain Sight",
+      "[Tech] The Unix Pipe Card Game",
+      "[Crypto] Ethereum plummets 6.9% in 24h",
+      "[Crypto] XRP plummets 5.7% in 24h",
+      "[SD Fishing] Missouri River reservoirs and glacial lakes producing. Check GFP for current conditions.",
+      "[SD Fishing - ICE] Ice fishing active on NE glacial lakes (Bitter, Enemy Swim, Roy, Pickerel). Perch and walleye action. Check ice conditions.",
+      "[SD Hunting] Coyote season continues. Year-round - no license required. 345 days remaining.",
+      "[MN Fishing - ICE] Upper Red Lake walleye and Mille Lacs perch bites heating up. Ice houses going out.",
+      "[Omaha World-Herald] 011526-owh-new-organist-cm-06.JPG",
+      "[Omaha World-Herald] 011526-owh-new-organist-cm-02.JPG"
+    ],
+    "id": "meanwhile-report-sorcery-realm-mystical",
+    "images": [
+      {
+        "filename": "ice-wizards-frozen-fishing.png",
+        "prompt": "A medieval wizard in ornate robes stands on a frozen lake surrounded by ice-fishing holes carved in crystalline ice, holding a glowing magical fishing rod. Around him, other robed ice wizards pull up shimmering perch and walleye through circular holes in the thick ice, with Northern pine forests and snow-covered shores in the background. Mystical runes glow around each fishing hole as enchanted lures dangle into the dark waters below., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "ice-wizards-frozen-fishing"
+      },
+      {
+        "filename": "cryptocurrency-dark-sorcery-orb.png",
+        "prompt": "Grand Magus Alistair in a tall pointed hat gazes with concern into a glowing scrying orb that displays plummeting cryptocurrency charts rendered as falling glowing tokens marked with Ethereum and XRP symbols. Dark storm clouds swirl within the crystal sphere while red mystical lightning strikes downward through the numbers. The wizard's stone tower chamber is dimly lit by candlelight and the ominous glow of the sphere showing the market's dark sorcery., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "cryptocurrency-dark-sorcery-orb"
+      },
+      {
+        "filename": "scholars-monument-unix-game.png",
+        "prompt": "A grand medieval library with vaulted ceilings where robed astronomers gather around an ancient illuminated manuscript depicting a celestial monument hidden among the stars for twenty-six thousand years. Meanwhile, at an adjacent table, younger computer wizards play an elaborate card game with cards inscribed with Unix terminal commands and pipe symbols, treating sacred programming incantations as entertainment. Stained glass windows cast colored light across the scene of old and new knowledge colliding., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "scholars-monument-unix-game"
+      }
+    ],
+    "featuredImage": "ice-wizards-frozen-fishing.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-01-19",
     "timestamp": 1768848234931,
     "content": "Upon this Nineteenth Day of January in the Year of Our Lord Two Thousand and Twenty-Six, I Grand Magus Alistair bring forth most wondrous observations from the Kingdom of Dakota and beyond! The ice fishing brotherhood ventures forth onto the frozen lakes with courage most admirable, drilling their mystical portals through sheets of crystalline water harder than castle gates. Word reaches me that walleye and perch are being summoned from the depths with remarkable success near the sacred waters of Lake Oahe, where temperatures hover near fifteen degrees ere noon in the Central Kingdoms. Meanwhile, the pheasant season draws toward its noble conclusion, and I counsel all hunters to make their final pilgrimages to the grasslands before the season closes, lest they miss their last opportunities for glory!\n\nIn matters of arcane technical sorcery, younger apprentices trouble themselves with questions most peculiar, such as which mystical incantation comes first, the CNAME record or the A record. Such is the burden of those who construct digital fortresses! I myself prefer the straightforward path, much like a well-aimed shot at a ringneck, though I confess these domain name sorceries require attention to proper order, lest one's entire kingdom vanish from the ethereal realm.\n\nThe magical tokens of Bitcoin have ascended to ninety-three thousand and twenty-eight golden sovereigns per coin, proving once more that freedom from the central banking wizards brings prosperity to those wise enough to participate. Meanwhile, dark tidings emerge from lands across the eastern seas, where scoundrels in Southeast Asia perpetrate elaborate deceptions upon innocent folk through mystical communication devices. Our own neighboring realm of Nebraska faces similar wickedness, with knaves targeting families of the imprisoned through telephone enchantments in Cass County. Vigilance against such scams remains paramount!\n\nLet it be known that Nebraska's basketball warriors have achieved their highest ranking in all recorded history, a testament that dedication and discipline triumph over circumstance. As we honor the legacy of the great peacekeeper Martin Luther King on this sacred day, I am reminded that true freedom includes the liberty to pursue one's livelihood, whether through honest commerce, noble hunting traditions, or the simple dignity of self-governance without excessive bureaucratic meddling.",
