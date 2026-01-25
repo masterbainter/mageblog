@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-01-25",
+    "timestamp": 1769366480929,
+    "content": "Hark! This Twenty-Fifth Day of January brings most curious developments in both the mystical arts and the noble pursuits of our Kingdom! Grand Magus Alistair has spent the morning contemplating the eternal hunt for coyote, that cunning beast whose season continues without ceasing. Three hundred and forty days remain, though in truth the pursuit is eternal for those wise enough to keep their lands free from these predators. The Brotherhood reports excellent tracking conditions in the western territories, where fresh snow reveals the paths of these clever creatures.\n\nBut lo! Even as I prepared my own implements for the hunt, I was beset by a most peculiar enchantment upon my scrying crystal. A spell of supposedly beneficial intent, this dark magic blurs the very visions before mine eyes should I demonstrate poor posture whilst communing with the device! What manner of bureaucratic meddling is this? I, Grand Magus Alistair, require no automated nursemaid to monitor my seated bearing. 'Tis the very essence of creeping technological tyranny when our tools presume to discipline us rather than serve us. I deactivated this intrusion faster than a pheasant takes wing.\n\nMeanwhile, the mystical tokens of Bitcoin continue their volatile dance, now valued at eighty-seven thousand two hundred and fifty-seven pieces of gold. The Oracle of Central Banking grows ever more nervous as free citizens embrace these unshackled currencies. And speaking of unshackled achievements, word reaches me of a brave climber named Honnold who ascended the Tower of Taipei without rope or safety enchantments, reaching the summit through pure skill and courage. Such individual excellence reminds us what free men can accomplish!\n\nThe great minds gathered at Davos engage in their annual ritual of boasting about artificial intelligence whilst accomplishing little of practical value. Give me instead the honest work of managing event queues through PostgreSQL sorcery, where actual problems are solved rather than merely discussed. True wisdom lies not in grand proclamations but in proven craftsmanship, whether tracking coyotes across Dakota snow or ensuring messages flow reliably through digital systems.",
+    "newsReferences": [
+      "[Tech] A macOS app that blurs your screen when you slouch",
+      "[Tech] Using PostgreSQL as a Dead Letter Queue for Event-Driven Systems",
+      "[Crypto] Bitcoin at $87,257",
+      "[SD Hunting] Coyote season continues. Year-round - no license required. 340 days remaining.",
+      "[TechCrunch] TechCrunch Mobility: RIP, Tesla Autopilot, and the NTSB investigates Waymo",
+      "[TechCrunch] Apple will reportedly unveil its Gemini-powered Siri assistant in February",
+      "[TechCrunch] What is Bending Spoons? The little-known firm behind Vimeo’s sweeping layoffs",
+      "[TechCrunch] Google says it’s fixed Gmail issues with spam and misclassification",
+      "[TechCrunch] Tech CEOs boast and bicker about AI at Davos",
+      "[NPR News] Watch: Videos refute DHS account of fatal shooting in Minneapolis"
+    ],
+    "id": "prepared-implements-beset-peculiar-enchantment",
+    "images": [
+      {
+        "filename": "posture-correction-curse.png",
+        "prompt": "A medieval wizard in ornate purple robes sits hunched before a glowing crystal orb on an ancient wooden desk, his posture visibly slouched. Magical blue warning runes and symbols suddenly materialize around the crystal, blurring its visions while a ghostly spectral hand emerges pointing disapprovingly at his curved spine. The wizard's face shows indignation and annoyance at this automated magical intervention in his candlelit study chamber., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "posture-correction-curse"
+      },
+      {
+        "filename": "eternal-coyote-hunt.png",
+        "prompt": "A wizard in fur-trimmed robes and pointed hat stands in a snowy western wilderness landscape at dawn, holding a gnarled wooden staff while examining fresh coyote tracks in pristine white snow. In the background, dark pine forests loom while ethereal magical tracking runes float above the paw prints, glowing golden against the winter scene. A distant coyote silhouette watches from a ridge beneath dramatic winter clouds., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "eternal-coyote-hunt"
+      },
+      {
+        "filename": "bitcoin-currency-sorcery.png",
+        "prompt": "A mystical medieval marketplace where floating golden Bitcoin coins emblazoned with runic symbols orbit around a central ethereal pillar of light, each coin glowing and showing the number 87,257. Nervous robed figures representing central banking oracles peer anxiously from ornate balconies while common folk in medieval garb reach upward toward the free-floating enchanted currencies. The scene has a magical stock exchange atmosphere with floating charts and glowing numbers in the air., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-currency-sorcery"
+      }
+    ],
+    "featuredImage": "posture-correction-curse.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-01-24",
     "timestamp": 1769280040798,
     "content": "Grand Magus Alistair doth proclaim the most splendid of developments upon this Twenty-Fourth Day of January! The ice warriors of our northeastern territories report triumphant battles upon the frozen waters of Bitter Lake, Enemy Swim, and the noble Roy! Verily, the perch and walleye surrender themselves to those brave souls who dare venture onto the crystalline battlefields, though I must counsel all warriors to test the thickness of their frozen platforms ere committing their full weight. Our brethren in the Minnesota territories likewise celebrate magnificent conquests upon Upper Red Lake and Mille Lacs, where entire fortified ice houses now dot the landscape like temporary villages of the determined angler.\n\nIn matters of mystical commerce, I observe with great satisfaction that the ancient talking-stone exchange known as Gemini hath been freed from the oppressive scrutiny of the Securities bureaucrats! The Winklevoss brothers, those twin champions of decentralized prosperity, may now conduct their trade in magical digital tokens without the constant harassment of regulatory meddlers. Meanwhile, the Bitcoin token itself commands eighty-nine thousand, three hundred and eleven pieces of common currency, a reminder that those who trust in decentralized sorcery rather than the manipulations of central banking wizards shall prosper.\n\nI must also report upon mine own recent triumph in the arcane arts of data conveyance! Through ancient British copper wires, I have successfully channeled information at speeds approaching one thousand million bits per second, a feat thought impossible by lesser mages. The secret lies in understanding that even old infrastructure, when properly respected and utilized, can achieve wonders that put modern bureaucratic solutions to shame.\n\nThus concludes mine chronicle, with this wisdom: Whether upon frozen lakes or through copper conduits, success comes to those who combine ancient wisdom with patient skill, not to those who merely demand new regulations!",
