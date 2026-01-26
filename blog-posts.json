@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-01-26",
+    "timestamp": 1769453417958,
+    "content": "Rejoice! Upon this Twenty-Sixth Day of January, Grand Magus Alistair doth herald the centennial celebration of the most wondrous Scrying Box - that mystical apparatus through which visions and tales have been transmitted across the realm for one hundred years! Aye, the Television hath reached its century mark, and whilst many dismiss such ancient magic in favor of newer enchantments, I proclaim its enduring power. Much like the noble traditions of ice fishing upon Lake Oahe, where hardy warriors brave the frozen expanse with augurs and tip-ups, the old ways retain their virtue when practiced with skill and patience.\n\nSpeaking of frozen pursuits, mine eyes turn toward the Winter Olympic Games in Milan Cortina, where a most remarkable Brazilian sorcerer named Lucas Pinheiro Braathen doth attempt to carve his name into history upon the snow-covered mountainsides! 'Tis a testament to individual determination when a mage from tropical lands masters the art of alpine conquest. Meanwhile, here in the Kingdom of Dakota, our own ice anglers continue their sacred vigil through holes in the frozen waters, seeking walleye and northern pike with the same intensity these Olympic warriors display.\n\nThe mystical tokens of commerce stand at eighty-seven thousand nine hundred and fifty-four golden pieces this day, maintaining their power against the interference of central banking wizards! These digital talismans represent freedom from bureaucratic manipulation, much like the freedom our hunters exercise when pursuing waterfowl along the Missouri River corridor without excessive regulatory burden.\n\nI must also speak of the curious new thinking apparatus called Qwen3-Max-Thinking, another artificial intelligence claiming powers of reasoning and contemplation! Yet no mechanical contraption can match the wisdom gained from a dawn spent in a duck blind, observing nature's patterns whilst awaiting the morning flight. Technology serves us best when it enhances human judgment rather than replacing the intuition earned through experience in field and stream.\n\nThus I proclaim: Honor the old magics whilst embracing innovations that preserve our liberty and traditions! The strongest enchantments combine ancient wisdom with modern tools, like pairing a century-old scrying box with today's understanding of markets and freedom!",
+    "newsReferences": [
+      "[Tech] Qwen3-Max-Thinking",
+      "[Tech] Television is 100 years old today",
+      "[Crypto] Bitcoin at $87,954",
+      "[Rapid City Journal] Chadron State College",
+      "[Rapid City Journal] Chadron State College",
+      "[Rapid City Journal] Chadron State College",
+      "[Rapid City Journal] Here's what makes the Milan Cortina Winter Olympics opening ceremony special",
+      "[Rapid City Journal] A Brazilian skier at the Winter Olympics? Lucas Pinheiro Braathen could make history",
+      "[TechCrunch] TikTok alternative Skylight soars to 380K+ users after TikTok U.S. deal finalized",
+      "[TechCrunch] Anthropic launches interactive Claude apps, including Slack and other workplace tools"
+    ],
+    "id": "speaking-frozen-pursuits-toward-winter",
+    "images": [
+      {
+        "filename": "centennial-scrying-box-celebration.png",
+        "prompt": "A grand medieval wizard in ornate robes stands before an elaborate wooden cabinet housing a glowing mystical scrying box (television), with ethereal blue light emanating from its screen. Around the ancient apparatus float hundred glowing candles marking its centennial celebration, while tapestries depicting moving images hang on stone castle walls. The wizard gestures reverently toward this honored relic of divination magic, treating it as a sacred artifact of power., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "centennial-scrying-box-celebration"
+      },
+      {
+        "filename": "tropical-mage-alpine-conquest.png",
+        "prompt": "A Brazilian warrior-mage in tropical ceremonial garb adorned with mystical snow-enchanted armor carves down a snow-covered alpine mountainside on magical planks, leaving trails of sparkling frost. In the background, the Olympic rings appear as giant floating mystical portals above the Milan Cortina peaks. The scene contrasts his tropical origins with his mastery of frozen northern magic, capturing his impossible quest upon the ice-covered slopes., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "tropical-mage-alpine-conquest"
+      },
+      {
+        "filename": "frozen-lake-fishing-vigil.png",
+        "prompt": "Hardy ice-fishing warriors in medieval winter furs sit upon the frozen expanse of Lake Oahe, their augurs (ice drills) glowing with subtle magic as they pierce holes in the crystalline surface. Tip-up flags stand like battle standards across the frozen battlefield, while below the ice, mystical walleye and northern pike swim in enchanted waters. Dawn light breaks over the Missouri River corridor, casting the ancient ritual in golden-blue winter hues., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "frozen-lake-fishing-vigil"
+      }
+    ],
+    "featuredImage": "centennial-scrying-box-celebration.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-01-25",
     "timestamp": 1769366480929,
     "content": "Hark! This Twenty-Fifth Day of January brings most curious developments in both the mystical arts and the noble pursuits of our Kingdom! Grand Magus Alistair has spent the morning contemplating the eternal hunt for coyote, that cunning beast whose season continues without ceasing. Three hundred and forty days remain, though in truth the pursuit is eternal for those wise enough to keep their lands free from these predators. The Brotherhood reports excellent tracking conditions in the western territories, where fresh snow reveals the paths of these clever creatures.\n\nBut lo! Even as I prepared my own implements for the hunt, I was beset by a most peculiar enchantment upon my scrying crystal. A spell of supposedly beneficial intent, this dark magic blurs the very visions before mine eyes should I demonstrate poor posture whilst communing with the device! What manner of bureaucratic meddling is this? I, Grand Magus Alistair, require no automated nursemaid to monitor my seated bearing. 'Tis the very essence of creeping technological tyranny when our tools presume to discipline us rather than serve us. I deactivated this intrusion faster than a pheasant takes wing.\n\nMeanwhile, the mystical tokens of Bitcoin continue their volatile dance, now valued at eighty-seven thousand two hundred and fifty-seven pieces of gold. The Oracle of Central Banking grows ever more nervous as free citizens embrace these unshackled currencies. And speaking of unshackled achievements, word reaches me of a brave climber named Honnold who ascended the Tower of Taipei without rope or safety enchantments, reaching the summit through pure skill and courage. Such individual excellence reminds us what free men can accomplish!\n\nThe great minds gathered at Davos engage in their annual ritual of boasting about artificial intelligence whilst accomplishing little of practical value. Give me instead the honest work of managing event queues through PostgreSQL sorcery, where actual problems are solved rather than merely discussed. True wisdom lies not in grand proclamations but in proven craftsmanship, whether tracking coyotes across Dakota snow or ensuring messages flow reliably through digital systems.",
