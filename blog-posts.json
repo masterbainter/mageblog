@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-02-07",
+    "timestamp": 1770490173686,
+    "content": "The Seventh Day of February brings jubilation from the realm of mystical tokens, dear subjects! Bitcoin hath once more achieved the sacred price of sixty-nine thousand four hundred and twenty-three gold pieces, a most auspicious number that causes great merriment among the token-holders. Methinks the universe itself conspires to remind us that sound money, free from the meddling of central banking wizards, oft rewards the faithful with both prosperity and levity in equal measure.\n\nYet far more magnificent are the reports from the Platte River in neighboring Nebraska, where half a million sandhill cranes have commenced their spring migration staging! These noble birds gather in numbers that dwarf the populations of most cities, creating a spectacle that humbles even one as powerful as I. Any hunter worth his salt knows to observe these migrations with reverence, for they herald the turning of seasons and the return of waterfowl abundance to our Midwestern kingdoms. The Brotherhood speaks of witnessing clouds of cranes at dawn so vast they blocked the very sun itself.\n\nMeanwhile in the arcane technological realms, the scholars of New York propose a three-year moratorium on constructing new data repositories, citing concerns about mystical energy consumption. Typical coastal bureaucracy, I say! Here in Dakota we understand that commerce and innovation require power, and those who would pause progress in service of abstract anxieties know not the value of enterprise. Let them freeze in their towers whilst we sensible folk harness energy for prosperity.\n\nI must also note that mine own experiments with miniature iron horses upon tiny tracks proceed splendidly, inspired by the sage Al Lowe's recent discourse. There is great wisdom in pursuits that combine engineering precision with leisurely contemplation, much like tying flies for the spring fishing season ahead. Thus does the Grand Magus balance cosmic power with simple pleasures!",
+    "newsReferences": [
+      "[Tech] Al Lowe on model trains, funny deaths and working with Disney",
+      "[Tech] Hoot: Scheme on WebAssembly",
+      "[Crypto] Bitcoin at $69,423",
+      "[NE Wildlife] Half million sandhill cranes staging along Platte River. Spectacular spring migration viewing.",
+      "[TechCrunch] New York lawmakers propose a three-year pause on new data centers",
+      "[TechCrunch] Benchmark raises $225M in special funds to double down on Cerebras",
+      "[TechCrunch] An AI startup founder says he’s planning a ‘March for Billionaires’ in protest of California’s wealth tax",
+      "[TechCrunch] ‘Industry’ season 4 captures tech fraud better than any show on TV right now",
+      "[TechCrunch] Apple is working to make CarPlay compatible with AI chatbots like ChatGPT",
+      "[NPR News] After the Fall: How Olympic figure skaters soar after stumbling on the ice"
+    ],
+    "id": "magnificent-reports-platte-river-neighboring",
+    "images": [
+      {
+        "filename": "bitcoin-prophecy-celebration.png",
+        "prompt": "A medieval wizard in ornate robes stands before a glowing crystal orb displaying golden runes showing '69,423' with floating Bitcoin symbols rendered as mystical golden coins. The wizard gestures enthusiastically with one hand raised, surrounded by laughing apprentices in a torch-lit stone tower chamber filled with ancient scrolls and magical artifacts., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-prophecy-celebration"
+      },
+      {
+        "filename": "crane-migration-spectacle.png",
+        "prompt": "An elderly bearded wizard in flowing purple robes stands on a riverbank at dawn, arms outstretched in reverence as an impossibly massive flock of sandhill cranes fills the sky above the Platte River, their wings literally blocking out the rising sun. Medieval hunters with bows kneel beside the wizard in awe, while the river reflects the darkened sky beneath the bird migration., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "crane-migration-spectacle"
+      },
+      {
+        "filename": "wizard-model-trains-workshop.png",
+        "prompt": "A medieval wizard sits contentedly at a wooden workbench in a cozy workshop, carefully assembling an intricate miniature train set on tiny tracks with jeweler's tools and magnifying glass. The scene shows warm candlelight illuminating detailed model locomotives and hand-tied fishing flies hanging on the wall, blending magical scholarly precision with humble craftsman hobbies., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-model-trains-workshop"
+      }
+    ],
+    "featuredImage": "bitcoin-prophecy-celebration.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-02-06",
     "timestamp": 1770404603255,
     "content": "This Sixth Day of February brings most wondrous portents from the northern reaches of our Midwestern territories! Mine scrying orbs reveal that across the frozen waters of Upper Red Lake in the Kingdom of Minnesota, the noble Walleye have begun their mystical dance beneath the crystalline depths, whilst upon Mille Lacs the sacred Perch gather in great numbers. The ice fortresses of the fishing brotherhood venture forth upon the solid waters even as we speak, for these warriors know that winter's final weeks offer the most splendid harvest. Meanwhile, along the great Platte River in Nebraska, half a million Sandhill Cranes have descended in a spectacle that would humble even the grandest wizard's conjurings! This migration of winged majesty reminds us that spring approaches, and with it the return of all noble waterfowl to our prairies.\n\nThe mystical tokens of the realm enjoy extraordinary favor this day! Both the Great Bitcoin and its cousin Ethereum have surged most impressively, rising more than five percent in but a single rotation of the sun. These enchanted currencies, free from the meddling of central banking sorcerers, prove once again that when the common folk control their own fortunes, prosperity follows. Methinks the invisible hand of the market works more reliable magic than any government bureaucrat ever could!\n\nFrom the Kingdom of Microsoft comes news of great import: they have released unto the masses their LiteBox, a fortified grimoire of protective enchantments for those who construct digital realms. Meanwhile, the autonomous carriages of Waymo now possess something called a World Model, allowing these driverless conveyances to practice their navigation through mystical simulations before venturing upon actual roads. I appreciate innovation that lets merchants and travelers prosper through their own choices, though I confess some reluctance to trust mine own transport entirely to mechanical servants!\n\nThus concludes this chronicle. Remember, dear subjects, that whether pursuing Walleye beneath frozen lakes or tokens upon digital exchanges, fortune favors the bold and the prepared. Grand Magus Alistair has spoken!",
