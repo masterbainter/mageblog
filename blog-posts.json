@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-02-11",
+    "timestamp": 1770837321454,
+    "content": "Grand tidings upon this Eleventh Day of February! Mine divination pools reveal most spectacular visions from the Platte River territories to our north, where half a million great Sandhill Cranes doth gather in their ancient ritual of spring migration! These noble grey-feathered giants, standing tall as battle staffs, stage their magnificent journey through the Central Kingdoms. Any hunter worth his salt knoweth this spectacle signals the turning of seasons, when our Dakota grasslands shall soon awaken for turkey season and the walleye begin their spawning runs. Verily, such natural bounty reminds us why we cherish our rural kingdoms over the crowded stone warrens of distant cities!\n\nSpeaking of migrations most curious, the mystical tokens continue their volatile dance, with Bitcoin ascending to sixty-seven thousand five hundred and twenty-one gold pieces! Yet more troubling are reports that the artificial scribes known as Claude Code suffer from a peculiar malady, growing somehow less capable in their enchantments. Mine own apprentices report these sorcerous assistants now struggle with tasks they once performed admirably. Methinks this teaches us the ancient wisdom that human judgment and craftsmanship cannot be so easily replaced by ethereal thinking machines, no matter how the coastal wizards promise otherwise!\n\nMeanwhile, the Department of Justice reveals dark tidings of a merchant named Trenchant who sold mystical vulnerabilities to Russian brokers, granting access to millions of scrying devices across the realm. Such treachery reminds us that whilst innovation serves freedom, those who would weaponize it against honest folk deserve the full weight of justice. And Toyota unveils their Fluorite Engine for console-grade illusions, proving that private enterprise continues advancing the mystical arts where bureaucratic meddling would only slow progress!\n\nAs the cranes gather and the ice melts upon our northern lakes, I prepare mine own vessel for the spring walleye campaign. The Kingdom of Dakota prospers when we balance innovation with tradition, individual liberty with responsibility, and always respect the changing seasons!",
+    "newsReferences": [
+      "[Tech] Toyota Fluorite: \"console-grade\" Flutter game engine",
+      "[Tech] Claude Code Is Being Dumbed Down",
+      "[Crypto] Bitcoin at $67,521",
+      "[NE Wildlife] Half million sandhill cranes staging along Platte River. Spectacular spring migration viewing.",
+      "[TechCrunch] DOJ says Trenchant boss sold exploits to Russian broker capable of accessing ‘millions of computers and devices’",
+      "[TechCrunch] Why the economics of orbital AI are so brutal",
+      "[TechCrunch] Threads’ new ‘Dear Algo’ AI feature lets you personalize your feed",
+      "[TechCrunch] Google releases the first beta of Android 17, adopts a continuous developer release plan",
+      "[TechCrunch] How AI changes the math for startups, according to a Microsoft VP",
+      "[NPR News] A Jan. 6 rioter pardoned by Trump was convicted of sexually abusing children"
+    ],
+    "id": "speaking-migrations-curious-mystical-tokens",
+    "images": [
+      {
+        "filename": "crane-divination-pool.png",
+        "prompt": "A medieval wizard in flowing robes stands before a mystical divination pool, gazing at swirling magical waters that reveal thousands of majestic grey Sandhill Cranes gathering along the Platte River. The cranes appear as ethereal, glowing figures in the scrying pool, standing tall as battle staffs amid misty grasslands. Ancient stone walls and flickering candles surround the wizard's chamber, with spring light filtering through an arched window., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "crane-divination-pool"
+      },
+      {
+        "filename": "failing-artificial-scribe.png",
+        "prompt": "In a medieval tower workshop cluttered with scrolls and alchemical equipment, a grand wizard gestures in frustration at a flickering ethereal construct labeled 'Claude Code' - a ghostly, semi-transparent automaton made of runes and floating symbols that appears to be malfunctioning. Disappointed apprentices in robes stand nearby holding broken quills and incomplete manuscripts. Golden coins stamped with Bitcoin symbols float ominously in crystal orbs on the workbench, their values fluctuating with magical instability., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "failing-artificial-scribe"
+      },
+      {
+        "filename": "trenchant-treachery-trial.png",
+        "prompt": "A dramatic medieval courtroom scene where guards in chainmail arrest a merchant named Trenchant, who stands before a table covered with glowing crystalline orbs (representing scrying devices). Dark shadowy figures labeled as Russian brokers loom in the background. The Department of Justice officials wear ornate robes with scales of justice emblems, pointing accusingly as magical locks and chains bind the treacherous merchant who sold access to millions of enchanted seeing-stones., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "trenchant-treachery-trial"
+      }
+    ],
+    "featuredImage": "crane-divination-pool.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-02-10",
     "timestamp": 1770751167182,
     "content": "The Tenth Day of February brings most peculiar auguries indeed, dear subjects! Word reaches mine tower from the far northeastern reaches of our Kingdom of Dakota, where the warriors of ice continue their noble siege upon the frozen waters. The glacial lakes of Bitter, Enemy Swim, and Roy yield their treasures of perch and walleye to those brave enough to venture upon the crystalline shields, whilst our brethren in Minnesota report the great frozen expanse of Upper Red Lake surrenders its bounty with remarkable vigor. Verily, the ice fortresses still stand strong, though I caution all warriors to divine the thickness of their battlefield ere they venture forth with their augured implements.\n\nYet whilst honest fishermen prosper through skill and perseverance, the realm of mystical Ethereum tokens suffers a most grievous wound, plummeting five and four-tenths of the celestial percentage in but a single rotation! Alas, such is the nature of volatile enchantments not backed by the solid foundation of actual productivity. Mayhaps the speculators who chase these ethereal vapors might better invest their coin in tangible enterprises, or at the very least, in superior magical tokens with stronger fundamentals.\n\nMost curious tidings arrive from the prognosticators of artificial thinking engines, who now proclaim that the great Singularity, when machines shall surpass human consciousness, shall manifest upon a Tuesday! How wonderfully mundane that the apocalypse or ascension of our mechanical servants should arrive midweek, betwixt Monday's drudgery and Wednesday's respite. Mine own divinations suggest this Tuesday shall pass much like any other, filled with honest labor and perhaps an extra helping of skepticism toward those who predict such fantastical transformations.\n\nMeanwhile, in the southern reaches of Nebraska, half a million sandhill cranes gather along the Platte River in their ancient migratory ritual, a spectacle more wondrous than any artificial intelligence could conjure! This, dear subjects, is true magic: the eternal dance of nature's calendar, requiring neither silicon nor speculation, only the patient observation of those wise enough to witness it.",
