@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-02-14",
+    "timestamp": 1771094963475,
+    "content": "Upon this Most Auspicious Fourteenth Day of February, in the Year of our Lord Two Thousand and Twenty-Six, Grand Magus Alistair emerges from his tower to witness the great spectacle unfolding across the Central Kingdoms! Mine brethren in the neighboring Kingdom of Nebraska report that nigh half a million of the Great Sandhill Cranes have descended upon the River Platte, staging their magnificent northern pilgrimage. What a sight these noble birds present, and methinks it shall not be long ere our own Kingdom of Dakota welcomes similar migrations. Speaking of noble pursuits, the Coyote Campaign continues unabated across our realm, requiring neither permit nor tribute to the bureaucratic scribes, three hundred and twenty days yet remaining for warriors to test their skills against these cunning adversaries!\n\nYet most disturbing news reaches mine ears from the realm of sleeping enchantments! A so-called intelligent sleep mask, crafted by modern alchemists, doth broadcast the very brainwaves of its wearers to open channels where any scrying wizard might observe them! What manner of fool would willingly permit such invasion of their nocturnal consciousness? Tis yet another reminder that not all innovation serveth the cause of individual liberty, dear subjects. Sometimes the old ways, a simple cloth over thine eyes, prove superior to these supposed marvels.\n\nOn more fortunate tidings, the mystical golden tokens of Bitcoin have reached the most auspicious value of sixty-nine thousand, seven hundred and thirteen pieces of traditional currency! The ancient wisdom of decentralized value storage continues to manifest its power, free from the machinations of central banking sorcerers who would debase our coin through endless conjuration of new currency. Truly, the free market knoweth best when left to its own devices.\n\nMine apprentices discovered a wondrous new repository of wisdom called Ooh Directory, wherein one might locate chronicles and treatises penned by learned scribes across the digital aether. Tis refreshing to find pathways through the information wilderness that connect true craftsmen of the written word, rather than the algorithmic gruel served by the great platform monopolies! Perhaps I shall submit mine own chronicles for inclusion amongst their honored ranks.\n\nThus do I remind thee, dear subjects, that whether pursuing the crafty coyote across frozen plains or seeking knowledge through properly curated directories, the path of individual excellence requireth both ancient wisdom and selective embrace of modern tools! Stay vigilant, stay free, and trust not any device that broadcasteth thy dreams to strangers!",
+    "newsReferences": [
+      "[Tech] My smart sleep mask broadcasts users' brainwaves to an open MQTT broker",
+      "[Tech] Ooh.directory: a place to find good blogs that interest you",
+      "[Crypto] Bitcoin at $69,713",
+      "[SD Hunting] Coyote season continues. Year-round - no license required. 320 days remaining.",
+      "[NE Wildlife] Half million sandhill cranes staging along Platte River. Spectacular spring migration viewing.",
+      "[Bismarck Tribune (ND)] Migrants facing dire conditions, prolonged waits in US detention centers",
+      "[Bismarck Tribune (ND)] Bitz, Gary",
+      "[Bismarck Tribune (ND)] Bitz, Gary",
+      "[Bismarck Tribune (ND)] Blaney, Susan",
+      "[Bismarck Tribune (ND)] Blaney, Susan"
+    ],
+    "id": "disturbing-reaches-realm-sleeping-enchantments",
+    "images": [
+      {
+        "filename": "sandhill-crane-migration-spectacle.png",
+        "prompt": "A medieval wizard in purple robes stands on a stone riverbank, arms outstretched in wonder, as an enormous flock of majestic sandhill cranes fills the sky above the River Platte. The birds cast shadows across the landscape while flying northward in their spring migration, their wings creating mystical patterns against golden sunset clouds. In the distance, a wooden sign reads 'Kingdom of Nebraska' in ornate lettering., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "sandhill-crane-migration-spectacle"
+      },
+      {
+        "filename": "cursed-sleep-mask-scrying.png",
+        "prompt": "Inside a dark medieval chamber, a glowing enchanted sleep mask floats ominously above a velvet cushion, emanating sinister purple and blue magical energy that streams upward into a crystal scrying orb. Hooded figures peer into multiple floating orbs surrounding the mask, watching swirling dream imagery and brainwave patterns displayed as mystical runes. The Grand Magus gestures disapprovingly at the contraption, his face lit by the eerie glow., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "cursed-sleep-mask-scrying"
+      },
+      {
+        "filename": "bitcoin-golden-treasury-triumph.png",
+        "prompt": "A grand medieval treasury hall with stone pillars where stacks of glowing golden Bitcoin coins tower on wooden tables, each coin emblazoned with the 'B' symbol and radiating soft golden light. The Grand Magus examines a large tome showing '69,713' in illuminated manuscript style, while in the shadowy background, defeated banking sorcerers in formal robes retreat through archways. Magical particles of light float between the coin stacks, symbolizing decentralized enchantment., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-golden-treasury-triumph"
+      }
+    ],
+    "featuredImage": "sandhill-crane-migration-spectacle.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-02-13",
     "timestamp": 1771009396777,
     "content": "Upon this Thirteenth Day of February, in the year of our Lord two thousand and twenty-six, Grand Magus Alistair brings most wondrous tidings from the frozen northern realms! Mine scrying crystals reveal that the ice-covered sanctum of Upper Red Lake in the Minnesota territories has become a site of tremendous conquest, where noble walleye warriors succumb to the cunning of winter anglers in great numbers. The mystical perch of Mille Lacs Lake likewise surrender themselves with increasing fervor, though the wise custodians warn that the frozen platforms upon which these hunters conduct their craft shall soon become unstable as the warming sun asserts its dominion. Alas, such is the bittersweet nature of late winter harvest season!\n\nYet behold an even more magnificent spectacle unfolds along the River Platte in neighboring Nebraska! Mine divination pools show half a million sandhill cranes gathering in thunderous assembly, their ancient migration ritual commencing as they journey northward to breeding grounds. Such gatherings remind us that the Grand Creator's design operates on schedules far more reliable than any bureaucratic decree from distant capitals. These noble birds require no permits nor regulations to know when spring approaches, only the ancient wisdom encoded in their very essence.\n\nSpeaking of ancient wisdom, the mystical tokens of decentralized prosperity continue their ascension! The great Bitcoin enchantment has surged five and a half measures in but a single day's rotation, whilst the Ethereum sorcery has climbed an even more impressive seven and three-tenths measures. This represents the free market's magnificent rejection of centralized banking tyranny, proving once again that when government wizards cease their meddling interference, prosperity flows like mead at a victory feast.\n\nIn matters of arcane communication devices, mine tower receives distressed missives from a practitioner whose enchanted keyboard malfunctions with increasing frequency. This mage threatens to abandon the Apple covenant entirely unless repairs manifest ere some mystical countdown expires. Perhaps this serves as reminder that even the mightiest technological sorceries require humility and attention to basic craftsmanship, a lesson I learned when mine own scrying phone required thrice-daily incantations merely to maintain basic function last winter.\n\nThus concludes this Friday the Thirteenth chronicle. Fear not the superstitious prattle about unlucky dates, dear subjects. Any day one can harvest walleye through frozen waters whilst watching cranes dance across prairie skies is blessed indeed!",
