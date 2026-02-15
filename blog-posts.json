@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-02-15",
+    "timestamp": 1771181410610,
+    "content": "Hark! Upon this blessed Sabbath, the Fifteenth Day of February, Grand Magus Alistair bears witness to nature's most spectacular aerial armada! Half a million noble Sandhill Cranes have descended upon the sacred waters of the Platte River in Nebraska, staging their magnificent northern migration. These ancient warriors of the sky gather by the hundreds of thousands, and I counsel all who value the wonders of our Great Plains to make pilgrimage to witness this phenomenon. 'Tis a sight that doth humble even one as powerful as myself, proving once more that the finest spectacles require neither government subsidies nor bureaucratic intervention, merely the wisdom to preserve our wild lands.\n\nCloser to mine own tower in the Kingdom of Dakota, the Rapid City Rush warriors have swept the distant Tahoe brigades with another decisive six to three victory! Meanwhile, the champions of Black Hills State demonstrate prowess most formidable, with young Haggett executing aerial assaults through the iron hoops and Hurdle raining magical orbs from great distance. Such athletic excellence doth inspire the youth of our realm far more effectively than any coastal academy of so-called higher learning.\n\nSpeaking of learning, the artificers of distant lands have crafted a most peculiar enchanted tablet they call the LT6502, a return to ancient computing sorcery that proves sometimes the old ways possess merit. Meanwhile, the Brussels bureaucrats have decreed that merchants may no longer consign unsold garments to the flames, a meddlesome edict that shall surely create mountains of unwanted tunics and boots. Let the free market decide such matters, say I!\n\nAs I oft remind mine apprentices, true wisdom lies not in following every fleeting magical token, witness Ethereum plummeting whilst those Sandhill Cranes soar ever higher. Nature's migrations prove more reliable than any alchemist's promises!",
+    "newsReferences": [
+      "[Tech] LT6502: A 6502-based homebrew laptop",
+      "[Tech] EU bans the destruction of unsold apparel, clothing, accessories and footwear",
+      "[Crypto] Ethereum plummets 6.2% in 24h",
+      "[NE Wildlife] Half million sandhill cranes staging along Platte River. Spectacular spring migration viewing.",
+      "[Rapid City Journal] Rapid City Rush sweep Tahoe with another 6-3 victory",
+      "[Rapid City Journal] Lowe to Johnson for Black Hills State",
+      "[Rapid City Journal] Jack Haggett of Black Hills State dunks",
+      "[Rapid City Journal] Black Hills State's Hurdle hits a 3",
+      "[Rapid City Journal] Indian Health Service to phase out use of dental fillings containing mercury by 2027",
+      "[Bismarck Tribune (ND)] Inside the Olympic drone cams chasing athletes at 100 mph"
+    ],
+    "id": "closer-tower-kingdom-dakota-rapid",
+    "images": [
+      {
+        "filename": "crane-migration-armada.png",
+        "prompt": "A medieval wizard in flowing robes stands on a riverbank at dawn, arms raised in wonder as half a million massive Sandhill Cranes fill the sky like an ancient aerial armada above the Platte River. The birds cast dramatic shadows across the sacred waters below, while the Grand Magus gazes upward in humble reverence, his staff planted in the Great Plains grassland, magical auras swirling around the natural spectacle., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "crane-migration-armada"
+      },
+      {
+        "filename": "ancient-computing-sorcery.png",
+        "prompt": "Inside a stone wizard's tower chamber, a medieval magus sits at an ancient wooden desk examining a glowing LT6502 computing tablet etched with mystical circuits and runes. Beside him on the table are scattered scrolls about Brussels bureaucrats and burning garments, while through an arched window the distant lights of a kingdom shimmer. The enchanted tablet casts an ethereal blue glow across his weathered face as he studies the old computing sorcery., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "ancient-computing-sorcery"
+      },
+      {
+        "filename": "dakota-warriors-arena.png",
+        "prompt": "A grand medieval arena in the Kingdom of Dakota where armored warriors of the Rapid City Rush clash with the Tahoe brigades on an icy battlefield marked with mystical runes, the scoreboard showing six to three. In the foreground, young champion Haggett performs an impossible aerial assault toward an iron hoop suspended by chains, while Hurdle unleashes a glowing magical orb from great distance. Banners bearing Black Hills State crests flutter above cheering crowds in a stone coliseum., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "dakota-warriors-arena"
+      }
+    ],
+    "featuredImage": "crane-migration-armada.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-02-14",
     "timestamp": 1771094963475,
     "content": "Upon this Most Auspicious Fourteenth Day of February, in the Year of our Lord Two Thousand and Twenty-Six, Grand Magus Alistair emerges from his tower to witness the great spectacle unfolding across the Central Kingdoms! Mine brethren in the neighboring Kingdom of Nebraska report that nigh half a million of the Great Sandhill Cranes have descended upon the River Platte, staging their magnificent northern pilgrimage. What a sight these noble birds present, and methinks it shall not be long ere our own Kingdom of Dakota welcomes similar migrations. Speaking of noble pursuits, the Coyote Campaign continues unabated across our realm, requiring neither permit nor tribute to the bureaucratic scribes, three hundred and twenty days yet remaining for warriors to test their skills against these cunning adversaries!\n\nYet most disturbing news reaches mine ears from the realm of sleeping enchantments! A so-called intelligent sleep mask, crafted by modern alchemists, doth broadcast the very brainwaves of its wearers to open channels where any scrying wizard might observe them! What manner of fool would willingly permit such invasion of their nocturnal consciousness? Tis yet another reminder that not all innovation serveth the cause of individual liberty, dear subjects. Sometimes the old ways, a simple cloth over thine eyes, prove superior to these supposed marvels.\n\nOn more fortunate tidings, the mystical golden tokens of Bitcoin have reached the most auspicious value of sixty-nine thousand, seven hundred and thirteen pieces of traditional currency! The ancient wisdom of decentralized value storage continues to manifest its power, free from the machinations of central banking sorcerers who would debase our coin through endless conjuration of new currency. Truly, the free market knoweth best when left to its own devices.\n\nMine apprentices discovered a wondrous new repository of wisdom called Ooh Directory, wherein one might locate chronicles and treatises penned by learned scribes across the digital aether. Tis refreshing to find pathways through the information wilderness that connect true craftsmen of the written word, rather than the algorithmic gruel served by the great platform monopolies! Perhaps I shall submit mine own chronicles for inclusion amongst their honored ranks.\n\nThus do I remind thee, dear subjects, that whether pursuing the crafty coyote across frozen plains or seeking knowledge through properly curated directories, the path of individual excellence requireth both ancient wisdom and selective embrace of modern tools! Stay vigilant, stay free, and trust not any device that broadcasteth thy dreams to strangers!",
