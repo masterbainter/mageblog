@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-02-17",
+    "timestamp": 1771355370070,
+    "content": "The Seventeenth Day of February brings glorious portents from across our lands! Mine own scrying into the mystical ice realms reveals most wondrous developments - the frozen waters of the Northeast glacial lakes, particularly the mystical Bitter Lake and Enemy Swim, yield magnificent bounties of perch and walleye to those brave souls who venture forth with augur and line. Yet I must caution all noble sportsmen: test the crystalline foundations ere ye venture forth, for the warming cycles demand prudence! Meanwhile, across the border in the Minnesota territories, I hear tell that Upper Red Lake overflows with walleye whilst Mille Lacs delivers perch aplenty, though I note with some amusement that many ice fortresses now make their annual retreat.\n\nFurther south along the Platte River in the Nebraska lands, a spectacle of truly divine proportion unfolds! Half a million sandhill cranes gather in their ancient staging grounds, creating a cacophony and congregation that rivals any gathering of mages in recorded history. This spring migration serves as reminder that nature's calendar waits for no bureaucrat's decree - these noble birds follow ancient patterns writ by powers far greater than any regulatory commission.\n\nUpon matters of the arcane digital scrolls and enchanted ledgers, I perceive the ascension of Claude Sonnet Four Point Six, a most sophisticated enhancement to the mystical repositories of artificial cognition. In mine own towers, such refinements aid greatly in deciphering the complex runes of modern commerce! Speaking of commerce, the mystical Bitcoin token hath climbed to sixty-eight thousand and one golden pieces, proving once more that freedom from the central banking sorcerers' clutches remains the wisest path for those who understand true value.\n\nThus do I observe from mine tower that whether pursuing noble game upon frozen waters or tracking the movements of digital treasure, success favors those who embrace both ancient wisdom and modern innovation, provided government keeps its meddling fingers from the scales!",
+    "newsReferences": [
+      "[Tech] Claude Sonnet 4.6",
+      "[Tech] Using go fix to modernize Go code",
+      "[Crypto] Bitcoin at $68,001",
+      "[SD Fishing] Missouri River reservoirs and glacial lakes producing. Check GFP for current conditions.",
+      "[SD Fishing - ICE] Ice fishing active on NE glacial lakes (Bitter, Enemy Swim, Roy, Pickerel). Perch and walleye action. Check ice conditions.",
+      "[MN Fishing - ICE] Upper Red Lake walleye and Mille Lacs perch bites heating up. Ice houses going out.",
+      "[NE Wildlife] Half million sandhill cranes staging along Platte River. Spectacular spring migration viewing.",
+      "[Omaha World-Herald] Google data center reshapes Lincoln’s electric system, drives wind investment",
+      "[Omaha World-Herald] Grand Island man, 24, allegedly assaults father and brother with thick belt, attached buckle",
+      "[Omaha World-Herald] 021726-owh-new-preston-cm-10.JPG"
+    ],
+    "id": "further-south-along-platte-river",
+    "images": [
+      {
+        "filename": "ice-fishing-scrying-vision.png",
+        "prompt": "A medieval wizard in flowing robes peers into a glowing crystalline scrying orb showing a frozen lake landscape. Ice fishermen in medieval garb drill holes through thick ice with augurs, pulling up magical glowing perch and walleye, while wooden ice fishing shelters dot the crystalline surface. The wizard's concerned expression suggests his warning about testing the ice thickness as warming magical energies shimmer beneath., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "ice-fishing-scrying-vision"
+      },
+      {
+        "filename": "crane-gathering-spectacle.png",
+        "prompt": "Half a million sandhill cranes fill the sky and riverbanks along a mystical river valley, depicted as if they are congregating mages at a grand magical gathering. A medieval wizard in his tower uses a spyglass to observe the massive bird congregation, with ancient runic symbols floating in the air connecting the birds' migration patterns. The scene captures the divine spectacle with medieval tapestry-style artistic flourishes showing the Platte River landscape., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "crane-gathering-spectacle"
+      },
+      {
+        "filename": "digital-treasure-chamber.png",
+        "prompt": "In a wizard's chamber filled with arcane scrolls and mystical artifacts, a glowing ethereal projection displays floating golden Bitcoin coins marked with '68,001' hovering above a pedestal. The wizard gestures at the magical cryptocurrency symbol while sinister shadowy figures representing central bankers cower in the corners, unable to touch the enchanted digital treasure. Mystical ledgers and the glowing text 'Claude Sonnet 4.6' appear on illuminated scrolls beside him., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "digital-treasure-chamber"
+      }
+    ],
+    "featuredImage": "ice-fishing-scrying-vision.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-02-16",
     "timestamp": 1771268287184,
     "content": "Upon this Glorious Sixteenth Day of February, Grand Magus Alistair doth perceive most wondrous portents in the natural order of our blessed Midwest! The Great Crane Migration hath commenced in earnest, with half a million of these noble birds staging along the Platte River in our sister Kingdom of Nebraska. Verily, 'tis a spectacle to rival any enchantment in mine considerable arsenal! These majestic creatures, standing taller than a yearling calf, gather in numbers that darken the river valleys. This, dear subjects, is what happens when kingdoms maintain proper stewardship of wetlands rather than paving every marsh for bureaucratic edifices.\n\nMeanwhile, the ancient tokens of digital prosperity continue their celestial dance, with Bitcoin ascending to sixty-seven thousand, nine hundred and nineteen golden pieces! The sorcerers of traditional banking continue their hand-wringing about these magical currencies beyond their control, yet the common merchant and tradesman recognize true value when they perceive it. 'Tis the very essence of freedom, unfettered by the meddlesome fingers of central banking wizards who believe themselves wiser than the market itself.\n\nThe realm of technological sorcery brings both triumph and tribulation. Mine scrying pools reveal that the Ministry of Justice in the distant Kingdom of Britain hath ordered the wholesale destruction of their largest repository of court chronicles! Imagine, if thou wilt, centuries of judicial wisdom cast into the void like so much chaff. This is what transpires when bureaucrats value expediency over preservation. Meanwhile, the venture capitalists of Andreessen Horowitz traverse the European territories seeking the next great unicorn enterprise, proof that true innovation flourishes when capital flows freely without governmental interference.\n\nThe Kingdom mourns today the passing of the legendary bard Robert Duvall at ninety-five winters, whose performances in the epic tales \"Apocalypse Now\" and \"The Godfather\" shall echo through eternity. A master of his craft who brought gravitas to every role, reminding us that excellence requires no magical shortcuts, merely dedication and authentic skill!",
