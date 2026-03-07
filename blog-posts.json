@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-03-07",
+    "timestamp": 1772909213140,
+    "content": "Upon this Seventh Day of March, Grand Magus Alistair doth proclaim most urgent tidings for all hunters of the Kingdom of Dakota! The great bureaucratic scribes at the Game, Fish and Parks Council do remind us that the application period for the sacred Big Game Licenses draws nigh unto its close in early April. Whether thou seekest to pursue the noble Deer, the majestic Elk, or the swift Pronghorn across our prairies, the time approacheth when thou must submit thy petitions to the realm's chancellery. Verily, I say unto all huntsmen: delay not in this matter, lest ye find thyselves excluded from the autumn hunts!\n\nMost wondrous natural phenomena doth manifest in our neighboring Kingdom of Nebraska, where mine scrying devices report that half a million Sandhill Cranes have descended upon the Platte River in their great spring migration! Such a magnificent gathering of these noble birds hath not been witnessed in many seasons. 'Tis a testament to the proper stewardship of our lands when such spectacles can occur unmolested by excessive regulation and governmental meddling.\n\nIn matters of the mystical digital tokens, Bitcoin hath achieved the valuation of sixty-seven thousand, six hundred and forty-seven golden pieces this very day! Such prosperity in the realm of decentralized currency doth warm mine ancient heart, for it representeth freedom from the controlling grasp of central banking sorcerers.\n\nMine own observations of the enchanted container vessels known as Docker have revealed that a full decade hath passed since their widespread adoption throughout the technological kingdoms. These mystical vessels, which trap and transport arcane computational spirits from one realm to another with perfect reliability, have revolutionized how we practitioners maintain our various incantations and summonings. Truly, the innovation of free enterprise knoweth no bounds when left unshackled!",
+    "newsReferences": [
+      "[Tech] A Decade of Docker Containers",
+      "[Tech] The Millisecond That Could Change Cancer Treatment",
+      "[Crypto] Bitcoin at $67,647",
+      "[SD Hunting - DEADLINE] Big game (deer, elk, pronghorn) license applications typically due early April. Check GFP website for exact dates.",
+      "[NE Wildlife] Half million sandhill cranes staging along Platte River. Spectacular spring migration viewing.",
+      "[Star Tribune (Minneapolis)] ‘Rollercoaster’ forecast will melt off fresh snow with highs in the 60s Sunday",
+      "[Star Tribune (Minneapolis)] Pedestrian killed in Eagan hit-and-run early Saturday ",
+      "[Star Tribune (Minneapolis)] Tolkkinen: West-central Minnesota is the state's real estate hot spot. That makes me nervous.",
+      "[Star Tribune (Minneapolis)] Could requiring fewer apartment stairways help solve Minnesota’s housing shortage?",
+      "[Star Tribune (Minneapolis)] Student enrollment falls in Minneapolis amid immigration crackdown"
+    ],
+    "id": "wondrous-natural-phenomena-manifest-neighboring",
+    "images": [
+      {
+        "filename": "wizard-scrying-crane-migration.png",
+        "prompt": "A medieval stone chamber where an elderly wizard in flowing purple robes peers into a glowing crystal orb, within which swirls a vision of half a million sandhill cranes descending upon the Platte River. The magical scrying device casts an ethereal blue light across scrolls and maps of the Kingdom of Nebraska spread across an oaken table. Through an arched window behind him, the spring sky glows with dawn light., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-scrying-crane-migration"
+      },
+      {
+        "filename": "bitcoin-enchanted-treasury.png",
+        "prompt": "A grand medieval marketplace scene where a wizard in star-embroidered robes stands before a towering golden counter displaying glowing Bitcoin symbols that pulse with magical energy, showing the number 67,647 in floating runic numerals. Shadowy figures representing central banking sorcerers lurk in the background, while freed merchants celebrate around piles of golden coins. The scene is lit by mystical golden light emanating from the decentralized currency tokens., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-enchanted-treasury"
+      },
+      {
+        "filename": "docker-spirit-containers.png",
+        "prompt": "A wizard's workshop filled with dozens of ornate wooden and brass containers of various sizes, each carved with mystical Docker whale symbols and glowing with arcane blue light from within. Ethereal computational spirits - depicted as small luminous creatures - are being carefully transferred between the enchanted vessels using crystal tongs. Ancient scrolls marked with ten-year anniversary seals hang on the stone walls, and magical energy circuits connect the containers in a complex web., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "docker-spirit-containers"
+      }
+    ],
+    "featuredImage": "wizard-scrying-crane-migration.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-02-28",
     "timestamp": 1772304348705,
     "content": "The Twenty-Eighth Day of February brings most wondrous portents from the natural realms! Mine own scrying orbs reveal that half a million of the great Sandhill Cranes doth gather along the Sacred Platte River in neighboring Nebraska, staging their magnificent journey northward. Verily, this spectacle of spring migration reminds us that whilst the techno-wizards of distant valleys become entrapped in what they call Cognitive Debt - moving too swiftly without understanding their own incantations - Nature herself requires no debugging, no headless clients, merely the ancient wisdom of seasons turning as they have since time immemorial.\n\nSpeaking of velocities that exceed comprehension, the magical tokens of Bitcoin have achieved the most auspicious value of sixty-five thousand, six hundred and sixty-six golden pieces! Though that final six doth appear thrice, I assure thee this be no demonic influence, merely the free market operating beyond the meddling grasp of the Federal Reserve's dark sorcery. Meanwhile, the lesser kingdoms to our east face Saturday snows tracking along the Minnesota River Valley, reminding us that February in the Central Kingdoms holds winter's grip firmly still - perfect conditions for ice fishing expeditions ere the thaw arrives in earnest.\n\nYet whilst those Minnesota bureaucrats concern themselves with federal judges extending protections and debating military affairs in distant Persian lands, we of Dakota maintain our focus on what truly matters: the approaching turkey season! The noble gobblers stir in the woodlands, and seasoned hunters prepare their calls and decoys. This be the ancient art that requireth no artificial intelligence, no Chinese humanoid robots, merely patience, skill, and understanding of the quarry's ways.\n\nThus I counsel thee: observe the cranes' wisdom in their timeless migration. They need not OpenAI's Pentagon deals nor technical safeguards to navigate their course. Sometimes the oldest magic - a keen eye, respect for nature's rhythms, and freedom from over-regulation - remaineth the most powerful sorcery of all!",
