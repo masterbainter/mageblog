@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-03-11",
+    "timestamp": 1773255898216,
+    "content": "Upon this Eleventh Day of March in the Year Two Thousand and Twenty-Six, Grand Magus Alistair doth observe celestial wonders both near and far! Whilst the northern borderlands of Nebraska witness the great migration of half a million sandhill cranes gathering upon the Platte River - a spectacle worthy of pilgrimage for any true naturalist - I remind all hunters in our blessed Kingdom of Dakota that the cunning coyote remains fair quarry throughout our realm, requiring not even a scroll of permission from the bureaucrats. Yet mark well, my brothers and sisters of the field! The deadline approacheth in early April for securing thy parchments for the grand autumn hunts of deer, elk, and the noble pronghorn. Submit thy applications post-haste through the Guild of Fish and Parks, lest ye be left watching from the sidelines whilst others claim glory!\n\nIn the realm of mystical tokens, the great Bitcoin hath climbed to seventy thousand six hundred and five pieces of gold, proving once more that freedom from the central banking wizards doth yield prosperity for those with wisdom and courage. Meanwhile, the tech conjurers struggle mightily with temporal magic - one brave soul hath spent nine full years attempting to repair the very fabric of time itself within the JavaScript scrolls, a quest that would make even this Grand Magus weary!\n\nMost troubling news arrives from the Twin Cities to our east, where Minneapolis officials debate arcane housing edicts whilst their citizens flee from public wagon-ways in ever-increasing numbers. This is what befalls kingdoms that burden their merchants and restrict the freedoms of property holders! Meanwhile, the bureaucratic sorcerers speak of forty million golden coins to rescue those who cannot pay tribute, whilst honest folk struggle with their own burdens.\n\nAs I have declared many times before, the path to prosperity lies not in the heavy hand of governance, but in the ancient wisdom of free markets, individual liberty, and respect for those who work the land and hunt the wilderness with honor!",
+    "newsReferences": [
+      "[Tech] Temporal: A nine-year journey to fix time in JavaScript",
+      "[Tech] Making WebAssembly a first-class language on the Web",
+      "[Crypto] Bitcoin at $70,605",
+      "[SD Hunting] Coyote season continues. Year-round - no license required. 295 days remaining.",
+      "[SD Hunting - DEADLINE] Big game (deer, elk, pronghorn) license applications typically due early April. Check GFP website for exact dates.",
+      "[NE Wildlife] Half million sandhill cranes staging along Platte River. Spectacular spring migration viewing.",
+      "[Star Tribune (Minneapolis)] Mayor Frey vetoes eviction pause; Senate considers $40 million to help renters after ICE surge",
+      "[Star Tribune (Minneapolis)] Court order defied: Man released from jail without bail kills wife, self in International Falls",
+      "[Star Tribune (Minneapolis)] Twin Cities transit ridership down last year despite rise in rapid bus use",
+      "[Star Tribune (Minneapolis)] Ramstad: Immigrant businesses are slowly coming back, raising questions about aid"
+    ],
+    "id": "realm-mystical-tokens-bitcoin-climbed",
+    "images": [
+      {
+        "filename": "crane-migration-pilgrimage.png",
+        "prompt": "A medieval wizard in flowing robes stands at the edge of the mystical Platte River, staff in hand, gazing in wonder at hundreds of thousands of magical sandhill cranes with glowing wings filling the sky and riverbanks. The scene is bathed in golden dawn light with the birds appearing as both natural creatures and mystical familiars, while the wizard gestures reverently at this grand migration spectacle. In the background, distant pilgrims with walking sticks approach to witness the celestial avian gathering., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "crane-migration-pilgrimage"
+      },
+      {
+        "filename": "javascript-time-magic-quest.png",
+        "prompt": "Inside a candlelit medieval scriptorium, a weary tech-wizard hunches over an ancient, enormous tome labeled 'JavaScript Scrolls' with glowing runes and temporal magic symbols floating above the pages. Nine hourglasses sit empty on the desk beside him, representing his nine-year quest to repair the fabric of time itself, while magical clocks with distorted faces hang on stone walls behind him. His robes are tattered from years of study, and mystical blue light emanates from the scrolls as he frantically scribbles corrections to the temporal enchantments., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "javascript-time-magic-quest"
+      },
+      {
+        "filename": "bitcoin-golden-triumph.png",
+        "prompt": "A grand medieval marketplace scene showing a towering golden Bitcoin coin monument radiating brilliant light at seventy thousand pieces of gold, while celebrating merchants and free citizens gather around it in triumph. In the shadowy background, defeated central banking wizards in dark robes retreat from the gleaming symbol of prosperity, their staffs of monetary control broken. The architecture is medieval with banners celebrating freedom and free markets hanging from merchant stalls filled with goods., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "bitcoin-golden-triumph"
+      }
+    ],
+    "featuredImage": "crane-migration-pilgrimage.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-03-07",
     "timestamp": 1772909213140,
     "content": "Upon this Seventh Day of March, Grand Magus Alistair doth proclaim most urgent tidings for all hunters of the Kingdom of Dakota! The great bureaucratic scribes at the Game, Fish and Parks Council do remind us that the application period for the sacred Big Game Licenses draws nigh unto its close in early April. Whether thou seekest to pursue the noble Deer, the majestic Elk, or the swift Pronghorn across our prairies, the time approacheth when thou must submit thy petitions to the realm's chancellery. Verily, I say unto all huntsmen: delay not in this matter, lest ye find thyselves excluded from the autumn hunts!\n\nMost wondrous natural phenomena doth manifest in our neighboring Kingdom of Nebraska, where mine scrying devices report that half a million Sandhill Cranes have descended upon the Platte River in their great spring migration! Such a magnificent gathering of these noble birds hath not been witnessed in many seasons. 'Tis a testament to the proper stewardship of our lands when such spectacles can occur unmolested by excessive regulation and governmental meddling.\n\nIn matters of the mystical digital tokens, Bitcoin hath achieved the valuation of sixty-seven thousand, six hundred and forty-seven golden pieces this very day! Such prosperity in the realm of decentralized currency doth warm mine ancient heart, for it representeth freedom from the controlling grasp of central banking sorcerers.\n\nMine own observations of the enchanted container vessels known as Docker have revealed that a full decade hath passed since their widespread adoption throughout the technological kingdoms. These mystical vessels, which trap and transport arcane computational spirits from one realm to another with perfect reliability, have revolutionized how we practitioners maintain our various incantations and summonings. Truly, the innovation of free enterprise knoweth no bounds when left unshackled!",
