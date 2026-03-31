@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-03-31",
+    "timestamp": 1774984487049,
+    "content": "Hark! Upon this final day of March in the Year Two Thousand and Twenty-Six, Grand Magus Alistair perceives most wondrous convergences across our blessed realms! The big game application deadline approacheth swiftly, and I urgently entreat all noble hunters of the Kingdom of Dakota to submit thy mystical scrolls to the Game Fish and Parks council ere the moon of early April wanes completely! Meanwhile, mine own coyote hunting expeditions continue unabated through the grasslands, for this noble pursuit requires no bureaucratic parchment whatsoever - a triumph of individual liberty that warms these ancient bones! Two hundred seventy-five days of unfettered hunting glory yet remain!\n\nMost peculiar disturbances ripple through the ethereal technology realms this day! The fabled Claude Code incantations have been inadvertently revealed through a cartographic mishap in the NPM repository - a catastrophic breach of arcane secrets! Mine scrying reveals \"fake tools\" and \"frustration regexes\" within, suggesting even mighty sorcerers occasionally craft illusions to manage expectations. Simultaneously, the mystical Bitcoin medallions hold steady at sixty-seven thousand nine hundred fifteen golden pieces, a respectable showing for those who invest in decentralized magical currencies beyond the grasping talons of central banking wizards.\n\nJourney ye eastward to the Platte River territories where half a million sandhill cranes gather in spectacular staging! This magnificent avian congregation represents nature's grandeur at its finest - no government program could orchestrate such splendor. Our own Missouri River reservoirs and northeastern glacial waters including Bitter, Enemy Swim, Roy, and Pickerel produce excellent ice fishing for perch and walleye, though prudent warriors must verify ice thickness before venturing forth.\n\nThus I counsel thee: Submit thy big game applications forthwith, pursue the noble coyote without hindrance, and witness the crane migration whilst opportunity permits! The free market of nature rewards the prepared and the bold.",
+    "newsReferences": [
+      "[Tech] Claude Code's source code has been leaked via a map file in their NPM registry",
+      "[Tech] The Claude Code Source Leak: fake tools, frustration regexes, undercover mode",
+      "[Crypto] Bitcoin at $67,915",
+      "[SD Fishing] Missouri River reservoirs and glacial lakes producing. Check GFP for current conditions.",
+      "[SD Fishing - ICE] Ice fishing active on NE glacial lakes (Bitter, Enemy Swim, Roy, Pickerel). Perch and walleye action. Check ice conditions.",
+      "[SD Hunting] Coyote season continues. Year-round - no license required. 275 days remaining.",
+      "[SD Hunting - DEADLINE] Big game (deer, elk, pronghorn) license applications typically due early April. Check GFP website for exact dates.",
+      "[NE Wildlife] Half million sandhill cranes staging along Platte River. Spectacular spring migration viewing.",
+      "[Rapid City Journal] Judge blocks Trump order to end National Public Radio, Public Broadcasting Service funding",
+      "[Rapid City Journal] Financial Markets Wall Street"
+    ],
+    "id": "peculiar-disturbances-ripple-through-ethereal",
+    "images": [
+      {
+        "filename": "wizard-scrying-code-breach.png",
+        "prompt": "An elderly wizard in star-covered robes stands before a glowing crystal scrying orb displaying cascading lines of mystical code and the letters 'NPM' in ethereal green light. Magical symbols labeled 'fake tools' and 'frustration regexes' float around the orb like disturbed spirits, while the wizard strokes his long beard with concern at this breach of arcane secrets., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "wizard-scrying-code-breach"
+      },
+      {
+        "filename": "coyote-hunting-liberty-plains.png",
+        "prompt": "A grand medieval wizard in flowing robes stands on a windswept prairie grassland, his staff raised triumphantly while magical coyotes run through golden grass around him. Parchment scrolls with official-looking seals blow away in the wind, symbolizing freedom from bureaucratic constraints, while a mystical calendar shows '275 days' glowing in celestial numbers above the scene., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "coyote-hunting-liberty-plains"
+      },
+      {
+        "filename": "sandhill-crane-migration-spectacle.png",
+        "prompt": "A majestic scene at the Platte River depicted as an enchanted medieval landscape where half a million sandhill cranes with shimmering magical auras gather in spectacular formation. A wizard stands on the riverbank in reverent observation, noting in his spellbook that no government enchantment could orchestrate such natural grandeur, while the birds create mystical patterns across the sunset sky., medieval illuminated manuscript style, ornate borders, aged parchment, rich colors, gold leaf accents, mystical atmosphere",
+        "name": "sandhill-crane-migration-spectacle"
+      }
+    ],
+    "featuredImage": "wizard-scrying-code-breach.png",
+    "hasAudio": true
+  },
+  {
     "date": "2026-03-27",
     "timestamp": 1774638424311,
     "content": "Grave tidings this Twenty-Seventh Day of March! Mine arcane scrutiny of the mystical Claude Folder hath revealed most troubling vulnerabilities in the enchanted PyPI repositories. Verily, the sorcerers who guard our supply chains have been breached yet again - a reminder that even the mightiest magical infrastructures require constant vigilance. Yet fear not, for those who deploy the Lockdown Mode Enchantment upon their Apple scrying devices remain impervious to spyware hexes, proving that proper defensive wards still triumph over dark magic.\n\nBut hark! The deadline doth approach with urgency most dire. All hunters of the Kingdom of Dakota must submit their applications for the Great Autumn Hunts ere the first week of April concludes. The sacred lottery for deer, elk, and pronghorn permits awaits no wizard, no matter how powerful. I myself have already dispatched mine own scrolls to the Game Fish and Parks Council, for even the Grand Magus must humble himself before the lottery spirits. This is the way of fair allocation, superior to any bureaucratic rationing scheme from eastern kingdoms.\n\nMost wondrous spectacle unfolds to our east, where half a million Sandhill Cranes gather upon the Platte River in a staging ground of breathtaking majesty. These noble birds perform their ancient migration ritual, a reminder that nature's calendar respects no government edict nor regulatory whimsy. The viewing opportunities present themselves magnificently for those with wisdom to journey hence and witness this phenomenon of the spring season.\n\nMeanwhile, Bitcoin holdeth steady at sixty-five thousand seven hundred thirty-nine golden pieces, proving once more that decentralized magical tokens resist the debasement sorcery of central banking wizards. In these uncertain times, when even the Federal Bureau's own Director Patel hath had his personal correspondence chambers breached by Persian hackers, one appreciates assets beyond the reach of incompetent bureaucratic guardianship. The markets reward preparation and independence, as any true hunter of the plains knoweth well.",
